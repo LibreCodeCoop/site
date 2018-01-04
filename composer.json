@@ -6,5 +6,8 @@
     "license": "MIT",
     "require": {
         "sculpin/sculpin": "^2.1"
+    },
+    "scripts": {
+        "prod": ["sculpin generate --env=prod"]
     }
 }
