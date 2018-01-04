@@ -1,0 +1,10 @@
+{
+    "name": "lyseontech/site",
+    "description": "Site da cooperativa LyseonTech",
+    "type": "project",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "require": {
+        "sculpin/sculpin": "^2.1"
+    }
+}
