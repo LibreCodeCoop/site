@@ -8,6 +8,8 @@
         "sculpin/sculpin": "^2.1"
     },
     "scripts": {
-        "prod": ["sculpin generate --env=prod"]
+        "prod": ["sculpin generate --env=prod"],
+        "deploy"    : "cd output_prod; git add -A .; git commit -m 'Atualizando build do site'; git push origin HEAD:master; cd ..",
+        "prod-deploy": ["@prod", "@deploy"]
     }
 }
