@@ -1,23 +1,19 @@
-nguage: php
+language: php
 php:
   - 7.1
-install:
-  - composer self-update
-  - npm install --global node-sass
-script: /bin/true
 
 deploy:
-  provider: script
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: ${TRAVIS_BUILD_DIR}/output_prod
+  repo: LyseonTech/lyseontech.github.io
+  target_branch: master
+  email: travis-ci@lyseon.tech
+  name: Travis-CI
   on:
     branch: master
-  script: /bin/true
-  skip_cleanup: true
 
 before_deploy:
-  - git config --file=.gitmodules submodule.output_prod.url https://$GH_TOKEN:@github.com/lyseontech/lyseontech.github.io.git
-  - git submodule sync
-  - git submodule update --init --recursive --remote
-  - git config --global user.name "Travis-CI"
-  - git config --global user.email "travis.ci@lyseon.tech"
   - composer install
-  - composer prod-deploy
+  - composer prod
