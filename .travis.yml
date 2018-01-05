@@ -17,3 +17,5 @@ deploy:
 before_deploy:
   - composer install
   - composer prod
+
+script: /bin/true
