@@ -1,8 +1,24 @@
 <html>
   <head>
-    <title>Lyseon Tech</title>
+    <title>{{ site.title }}</title>
+    <style>
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    #footer .copyright {
+      list-style: none;
+      text-align: center;
+    }
+    </style>
   </head>
   <body>
     {% block content %}{% endblock %}
+    <footer id="footer">
+      <ul class="copyright">
+        <li>&copy; {{ "now"|date("Y") }} {{ site.title }}</li>
+      </ul>
+    </footer>
   </body>
 </html>
