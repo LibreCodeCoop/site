@@ -156,7 +156,7 @@ layout: default
 </section>
 <!-- End / Section -->
 
-<!-- About-->
+<!-- sobre-->
 
 <!-- Section -->
 <section class="md-section">
@@ -166,7 +166,7 @@ layout: default
         
         <!-- title-01 -->
         <div class="title-01 title-01__style-03 md-text-left">
-          <h6 class="title-01__subTitle">about</h6>
+          <h6 class="title-01__subTitle">sobre</h6>
           <h2 class="title-01__title">We Are The Leaders In This Industry</h2>
           <div>Nam suscipit nisi risus, et porttitor metus molestie a. Phasellus id quam id turpis suscipit pretium. Maecenas ultrices, lacus ut accumsan maximus, odio augue rhoncus augue, vulputate maximus mi sapien sed nisl. Sed fermentum congue orci sed lacinia. Nulla nunc purus, consectetur</div>
         </div><!-- End / title-01 -->
