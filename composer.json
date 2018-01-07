@@ -8,6 +8,7 @@
     "sculpin/sculpin": "^2.1"
   },
   "scripts": {
+    "dev": "vendor/bin/sculpin generate --watch --server",
     "prod": [
       "sculpin generate --env=prod"
     ],
@@ -16,5 +17,8 @@
       "@prod",
       "@deploy"
     ]
+  },
+  "config": {
+    "process-timeout": 0
   }
 }
