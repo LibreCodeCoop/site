@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: page
+header:
+  title: Contato
+  subtitle: Estamos prontos para te ouvir
 ---
 
 <!-- Content-->
@@ -8,17 +11,6 @@ layout: default
 	<!-- Section -->
 	<section class="md-section js-consult-form" style="background-color:#f7f7f7;">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-0 offset-sm-0 offset-md-0 offset-lg-3 ">
-					
-					<!-- title-01 -->
-					<div class="title-01">
-						<h2 class="title-01__title">Contact Details</h2>
-						<div>Integer placerat ullamcorper urna nec rhoncus. Sed velit justo, lacinia non sapien imperdiet, sagitt</div>
-					</div><!-- End / title-01 -->
-					
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-lg-4 ">
 					
