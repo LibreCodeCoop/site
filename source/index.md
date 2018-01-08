@@ -225,109 +225,6 @@ header:
 </section>
 <!-- End / Section -->
 
-<!-- Contact us-->
-
-<!-- Section -->
-<section class="md-section md-skin-dark js-consult-form" style="background-image:url(&quot;img/backgrounds/1.jpg&quot;);">
-  <div class="md-overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 offset-0 offset-sm-0 offset-md-0 offset-lg-2 ">
-        
-        <!-- title-01 -->
-        <div class="title-01 title-01__style-02">
-          <h2 class="title-01__title">Contact With Us via Hot Line</h2>
-          <div>Sed ante nisl, fermentum et facilisis in, maximus </div>
-        </div><!-- End / title-01 -->
-        
-        <div class="consult-phone">(+88) 242 2323 777</div>
-      </div>
-    </div>
-    
-    <!-- form-01 -->
-    <div class="form-01 consult-form js-consult-form__content">
-      <h2 class="form-01__title">Give Us Your Feedback</h2>
-      <form class="form-01__form">
-        <div class="form__item form__item--03">
-          <input type="text" name="name" placeholder="Your name"/>
-        </div>
-        <div class="form__item form__item--03">
-          <input type="text" name="phone" placeholder="Your Email"/>
-        </div>
-        <div class="form__item form__item--03">
-          <input type="email" name="email" placeholder="Your Email"/>
-        </div>
-        <div class="form__item">
-          <textarea rows="3" name="Your message" placeholder="Your message"></textarea>
-        </div>
-        <div class="form__button"><a class="btn btn-primary btn-w180" href="#">send message</a>
-        </div>
-      </form>
-    </div><!-- End / form-01 -->
-    
-  </div>
-</section>
-<!-- End / Section -->
-
-<!-- What’s Client Say ?-->
-
-<!-- Section -->
-<section class="md-section" style="padding-bottom:0;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
-        
-        <!-- title-01 -->
-        <div class="title-01" style="margin-bottom:50px;">
-          <h2 class="title-01__title">What’s Client Say?</h2>
-        </div><!-- End / title-01 -->
-        
-      </div>
-    </div>
-    <div class="consult-slide">
-      
-      <!-- carousel__element owl-carousel -->
-      <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":true,"nav":false,"margin":30,"responsive":{"0":{"items":1},"992":{"items":2}}}'>
-        
-        <!-- testimonial -->
-        <div class="testimonial">
-          <div class="testimonial__info"><a class="testimonial__avatar" href="#"><img src="img/avatars/avatar-01.jpg" alt=""/></a>
-            <h5 class="testimonial__name">Brandon Hanson</h5><span class="testimonial__position">Support</span>
-          </div>
-          <div class="testimonial__content">
-            <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque luctus nibh augue, non ultrices arcu molestie in. In</div>
-          </div>
-        </div><!-- End / testimonial -->
-        
-        
-        <!-- testimonial -->
-        <div class="testimonial">
-          <div class="testimonial__info"><a class="testimonial__avatar" href="#"><img src="img/avatars/avatar-02.jpg" alt=""/></a>
-            <h5 class="testimonial__name">Brandon Hanson</h5><span class="testimonial__position">CEO &amp; Founder</span>
-          </div>
-          <div class="testimonial__content">
-            <div class="testimonial__text">Sed ante nisl, fermentum et facilisis in, maximus sed ipsum. Cras hendrerit feugiat eros, ut fringilla nunc finibus sed. Quisque vitae dictum augue, v</div>
-          </div>
-        </div><!-- End / testimonial -->
-        
-        
-        <!-- testimonial -->
-        <div class="testimonial">
-          <div class="testimonial__info"><a class="testimonial__avatar" href="#"><img src="img/avatars/1.jpg" alt=""/></a>
-            <h5 class="testimonial__name">Maria Gutierrez</h5><span class="testimonial__position">Designer</span>
-          </div>
-          <div class="testimonial__content">
-            <div class="testimonial__text">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu sagittis volutpat. Aliquam erat volutpat. Praesen</div>
-          </div>
-        </div><!-- End / testimonial -->
-        
-      </div><!-- End / carousel__element owl-carousel -->
-      
-    </div>
-  </div>
-</section>
-<!-- End / Section -->
-
 <!-- Our partner-->
 
 <!-- Section -->
@@ -338,7 +235,7 @@ header:
         
         <!-- title-01 -->
         <div class="title-01">
-          <h2 class="title-01__title">Our Partner</h2>
+          <h2 class="title-01__title">Nossos parceiros</h2>
         </div><!-- End / title-01 -->
         
       </div>
@@ -347,34 +244,15 @@ header:
     <!-- carousel__element owl-carousel -->
     <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
       
-      <!--  -->
       <div>
-        <div class="brand-01__image"><img src="img/brands/1.png" alt=""/></div>
-      </div><!-- End /  -->
-      
-      
-      <!--  -->
+        <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="img/brands/1.png" alt="PHPRio"/></a></div>
+      </div>
       <div>
-        <div class="brand-01__image"><img src="img/brands/2.png" alt=""/></div>
-      </div><!-- End /  -->
-      
-      
-      <!--  -->
+        <div class="brand-01__image"><a href="http://ocbrj.coop.br/" target="_blank"><img src="img/brands/2.png" alt="SescoopRJ"/></a></div>
+      </div>
       <div>
-        <div class="brand-01__image"><img src="img/brands/3.png" alt=""/></div>
-      </div><!-- End /  -->
-      
-      
-      <!--  -->
-      <div>
-        <div class="brand-01__image"><img src="img/brands/4.png" alt=""/></div>
-      </div><!-- End /  -->
-      
-      
-      <!--  -->
-      <div>
-        <div class="brand-01__image"><img src="img/brands/5.png" alt=""/></div>
-      </div><!-- End /  -->
+        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/brands/3.png" alt="PHPWomen BR"/></a></div>
+      </div>
       
     </div><!-- End / carousel__element owl-carousel -->
     
@@ -392,7 +270,7 @@ header:
         
         <!-- title-01 -->
         <div class="title-01">
-          <h2 class="title-01__title">Latest Blogs</h2>
+          <h2 class="title-01__title">Últimos posts</h2>
         </div><!-- End / title-01 -->
         
       </div>
