@@ -14,8 +14,8 @@ header:
 				<!-- title-01 -->
 				<div class="title-01 title-01__style-04">
 					<h6 class="title-01__subTitle">{{ page.title }}</h6>
-					<h2 class="title-01__title">We Are The Leaders In This Industry</h2>
-					<div>Curabitur elementum urna augue, eu porta purus gravida in. Cras consectetur, lorem a cursus vestibulum, ligula purus iaculis nulla, in dignissim risus turpis id justo. Sed eleifend ante et ligula eleifend ultricies. Fusce porta feugiat nisl, eget faucibus augue ultrices et. Nullam id leo fringilla, viverra est ut, faucibus lectus. Integer vel finibus ex, et convallis enim. Curabitur tristique convallis neque a eleifend. Donec mattis leo in velit scelerisque, sit amet ultricies erat mollis. Suspendisse potenti. Etiam commodo ipsum placerat, ornare libero a, consequat justo.</div>
+					<h2 class="title-01__title">Lyseon Tech - Soluções Tecnológicas</h2>
+					<div>A Lyseon Tech é uma cooperativa de trabalho formada por profissionais de T.I. com grande experiência no mercado de trabalho com objetivo em apresentar benefícios e soluções para as empresas e seus cooperados através da gestão democrática de nossa empresa.</div>
 				</div><!-- End / title-01 -->
 				
 			</div>
@@ -103,7 +103,7 @@ header:
 				
 				<!-- title-01 -->
 				<div class="title-01">
-					<h2 class="title-01__title">Our Advisors</h2>
+					<h2 class="title-01__title">Quem somos</h2>
 				</div><!-- End / title-01 -->
 				
 			</div>
@@ -117,12 +117,12 @@ header:
 				<div class="textbox textbox__style-02">
 					<div class="textbox__image"><a href="#"><img src="img/avatars/1.jpg" alt=""/></a></div>
 					<div class="textbox__body">
-						<h2 class="textbox__title"><a href="#">Ashley Mills</a></h2>
-						<div class="textbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
+						<h2 class="textbox__title"><a href="#">Vitor Mattos</a></h2>
+						<div class="textbox__description">Trabalha há mais de 10 anos na área de web e TI, empreendedor, sembre buscando novos desafios e conhecimentos. Grande incentivador do software livre, evangelista PHP, palestrante em eventos regionais e nacionais. Amante do conhecimento e apaixonado por compartilhá-lo com todos. </div>
 							
 							<!-- social-01 -->
 							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
+								<nav class="social-01__navSocial"><a class="social-01__item" href="https://www.facebook.com/vitormattosrj"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="https://github.com/vitormattos"><i class="fa fa-github"></i></a><a class="social-01__item" href="https://twitter.com/vitormattosrj"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="https://medium.com/@VitorMattos"><i class="fa fa-medium"></i></a>
 								</nav>
 							</div><!-- End / social-01 -->
 							
@@ -139,7 +139,7 @@ header:
 							
 							<!-- social-01 -->
 							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
+								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-github"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-"></i></a>
 								</nav>
 							</div><!-- End / social-01 -->
 							
@@ -156,7 +156,7 @@ header:
 							
 							<!-- social-01 -->
 							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
+								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-github"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
 								</nav>
 							</div><!-- End / social-01 -->
 							
@@ -173,7 +173,7 @@ header:
 							
 							<!-- social-01 -->
 							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
+								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-github"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
 								</nav>
 							</div><!-- End / social-01 -->
 							
