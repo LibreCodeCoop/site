@@ -15,7 +15,7 @@ header:
           <div class="slider__content">
             <div class="container">
               <h2>Soluções em tecnologia</h2>
-              <p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p>
+              <p>Com união e simplicidade trazendo soluções em tecnologia para nossos clientes.</p>
             </div>
           </div>
         </div>
@@ -111,8 +111,8 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-announcement"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Brand &amp; Identity</a></h2>
-            <div class="iconbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
+            <h2 class="iconbox__title"><a href="#">Marca e identidate visual</a></h2>
+            <div class="iconbox__description">Criação de marca e dientidade visual para sua empresa.</div>
           </div>
         </div><!-- End / iconbox -->
         
@@ -123,8 +123,8 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-headphone"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Marketing Planning</a></h2>
-            <div class="iconbox__description">Etiam non varius justo, vel tempor mi. Nulla facilisi. Fusce at tortor arcu. Suspendisse maximus ac </div>
+            <h2 class="iconbox__title"><a href="#">Marketing digital</a></h2>
+            <div class="iconbox__description">Promova sua empresa online e potencialize seus negócios por meio de redes sociais.</div>
           </div>
         </div><!-- End / iconbox -->
         
@@ -135,8 +135,8 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-timer"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Business Planning</a></h2>
-            <div class="iconbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
+            <h2 class="iconbox__title"><a href="#">Treinamentos e workshops</a></h2>
+            <div class="iconbox__description">Faça treinamentos e workshops para qualificação profissional de sua equipe com os melhores profissionais do mercado.</div>
           </div>
         </div><!-- End / iconbox -->
         
@@ -147,8 +147,8 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-briefcase"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Email Marketing</a></h2>
-            <div class="iconbox__description">Suspendisse ac elit vitae est lacinia interdum eu sit amet mauris. Phasellus aliquam nisi sit amet l</div>
+            <h2 class="iconbox__title"><a href="#">Desenvolvimento de sistemas</a></h2>
+            <div class="iconbox__description">Faça com os melhores! Desenvolvimento de aplicações web e aplicativos mobile híbridos.</div>
           </div>
         </div><!-- End / iconbox -->
         
