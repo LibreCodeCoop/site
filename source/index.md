@@ -14,7 +14,7 @@ header:
         <div class="md-tb__cell">
           <div class="slider__content">
             <div class="container">
-              <h2>We provide free template</h2>
+              <h2>Soluções em tecnologia</h2>
               <p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p>
             </div>
           </div>
@@ -26,8 +26,8 @@ header:
         <div class="md-tb__cell">
           <div class="slider__content">
             <div class="container">
-              <h2>We create the trend</h2>
-              <p>Curabitur elementum urna augue, eu porta purus gravida in. Cras consectetur, lorem a cursus vestibulum, ligula purus iaculis nulla, in dignissim risus turpis id justo. Sed eleifend ante et ligula elei</p>
+              <h2>Cooperativismo</h2>
+              <p>Cooperativismo é um movimento internacional, que tem na sua essência a busca da constituição de uma sociedade justa, livre e fraterna.</p>
             </div>
           </div>
         </div>
