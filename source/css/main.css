@@ -16,7 +16,8 @@
   9. countDown
   10. dropdown
   11. consult_form_01
-  12. consult_formSearch
+  12. consult_formSearchEstamos prontos para te ouvir
+Contato
   13. consult_formSub
   14. grid-css
   15. consult_iconbox
@@ -1677,7 +1678,7 @@ mark, .mark {
 
 @media (min-width: 768px) {
     .js-consult-form .consult-form {
-        position: absolute;
+        position: unset;
         left: 10%;
         right: 10%;
     }
