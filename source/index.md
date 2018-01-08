@@ -97,8 +97,8 @@ header:
         <div class="iconbox">
           <div class="iconbox__icon"><i class="ti-headphone-alt"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Best National Locations</a></h2>
-            <div class="iconbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. Aliquam erat volutpat. In fringilla erat at eros pharetra faucibus. Nunc a magna eu lectus fringilla interdum luctus vitae diam. Morbi ac orci ac dolor pellentesque interdum vel accumsan risus. In ves</div>
+            <h2 class="iconbox__title"><a href="#">Profissionais altamente qualificados</a></h2>
+            <div class="iconbox__description">Em nosso time temos profissionais altamente qualificados e especialistas renomados nacionalemente para realizarem seus sonhos por meio da tecnologia.</div>
           </div>
         </div><!-- End / iconbox -->
         
@@ -111,7 +111,7 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-announcement"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Marca e identidate visual</a></h2>
+            <h2 class="iconbox__title"><a href="/contato">Marca e identidate visual</a></h2>
             <div class="iconbox__description">Criação de marca e dientidade visual para sua empresa.</div>
           </div>
         </div><!-- End / iconbox -->
@@ -123,7 +123,7 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-headphone"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Marketing digital</a></h2>
+            <h2 class="iconbox__title"><a href="/contato">Marketing digital</a></h2>
             <div class="iconbox__description">Promova sua empresa online e potencialize seus negócios por meio de redes sociais.</div>
           </div>
         </div><!-- End / iconbox -->
@@ -135,7 +135,7 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-timer"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Treinamentos e workshops</a></h2>
+            <h2 class="iconbox__title"><a href="/contato">Treinamentos e workshops</a></h2>
             <div class="iconbox__description">Faça treinamentos e workshops para qualificação profissional de sua equipe com os melhores profissionais do mercado.</div>
           </div>
         </div><!-- End / iconbox -->
@@ -147,7 +147,7 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-briefcase"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Desenvolvimento de sistemas</a></h2>
+            <h2 class="iconbox__title"><a href="/contato">Desenvolvimento de sistemas</a></h2>
             <div class="iconbox__description">Faça com os melhores! Desenvolvimento de aplicações web e aplicativos mobile híbridos.</div>
           </div>
         </div><!-- End / iconbox -->
