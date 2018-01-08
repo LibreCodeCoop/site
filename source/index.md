@@ -50,8 +50,8 @@ header:
           <div class="textbox">
             <div class="textbox__image"><a href="#"><img src="img/services/4.jpg" alt=""/></a></div>
             <div class="textbox__body">
-              <h2 class="textbox__title"><a href="#">Free template</a></h2>
-              <div class="textbox__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque lu</div>
+              <h2 class="textbox__title"><a href="#">Quem somos</a></h2>
+              <div class="textbox__description">Com união e simplicidade trazendo soluções em tecnologia para nossos clientes.</div>
             </div>
           </div><!-- End / textbox -->
           
@@ -62,8 +62,8 @@ header:
           <div class="textbox">
             <div class="textbox__image"><a href="#"><img src="img/services/5.jpg" alt=""/></a></div>
             <div class="textbox__body">
-              <h2 class="textbox__title"><a href="#">Responsive Layout</a></h2>
-              <div class="textbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
+              <h2 class="textbox__title"><a href="#">Cooperativismo</a></h2>
+              <div class="textbox__description">É um movimento internacional, com essência na construção de uma sociedade justa, livre e fraterna.</div>
             </div>
           </div><!-- End / textbox -->
           
@@ -74,8 +74,8 @@ header:
           <div class="textbox">
             <div class="textbox__image"><a href="#"><img src="img/services/6.jpg" alt=""/></a></div>
             <div class="textbox__body">
-              <h2 class="textbox__title"><a href="#">SEO Optimized</a></h2>
-              <div class="textbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
+              <h2 class="textbox__title"><a href="#">Treinamentos</a></h2>
+              <div class="textbox__description">Faça treinamentos em sua empresa para qualificar seu time de tecnologia com profissionais qualificados.</div>
             </div>
           </div><!-- End / textbox -->
           
@@ -152,73 +152,6 @@ header:
           </div>
         </div><!-- End / iconbox -->
         
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End / Section -->
-
-<!-- sobre-->
-
-<!-- Section -->
-<section class="md-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 ">
-        
-        <!-- title-01 -->
-        <div class="title-01 title-01__style-03 md-text-left">
-          <h6 class="title-01__subTitle">sobre</h6>
-          <h2 class="title-01__title">We Are The Leaders In This Industry</h2>
-          <div>Nam suscipit nisi risus, et porttitor metus molestie a. Phasellus id quam id turpis suscipit pretium. Maecenas ultrices, lacus ut accumsan maximus, odio augue rhoncus augue, vulputate maximus mi sapien sed nisl. Sed fermentum congue orci sed lacinia. Nulla nunc purus, consectetur</div>
-        </div><!-- End / title-01 -->
-        
-        <div class="row">
-          <div class="col-sm-4 ">
-            
-            <!-- box-number -->
-            <div class="box-number">
-              <div class="box-number__number">
-                <h2 class="js-counter" data-counter-time="2000" data-counter-delay="10">99</h2>
-              </div>
-              <div class="box-number__description">Happy clients</div>
-            </div><!-- End / box-number -->
-            
-          </div>
-          <div class="col-sm-4 ">
-            
-            <!-- box-number -->
-            <div class="box-number">
-              <div class="box-number__number">
-                <h2 class="js-counter" data-counter-time="2000" data-counter-delay="10">1200</h2>
-              </div>
-              <div class="box-number__description">Message per Day</div>
-            </div><!-- End / box-number -->
-            
-          </div>
-          <div class="col-sm-4 ">
-            
-            <!-- box-number -->
-            <div class="box-number">
-              <div class="box-number__number">
-                <h2 class="js-counter" data-counter-time="2000" data-counter-delay="10">15</h2>
-              </div>
-              <div class="box-number__description">Awards</div>
-            </div><!-- End / box-number -->
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 ">
-        <div class="js-consult-slider">
-          
-          <!-- carousel__element owl-carousel -->
-          <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":30,"responsive":{"0":{"items":2},"576":{"items":3},"992":{"items":1}}}'>
-            <div class="image-full"><img src="img/image-01.jpg" alt=""></div>
-            <div class="image-full"><img src="img/image-02.jpg" alt=""></div>
-          </div><!-- End / carousel__element owl-carousel -->
-          
-        </div>
       </div>
     </div>
   </div>
