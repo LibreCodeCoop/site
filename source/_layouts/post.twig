@@ -1,0 +1,30 @@
+{% extends 'default' %}
+{% block content_wrapper %}
+<div class="consult-postDetail">
+  <div class="image-full"><img src="img/blogs/detail/1.jpg" alt=""></div>
+  <div class="consult-postDetail"></div>
+  <div class="container">
+    <div class="consult-postDetail__main">
+      <div class="row">
+        <div class="col-lg-10 col-xl-8 offset-0 offset-sm-0 offset-md-0 offset-lg-1 offset-xl-2 ">
+          <div class="consult-postDetail__content">
+            <div class="row">
+              <div class="col-xl-11 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+                {% if page.title %}
+                    <h1>{{ page.title }}
+                    {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
+                    </h1>
+                {% endif %}
+                <ul class="consult-postDetail__meta">
+                  <li><i class="fa fa-calendar-o" aria-hidden="true"></i>{{ page.date | date('F j, Y ') }}</li>
+                </ul>
+                <div class="e-content">{{ page.blocks.content|raw }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

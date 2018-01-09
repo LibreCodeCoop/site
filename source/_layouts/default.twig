@@ -1,24 +1,21 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>{{ site.title }}</title>
-    <style>
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    #footer .copyright {
-      list-style: none;
-      text-align: center;
-    }
-    </style>
+    {% include 'head' %}
   </head>
   <body>
-    {% block content %}{% endblock %}
-    <footer id="footer">
-      <ul class="copyright">
-        <li>&copy; {{ "now"|date("Y") }} {{ site.title }}</li>
-      </ul>
-    </footer>
+    <div class="page-wrap">
+      {% include 'header' %}
+      <!-- Content-->
+      <div class="md-content">
+        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+      </div>
+      <!-- End / Content-->
+      <!-- footer -->
+      {% include 'footer' %}
+      <!-- End / footer -->
+      
+    </div>
+    {% include 'script' %}
   </body>
 </html>

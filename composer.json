@@ -1,15 +1,24 @@
 {
-    "name": "lyseontech/site",
-    "description": "Site da cooperativa LyseonTech",
-    "type": "project",
-    "minimum-stability": "dev",
-    "license": "MIT",
-    "require": {
-        "sculpin/sculpin": "^2.1"
-    },
-    "scripts": {
-        "prod": ["sculpin generate --env=prod"],
-        "deploy"    : "cd output_prod; git add -A .; git commit -m 'Atualizando build do site'; git push origin HEAD:master; cd ..",
-        "prod-deploy": ["@prod", "@deploy"]
-    }
+  "name": "lyseontech/site",
+  "description": "Site da cooperativa LyseonTech",
+  "type": "project",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "require": {
+    "sculpin/sculpin": "^2.1"
+  },
+  "scripts": {
+    "dev": "vendor/bin/sculpin generate --watch --server",
+    "prod": [
+      "sculpin generate --env=prod"
+    ],
+    "deploy": "cd output_prod; git add -A .; git commit -m 'Atualizando build do site'; git push origin HEAD:master; cd ..",
+    "prod-deploy": [
+      "@prod",
+      "@deploy"
+    ]
+  },
+  "config": {
+    "process-timeout": 0
+  }
 }
