@@ -49,7 +49,7 @@ header:
 				
 				<!-- textbox -->
 				<div class="textbox textbox__style-02">
-					<div class="textbox__image"><a href="#"><img src="img/avatars/1.jpg" alt=""/></a></div>
+					<div class="textbox__image"><a href="#"><img src="/img/avatars/1.jpg" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="#">Vitor Mattos</a></h2>
 						<div class="textbox__description">Trabalha há mais de 10 anos na área de web e TI, empreendedor, sembre buscando novos desafios e conhecimentos. Grande incentivador do software livre, evangelista PHP, palestrante em eventos regionais e nacionais. Amante do conhecimento e apaixonado por compartilhá-lo com todos. </div>
@@ -66,7 +66,7 @@ header:
 				
 				<!-- textbox -->
 				<div class="textbox textbox__style-02">
-					<div class="textbox__image"><a href="#"><img src="img/avatars/2.jpg" alt=""/></a></div>
+					<div class="textbox__image"><a href="#"><img src="/img/avatars/2.jpg" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="#">Daiane Alves</a></h2>
 						<div class="textbox__description">Estudante de sistemas de informação na UFF, trabalho dando aulas de informática já faz mais de 10 anos e no momento estudo desenvolvimento de aplicações web com PHP, Python e NodeJS para conseguir colocação no mercado de desenvolvimento de software que muito me encantou por conta estudos acadêmicos e participação de comunidades de software livre.</div>
@@ -106,13 +106,13 @@ header:
     <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
       
       <div>
-        <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="img/brands/1.png" alt="PHPRio"/></a></div>
+        <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="/img/brands/1.png" alt="PHPRio"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="http://ocbrj.coop.br/" target="_blank"><img src="img/brands/2.png" alt="SescoopRJ"/></a></div>
+        <div class="brand-01__image"><a href="http://ocbrj.coop.br/" target="_blank"><img src="/img/brands/2.png" alt="SescoopRJ"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/brands/3.png" alt="PHPWomen BR"/></a></div>
+        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="/img/brands/3.png" alt="PHPWomen BR"/></a></div>
       </div>
       
     </div><!-- End / carousel__element owl-carousel -->
