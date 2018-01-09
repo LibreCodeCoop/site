@@ -1633,14 +1633,14 @@ mark, .mark {
 
 .consult-form {
     text-align: center;
-    padding: 40px 30px;
+    /*padding: 40px 30px;*/
     background-color: white;
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .2);
 }
 
 @media (min-width: 992px) {
     .consult-form {
-        padding: 60px 75px;
+        /*padding: 60px 75px;*/
     }
 }
 

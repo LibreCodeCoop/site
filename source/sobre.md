@@ -125,52 +125,33 @@ header:
 
 <!-- Section -->
 <section class="md-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
-				
-				<!-- title-01 -->
-				<div class="title-01">
-					<h2 class="title-01__title">Our Partner</h2>
-				</div><!-- End / title-01 -->
-				
-			</div>
-		</div>
-		
-		<!-- carousel__element owl-carousel -->
-		<div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
-			
-			<!--  -->
-			<div>
-				<div class="brand-01__image"><img src="img/brands/1.png" alt=""/></div>
-			</div><!-- End /  -->
-			
-			
-			<!--  -->
-			<div>
-				<div class="brand-01__image"><img src="img/brands/2.png" alt=""/></div>
-			</div><!-- End /  -->
-			
-			
-			<!--  -->
-			<div>
-				<div class="brand-01__image"><img src="img/brands/3.png" alt=""/></div>
-			</div><!-- End /  -->
-			
-			
-			<!--  -->
-			<div>
-				<div class="brand-01__image"><img src="img/brands/4.png" alt=""/></div>
-			</div><!-- End /  -->
-			
-			
-			<!--  -->
-			<div>
-				<div class="brand-01__image"><img src="img/brands/5.png" alt=""/></div>
-			</div><!-- End /  -->
-			
-		</div><!-- End / carousel__element owl-carousel -->
-		
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
+        
+        <!-- title-01 -->
+        <div class="title-01">
+          <h2 class="title-01__title">Nossos parceiros</h2>
+        </div><!-- End / title-01 -->
+        
+      </div>
+    </div>
+    
+    <!-- carousel__element owl-carousel -->
+    <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
+      
+      <div>
+        <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="img/brands/1.png" alt="PHPRio"/></a></div>
+      </div>
+      <div>
+        <div class="brand-01__image"><a href="http://ocbrj.coop.br/" target="_blank"><img src="img/brands/2.png" alt="SescoopRJ"/></a></div>
+      </div>
+      <div>
+        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/brands/3.png" alt="PHPWomen BR"/></a></div>
+      </div>
+      
+    </div><!-- End / carousel__element owl-carousel -->
+    
+  </div>
 </section>
 <!-- End / Section -->

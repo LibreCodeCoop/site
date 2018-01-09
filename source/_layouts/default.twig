@@ -8,7 +8,7 @@
       {% include 'header' %}
       <!-- Content-->
       <div class="md-content">
-        {% block content %}{% endblock %}
+        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
       </div>
       <!-- End / Content-->
       <!-- footer -->
