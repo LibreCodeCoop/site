@@ -11,6 +11,7 @@ deploy:
   target_branch: master
   email: travis-ci@lyseon.tech
   name: Travis-CI
+  fqdn: lyseon.tech
   on:
     branch: master
 
