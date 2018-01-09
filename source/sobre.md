@@ -79,41 +79,6 @@ header:
 							
 					</div>
 				</div><!-- End / textbox -->
-				
-				
-				<!-- textbox -->
-				<div class="textbox textbox__style-02">
-					<div class="textbox__image"><a href="#"><img src="img/avatars/3.jpg" alt=""/></a></div>
-					<div class="textbox__body">
-						<h2 class="textbox__title"><a href="#">Ann Fowler</a></h2>
-						<div class="textbox__description">Sed ante nisl, fermentum et facilisis in, maximus sed ipsum. Cras hendrerit feugiat eros, ut fringil</div>
-							
-							<!-- social-01 -->
-							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-github"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
-								</nav>
-							</div><!-- End / social-01 -->
-							
-					</div>
-				</div><!-- End / textbox -->
-				
-				
-				<!-- textbox -->
-				<div class="textbox textbox__style-02">
-					<div class="textbox__image"><a href="#"><img src="img/avatars/4.jpg" alt=""/></a></div>
-					<div class="textbox__body">
-						<h2 class="textbox__title"><a href="#">Cynthia Aguilar</a></h2>
-						<div class="textbox__description">Integer placerat ullamcorper urna nec rhoncus. Sed velit justo, lacinia non sapien imperdiet, sagitt</div>
-							
-							<!-- social-01 -->
-							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-github"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a>
-								</nav>
-							</div><!-- End / social-01 -->
-							
-					</div>
-				</div><!-- End / textbox -->
-				
 			</div><!-- End / carousel__element owl-carousel -->
 			
 		</div>
