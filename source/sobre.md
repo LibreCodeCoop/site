@@ -25,73 +25,7 @@ header:
 <!-- End / Section -->
 
 
-<!-- Section -->
-<section class="md-section consult-background">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-10 col-xl-8 offset-0 offset-sm-0 offset-md-0 offset-lg-1 offset-xl-2 ">
-				
-				<!-- title-01 -->
-				<div class="title-01 title-01__style-04">
-					<h6 class="title-01__subTitle">awardS</h6>
-					<h2 class="title-01__title">This Is What We Get</h2>
-				</div><!-- End / title-01 -->
-				
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 col-lg-3 ">
-				
-				<!-- iconbox -->
-				<div class="iconbox iconbox__style-03">
-					<div class="iconbox__icon"><i class="ti-cup"></i></div>
-					<div>
-						<h2 class="iconbox__title"><a href="#">The Myth of Ugly Design</a></h2>
-						<div class="iconbox__description">Duis porttitor libero ac egestas euismod. Maecenas quis felis turpis. Nulla quis turpis sed augue eg</div>
-					</div>
-				</div><!-- End / iconbox -->
-				
-			</div>
-			<div class="col-md-6 col-lg-3 ">
-				
-				<!-- iconbox -->
-				<div class="iconbox iconbox__style-03">
-					<div class="iconbox__icon"><i class="ti-crown"></i></div>
-					<div>
-						<h2 class="iconbox__title"><a href="#">How to Create and Manage SVG Sprites</a></h2>
-						<div class="iconbox__description">Sed ante nisl, fermentum et facilisis in, maximus sed ipsum. Cras hendrerit feugiat eros, ut fringil</div>
-					</div>
-				</div><!-- End / iconbox -->
-				
-			</div>
-			<div class="col-md-6 col-lg-3 ">
-				
-				<!-- iconbox -->
-				<div class="iconbox iconbox__style-03">
-					<div class="iconbox__icon"><i class="ti-world"></i></div>
-					<div>
-						<h2 class="iconbox__title"><a href="#">Best National Locations</a></h2>
-						<div class="iconbox__description">Etiam non varius justo, vel tempor mi. Nulla facilisi. Fusce at tortor arcu. Suspendisse maximus ac </div>
-					</div>
-				</div><!-- End / iconbox -->
-				
-			</div>
-			<div class="col-md-6 col-lg-3 ">
-				
-				<!-- iconbox -->
-				<div class="iconbox iconbox__style-03">
-					<div class="iconbox__icon"><i class="ti-shine"></i></div>
-					<div>
-						<h2 class="iconbox__title"><a href="#">How to Master Microcopy</a></h2>
-						<div class="iconbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
-					</div>
-				</div><!-- End / iconbox -->
-				
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End / Section -->
+
 
 <!-- Our Advisors-->
 
@@ -122,7 +56,7 @@ header:
 							
 							<!-- social-01 -->
 							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="https://www.facebook.com/vitormattosrj"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="https://github.com/vitormattos"><i class="fa fa-github"></i></a><a class="social-01__item" href="https://twitter.com/vitormattosrj"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="https://medium.com/@VitorMattos"><i class="fa fa-medium"></i></a>
+								<nav class="social-01__navSocial"><a target="_blank" class="social-01__item" href="https://www.facebook.com/vitormattosrj"><i class="fa fa-facebook"></i></a><a target="_blank" class="social-01__item" href="https://github.com/vitormattos"><i class="fa fa-github"></i></a><a target="_blank" class="social-01__item" href="https://twitter.com/vitormattosrj"><i class="fa fa-twitter"></i></a><a target="_blank" class="social-01__item" href="https://medium.com/@VitorMattos"><i class="fa fa-medium"></i></a>
 								</nav>
 							</div><!-- End / social-01 -->
 							
