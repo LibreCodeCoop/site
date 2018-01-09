@@ -37,7 +37,7 @@ header:
 				
 				<!-- title-01 -->
 				<div class="title-01">
-					<h2 class="title-01__title">Quem somos</h2>
+					<h2 class="title-01__title">Quem somos?</h2>
 				</div><!-- End / title-01 -->
 				
 			</div>
@@ -68,13 +68,13 @@ header:
 				<div class="textbox textbox__style-02">
 					<div class="textbox__image"><a href="#"><img src="img/avatars/2.jpg" alt=""/></a></div>
 					<div class="textbox__body">
-						<h2 class="textbox__title"><a href="#">Bruce Powell</a></h2>
+						<h2 class="textbox__title"><a href="#">Daiane Alves</a></h2>
 						<div class="textbox__description">Etiam non varius justo, vel tempor mi. Nulla facilisi. Fusce at tortor arcu. Suspendisse maximus ac </div>
 							
 							<!-- social-01 -->
 							<div class="social-01">
-								<nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-github"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-"></i></a>
-								</nav>
+								<nav class="social-01__navSocial"><a target="_blank" class="social-01__item" href="https://www.facebook.com/vitormattosrj"><i class="fa fa-facebook"></i></a><a target="_blank" class="social-01__item" href="https://github.com/vitormattos"><i class="fa fa-github"></i></a><a target="_blank" class="social-01__item" href="https://twitter.com/vitormattosrj"><i class="fa fa-twitter"></i></a><a target="_blank" class="social-01__item" href="https://medium.com/@VitorMattos"><i class="fa fa-medium"></i></a>
+                                </nav>
 							</div><!-- End / social-01 -->
 							
 					</div>
