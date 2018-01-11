@@ -111,8 +111,8 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-announcement"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="/contato">Marca e identidate visual</a></h2>
-            <div class="iconbox__description">Criação de marca e dientidade visual para sua empresa.</div>
+            <h2 class="iconbox__title"><a href="/contato">Marca e identidade visual</a></h2>
+            <div class="iconbox__description">Criação de marca e identidade visual para sua empresa.</div>
           </div>
         </div><!-- End / iconbox -->
         
