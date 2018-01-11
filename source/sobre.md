@@ -69,7 +69,7 @@ header:
 					<div class="textbox__image"><a href="#"><img src="/img/avatars/2.jpg" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="#">Daiane Alves</a></h2>
-						<div class="textbox__description">Estudante de sistemas de informação na UFF, trabalho dando aulas de informática já faz mais de 10 anos e no momento estudo desenvolvimento de aplicações web com PHP, Python e NodeJS para conseguir colocação no mercado de desenvolvimento de software que muito me encantou por conta estudos acadêmicos e participação de comunidades de software livre.</div>
+						<div class="textbox__description">Estudante de Sistemas de Informação na UFF, trabalho dando aulas de informática já faz mais de 14 anos e no momento estudo desenvolvimento de aplicações web com PHP. Organizadora da comunidade PHPRio e fundadora da comunidade PHPWomenRJ, pois muito me encanta a participação em comunidades de software livre.</div>
 							
 							<!-- social-01 -->
 							<div class="social-01">
