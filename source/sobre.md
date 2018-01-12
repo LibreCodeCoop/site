@@ -52,7 +52,7 @@ header:
 					<div class="textbox__image"><a href="#"><img src="/img/avatars/1.jpg" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="#">Vitor Mattos</a></h2>
-						<div class="textbox__description">Trabalha há mais de 10 anos na área de web e TI, empreendedor, sembre buscando novos desafios e conhecimentos. Grande incentivador do software livre, evangelista PHP, palestrante em eventos regionais e nacionais. Amante do conhecimento e apaixonado por compartilhá-lo com todos. </div>
+						<div class="textbox__description">Trabalha há mais de 10 anos na área de web e TI, empreendedor, sempre buscando novos desafios e conhecimentos. Grande incentivador do software livre, evangelista PHP, palestrante em eventos regionais e nacionais. Amante do conhecimento e apaixonado por compartilhá-lo com todos. </div>
 							
 							<!-- social-01 -->
 							<div class="social-01">
@@ -66,6 +66,22 @@ header:
 				
 				<!-- textbox -->
 				<div class="textbox textbox__style-02">
+					<div class="textbox__image"><a href="#"><img src="/img/avatars/lorhana.jpg" alt=""/></a></div>
+					<div class="textbox__body">
+						<h2 class="textbox__title"><a href="#">Lorhana Trindade</a></h2>
+						<div class="textbox__description">Analista de Sistemas recém formada, trabalhei durante 1 ano e meio como analista de helpdesk e agora sou padawan(quase Jedi hehehe) front-end. Apaixonada por desenvolvimento web/mobile e pela comunidade de software livre, procuro sempre estar envolvida com a galera e ajudar nos eventos.</div>
+							
+							<!-- social-01 -->
+							<div class="social-01">
+								<nav class="social-01__navSocial"><a target="_blank" class="social-01__item" href="https://github.com/lortrindade"><i class="fa fa-github"></i></a><a target="_blank" class="social-01__item" href="https://twitter.com/lortrindade"><i class="fa fa-twitter"></i></a><a target="_blank" class="social-01__item" href="https://medium.com/"><i class="fa fa-medium"></i></a><a target="_blank" class="social-01__item" href="https://www.instagram.com/lortrindade/"><i class="fa fa-instagram"></i></a>
+                                </nav>
+							</div><!-- End / social-01 -->
+							
+					</div>
+				</div><!-- End / textbox -->
+
+								<!-- textbox -->
+				<div class="textbox textbox__style-02">
 					<div class="textbox__image"><a href="#"><img src="/img/avatars/2.jpg" alt=""/></a></div>
 					<div class="textbox__body">
 						<h2 class="textbox__title"><a href="#">Daiane Alves</a></h2>
@@ -78,7 +94,8 @@ header:
 							</div><!-- End / social-01 -->
 							
 					</div>
-				</div><!-- End / textbox -->
+				</div><!-- End / textbox -->	
+
 			</div><!-- End / carousel__element owl-carousel -->
 			
 		</div>
@@ -103,7 +120,7 @@ header:
     </div>
     
     <!-- carousel__element owl-carousel -->
-    <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
+    <div class="carousel__element owl-carousel" data-options='{"loop":false,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
       
       <div>
         <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="/img/brands/1.png" alt="PHPRio"/></a></div>
