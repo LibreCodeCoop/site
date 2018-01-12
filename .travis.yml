@@ -6,7 +6,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir:  ${TRAVIS_BUILD_DIR}/output_prod
+  local_dir: " ${TRAVIS_BUILD_DIR}/output_prod"
   repo: LyseonTech/lyseontech.github.io
   target_branch: master
   email: travis-ci@lyseon.tech
