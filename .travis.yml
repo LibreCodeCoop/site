@@ -9,6 +9,7 @@ deploy:
   local_dir: output_prod
   repo: LyseonTech/lyseontech.github.io
   target_branch: master
+  keep-history: true
   email: travis-ci@lyseon.tech
   name: Travis-CI
   fqdn: lyseon.tech
