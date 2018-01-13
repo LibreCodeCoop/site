@@ -3626,18 +3626,18 @@ mark, .mark {
 }
 
 .footer__main {
-    padding: 80px 15px 50px;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
     .footer__main {
-        padding: 80px 30px 40px;
+        /*padding: 80px 30px 40px;*/
     }
 }
 
 @media (min-width: 1200px) {
     .footer__main {
-        padding: 140px 75px 60px;
+        /*padding: 140px 75px 60px;*/
     }
 }
 
@@ -3664,6 +3664,7 @@ mark, .mark {
     right: 50px;
     position: center;
     display: block;
+    padding-top: 8px;
 }
 
 .consult_backToTop a {
