@@ -3313,6 +3313,8 @@ mark, .mark {
 }
 
 .textbox__description {
+    font-size: 15px;
+    font-family: "helvetica";
     color: #c2c2c2;
 }
 
