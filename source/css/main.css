@@ -3313,6 +3313,8 @@ mark, .mark {
 }
 
 .textbox__description {
+    font-size: 15px;
+    font-family: "helvetica";
     color: #c2c2c2;
 }
 
@@ -3605,8 +3607,8 @@ mark, .mark {
 
 .footer {
     background-color: #1a1a23;
-    overflow: hidden;
     color: #c2c2c2;
+    text-align: center;
 }
 
 .footer .row {
@@ -3614,7 +3616,11 @@ mark, .mark {
 }
 
 .footer .widget-text__widget ul li a {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #c2c2c2;
+    list-style: none;
 }
 
 .footer .widget-text__widget ul li a:hover {
@@ -3622,18 +3628,18 @@ mark, .mark {
 }
 
 .footer__main {
-    padding: 80px 15px 50px;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
     .footer__main {
-        padding: 80px 30px 40px;
+        /*padding: 80px 30px 40px;*/
     }
 }
 
 @media (min-width: 1200px) {
     .footer__main {
-        padding: 140px 75px 60px;
+        /*padding: 140px 75px 60px;*/
     }
 }
 
@@ -3644,7 +3650,7 @@ mark, .mark {
 }
 
 .footer__item {
-    margin-bottom: 40px;
+    text-align: center;
 }
 
 .footer__item .consult_logo {
@@ -3657,10 +3663,10 @@ mark, .mark {
 
 .consult_backToTop {
     top: 0;
-    right: 30px;
-    position: absolute;
+    right: 50px;
+    position: center;
     display: block;
-    text-align: right;
+    padding-top: 8px;
 }
 
 .consult_backToTop a {
