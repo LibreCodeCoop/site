@@ -132,7 +132,7 @@ header:
         <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="/img/brands/3.png" alt="PHPWomen BR"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="https://phpzm.rocks/" target="_blank"><img src="/img/brands/4.png" alt="PHPWomen BR"/></a></div>
+        <div class="brand-01__image"><a href="https://phpzm.rocks/" target="_blank"><img src="/img/brands/4.png" alt="phpZM"/></a></div>
       </div>
       
     </div><!-- End / carousel__element owl-carousel -->
