@@ -15,7 +15,7 @@ header:
 				<div class="title-01 title-01__style-04">
 					<h6 class="title-01__subTitle">{{ page.title }}</h6>
 					<h2 class="title-01__title">Lyseon Tech - Soluções Tecnológicas</h2>
-					<div>A Lyseon Tech é uma cooperativa de trabalho com modelo de gestão democrática, segura e eficiente composta por profissionais de T.I. altamente qualificados e experientes no mercado.Prezamos por apresentar vantagens, tanto para o cooperado como para as empresas parceiras e para isso oferecemos para seu negócio as seguintes soluções:
+					<div>A Lyseon Tech é uma cooperativa de trabalho com modelo de gestão democrática, segura e eficiente composta por profissionais de T.I. altamente qualificados e experientes no mercado. Prezamos por apresentar vantagens, tanto para o cooperado como para as empresas parceiras e para isso oferecemos para seu negócio as seguintes soluções:
 					<ul class="sobre-solucoes">
 					   <li>Desenvolvimento de Sistemas (web, mobile e desktop)</li>
                      <li>Consultoria Geral em T.I.</li>
