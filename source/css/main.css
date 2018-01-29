@@ -65,6 +65,9 @@ img {
     height: auto;
     border: 0;
 }
+ul.sobre-solucoes {
+    list-style-type: none;
+}
 
 .page-wrap {
     overflow: hidden;
