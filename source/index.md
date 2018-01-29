@@ -111,8 +111,8 @@ header:
         <div class="iconbox iconbox__style-02">
           <div class="iconbox__icon"><i class="ti-announcement"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="/contato">Marca e identidate visual</a></h2>
-            <div class="iconbox__description">Criação de marca e dientidade visual para sua empresa.</div>
+            <h2 class="iconbox__title"><a href="/contato">Marca e identidade visual</a></h2>
+            <div class="iconbox__description">Criação de marca e identidade visual para sua empresa.</div>
           </div>
         </div><!-- End / iconbox -->
         
@@ -175,7 +175,7 @@ header:
     </div>
     
     <!-- carousel__element owl-carousel -->
-    <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
+    <div class="carousel__element owl-carousel" data-options='{"loop":false,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
       
       <div>
         <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="img/brands/1.png" alt="PHPRio"/></a></div>
@@ -185,6 +185,9 @@ header:
       </div>
       <div>
         <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/brands/3.png" alt="PHPWomen BR"/></a></div>
+      </div>
+      <div>
+        <div class="brand-01__image"><a href="https://phpzm.rocks/" target="_blank"><img src="/img/brands/4.png" alt="phpZM"/></a></div>
       </div>
       
     </div><!-- End / carousel__element owl-carousel -->
