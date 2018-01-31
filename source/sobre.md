@@ -210,6 +210,37 @@ header:
                     </div>
                 </div><!-- End / textbox -->
 
+                <div class="textbox textbox__style-02">
+                    <div class="textbox__image">
+                        <a href="javascript:void(0);"><img src="/img/avatars/luciano.jpg" alt="Luciano"/></a>
+                    </div>
+                    <div class="textbox__body">
+                        <h2 class="textbox__title"><a href="javascript:void(0);">Luciano Ibraim</a></h2>
+                        <div class="textbox__description">
+                            Formado em administração com MBA em Controladoria e Finanças, trabalha com administração desde 2005.
+                            Trabalhou na Escola de Comunicaçao do Exército e no Instituto Militar de Engenharia.
+                            Possui experiência como Diretor de Projetos e de Produção.
+                        </div>
+                        <!-- social-01 -->
+                        <div class="social-01">
+                            <nav class="social-01__navSocial">
+                                <a target="_blank" class="social-01__item"
+                                   href="https://www.facebook.com/luciano.ibraim">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a target="_blank" class="social-01__item"
+                                   href="https://github.com/lucianoibraim">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                                <a target="_blank" class="social-01__item"
+                                   href="https://www.linkedin.com/in/luciano-xavier-71285084/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </nav>
+                        </div><!-- End / social-01 -->
+                    </div>
+                </div><!-- End / textbox -->
+
             </div><!-- End / carousel__element owl-carousel -->
         </div>
     </div>
