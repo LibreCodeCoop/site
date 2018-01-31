@@ -3319,6 +3319,7 @@ mark, .mark {
     font-size: 15px;
     font-family: "helvetica";
     color: #c2c2c2;
+    min-height: 250px;
 }
 
 .textbox__style-02 {
