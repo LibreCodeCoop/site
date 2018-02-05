@@ -1,5 +1,5 @@
 <!-- header -->
-<header class="header {{ page.header.transparent ? 'header__style-02' : ''  }}">
+<header class="header {{ $page->transparent ? 'header__style-02' : ''  }}">
   <style>
 #forkongithub a {
 	background: #000;
@@ -70,12 +70,12 @@
     <nav class="consult-nav">
       <!-- consult-menu -->
       <ul class="consult-menu">
-        <li{% if page.url == '/.' %} class="current-menu-item"{% endif %}><a href="/">Home</a></li>
-        <li{% if page.url == '/sobre' %} class="current-menu-item"{% endif %}><a href="/sobre">Sobre</a></li>
-        {#}<li{% if page.url == '/solucoes' %} class="current-menu-item"{% endif %}><a href="/solucoes">Soluções</a></li>
-        <li{% if page.url == '/blog' %} class="current-menu-item"{% endif %}><a href="/blog">Blog</a></li>#}
-        <li{% if page.url == '/trabalhe-conosco' %} class="current-menu-item"{% endif %}><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
-        <li{% if page.url == '/contato' %} class="current-menu-item"{% endif %}><a href="/contato">Contato</a></li>
+        <li{!! $page->getPath() == '' ? ' class="current-menu-item"':'' !!}><a href="/">Home</a></li>
+        <li{!! $page->getPath() == '/sobre' ? ' class="current-menu-item"':'' !!}><a href="/sobre">Sobre</a></li>
+        {{--<li{!! $page->getPath() == '/solucoes' ? ' class="current-menu-item"':'' !!}><a href="/solucoes">Soluções</a></li>
+        <li{!! $page->getPath() == '/blog' ? ' class="current-menu-item"':'' !!}><a href="/blog">Blog</a></li>--}}
+        <li{!! $page->getPath() == '/trabalhe-conosco' ? ' class="current-menu-item"':'' !!}><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
+        <li{!! $page->getPath() == '/contato' ? ' class="current-menu-item"':'' !!}><a href="/contato">Contato</a></li>
       </ul><!-- consult-menu -->
       
       <div class="navbar-toggle"><span></span><span></span><span></span></div>

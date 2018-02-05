@@ -1,9 +1,9 @@
----
-layout: default
-header:
-    transparent: true
----
+<?php
+$page->transparent = true;
+?>
+@extends('_layouts.master')
 
+@section('body')
 <!-- slider -->
 <div class="slider">
   
@@ -195,3 +195,4 @@ header:
   </div>
 </section>
 <!-- End / Section -->
+@endsection

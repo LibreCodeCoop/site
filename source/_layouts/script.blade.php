@@ -15,15 +15,14 @@
 <script type="text/javascript" src="/vendors/smoothscroll/SmoothScroll.min.js"></script>
 <!-- App-->
 <script type="text/javascript" src="/js/main.js"></script>
-{% if site.google_analytics_tracking_id %}
+@if ($page->google_analytics_tracking_id)
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_tracking_id }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $page->google_analytics_tracking_id }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ site.google_analytics_tracking_id }}');
+    gtag('config', '{{ $page->google_analytics_tracking_id }}');
   </script>
-{% endif %}
-{% include '_dump' %}
+@endif

@@ -27,5 +27,5 @@
       </div>
     </div>
   </div>
-  <div class="footer__copyright">&copy; {{ "now"|date("Y") }} {{ site.title }}</div>
+  <div class="footer__copyright">&copy; <?php echo date("Y") ?> {{ $page->title }}</div>
 </footer>
