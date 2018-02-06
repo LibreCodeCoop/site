@@ -27,5 +27,5 @@
       </div>
     </div>
   </div>
-  <div class="footer__copyright">&copy; <?php echo date("Y") ?> {{ $page->title }}</div>
+  <div class="footer__copyright">&copy; <?php echo date("Y") ?> Lyseon Tech</div>
 </footer>
