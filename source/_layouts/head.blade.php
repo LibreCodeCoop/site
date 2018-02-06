@@ -1,4 +1,4 @@
-<title>{{ site.title }}</title>
+<title>{{ $page->title }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
@@ -10,9 +10,9 @@
 <link rel="stylesheet" type="text/css" href="/vendors/bootstrap4/bootstrap-grid.min.css">
 <link rel="stylesheet" type="text/css" href="/vendors/magnific-popup/magnific-popup.min.css">
 <link rel="stylesheet" type="text/css" href="/vendors/owl.carousel/owl.carousel.css">
-{# <link rel="stylesheet" type="text/css" href="vendors/_jquery/jquery.min.css"> #}
+{{-- <link rel="stylesheet" type="text/css" href="vendors/_jquery/jquery.min.css"> --}}
 
-{# https://realfavicongenerator.net #}
+{{-- https://realfavicongenerator.net --}}
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -27,4 +27,3 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css"><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
-{% block head %}{% endblock %}

@@ -1,10 +1,10 @@
----
-layout: page
-header:
-  title: Contato
-  subtitle: Estamos prontos para te ouvir
----
+<?php
+$page->title = 'Contato';
+$page->subtitle = 'Estamos prontos para te ouvir';
+?>
+@extends('_layouts.page')
 
+@section('body')
 <!-- Content-->
 <div class="md-content">
 	
@@ -45,6 +45,8 @@ header:
 			
 		</div>
 	</section>
+	
+@endsection
 	<!-- End / Section -->
 	
 </div>

@@ -1,9 +1,12 @@
----
-layout: page
-header:
-  title: Trabalhe Conosco
-  subtitle: Faça parte desse time
----
+<?php
+$page->title = 'Trabalhe Conosco';
+$page->subtitle = 'Faça parte desse time';
+?>
+
+@extends('_layouts.page')
+
+@section('body')
+
 <section class="md-section js-consult-form" style="background-color:#f7f7f7;">
     <div class="container">
         <div class="form-01 consult-form js-consult-form__content" id="form01">
@@ -18,3 +21,4 @@ header:
         </div><!-- End / form-01 -->
     </div>
 </section>
+@endsection
