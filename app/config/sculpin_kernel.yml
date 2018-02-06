@@ -1,9 +1,0 @@
-sculpin_content_types:
-    posts:
-        permalink: blog/:title/
-        enabled: true
-        type: path
-        path: _posts
-        taxonomies:
-            - tags
-            - categories
