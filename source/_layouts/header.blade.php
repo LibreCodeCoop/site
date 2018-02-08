@@ -72,8 +72,8 @@
       <ul class="consult-menu">
         <li{!! $page->getPath() == '' ? ' class="current-menu-item"':'' !!}><a href="/">Home</a></li>
         <li{!! $page->getPath() == '/sobre' ? ' class="current-menu-item"':'' !!}><a href="/sobre">Sobre</a></li>
-        {{--<li{!! $page->getPath() == '/solucoes' ? ' class="current-menu-item"':'' !!}><a href="/solucoes">Soluções</a></li>
-        <li{!! $page->getPath() == '/blog' ? ' class="current-menu-item"':'' !!}><a href="/blog">Blog</a></li>--}}
+        <li{!! $page->getPath() == '/solucoes' ? ' class="current-menu-item"':'' !!}><a href="/solucoes">Soluções</a></li>
+        {{--<li{!! $page->getPath() == '/blog' ? ' class="current-menu-item"':'' !!}><a href="/blog">Blog</a></li>--}}
         <li{!! $page->getPath() == '/trabalhe-conosco' ? ' class="current-menu-item"':'' !!}><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
         <li{!! $page->getPath() == '/contato' ? ' class="current-menu-item"':'' !!}><a href="/contato">Contato</a></li>
       </ul><!-- consult-menu -->
