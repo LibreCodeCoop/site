@@ -27,7 +27,7 @@ real as mudanças do projeto.
 ## Deploy
 
 Para fazer deploy faça um fork do projeto com sua conta pessoal, adicione um
-novo remote com a url do seu fork, crie uma nova branch a partir da decelop com o nome da
+novo remote com a url do seu fork, crie uma nova branch a partir da develop com o nome da
 funcionalidade a ser implementada, faça seus commits, empurre a branch criada
 para seu remote e crie um pull request para o repositório oficial do site na
 branch develop.
