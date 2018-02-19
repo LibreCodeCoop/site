@@ -6,7 +6,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: output_prod
+  local_dir: build_production
   repo: LyseonTech/lyseontech.github.io
   target_branch: master
   keep-history: true
