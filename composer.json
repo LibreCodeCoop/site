@@ -8,7 +8,14 @@
         "tightenco/jigsaw": "^1.0"
     },
     "scripts": {
+        "post-install-cmd": [
+            "npm install"
+        ],
+        "dev": [
+            "gulp watch"
+        ],
         "prod": [
+            "gulp --production",
             "jigsaw build production"
         ]
     }
