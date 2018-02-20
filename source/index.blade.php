@@ -98,7 +98,7 @@ $page->transparent = true;
           <div class="iconbox__icon"><i class="ti-headphone-alt"></i></div>
           <div>
             <h2 class="iconbox__title"><a href="#">Profissionais altamente qualificados</a></h2>
-            <div class="iconbox__description">Em nosso time temos profissionais altamente qualificados e especialistas renomados nacionalemente para realizarem seus sonhos por meio da tecnologia.</div>
+            <div class="iconbox__description">Em nosso time temos profissionais altamente qualificados e especialistas renomados nacionalmente para realizarem seus sonhos por meio da tecnologia.</div>
           </div>
         </div><!-- End / iconbox -->
         

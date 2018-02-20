@@ -1,7 +1,10 @@
 /vendor/
-/output_dev/
-/output_prod/
+/node_modules/
+/build_local/
+/build_production/
 /.idea
+source/css/main.css
+source/css/main.css.map
 
 # Eclipse
 .buildpath
