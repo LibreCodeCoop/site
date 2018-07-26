@@ -8,26 +8,26 @@ $page->transparent = true;
 <div class="slider">
   
   <!-- carousel__element owl-carousel -->
-  <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 7000}'>
-    <div class="slider__item" style="background-image: url('img/slider.jpg');">
+  <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 10000}'>
+    <div class="slider__item" style="background-image: url('img/1.jpg');">
       <div class="md-tb">
         <div class="md-tb__cell">
           <div class="slider__content">
             <div class="container">
               <h2>Soluções em tecnologia</h2>
-              <p>Com união e simplicidade trazendo soluções em tecnologia para nossos clientes.</p>
+              <p>Desenvolvimentos de sistemas web seguros e inovadores, criação de aplicativos para plataformas Apple e Android. A Lyseon Tech é formada por profissionais com mais de 15 anos de experiência no mercado e grandes incentivadores de Software Livre. </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="slider__item" style="background-image: url('https://picsum.photos/1920/1080');">
+    <div class="slider__item" style="background-image: url('img/slider.jpg');">
       <div class="md-tb">
         <div class="md-tb__cell">
           <div class="slider__content">
             <div class="container">
               <h2>Cooperativismo</h2>
-              <p>Cooperativismo é um movimento internacional, que tem na sua essência a busca da constituição de uma sociedade justa, livre e fraterna.</p>
+              <p>Cooperativismo é um movimento internacional, que tem na sua essência a constituição de uma sociedade democrática e justa a fim de proporcionar melhor qualidade de vida tanto para os cooperados quanto para as empresas. </p>
             </div>
           </div>
         </div>
@@ -48,10 +48,10 @@ $page->transparent = true;
           
           <!-- textbox -->
           <div class="textbox">
-            <div class="textbox__image"><a href="#"><img src="img/services/4.jpg" alt=""/></a></div>
+            <div class="textbox__image"><img src="img/services/7.jpg" alt=""/></div>
             <div class="textbox__body">
-              <h2 class="textbox__title"><a href="#">Quem somos</a></h2>
-              <div class="textbox__description">Com união e simplicidade trazendo soluções em tecnologia para nossos clientes.</div>
+              <h2 class="textbox__title">Quem somos?</h2>
+              <div class="textbox__description">Somos uma empresa com foco em Tecnologia da Informação e desenvolvimento de sistemas, composta por profissionais experientes e qualificados no mercado de trabalho.</div>
             </div>
           </div><!-- End / textbox -->
           
@@ -60,10 +60,10 @@ $page->transparent = true;
           
           <!-- textbox -->
           <div class="textbox">
-            <div class="textbox__image"><a href="#"><img src="img/services/5.jpg" alt=""/></a></div>
+            <div class="textbox__image"><img src="img/services/3.jpg" alt=""/></div>
             <div class="textbox__body">
-              <h2 class="textbox__title"><a href="#">Cooperativismo</a></h2>
-              <div class="textbox__description">É um movimento internacional, com essência na construção de uma sociedade justa, livre e fraterna.</div>
+              <h2 class="textbox__title">Cooperativismo</h2>
+              <div class="textbox__description">Cooperativa é uma sociedade civil, sem fins lucrativos, constituída por profissionais voltados a desenvolver a economia de forma organizada e coletiva.</div>
             </div>
           </div><!-- End / textbox -->
           
@@ -72,10 +72,10 @@ $page->transparent = true;
           
           <!-- textbox -->
           <div class="textbox">
-            <div class="textbox__image"><a href="#"><img src="img/services/6.jpg" alt=""/></a></div>
+            <div class="textbox__image"><img src="img/services/8.jpg" alt=""/></div>
             <div class="textbox__body">
-              <h2 class="textbox__title"><a href="#">Treinamentos</a></h2>
-              <div class="textbox__description">Faça treinamentos em sua empresa para qualificar seu time de tecnologia com profissionais qualificados.</div>
+              <h2 class="textbox__title">Treinamentos</h2>
+              <div class="textbox__description">Temos uma equipe com especialistas em treinamentos, palestras, cursos, capacitações, workshops, planejados e desenvolvidos de acordo com as necessidades da sua empresa.</div>
             </div>
           </div><!-- End / textbox -->
           
@@ -97,7 +97,7 @@ $page->transparent = true;
         <div class="iconbox">
           <div class="iconbox__icon"><i class="ti-headphone-alt"></i></div>
           <div>
-            <h2 class="iconbox__title"><a href="#">Profissionais altamente qualificados</a></h2>
+            <h2 class="iconbox__title">Profissionais altamente qualificados</h2>
             <div class="iconbox__description">Em nosso time temos profissionais altamente qualificados e especialistas renomados nacionalmente para realizarem seus sonhos por meio da tecnologia.</div>
           </div>
         </div><!-- End / iconbox -->
@@ -136,7 +136,7 @@ $page->transparent = true;
           <div class="iconbox__icon"><i class="ti-timer"></i></div>
           <div>
             <h2 class="iconbox__title"><a href="/contato">Treinamentos e workshops</a></h2>
-            <div class="iconbox__description">Faça treinamentos e workshops para qualificação profissional de sua equipe com os melhores profissionais do mercado.</div>
+            <div class="iconbox__description">Temos uma equipe com especialistas em treinamentos, palestras, cursos, capacitações, workshops, planejados e desenvolvidos de acordo com as necessidades da sua empresa.</div>
           </div>
         </div><!-- End / iconbox -->
         
