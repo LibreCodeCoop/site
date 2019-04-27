@@ -99,45 +99,6 @@ $page->subtitle = 'Quem somos?';
                 <!-- textbox -->
                 <div class="textbox textbox__style-02">
                     <div class="textbox__image">
-                        <a href="javascript:void(0);"><img src="/img/avatars/lorhana.jpg" alt=""/></a>
-                    </div>
-                    <div class="textbox__body">
-                        <h2 class="textbox__title">
-                            <a href="javascript:void(0);">Lorhana Trindade</a>
-                        </h2>
-                        <div class="textbox__description">
-                            Analista de Sistemas recém formada, trabalhei durante 1 ano e meio como analista
-                            de helpdesk e agora sou padawan(quase Jedi hehehe) front-end. Apaixonada por
-                            desenvolvimento web/mobile e pela comunidade de software livre, procuro sempre estar
-                            envolvida com a galera e ajudar nos eventos.
-                        </div>
-                        <!-- social-01 -->
-                        <div class="social-01">
-                            <nav class="social-01__navSocial">
-                                <a target="_blank" class="social-01__item"
-                                   href="https://github.com/lortrindade">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                                <a target="_blank" class="social-01__item"
-                                   href="https://twitter.com/lortrindade">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a target="_blank" class="social-01__item"
-                                   href="https://medium.com/@lorhanatrindade">
-                                    <i class="fa fa-medium"></i>
-                                </a>
-                                <a target="_blank" class="social-01__item"
-                                   href="https://www.instagram.com/lortrindade/">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </nav>
-                        </div><!-- End / social-01 -->
-                    </div>
-                </div><!-- End / textbox -->
-
-                <!-- textbox -->
-                <div class="textbox textbox__style-02">
-                    <div class="textbox__image">
                         <a href="javascript:void(0);"><img src="/img/avatars/2.jpg" alt=""/></a>
                     </div>
                     <div class="textbox__body">
@@ -204,37 +165,6 @@ $page->subtitle = 'Quem somos?';
                                 <a target="_blank" class="social-01__item"
                                    href="https://medium.com/@wilcorrea">
                                     <i class="fa fa-medium"></i>
-                                </a>
-                            </nav>
-                        </div><!-- End / social-01 -->
-                    </div>
-                </div><!-- End / textbox -->
-
-                <div class="textbox textbox__style-02">
-                    <div class="textbox__image">
-                        <a href="javascript:void(0);"><img src="/img/avatars/luciano.jpg" alt="Luciano"/></a>
-                    </div>
-                    <div class="textbox__body">
-                        <h2 class="textbox__title"><a href="javascript:void(0);">Luciano Ibraim</a></h2>
-                        <div class="textbox__description">
-                            Formado em administração com MBA em Controladoria e Finanças, trabalha com administração desde 2005.
-                            Trabalhou na Escola de Comunicaçao do Exército e no Instituto Militar de Engenharia.
-                            Possui experiência como Diretor de Projetos e de Produção.
-                        </div>
-                        <!-- social-01 -->
-                        <div class="social-01">
-                            <nav class="social-01__navSocial">
-                                <a target="_blank" class="social-01__item"
-                                   href="https://www.facebook.com/luciano.ibraim">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a target="_blank" class="social-01__item"
-                                   href="https://github.com/lucianoibraim">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                                <a target="_blank" class="social-01__item"
-                                   href="https://www.linkedin.com/in/luciano-xavier-71285084/">
-                                    <i class="fa fa-linkedin"></i>
                                 </a>
                             </nav>
                         </div><!-- End / social-01 -->
