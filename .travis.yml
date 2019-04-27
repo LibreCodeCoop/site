@@ -12,7 +12,7 @@ deploy:
   keep-history: true
   email: travis-ci@lyseon.tech
   name: Travis-CI
-  fqdn: lyseon.tech
+  fqdn: lt.coop.br
   on:
     branch: master
 
