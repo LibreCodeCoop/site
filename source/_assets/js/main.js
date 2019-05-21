@@ -353,4 +353,3 @@
   window.addEventListener('resize', myEfficientFn);
 
 })(jQuery);
-

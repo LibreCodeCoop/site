@@ -18,8 +18,8 @@ $page->subtitle = 'Estamos prontos para te ouvir';
 					<div class="iconbox iconbox__style-04">
 						<div class="iconbox__icon"><i class="ti-email"></i></div>
 						<div>
-							<h2 class="iconbox__title"><a href="#">Email</a></h2>
-							<div class="iconbox__description">contato@lyseon.tech</div>
+							<h2 class="iconbox__title"><a href="mailto:contato@lt.coop.br">Email</a></h2>
+							<div class="iconbox__description">contato@lt.coop.br</div>
 						</div>
 					</div><!-- End / iconbox -->
 					
