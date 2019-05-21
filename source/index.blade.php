@@ -16,6 +16,7 @@ $page->transparent = true;
             <div class="container">
               <h2>SOLUÇÕES EM TECNOLOGIA</h2>
               <p>Desenvolvemos produtos digitais com agilidade, inovação e qualidade técnica, para que o mercado brasileiro acompanhe a velocidade do crescimento tecnológico mundial.
+              Em nosso time temos profissionais altamente qualificados e especialistas reconhecidos nacionalmente para realizarem seus sonhos por meio da tecnologia.
                 </p>
             </div>
           </div>
@@ -34,10 +35,8 @@ $page->transparent = true;
         
         <!-- iconbox -->
         <div class="iconbox">
-          <div class="iconbox__icon"><i class="ti-headphone-alt"></i></div>
           <div>
-            <h2 class="iconbox__title">Profissionais altamente qualificados</h2>
-            <div class="iconbox__description">Em nosso time temos profissionais altamente qualificados e especialistas renomados nacionalmente para realizarem seus sonhos por meio da tecnologia.</div>
+            <h2 class="iconbox__title">Conheça nossas soluções</h2>
           </div>
         </div><!-- End / iconbox -->
         
