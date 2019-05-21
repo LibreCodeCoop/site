@@ -9,7 +9,7 @@ $page->transparent = true;
   
   <!-- carousel__element owl-carousel -->
   <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 10000}'>
-    <div class="slider__item" >
+    <div class="slider__item" style="background-image: url('img/1.jpg');">
       <div class="md-tb">
         <div class="md-tb__cell">
           <div class="slider__content">
@@ -25,56 +25,6 @@ $page->transparent = true;
   </div><!-- End / carousel__element owl-carousel -->
   
 </div><!-- End / slider -->
-
-<!-- Service-->
-
-<!-- Section -->
-<section class="md-section" style="background-color:#f7f7f7;padding:0;">
-  <div class="container">
-    <div class="textbox-group">
-      <div class="row">
-        <div class="col-md-4 col-lg-4 ">
-          
-          <!-- textbox -->
-          <div class="textbox">
-            <div class="textbox__image"><img src="img/services/7.jpg" alt=""/></div>
-            <div class="textbox__body">
-              <h2 class="textbox__title">Quem somos?</h2>
-              <div class="textbox__description">Somos uma empresa com foco em Tecnologia da Informação e desenvolvimento de sistemas, composta por profissionais experientes e qualificados no mercado de trabalho.</div>
-            </div>
-          </div><!-- End / textbox -->
-          
-        </div>
-        <div class="col-md-4 col-lg-4 ">
-          
-          <!-- textbox -->
-          <div class="textbox">
-            <div class="textbox__image"><img src="img/services/3.jpg" alt=""/></div>
-            <div class="textbox__body">
-              <h2 class="textbox__title">Cooperativismo</h2>
-              <div class="textbox__description">Cooperativa é uma sociedade civil, sem fins lucrativos, constituída por profissionais voltados a desenvolver a economia de forma organizada e coletiva.</div>
-            </div>
-          </div><!-- End / textbox -->
-          
-        </div>
-        <div class="col-md-4 col-lg-4 ">
-          
-          <!-- textbox -->
-          <div class="textbox">
-            <div class="textbox__image"><img src="img/services/8.jpg" alt=""/></div>
-            <div class="textbox__body">
-              <h2 class="textbox__title">Treinamentos</h2>
-              <div class="textbox__description">Temos uma equipe com especialistas em treinamentos, palestras, cursos, capacitações, workshops, planejados e desenvolvidos de acordo com as necessidades da sua empresa.</div>
-            </div>
-          </div><!-- End / textbox -->
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End / Section -->
-
 
 <!-- Section -->
 <section class="md-section" style="background-color:#f7f7f7;padding-top:0;">
