@@ -9,7 +9,7 @@ $page->transparent = true;
   
   <!-- carousel__element owl-carousel -->
   <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 10000}'>
-    <div class="slider__item" style="background-image: url('img/1.jpg');">
+    <div class="slider__item" style="background-color: #004767;">
       <div class="md-tb">
         <div class="md-tb__cell">
           <div class="slider__content">
