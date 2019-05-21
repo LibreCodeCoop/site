@@ -1,5 +1,5 @@
 <!-- header -->
-<header class="header {{ $page->transparent ? 'header__style-02' : ''  }}">
+<header class="header shrink {{ $page->transparent ? 'header__style-02' : ''  }}">
   <style>
 #forkongithub a {
 	background: #000;
