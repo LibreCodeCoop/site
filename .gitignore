@@ -1,10 +1,13 @@
+/cache/
 /vendor/
 /node_modules/
 /build_local/
 /build_production/
-/.idea
-source/css/main.css
-source/css/main.css.map
+npm-debug.log
+yarn-error.log
+/source/assets/build/css/
+/source/assets/build/fonts/
+/source/assets/build/js/
 
 # Eclipse
 .buildpath
@@ -13,3 +16,7 @@ source/css/main.css.map
 
 # VI
 *.swp
+
+# vscode
+/.idea
+/.vscode/
