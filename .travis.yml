@@ -17,7 +17,7 @@ deploy:
     branch: master
 
 before_script:
-  - npm install -g gulp-cli
+  - npm install -g gulp
 
 before_deploy:
   - composer install
