@@ -14,7 +14,7 @@
 <script type="text/javascript" src="/vendors/menu/menu.min.js"></script>
 <script type="text/javascript" src="/vendors/smoothscroll/SmoothScroll.min.js"></script>
 <!-- App-->
-<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/assets/build/js/main.js"></script>
 @if ($page->google_analytics_tracking_id)
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ $page->google_analytics_tracking_id }}"></script>

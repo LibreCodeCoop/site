@@ -5,17 +5,17 @@
   "minimum-stability": "dev",
   "license": "MIT",
     "require": {
-        "tightenco/jigsaw": "^1.0"
+        "tightenco/jigsaw": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
             "npm install"
         ],
         "dev": [
-            "gulp watch"
+            "npm run watch"
         ],
         "prod": [
-            "gulp --production",
+            "npm run production",
             "jigsaw build production"
         ]
     }
