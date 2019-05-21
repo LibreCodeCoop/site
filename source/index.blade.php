@@ -9,25 +9,14 @@ $page->transparent = true;
   
   <!-- carousel__element owl-carousel -->
   <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 10000}'>
-    <div class="slider__item" style="background-image: url('img/1.jpg');">
+    <div class="slider__item" >
       <div class="md-tb">
         <div class="md-tb__cell">
           <div class="slider__content">
             <div class="container">
-              <h2>Soluções em tecnologia</h2>
-              <p>Desenvolvimentos de sistemas web seguros e inovadores, criação de aplicativos para plataformas Apple e Android. A Lyseon Tech é formada por profissionais com mais de 15 anos de experiência no mercado e grandes incentivadores de Software Livre. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slider__item" style="background-image: url('img/slider.jpg');">
-      <div class="md-tb">
-        <div class="md-tb__cell">
-          <div class="slider__content">
-            <div class="container">
-              <h2>Cooperativismo</h2>
-              <p>Cooperativismo é um movimento internacional, que tem na sua essência a constituição de uma sociedade democrática e justa a fim de proporcionar melhor qualidade de vida tanto para os cooperados quanto para as empresas. </p>
+              <h2>SOLUÇÕES EM TECNOLOGIA</h2>
+              <p>Desenvolvemos produtos digitais com agilidade, inovação e qualidade técnica, para que o mercado brasileiro acompanhe a velocidade do crescimento tecnológico mundial.
+                </p>
             </div>
           </div>
         </div>
