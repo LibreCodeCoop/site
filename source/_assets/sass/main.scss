@@ -1263,7 +1263,7 @@ mark, .mark {
 /* 7. carousel
 --------------------------------------------------------------------------------*/
 
-.owl-carousel .owl-item {
+ .owl-item {
     display: inline-block;
     vertical-align: top;
     float: none;
@@ -1285,6 +1285,14 @@ mark, .mark {
     margin: 10px;
     border-radius: 50%;
     background-color: #c2c2c2;
+}
+.md-section.produtos {
+    padding-top: 0;
+    margin-top: -93px;
+}
+
+.produtos h2 {
+    margin-top: 0;
 }
 
 .owl-dot.active {
@@ -1358,6 +1366,15 @@ mark, .mark {
 
 .consult-slide .owl-stage-outer {
     overflow: visible !important;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    vertical-align: middle;
 }
 
 /* 8. Comments
@@ -3355,6 +3372,8 @@ mark, .mark {
     font-weight: 400;
     margin-bottom: 5px;
     font-size: 30px;
+    margin-top: -240px;
+    color: #004564;
 }
 
 @media (min-width: 320px) {

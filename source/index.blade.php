@@ -102,14 +102,14 @@ $page->transparent = true;
 <!-- Our partner-->
 
 <!-- Section -->
-<section class="md-section">
+<section class="md-section produtos">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
         
         <!-- title-01 -->
         <div class="title-01">
-          <h2 class="title-01__title">Nossos parceiros</h2>
+          <h2 class="title-01__title">Produtos</h2>
         </div><!-- End / title-01 -->
         
       </div>
@@ -119,16 +119,16 @@ $page->transparent = true;
     <div class="carousel__element owl-carousel" data-options='{"loop":false,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
       
       <div>
-        <div class="brand-01__image"><a href="http://php.rio" target="_blank"><img src="img/brands/1.png" alt="PHPRio"/></a></div>
+        <div class="brand-01__image"><a href="https://nextcloud.com" target="_blank"><img src="img/nextcloud.png" alt="NextCloud"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="http://ocbrj.coop.br/" target="_blank"><img src="img/brands/2.png" alt="SescoopRJ"/></a></div>
+        <div class="brand-01__image"><a href="mailto:contato@lt.coop.br?subject=iEducar" target="_blank"><img src="img/ieducar.png" alt="i-Educar"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/brands/3.png" alt="PHPWomen BR"/></a></div>
+        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/matomo.png" alt="Matomo"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="https://phpzm.rocks/" target="_blank"><img src="/img/brands/4.png" alt="phpZM"/></a></div>
+        <div class="brand-01__image"><a href="https://phpzm.rocks/" target="_blank"><img src="/img/mautic.png" alt="Mautic"/></a></div>
       </div>
       
     </div><!-- End / carousel__element owl-carousel -->
