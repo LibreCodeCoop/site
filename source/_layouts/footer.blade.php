@@ -20,10 +20,7 @@
             </section><!-- End / widget-text__widget -->
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2  consult_backToTop">
-        <div class="footer__item">
-          <a href="#" id="back-to-top"> <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i><span></span></a>
-        </div>
+  
       </div>
     </div>
   </div>
