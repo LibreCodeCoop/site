@@ -1377,6 +1377,9 @@ mark, .mark {
     vertical-align: middle;
 }
 
+.md-section . {
+    color: rebeccapurple;
+}
 /* 8. Comments
 --------------------------------------------------------------------------------*/
 
@@ -3621,11 +3624,12 @@ mark, .mark {
 .footer {
     background-color: #1a1a23;
     color: #c2c2c2;
-    text-align: center;
 }
 
 .footer .row {
     position: relative;
+    float: right;
+    margin-left: 99px;
 }
 
 .footer .widget-text__widget ul li a {
