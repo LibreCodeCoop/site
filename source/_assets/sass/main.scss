@@ -1263,7 +1263,7 @@ mark, .mark {
 /* 7. carousel
 --------------------------------------------------------------------------------*/
 
- .owl-item {
+.owl-carousel .owl-item {
     display: inline-block;
     vertical-align: top;
     float: none;
@@ -1285,14 +1285,6 @@ mark, .mark {
     margin: 10px;
     border-radius: 50%;
     background-color: #c2c2c2;
-}
-.md-section.produtos {
-    padding-top: 0;
-    margin-top: -93px;
-}
-
-.produtos h2 {
-    margin-top: 0;
 }
 
 .owl-dot.active {
@@ -1368,18 +1360,6 @@ mark, .mark {
     overflow: visible !important;
 }
 
-.owl-carousel .owl-stage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin:0 auto;
-    vertical-align: middle;
-}
-
-.md-section . {
-    color: rebeccapurple;
-}
 /* 8. Comments
 --------------------------------------------------------------------------------*/
 
@@ -1836,6 +1816,7 @@ mark, .mark {
     font-size: 16px;
     font-weight: 400;
     color: #c2c2c2;
+    text-transform: capitalize;
 }
 
 .form-sub__style-02 .form-sub__title {
@@ -2594,9 +2575,8 @@ mark, .mark {
 
 .iconbox__title {
     font-size: 30px;
-    color: #004767;
     font-weight: 400;
-    margin-top: 35px;
+    text-transform: capitalize;
 }
 
 @media (min-width: 320px) {
@@ -2638,7 +2618,7 @@ mark, .mark {
 }
 
 .iconbox__style-02 .iconbox__description {
-    color: #63605f;
+    color: #c2c2c2;
 }
 
 .iconbox__style-03 .iconbox__icon {
@@ -2714,6 +2694,7 @@ mark, .mark {
 .infobox__title {
     font-size: 20px;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
 .infobox__description {
@@ -2812,6 +2793,7 @@ mark, .mark {
 
 .post-01__style-02 .post-01__categories a {
     font-size: 14px;
+    text-transform: capitalize;
 }
 
 .post-01__style-02 .post-01__title {
@@ -3200,6 +3182,7 @@ mark, .mark {
     font-size: 16px;
     color: #626262;
     letter-spacing: 0;
+    text-transform: capitalize;
     display: inline-block;
     margin-right: 20px;
 }
@@ -3375,8 +3358,6 @@ mark, .mark {
     font-weight: 400;
     margin-bottom: 5px;
     font-size: 30px;
-    margin-top: -240px;
-    color: #004564;
 }
 
 @media (min-width: 320px) {
@@ -3481,6 +3462,7 @@ mark, .mark {
 
 .video-title {
     font-size: 16px;
+    text-transform: capitalize;
     color: white;
 }
 
@@ -3573,6 +3555,7 @@ mark, .mark {
 
 .widget-title {
     font-size: 24px;
+    text-transform: capitalize;
     margin-bottom: 25px;
 }
 
@@ -3624,12 +3607,11 @@ mark, .mark {
 .footer {
     background-color: #1a1a23;
     color: #c2c2c2;
+    text-align: center;
 }
 
 .footer .row {
     position: relative;
-    float: right;
-    margin-left: 99px;
 }
 
 .footer .widget-text__widget ul li a {
@@ -4076,6 +4058,7 @@ mark, .mark {
         font-size: 14px;
         transition: all 300ms ease;
         font-weight: 300;
+        text-transform: capitalize;
         height: auto;
         line-height: 1.875;
         color: #8f8f8f;
@@ -4373,7 +4356,6 @@ mark, .mark {
     font-weight: 400;
     color: white;
     font-size: 30px;
-    letter-spacing: 4px;
 }
 
 @media (min-width: 320px) {
@@ -4384,7 +4366,7 @@ mark, .mark {
 
 @media (min-width: 992px) {
     .slider__content h2 {
-        font-size: 55px;
+        font-size: 68px;
     }
 }
 
