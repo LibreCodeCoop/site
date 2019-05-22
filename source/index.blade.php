@@ -47,7 +47,7 @@ $page->transparent = true;
         
         <!-- iconbox -->
         <div class="iconbox iconbox__style-02">
-          <div class="iconbox__icon"><i class="ti-briefcase"></i></div>
+          <div class="iconbox__icon"><i class="ti-desktop"></i></div>
           <div>
             <h2 class="iconbox__title"><a href="/contato">Desenvolvimento Aplicativos e Sistemas</a></h2>
             <div class="iconbox__description">Transforme seu negócio com soluções sob medida. Garanta mais inovação e agilidade no seu dia a dia. Nosso time está preparado para atender as demandas específicas com o melhor custo benefício para que sua empresa tenha em mãos soluções de alto valor agregado. </div>
@@ -59,7 +59,7 @@ $page->transparent = true;
         
         <!-- iconbox -->
         <div class="iconbox iconbox__style-02">
-          <div class="iconbox__icon"><i class="ti-timer"></i></div>
+          <div class="iconbox__icon"><i class="ti-star"></i></div>
           <div>
             <h2 class="iconbox__title"><a href="/contato">Treinamentos e Workshops</a></h2>
             <div class="iconbox__description">Temos uma equipe com especialistas em treinamentos, palestras, cursos, capacitações, workshops, planejados e desenvolvidos de acordo com as necessidades da sua empresa. Peça já seu orçamento que garantimos o melhor custo benefício.</div>
@@ -71,7 +71,7 @@ $page->transparent = true;
         
         <!-- iconbox -->
         <div class="iconbox iconbox__style-02">
-          <div class="iconbox__icon"><i class="ti-announcement"></i></div>
+          <div class="iconbox__icon"><i class="ti-lock"></i></div>
           <div>
             <h2 class="iconbox__title"><a href="/contato">Treinamento e Consultoria em SI</a></h2>
             <div class="iconbox__description">Temos uma equipe multidisciplinar com especialistas em segurança e compliance voltados para o aconselhamento e promoção da cultura de segurança, através de workshops, cursos, capacitação, desenvolvimento de material e rotinas de testes aptos a preparar e orientar toda a sua equipe.</div>
@@ -83,7 +83,7 @@ $page->transparent = true;
         
         <!-- iconbox -->
         <div class="iconbox iconbox__style-02">
-          <div class="iconbox__icon"><i class="ti-headphone"></i></div>
+          <div class="iconbox__icon"><i class="ti-comments"></i></div>
           <div>
             <h2 class="iconbox__title"><a href="/contato">Marketing Digital e Propaganda</a></h2>
             <div class="iconbox__description">Ter presença digital é fundamental para qualquer empresa. 
