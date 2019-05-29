@@ -11,5 +11,6 @@
       </section><!-- End / widget-text__widget -->
     </div>
   </div>
+  <div class="w-100"></div>
   <div class="footer__copyright">&copy; <?php echo date("Y") ?> {{ $page->title }}</div>
 </footer>
