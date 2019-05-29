@@ -44,15 +44,14 @@ $page->transparent = true;
     </div>
     <div class="row">
     <div class="col-sm-6 col-md-6 col-lg-3 ">
-        
-        <!-- iconbox -->
-        <div class="iconbox iconbox__style-02">
-          <div class="iconbox__icon"><i class="ti-desktop"></i></div>
-          <div>
-            <h2 class="iconbox__title"><a href="/contato">Desenvolvimento Aplicativos e Sistemas</a></h2>
-            <div class="iconbox__description">Transforme seu negócio com soluções sob medida. Garanta mais inovação e agilidade no seu dia a dia. Nosso time está preparado para atender as demandas específicas com o melhor custo benefício para que sua empresa tenha em mãos soluções de alto valor agregado. </div>
-          </div>
-        </div><!-- End / iconbox -->
+      <!-- iconbox -->
+      <div class="iconbox iconbox__style-02">
+        <div class="iconbox__icon"><i class="ti-desktop"></i></div>
+        <div>
+          <h2 class="iconbox__title"><a href="/contato">Desenvolvimento Aplicativos e Sistemas</a></h2>
+          <div class="iconbox__description">Transforme seu negócio com soluções sob medida. Garanta mais inovação e agilidade no seu dia a dia. Nosso time está preparado para atender as demandas específicas com o melhor custo benefício para que sua empresa tenha em mãos soluções de alto valor agregado. </div>
+        </div>
+      </div><!-- End / iconbox -->
 
       </div>
       <div class="col-sm-6 col-md-6 col-lg-3 ">
