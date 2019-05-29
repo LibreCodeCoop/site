@@ -124,10 +124,10 @@ $page->transparent = true;
         <div class="brand-01__image"><a href="mailto:contato@lt.coop.br?subject=iEducar" target="_blank"><img src="img/ieducar.png" alt="i-Educar"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="https://twitter.com/PHPWomenBR" target="_blank"><img src="img/matomo.png" alt="Matomo"/></a></div>
+        <div class="brand-01__image"><a href="#" target="_blank"><img src="img/matomo.png" alt="Matomo"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="https://phpzm.rocks/" target="_blank"><img src="/img/mautic.png" alt="Mautic"/></a></div>
+        <div class="brand-01__image"><a href="#" target="_blank"><img src="/img/mautic.png" alt="Mautic"/></a></div>
       </div>
       
     </div><!-- End / carousel__element owl-carousel -->
