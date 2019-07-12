@@ -17,7 +17,6 @@
                 <!-- title-01 -->
                 <div class="title-01 title-01__style-04">
                   <h6 class="title-01__subTitle">{{ $page->subtitle }}</h6>
-                  <h2 class="title-01__title">{{ $page->title }}</h2>
                   <div>{{ $page->description }}</div>
                 </div><!-- End / title-01 -->
                 

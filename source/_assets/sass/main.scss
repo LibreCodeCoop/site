@@ -3371,7 +3371,7 @@ mark, .mark {
     font-weight: 400;
     margin-bottom: 5px;
     font-size: 30px;
-    margin-top: -240px;
+    margin-top: 10px;
     color: #004564;
 }
 
@@ -3407,7 +3407,7 @@ mark, .mark {
 }
 
 .title-01__style-04 .title-01__title {
-    margin-bottom: 35px;
+    margin-bottom: 107px;
 }
 
 .title-01__style-05 .title-01__subTitle {
@@ -4670,3 +4670,8 @@ mark, .mark {
         margin-bottom: 30px;
     }
 }
+.row-ieducar{
+    width: 50%;
+    display: inline-flexbox;
+}
+
