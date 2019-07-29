@@ -44,7 +44,7 @@ $page->subtitle = 'Quem somos?';
             <div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
                 <!-- title-01 -->
                 <div class="title-01">
-                    <h2 class="title-01__title">Nossos parceiros</h2>
+                    <h2 class="title-01__title">Alguns de nossos clientes</h2>
                 </div><!-- End / title-01 -->
             </div>
         </div>
