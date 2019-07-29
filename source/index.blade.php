@@ -4,7 +4,7 @@ $page->transparent = true;
 @extends('_layouts.master')
 
 @section('body')
-<!-- slider -->
+ <!-- slider -->
 <div class="slider">
   
   <!-- carousel__element owl-carousel -->
@@ -14,7 +14,17 @@ $page->transparent = true;
         <div class="md-tb__cell">
           <div class="slider__content">
             <div class="container">
-              <h2>SOLUÇÕES EM TECNOLOGIA</h2>
+            <section class="cd-intro">
+              <h2 class="cd-headline rotate-1">
+                  <span>Soluções em</span>
+                  <span class="cd-words-wrapper">
+                    <b class="is-visible">tecnologia</b>
+                    <b>inovação</b>
+                    <b>agilidade</b>
+                  </span>
+              </h2>
+            </section>
+             <!-- <h2>SOLUÇÕES EM TECNOLOGIA</h2> -->
               <p>Desenvolvemos produtos digitais com agilidade, inovação e qualidade técnica, para que o mercado brasileiro acompanhe a velocidade do crescimento tecnológico mundial.
               Em nosso time temos profissionais altamente qualificados e especialistas reconhecidos nacionalmente para realizarem seus sonhos por meio da tecnologia.
                 </p>
@@ -135,4 +145,5 @@ $page->transparent = true;
   </div>
 </section>
 <!-- End / Section -->
+
 @endsection
