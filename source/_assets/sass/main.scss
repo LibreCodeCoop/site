@@ -1226,9 +1226,29 @@ mark, .mark {
 .brand-01__image img {
     width: auto !important;
     display: inline-block !important;
+   
 }
 
 .brand-01__image:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.brand-01__image_contact {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all ease .3s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.brand-01__image_contact img {
+    width: auto !important;
+    display: inline-block !important;
+    margin-top: 150px;
+}
+
+.brand-01__image_contact:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
