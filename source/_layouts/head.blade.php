@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/vendors/magnific-popup/magnific-popup.min.css">
 <link rel="stylesheet" type="text/css" href="/vendors/owl.carousel/owl.carousel.css">
 {{-- <link rel="stylesheet" type="text/css" href="vendors/_jquery/jquery.min.css"> --}}
+<link rel="stylesheet" type="text/css" href="/vendors/animated-headline/css/style.css">
 
 {{-- https://realfavicongenerator.net --}}
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">

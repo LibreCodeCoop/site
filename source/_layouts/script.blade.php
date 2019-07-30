@@ -13,6 +13,7 @@
 <script type="text/javascript" src="/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="/vendors/menu/menu.min.js"></script>
 <script type="text/javascript" src="/vendors/smoothscroll/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="/vendors/animated-headline/js/animated-headline.js"></script>
 <!-- App-->
 <script type="text/javascript" src="/assets/build/js/main.js"></script>
 @if ($page->google_analytics_tracking_id)
