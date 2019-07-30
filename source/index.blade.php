@@ -15,7 +15,7 @@ $page->transparent = true;
           <div class="slider__content">
             <div class="container">
             <section class="cd-intro">
-              <h2 class="cd-headline rotate-1">
+              <h2 class="cd-headline rotate-2 letters">
                   <span>Soluções em</span>
                   <span class="cd-words-wrapper">
                     <b class="is-visible">tecnologia</b>

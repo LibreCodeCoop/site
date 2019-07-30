@@ -9,9 +9,11 @@ Primary style
     line-height: 230px;
     text-align: center;
   }
-  .cd-title h1 {
+  .cd-title h1, h2 {
     font-size: 2.4rem;
     font-weight: 700;
+    font-style: normal;
+
   }
   @media only screen and (min-width: 768px) {
     .cd-title {
@@ -378,6 +380,7 @@ Primary style
     display: inline-block;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    font-style: normal;
   }
   .cd-headline.rotate-2 b {
     opacity: 0;
@@ -394,6 +397,7 @@ Primary style
     -o-transform: translateZ(-20px) rotateX(90deg);
     transform: translateZ(-20px) rotateX(90deg);
     opacity: 0;
+    
   }
   .is-visible .cd-headline.rotate-2 i {
     opacity: 1;
