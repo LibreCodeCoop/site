@@ -6,13 +6,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 brand-01__image">
-            <a href="#" target="_blank"><img src="/img/ieducar.png" class="img-responsive"  alt="NextCloud"/>
+            <a href="#" target="_blank"><img src="/img/ieducar.png" class="img-responsive"  alt="i-Educar"/>
             </a>
-            <div class="col-md-6 brand-01__image_contact">
-            <a href="#" target="_blank"><img src="/img/matomo.png" class="img-responsive"  alt="NextCloud"/>
-            </a>
-            </div>
-
+            
         </div>
         <div class="col-md-6"><p>i-Educar é um software livre e público, hospedado no <strong>Portal do Software Público Brasileiro</strong>. Foi desenvolvido para fazer gestão eficaz do sistema de ensino escolar, principalmente na esfera pública. O software já utilizado por algumas prefeituras brasileiras, como é o caso de Itajaí (SC), Arapiraca (AL), Porto Velho (RO) e Parauapebas (PA).</p>
 

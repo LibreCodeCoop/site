@@ -128,7 +128,7 @@ $page->transparent = true;
     <div class="carousel__element owl-carousel" data-options='{"loop":false,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":5}}}'>
       
       <div>
-        <div class="brand-01__image"><a href="/nextcloud" target="_blank"><img src="img/nextcloud.png" alt="NextCloud"/></a></div>
+        <div class="brand-01__image"><a href="nextcloud" target="_blank"><img src="img/nextcloud.png" alt="NextCloud"/></a></div>
       </div>
       <div>
         <div class="brand-01__image"><a href="ieducar" target="_blank"><img src="img/ieducar.png" alt="i-Educar"/></a></div>
