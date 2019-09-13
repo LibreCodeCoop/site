@@ -13,4 +13,5 @@
   </div>
   <div class="w-100"></div>
   <div class="footer__copyright">&copy; <?php echo date("Y") ?> {{ $page->title }}</div>
+  <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5521969203370&text=Ol%C3%A1%2C%20somos%20a%20Lyseon%20Tech%20-%20Desenvolvimento%20de%20Sistemas"><img src="https://i.imgur.com/ryESuZ5.png" style="height:80px; position:fixed; bottom: 20px; right: 20px; z-index:99999;" data-selector="img"></a>
 </footer>
