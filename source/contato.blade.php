@@ -1,6 +1,5 @@
 <?php
 $page->title = 'Contato';
-$page->subtitle = 'Estamos prontos para te ouvir';
 ?>
 @extends('_layouts.page')
 
@@ -31,17 +30,37 @@ $page->subtitle = 'Estamos prontos para te ouvir';
 						<div class="iconbox__icon"><i class="ti-mobile"></i></div>
 						<div>
 							<h2 class="iconbox__title"><a href="#">Telefone</a></h2>
-							<address class="iconbox__description">+55 21 96950-1266</address>
+							<address class="iconbox__description">+55 21 2042-2073</address>
+						</div>
+					</div><!-- End / iconbox -->
+					
+				</div>
+				<div class="col-lg-6 ">
+					
+					<!-- iconbox -->
+					<div class="iconbox iconbox__style-04">
+						<div class="iconbox__icon"><i class="fa fa-telegram" aria-hidden="true"></i></div>
+						<div>
+							<h2 class="iconbox__title"><a href="#">Telegram</a></h2>
+							<address class="iconbox__description">@LyseonTech</address>
+						</div>
+					</div><!-- End / iconbox -->
+					
+				</div>
+				<div class="col-lg-6 ">
+					
+					<!-- iconbox -->
+					<div class="iconbox iconbox__style-04">
+						<div class="iconbox__icon"><i class="fa fa-whatsapp"></i></div>
+						<div>
+							<h2 class="iconbox__title"><a href="#">WhatsApp</a></h2>
+							<address class="iconbox__description">+55 21 9 6920-3370</address>
 						</div>
 					</div><!-- End / iconbox -->
 					
 				</div>
 			</div>
 			
-			<!-- form-01 -->
-			<div class="form-01 consult-form js-consult-form__content" id="form01">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIWHHvNFEdRgcHZ71hAlO_UdkOZ2PQsbURNeXzXbpMhB1ppw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-			</div><!-- End / form-01 -->
 			
 		</div>
 	</section>
