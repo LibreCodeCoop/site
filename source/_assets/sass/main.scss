@@ -2612,7 +2612,7 @@ mark, .mark {
     font-size: 30px;
     color: #004767;
     font-weight: 400;
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 @media (min-width: 320px) {
@@ -2700,7 +2700,6 @@ mark, .mark {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    background-color: #ebebeb;
     border-radius: 50%;
     overflow: hidden;
     top: -5px;
@@ -3643,6 +3642,10 @@ mark, .mark {
     color: #c2c2c2;
 }
 
+.footer a{
+    background-color: #1a1a23;
+    color: #c2c2c2;
+}
 .footer .row {
     position: relative;
 }

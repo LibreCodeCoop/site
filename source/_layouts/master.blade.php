@@ -4,7 +4,7 @@
 	@include('_layouts.head')
   </head>
   <body>
-    <div class="page-wrap">
+      <div class="page-wrap">
       @include('_layouts.header')
       <!-- Content-->
       <div class="md-content">
