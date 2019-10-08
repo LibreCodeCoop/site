@@ -7,7 +7,7 @@ $page->subtitle = 'Estamos prontos para te ouvir';
 @section('body')
 <!-- Content-->
 <div class="md-content">
-	
+
 	<!-- Section -->
 	<section class="md-section js-consult-form" style="background-color:#f7f7f7;">
 		<div class="container">
@@ -45,9 +45,9 @@ $page->subtitle = 'Estamos prontos para te ouvir';
 			
 		</div>
 	</section>
-	
-@endsection
+
 	<!-- End / Section -->
-	
+
 </div>
 <!-- End / Content-->
+@endsection
