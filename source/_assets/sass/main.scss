@@ -45,6 +45,9 @@ Contato
 
 /* 1. base
 --------------------------------------------------------------------------------*/
+html, body {
+    height: 100%;
+}
 
 a[disabled], input[disabled], button[disabled], textarea[disabled] {
     cursor: not-allowed !important;
@@ -70,7 +73,14 @@ ul.sobre-solucoes {
 }
 
 .page-wrap {
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+
+    & > .md-content {
+        height: 100%;
+        padding-bottom: 114px;
+    }
 }
 
 .md-content {
@@ -3608,6 +3618,9 @@ mark, .mark {
     background-color: #1a1a23;
     color: #c2c2c2;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer .row {
@@ -3780,8 +3793,8 @@ mark, .mark {
     }
 }
 
-.header + * {
-    margin-top: 100px;
+.header + .md-content {
+    margin-top: 82px;
 }
 
 .header__logo {
@@ -3859,7 +3872,7 @@ mark, .mark {
     background-color: transparent;
 }
 
-.header__style-02 + * {
+.header__style-02 + .md-content {
     margin-top: 0;
 }
 
