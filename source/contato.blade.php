@@ -6,7 +6,7 @@ $page->title = 'Contato';
 @section('body')
 <!-- Content-->
 <div class="md-content">
-	
+
 	<!-- Section -->
 	<section class="md-section js-consult-form" style="background-color:#f7f7f7;">
 		<div class="container">
@@ -64,9 +64,9 @@ $page->title = 'Contato';
 			
 		</div>
 	</section>
-	
-@endsection
+
 	<!-- End / Section -->
-	
+
 </div>
 <!-- End / Content-->
+@endsection
