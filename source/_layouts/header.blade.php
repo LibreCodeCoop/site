@@ -2,7 +2,7 @@
 <header class="header shrink {{ $page->transparent ? 'header__style-02' : ''  }}">
 
   <div class="container">
-    <div class="header__logo"><a href="/"><img src="/img/logo.png" alt=""/></a></div>
+    <div class="header__logo"><a href="/"><img src="/img/logo.png" class="img-responsive" alt=""/></a></div>
     <!-- consult-nav -->
     <nav class="consult-nav">
       <!-- consult-menu -->

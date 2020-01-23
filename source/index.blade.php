@@ -134,7 +134,7 @@ $page->transparent = true;
         <div class="brand-01__image"><a href="ieducar" target="_blank"><img src="img/ieducar.png" alt="i-Educar"/></a></div>
       </div>
       <div>
-        <div class="brand-01__image"><a href="#" target="_blank"><img src="img/matomo.png" alt="Matomo"/></a></div>
+        <div class="brand-01__image"><a href="matomo" target="_blank"><img src="img/matomo.png" alt="Matomo"/></a></div>
       </div>
       <div>
         <div class="brand-01__image"><a href="#" target="_blank"><img src="/img/mautic.png" alt="Mautic"/></a></div>

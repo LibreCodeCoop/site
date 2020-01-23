@@ -3813,7 +3813,7 @@ mark, .mark {
 }
 
 @media (min-width: 992px) {
-    .header.shrink .consult-nav .consult-menu > li > a {
+    .header.shrink .consult-nav .consult-menu .header__logo> li > a {
         height: 70px;
         line-height: 70px;
     }
