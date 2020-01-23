@@ -131,6 +131,9 @@ $page->transparent = true;
         <div class="brand-01__image"><a href="nextcloud" target="_blank"><img src="img/nextcloud.png" alt="NextCloud"/></a></div>
       </div>
       <div>
+        <div class="brand-01__image"><a href="ojs" target="_blank"><img src="img/ojs.png" alt="ojs"/></a></div>
+      </div>
+      <div>
         <div class="brand-01__image"><a href="ieducar" target="_blank"><img src="img/ieducar.png" alt="i-Educar"/></a></div>
       </div>
       <div>
