@@ -945,9 +945,9 @@ h6 {
 }
 
 #testimonials .testimonial-item .testimonial-img {
-  width: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff;
+  width: 180px;
+/*   border-radius: 50%;
+  border: 4px solid #fff; */
   float: left;
 }
 
@@ -969,6 +969,7 @@ h6 {
 #testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 140px;
+  vertical-align: middle;
 }
 
 #testimonials .owl-nav,
