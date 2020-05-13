@@ -176,6 +176,7 @@ h6 {
   background: url("../img/intro-bg.png") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
+  background-color: #74b5fc;
 }
 
 #intro .intro-img {
@@ -482,7 +483,7 @@ h6 {
 --------------------------------*/
 
 #about {
-  background: #fff;
+  background: #74b5fc;
   padding: 60px 0;
 }
 
@@ -491,7 +492,7 @@ h6 {
 }
 
 #about .about-container .content {
-  background: #fff;
+ /*  background: #fff; */
 }
 
 #about .about-container .title {
@@ -509,7 +510,7 @@ h6 {
 }
 
 #about .about-container .icon-box {
-  background: #fff;
+  /* background: #fff; */
   background-size: cover;
   padding: 0 0 30px 0;
 }
@@ -607,9 +608,12 @@ h6 {
 
 #services .icon {
   position: absolute;
-  left: -10px;
-  top: calc(50% - 32px);
+/*   left: -10px;
+  top: calc(50% - 32px); */
+  right: 10px;
+  top: 10px;
 }
+
 
 #services .icon i {
   font-size: 64px;
@@ -617,16 +621,53 @@ h6 {
   transition: 0.5s;
 }
 
+
+#services .icon .php {
+  position: absolute;
+  width: 300px;
+  right: -200px;
+}
+
+#services .icon .js {
+  position: absolute;
+  width: 100px;
+  top: -10px;
+  right: -15px;
+}
+
+#services .icon .mariadb {
+  position: absolute;
+  width: 300px;  
+  left: -600px;
+  top: 60px;
+}
+
+#services .icon .postgre {
+  position: absolute;
+  width: 180px;
+  right: -80px;
+  top: 30px;
+}
+
 #services .title {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
+
+#services .title{
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;  
+  margin-right: 40px;
+}
+
 #services .title a {
   color: #111;
 }
+
 
 #services .box:hover .title a {
   color: #007bff;
@@ -634,9 +675,38 @@ h6 {
 
 #services .description {
   font-size: 14px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   line-height: 24px;
   margin-bottom: 0;
+}
+
+
+#services .description-php{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;  
+  margin-right: 100px;
+}
+
+#services .description-js{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;  
+  margin-right: 50px;
+}
+
+#services .description-mariadb{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;  
+  margin-left: 85px;
+}
+
+#services .description-postgre{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;  
+  margin-right: 115px;
 }
 
 #why-us {
