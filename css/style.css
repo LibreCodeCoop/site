@@ -720,8 +720,8 @@ h6 {
 }
 
 #why-us .card {
-  background: #00458f;
-  border-color: #00458f;
+  background: rgb(223, 226, 233);
+  border-color: rgb(197, 212, 245);
   border-radius: 10px;
   margin: 0 15px;
   padding: 15px 0;
@@ -732,8 +732,8 @@ h6 {
 }
 
 #why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
+  background: white;
+  border-color: white;
 }
 
 #why-us .card i {
@@ -749,15 +749,15 @@ h6 {
 
 #why-us .card p {
   font-size: 15px;
-  color: #d8eafe;
+  color: gray;
 }
 
 #why-us .card .readmore {
-  color: #fff;
+  color: gray;
   font-weight: 600;
   display: inline-block;
   transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
+  border-bottom: gray solid 2px;
 }
 
 #why-us .card .readmore:hover {
