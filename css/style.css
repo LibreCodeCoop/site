@@ -185,14 +185,15 @@ h6 {
 }
 
 #intro .intro-info {
-  width: 50%;
-  float: left;
+  /* width: 50%; */
+  /* float: left; */
+  text-align: center;
 }
 
 #intro .intro-info h2 {
   color: #fff;
   margin-bottom: 40px;
-  font-size: 48px;
+  font-size: 58px;
   font-weight: 700;
 }
 
