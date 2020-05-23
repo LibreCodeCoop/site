@@ -738,9 +738,13 @@ h6 {
 }
 
 #why-us .card i {
-  font-size: 48px;
+  font-size: 25px;
   padding-top: 15px;
-  color: #bfddfe;
+  color: #00428a;
+}
+
+#why-us .card ion-icon {
+  font-size: 55px;
 }
 
 #why-us .card h5 {
