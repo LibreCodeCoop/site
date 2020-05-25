@@ -589,6 +589,7 @@ h6 {
 #services {
   padding: 60px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background: #74b5fc;
 }
 
 #services .box {
@@ -949,12 +950,19 @@ h6 {
   margin-bottom: 40px;
 }
 
+#testimonials .testimonial-item {
+  text-align: center;
+}
+
 #testimonials .testimonial-item .testimonial-img {
-  width: 180px;
+  width: 200px;
 /*   border-radius: 50%;
   border: 4px solid #fff; */
-  float: left;
+  /* float: left; */
+  float: none;
+  margin: auto;  
 }
+
 
 #testimonials .testimonial-item h3 {
   font-size: 20px;
@@ -1474,11 +1482,11 @@ h6 {
     margin: auto;
   }
 
-  #testimonials .testimonial-item h3,
+/*   #testimonials .testimonial-item h3,
   #testimonials .testimonial-item h4,
   #testimonials .testimonial-item p {
     margin-left: 0;
-  }
+  } */
 }
 
 @media (max-width: 574px) {
