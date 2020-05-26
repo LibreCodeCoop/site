@@ -1270,14 +1270,19 @@ h6 {
 
 #footer {
   background: #00428a;
-  padding: 0 0 30px 0;
+  /* padding: 0 0 30px 0; */
   color: #eee;
   font-size: 14px;
 }
 
+#footer .container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 #footer .footer-top {
   background: #004a99;
-  padding: 60px 0 30px 0;
+  /* padding: 60px 0 30px 0; */
 }
 
 #footer .footer-top .footer-info {
@@ -1393,7 +1398,7 @@ h6 {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 #footer .credits {
