@@ -10,4 +10,15 @@ mix.jigsaw()
     .options({
         processCssUrls: false,
     })
+    .webpackConfig(webpack => {
+        return {
+            plugins: [
+                new webpack.ProvidePlugin({
+                    $: 'jquery',
+                    jQuery: 'jquery',
+                    'window.jQuery': 'jquery'
+                })
+            ]
+        };
+    })
     .version();
