@@ -110,7 +110,7 @@
                 Educação a distância
               </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="/ead" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@
                   Gestão de documentos
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="/nextcloud" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
                 Telemedicina
               </i>
               <div class="card-body">                
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="/telemedicina" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@
                   Gestão acadêmica
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="/gestao-academica" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@
                   Assembléias on-line
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="/assembleias-online" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
