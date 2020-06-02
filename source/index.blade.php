@@ -136,7 +136,7 @@
                   Web scrapping
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}webscraping" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
