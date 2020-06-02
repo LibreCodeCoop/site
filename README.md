@@ -1,6 +1,6 @@
-# [PHPWomen Br](http://phpwomen.org.br) site
+# [Lyseon Tech](http://LT.coop.br) site
 
-Repositório do site da comunidade PHPWomen BR
+Repositório do site corporativo da Lyseon Tech
 
 ## Instalação
 
