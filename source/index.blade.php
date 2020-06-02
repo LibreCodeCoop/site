@@ -179,7 +179,7 @@
                   Aplicativos
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}aplicativos" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -192,7 +192,7 @@
                   Sites
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}sites" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
