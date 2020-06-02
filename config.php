@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => '/',
     'title' => 'Jigsaw',
     'description' => 'Website description.',
     'collections' => [],
