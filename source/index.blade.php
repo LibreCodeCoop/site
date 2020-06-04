@@ -35,9 +35,12 @@
   <section id="intro" class="clearfix">
     <div class="container">
       <div class="intro-info">
-          <h2>Desenvolvemos soluções personalizadas com tecnologias livres!</h2>
-          <h3>Somos uma Cooperativa especializada em desevolver soluções nas mais diversas áreas da Tecnologia da Informação.</h3>
-          <a href="#about" class="btn-get-started scrollto">Conheça-nos</a>
+          <h2>Soluções personalizadas<br> 
+          com <span> tecnologias livres! </span> </h2>
+          <br><br>
+          <h5>Especialistas em desenvolvimento web, aplicativos e hospdagem.<br>
+          Empresa autogerenciada e igualitária.</h5>
+          
 
       </div>
 
@@ -68,7 +71,7 @@
               </div>
               <h4 class="title"><a href="">Por que uma cooperativa?</a></h4>
               <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente com um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade e produtividade e a economia de escala nos serviços.
-                <br><br>
+                <br>
                 O movimento cooperativista trabalha para o desenvolvimento sustentável da comunidade na qual está inserido.</p>
             </div>
 
@@ -81,7 +84,8 @@
               <h4 class="title"><a href="">Por que software livre (SL)?</a></h4>
               <p class="description">
                 Um projeto de licença livre é construído colaborativamente, de modo que está em constante crescimento e sendo constantemente testado e corrigido em suas atualizações.
-                Por ser aberto, o código de um SL é 100% auditável, permitindo identificar a existência de qualquer erro ou falha de segurança em seu interior que possa deixar vulnerável os dados trafegados no sistema. Por isso, um SL é permite uma política de segurança de dados mais transparente do que um software proprietário.
+                Por ser aberto, o código de um SL é 100% auditável, permitindo identificar a existência de qualquer erro ou falha de segurança em seu interior que possa deixar vulnerável os dados trafegados no sistema. 
+                Por isso, um SL permite uma política de segurança de dados mais transparente do que um software proprietário.
               </p>
             </div>
           </div>
@@ -400,7 +404,7 @@
       <div class="container">
         <div class="section-header">
           <h3>Nosso time</h3>
-          <p>Contamos com uma equipe de profissionais altamente qualificados e prontos para atender as necessidades específicas de cada cliente. Com perfis diversificados, estes profissionais trocam experiências, conhecimentos e informações, além de estarem sempre em contato com o que há de mais recente em termos de tecnologia. <br>
+          <p>Com perfis diversificados, nossos profissionais trocam experiências, conhecimentos e informações, e estão em constante contato com o que há de mais recente na tecnologia. <br>
           Conheça nossa diretoria.</p>
         </div>
 
@@ -432,10 +436,10 @@
                   <h4>Livia Gouvea</h4>
                   <span>co-Fouder - CTO</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/_liviacarol_"><i class="fa fa-twitter"></i></a>
+                    <a href="https://t.me/liviagouvea"><i class="fa fa-telegram"></i></a>
+                    <a href="https://github.com/liviacarolgouvea"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/livia-gouvea/"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
