@@ -11,7 +11,7 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-        <a href="#intro" class="scrollto"><img src="assets/images/logo.png" alt="" class="img-fluid"></a>
+        <a href="#intro" class="scrollto"><img src="{{ $page->baseUrl }}assets/images/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -25,7 +25,7 @@
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav><!-- .main-nav -->
-      
+
     </div>
   </header><!-- #header -->
 
@@ -38,7 +38,7 @@
           <h2>Desenvolvemos soluções personalizadas com tecnologias livres!</h2>
           <h3>Somos uma Cooperativa especializada em desevolver soluções nas mais diversas áreas da Tecnologia da Informação.</h3>
           <a href="#about" class="btn-get-started scrollto">Conheça-nos</a>
-          
+
       </div>
 
     </div>
@@ -54,8 +54,8 @@
 
         <header class="section-header">
           <h3>Quem somos?</h3>
-          
-          <p>Somos uma cooperativa de trabalho que desenvolve soluções em software livre, formada por profissionais com ampla experiência de mercado e reconhecidos nacionalmente em eventos de software livre.</p> 
+
+          <p>Somos uma cooperativa de trabalho que desenvolve soluções em software livre, formada por profissionais com ampla experiência de mercado e reconhecidos nacionalmente em eventos de software livre.</p>
         </header>
 
         <div class="row about-container">
@@ -64,10 +64,10 @@
 
             <div class="icon-box wow fadeInUp">
               <div class="icon">
-                <img src="assets/images/coop.png" class="img-fluid" alt="">
+                <img src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="">
               </div>
               <h4 class="title"><a href="">Por que uma cooperativa?</a></h4>
-              <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente com um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade e produtividade e a economia de escala nos serviços. 
+              <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente com um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade e produtividade e a economia de escala nos serviços.
                 <br><br>
                 O movimento cooperativista trabalha para o desenvolvimento sustentável da comunidade na qual está inserido.</p>
             </div>
@@ -75,8 +75,8 @@
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon">
                 <i>
-                  <img src="assets/images/gnu.png" class="img-fluid" alt="">
-                </i>                
+                  <img src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="">
+                </i>
               </div>
               <h4 class="title"><a href="">Por que software livre (SL)?</a></h4>
               <p class="description">
@@ -110,7 +110,7 @@
                 Educação a distância
               </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}ead" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@
                   Gestão de documentos
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}nextcloud" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -152,8 +152,8 @@
                 <br>
                 Telemedicina
               </i>
-              <div class="card-body">                
-                <a href="#" class="readmore">Saiba mais</a>
+              <div class="card-body">
+                <a href="{{ $page->baseUrl }}telemedicina" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -244,20 +244,20 @@
                   Gestão acadêmica
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}gestao-academica" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
-                <i>                  
+                <i>
                   <ion-icon name="videocam-outline"></ion-icon>
                   <br>
                   Assembléias on-line
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}assembleias-online" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -281,15 +281,15 @@
             <div class="owl-carousel testimonials-carousel wow fadeInUp">
 
               <div class="testimonial-item">
-                <img src="assets/images/solucoes/nextcloud.png" class="testimonial-img" alt="">
+                <img src="{{ $page->baseUrl }}assets/images/solucoes/nextcloud.png" class="testimonial-img" alt="">
                 <div>
                   Nextcloud é um sistema para gerenciamento de arquivos como Dropbox, Office 365 e Google Drive, porém, livre. O sistema possui recursos como calendário compartilhado, contatos, streaming, dentre outros.
                 </div>
                 <a href="#" class="readmore">Saiba mais</a>
-              </div>    
+              </div>
 
               <div class="testimonial-item">
-                <img src="assets/images/solucoes/ojs.png" class="testimonial-img" alt="">
+                <img src="{{ $page->baseUrl }}assets/images/solucoes/ojs.png" class="testimonial-img" alt="">
                 <div>
                   Open Journal Systems (OJS) é um sistema para gerenciamento e publicação de periódicos acadêmicos. É a solução mais utilizada pelas principais instituições de pesquisa no mundo.
                 </div>
@@ -297,16 +297,16 @@
               </div>
 
               <div class="testimonial-item">
-                <img src="assets/images/solucoes/moodle.png" class="testimonial-img" alt="">
+                <img src="{{ $page->baseUrl }}assets/images/solucoes/moodle.png" class="testimonial-img" alt="">
                 <div>
-                  O Moodle é um sistema para gestão de aprendizagem. 
+                  O Moodle é um sistema para gestão de aprendizagem.
                   É a ferramenta de educaçao a distância (EAD) mais utilizada pelas instituições de ensino.
                 </div>
                 <a href="#" class="readmore">Saiba mais</a>
               </div>
 
               <div class="testimonial-item">
-                <img src="assets/images/solucoes/ieducar.png" class="testimonial-img" alt="">
+                <img src="{{ $page->baseUrl }}assets/images/solucoes/ieducar.png" class="testimonial-img" alt="">
                 <div>
                   É um sistema para gestão acadêmica. O software já utilizado por algumas prefeituras brasileiras, como é o caso de Itajaí (SC), Arapiraca (AL), Porto Velho (RO) e Parauapebas (PA).
                 </div>
@@ -314,7 +314,7 @@
               </div>
 
               <div class="testimonial-item">
-                <img src="assets/images/solucoes/matomo.png" class="testimonial-img" alt="">                
+                <img src="{{ $page->baseUrl }}assets/images/solucoes/matomo.png" class="testimonial-img" alt="">
                 <div>
                   Matomo é um software de análise estatística da web, fornece relatórios detalhados sobre o acessos a site rastreia visitas on-line a. É uma ótima alternativa ao popularmente conhecido Google Analytics.
                 </div>
@@ -322,7 +322,7 @@
               </div>
 
               <div class="testimonial-item">
-                <img src="assets/images/solucoes/mautic.png" class="testimonial-img" alt="">              
+                <img src="{{ $page->baseUrl }}assets/images/solucoes/mautic.png" class="testimonial-img" alt="">
                 <div>
                   Mautic é um sistema para nutrição e acompanhamento de leads para organizar as suas campanhas de marketing. O sistema disponibiliza a visualização de visitas, tempo gasto, páginas acessadas e demais informações acessadas pelo Lead.
                 </div>
@@ -354,7 +354,7 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon">
-                <img src="assets/images/linguagens/php.jpeg" alt="" class="php">
+                <img src="{{ $page->baseUrl }}assets/images/linguagens/php.jpeg" alt="" class="php">
               </div>
               <h4 class="title"><a href="https://nextcloud.com/" target=“_blank”>PHP</a></h4>
               <p class="description-php">O PHP é uma linguagem de script open source de uso geral, usada por mais de 70% dos sites da wolrd wide web.</p>
@@ -363,7 +363,7 @@
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon">
-                <img src="assets/images/linguagens/js.png" alt="" class="js" >
+                <img src="{{ $page->baseUrl }}assets/images/linguagens/js.png" alt="" class="js" >
               </div>
               <h4 class="title"><a href="https://pkp.sfu.ca/ojs/" target=“_blank”>JavaScript</a></h4>
               <p class="description-js">JavaScript é uma linguagem de programação que juntamente com HTML e CSS é uma das três principais tecnologias da World Wide Web.</p>
@@ -372,7 +372,7 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon">
-                <img src="assets/images/linguagens/mariadb.png" alt="" class="mariadb" >
+                <img src="{{ $page->baseUrl }}assets/images/linguagens/mariadb.png" alt="" class="mariadb" >
               </div>
               <h4 class="title"><a href="">MariaDB</a></h4>
               <p class="description-mariadb">MariaDB é uma bifurcação do sistema de gerenciamento de banco de dados relacional MySQL, destinada a permanecer software livre e de código aberto.</p>
@@ -381,7 +381,7 @@
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon">
-                <img src="assets/images/linguagens/postgre.png" alt="" class="postgre" >
+                <img src="{{ $page->baseUrl }}assets/images/linguagens/postgre.png" alt="" class="postgre" >
               </div>
               <h4 class="title"><a href="">PostgreSQL</a></h4>
               <p class="description-postgre">O PostgreSQL é um poderoso sistema de banco de dados relacional de código aberto, com grande robustez de recursos de desempenho.</p>
@@ -391,7 +391,7 @@
         </div>
 
       </div>
-    </section><!-- #services -->    
+    </section><!-- #services -->
 
     <!--==========================
       Team Section
@@ -408,7 +408,7 @@
 
           <div class="col-lg-4 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="assets/images/daiane.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/daiane.png" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Daiane Alves</h4>
@@ -426,7 +426,7 @@
 
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
-              <img src="assets/images/livia.jpg" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/livia.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Livia Gouvea</h4>
@@ -444,7 +444,7 @@
 
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="assets/images/vitor.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/vitor.png" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Vitor Mattos</h4>
@@ -460,7 +460,7 @@
             </div>
           </div>
 
-          
+
         </div>
 
       </div>
@@ -482,49 +482,49 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-1.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-1.png" class="img-fluid" alt="">
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-2.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="">
             </div>
           </div>
-        
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-3.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="">
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-4.jpg" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="">
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-5.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="">
             </div>
           </div>
-        
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-6.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="">
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-7.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-7.png" class="img-fluid" alt="">
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/images/clients/client-8.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-8.png" class="img-fluid" alt="">
             </div>
           </div>
 
