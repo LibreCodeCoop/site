@@ -24,39 +24,11 @@
 
             <div class="icon-box wow fadeInUp">
               <p class="description">
-                Somos especializados em desenvolvimentos de aplicativos Android e iOS com know how e com larga experiência para cuidar do seu aplicativo, desde o surgimento da ideia, até a divulgação e manutenção do app depois de publicado. Conheça as etapas de desenvolvimento do seu aplicativo:
+              O número de usuários de smartphones cresce a cada dia e por conta disso, investir em aplicações mobile são essenciais para sucesso de toda empresa.
+              A Lyseon Tech possui um time de profissionais especializados tanto em desenvolvimento nativo (iOS e Android) como utilizando as melhores e mais recentes práticas de desenvolvimento híbrido.
+              Quer saber mais? Solicite já um orçamento.
               </p>
             </div>              
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Consultoria criativa
-              </h4>
-              <p class="description">
-                Processo onde, junto com o cliente, refinamos o escopo do projeto, avaliamos viabilidade e damos muitas idéias baseadas na experiência de mais de 70 aplicativos publicados. 
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Do conceito a realidade
-              </h4>
-              <p class="description">
-                Com todo o escopo bem definido, desenvolvemos o layout do projeto, onde será desenvolvido um wireframe do aplicativo pensando em facilitar a usabilidade do usuário. 
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Desenvolvimento
-              </h4>
-              <p class="description">
-               Temos um time de arquitetos de software e desenvolvedores especializados em dar vida ao projeto. 
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">Publicação</h4>
-              <p class="description">
-                Depois de todas as etapas concluídas é chegada a tão esperada hora de publicar seu aplicativo na Play Store e Aple Store e a LT cuida de todo esse processo.
-              </p>
-            </div>
         </div>
       </div>
     </section><!-- #about -->

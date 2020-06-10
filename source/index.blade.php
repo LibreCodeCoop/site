@@ -166,7 +166,7 @@
                   Web Analytics
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}web-analitics" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -205,7 +205,7 @@
                   ERP
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}erp" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@
                   CRM
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}crm" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@
                   Comércio eletrônico
                 </i>
               <div class="card-body">
-                <a href="#" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}comercio-eletronico" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
