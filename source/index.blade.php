@@ -603,10 +603,11 @@
     </section><!-- #contact -->
 
   </main>
-  <script>
+@endsection
+@section('footer_scripts')
+<script>
   $(document).ready(function() {
     $("#contactForm").submit(function(event){
-
       $(".alert").hide();
 
       event.preventDefault(); //prevent default action
@@ -625,5 +626,5 @@
       });
     });
   });
-  </script>
+</script>
 @endsection

@@ -75,5 +75,6 @@
   <!-- Contact Form JavaScript File -->
   <!-- <script src="contactform/contactform.js"></script>-->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  @yield('footer_scripts')
 </body>
 </html>
