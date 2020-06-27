@@ -573,7 +573,7 @@
             <div class="form">
               <div id="sendmessage">Mensagem foi enviada!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="https://nc.lt.coop.br/apps/forms/api/v1/submission/insert" method="post" role="form" class="contactForm">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -592,8 +592,9 @@
                   <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">Enviar mensagem</button></div>
+                <div class="form-group text-center"><button type="submit" title="Send Message">Enviar mensagem</button></div>
               </form>
+              <div class="alert alert-success" role="alert" id="Success" style="display: none;">Dados enviados com sucesso!</div>
             </div>
           </div>
 
@@ -603,4 +604,32 @@
     </section><!-- #contact -->
 
   </main>
+  <script>
+  $("#form").submit(function(event){
+
+    $(".alert").hide();
+
+    event.preventDefault(); //prevent default action
+
+    var post_url = $(this).attr("action"); //get form action url
+
+    $.ajax({
+      type: "POST",
+      url: post_url,
+      data: {"formId":6,"answers":{"12":[$('#name').val()],"13":[$('#email').val()],"14":[$('#subject').val()],"15":[$('#message').val()]}},
+      dataType: "json", // and this
+      success: function (msg) {
+        $('#form .form-group').hide()
+        $("#Success").show();
+      },
+      error: function (xhr) {
+        console.log(xhr)
+        $.each(xhr.responseJSON, function(k, v) {
+          var id = v.replace(' ','_')
+          $("#"+id).show();
+        });
+      }
+    });
+  });
+  </script>
 @endsection
