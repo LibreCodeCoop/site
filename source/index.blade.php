@@ -9,8 +9,6 @@
     <div class="container">
 
       <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
         <a href="#intro" class="scrollto"><img src="{{ $page->baseUrl }}assets/images/logo.png" alt="" class="img-fluid"></a>
       </div>
 
@@ -591,7 +589,7 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
                   <div class="validation"></div>
                 </div>
                 <div class="text-center"><button type="submit" title="Send Message">Enviar mensagem</button></div>
