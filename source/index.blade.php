@@ -605,30 +605,34 @@
 
   </main>
   <script>
-  $("#contactForm").submit(function(event){
+  (function($) {
+    $(document).ready(function() {
+      $("#contactForm").submit(function(event){
 
-    $(".alert").hide();
+        $(".alert").hide();
 
-    event.preventDefault(); //prevent default action
+        event.preventDefault(); //prevent default action
 
-    var post_url = $(this).attr("action"); //get form action url
+        var post_url = $(this).attr("action"); //get form action url
 
-    $.ajax({
-      type: "POST",
-      url: post_url,
-      data: {"formId":6,"answers":{"12":[$('#name').val()],"13":[$('#email').val()],"14":[$('#subject').val()],"15":[$('#message').val()]}},
-      dataType: "json", // and this
-      success: function (msg) {
-        $('#form .form-group').hide()
-        $("#Success").show();
-      },
-      error: function (xhr) {
-        console.log(xhr)
-        $.each(xhr.responseJSON, function(k, v) {
-          var id = v.replace(' ','_')
-          $("#"+id).show();
+        $.ajax({
+          type: "POST",
+          url: post_url,
+          data: {"formId":6,"answers":{"12":[$('#name').val()],"13":[$('#email').val()],"14":[$('#subject').val()],"15":[$('#message').val()]}},
+          dataType: "json", // and this
+          success: function (msg) {
+            $('#form .form-group').hide()
+            $("#Success").show();
+          },
+          error: function (xhr) {
+            console.log(xhr)
+            $.each(xhr.responseJSON, function(k, v) {
+              var id = v.replace(' ','_')
+              $("#"+id).show();
+            });
+          }
         });
-      }
+      });
     });
   });
   </script>
