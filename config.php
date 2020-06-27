@@ -1,8 +1,9 @@
 <?php
 
 return [
-    'baseUrl' => '',
     'production' => false,
+    'baseUrl' => '',
+    'title' => 'Lyseon Tech',
+    'description' => 'Website description.',
     'collections' => [],
-    'title' => 'Lyseon Tech'
 ];

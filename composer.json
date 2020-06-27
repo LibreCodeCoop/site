@@ -1,11 +1,9 @@
 {
-  "name": "lyseontech/site",
-  "description": "Site da cooperativa LyseonTech",
-  "type": "project",
-  "minimum-stability": "dev",
-  "license": "MIT",
+    "name": "lyseontech/site",
+    "description": "Site corporativo da Lyseon Tech Soluções Tecnológicas",
+    "type": "project",
     "require": {
-        "tightenco/jigsaw": "dev-master"
+        "tightenco/jigsaw": "^1.3"
     },
     "scripts": {
         "post-install-cmd": [

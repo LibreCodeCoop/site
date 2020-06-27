@@ -1,28 +1,17 @@
-# Site Lyseon Tech
+# [Lyseon Tech](http://LT.coop.br) site
 
-Repositório do site da Lyseon Tech
+Repositório do site corporativo da Lyseon Tech
 
 ## Instalação
 
 ```bash
 git clone git@github.com:LyseonTech/site.git
 cd site
-composer install
+docker-compose up
 ```
 
-## Ambiente de desenvolvimento
-
-O projeto utiliza gulp para monitorar mudanças nos arquivos e executar o build
-automaticamente.
-
-Para iniciar o `watch` e o `build` automático do projeto execute o comando abaixo:
-
-```bash
-composer dev
-```
-
-Com este comando irá abrir uma janela do navegador onde você poderá ver em tempo
-real as mudanças do projeto.
+ - Abra no navegador o endereço:
+   http://localhost/
 
 ## Deploy
 

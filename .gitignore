@@ -1,23 +1,13 @@
-/cache/
-/vendor/
-/node_modules/
 /build_local/
-/build_production/
+/cache/
+/node_modules/
+/vendor/
+/.idea/
+/.vscode/
 npm-debug.log
 yarn-error.log
-/source/assets/build/css/
-/source/assets/build/fonts/
-/source/assets/build/js/
-/source/assets/build/mix-manifest.json
 
-# Eclipse
-.buildpath
-.project
-.settings
-
-# VI
-*.swp
-
-# vscode
-/.idea
-/.vscode/
+# Optional ignores
+# /build_staging/
+# /build_production/
+/source/assets/build/
