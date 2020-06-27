@@ -19,7 +19,6 @@
           <li><a href="#testimonials">Produtos</a></li>
           <li><a href="#services">Tecnologias</a></li>
           <li><a href="#team">Equipe</a></li>
-          </li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav><!-- .main-nav -->
