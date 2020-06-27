@@ -573,7 +573,7 @@
             <div class="form">
               <div id="sendmessage">Mensagem foi enviada!</div>
               <div id="errormessage"></div>
-              <form action="https://nc.lt.coop.br/apps/forms/api/v1/submission/insert" method="post" role="form" class="contactForm">
+              <form action="https://nc.lt.coop.br/apps/forms/api/v1/submission/insert" method="post" role="form" class="contactForm" id="contactForm">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -605,7 +605,7 @@
 
   </main>
   <script>
-  $("#form").submit(function(event){
+  $("#contactForm").submit(function(event){
 
     $(".alert").hide();
 
