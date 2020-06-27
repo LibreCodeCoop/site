@@ -618,18 +618,11 @@
         type: "POST",
         url: post_url,
         data: {"formId":6,"answers":{"12":[$('#name').val()],"13":[$('#email').val()],"14":[$('#subject').val()],"15":[$('#message').val()]}},
-        dataType: "json", // and this
-        success: function (msg) {
-          $('#form .form-group').hide()
-          $("#Success").show();
-        },
-        error: function (xhr) {
-          console.log(xhr)
-          $.each(xhr.responseJSON, function(k, v) {
-            var id = v.replace(' ','_')
-            $("#"+id).show();
-          });
-        }
+        dataType: "json"
+      }).always(function (msg) {
+        console.log('sucesso')
+        $('#contactForm .form-group').hide()
+        $("#Success").show();
       });
     });
   });
