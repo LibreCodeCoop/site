@@ -89,6 +89,9 @@
       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
   </script>
+  <noscript>
+    <img src="https://matomo.lt.coop.br/matomo.php?idsite=2&amp;rec=1&amp;action_name={{ $page->getUrl() }}" style="border:0" alt="" />
+  </noscript>
   @endif
 </body>
 </html>
