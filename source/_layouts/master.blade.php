@@ -76,5 +76,19 @@
   <!-- <script src="contactform/contactform.js"></script>-->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   @yield('footer_scripts')
+  @if ($page->production)
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.lt.coop.br/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '2']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  @endif
 </body>
 </html>
