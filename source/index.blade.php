@@ -357,7 +357,7 @@
               <div class="icon">
                 <img src="{{ $page->baseUrl }}assets/images/linguagens/php.jpeg" alt="" class="php">
               </div>
-              <h4 class="title"><a href="https://nextcloud.com/" target=“_blank”>PHP</a></h4>
+              <h4 class="title"><a href="#" target=“_blank”>PHP</a></h4>
               <p class="description-php">O PHP é uma linguagem de script open source de uso geral, usada por mais de 70% dos sites da wolrd wide web.</p>
             </div>
           </div>
@@ -366,7 +366,7 @@
               <div class="icon">
                 <img src="{{ $page->baseUrl }}assets/images/linguagens/js.png" alt="" class="js" >
               </div>
-              <h4 class="title"><a href="https://pkp.sfu.ca/ojs/" target=“_blank”>JavaScript</a></h4>
+              <h4 class="title"><a href="#" target=“_blank”>JavaScript</a></h4>
               <p class="description-js">JavaScript é uma linguagem de programação que juntamente com HTML e CSS é uma das três principais tecnologias da World Wide Web.</p>
             </div>
           </div>
@@ -375,7 +375,7 @@
               <div class="icon">
                 <img src="{{ $page->baseUrl }}assets/images/linguagens/mariadb.png" alt="" class="mariadb" >
               </div>
-              <h4 class="title"><a href="">MariaDB</a></h4>
+              <h4 class="title"><a href="#">MariaDB</a></h4>
               <p class="description-mariadb">MariaDB é uma bifurcação do sistema de gerenciamento de banco de dados relacional MySQL, destinada a permanecer software livre e de código aberto.</p>
             </div>
           </div>
@@ -384,7 +384,7 @@
               <div class="icon">
                 <img src="{{ $page->baseUrl }}assets/images/linguagens/postgre.png" alt="" class="postgre" >
               </div>
-              <h4 class="title"><a href="">PostgreSQL</a></h4>
+              <h4 class="title"><a href="#">PostgreSQL</a></h4>
               <p class="description-postgre">O PostgreSQL é um poderoso sistema de banco de dados relacional de código aberto, com grande robustez de recursos de desempenho.</p>
             </div>
           </div>
