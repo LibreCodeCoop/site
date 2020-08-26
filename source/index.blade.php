@@ -35,7 +35,7 @@
           <h2>Soluções personalizadas<br> 
           com <span> tecnologias livres! </span> </h2>
           <br><br>
-          <h5>Especialistas em desenvolvimento web, aplicativos e hospdagem.<br>
+          <h5>Especialistas em desenvolvimento web, aplicativos e hospedagem.<br>
           Empresa autogerenciada e igualitária.</h5>
           
 
