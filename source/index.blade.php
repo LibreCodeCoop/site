@@ -539,7 +539,7 @@
       Contact Section
     ============================-->
     <section id="contact">
-      <div class="container-fluid">
+      <div class="container">
 
         <div class="section-header">
           <h3>Contato</h3>
