@@ -77,6 +77,14 @@
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   @yield('footer_scripts')
   @if ($page->production)
+	<script type="text/javascript">
+    (function(w, d, s, u) {
+      w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+      var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true; j.src = 'https://chat.lt.coop.br/livechat/rocketchat-livechat.min.js?_=201903270000';
+      h.parentNode.insertBefore(j, h);
+    })(window, document, 'script', 'https://chat.lt.coop.br/livechat');
+  </script>
   <script type="text/javascript">
     var _paq = window._paq || [];
     _paq.push(['trackPageView']);
