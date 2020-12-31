@@ -570,30 +570,7 @@
             </div>
 
             <div class="form">
-              <div id="sendmessage">Mensagem foi enviada!</div>
-              <div id="errormessage"></div>
-              <form action="https://nc.lt.coop.br/apps/forms/api/v1/submission/insert" method="post" role="form" class="contactForm" id="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:3" data-msg="Nos diga como prefere ser chamado" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" data-rule="email" data-msg="Informe um email válido" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Informe o assunto" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Escreva uma mensgem para nós" placeholder="Mensagem"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group text-center"><button type="submit" title="Send Message">Enviar mensagem</button></div>
-              </form>
-              <div class="alert alert-success" role="alert" id="Success" style="display: none;">Dados enviados com sucesso!</div>
+              <iframe id="form-contato" src="https://ls.lt.coop.br/?r=survey/index&sid=467949&newtest=Y" style="width: 100%;height:460px;border: 0;overflow:hidden;" scrolling="no"></iframe>
             </div>
           </div>
 
@@ -605,26 +582,4 @@
   </main>
 @endsection
 @section('footer_scripts')
-<script>
-  $(document).ready(function() {
-    $("#contactForm").submit(function(event){
-      $(".alert").hide();
-
-      event.preventDefault(); //prevent default action
-
-      var post_url = $(this).attr("action"); //get form action url
-
-      $.ajax({
-        type: "POST",
-        url: post_url,
-        data: {"formId":6,"answers":{"12":[$('#name').val()],"13":[$('#email').val()],"14":[$('#subject').val()],"15":[$('#message').val()]}},
-        dataType: "json"
-      }).always(function (msg) {
-        console.log('sucesso')
-        $('#contactForm .form-group').hide()
-        $("#Success").show();
-      });
-    });
-  });
-</script>
 @endsection
