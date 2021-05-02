@@ -20,6 +20,7 @@
           <li><a href="#services">Tecnologias</a></li>
           <li><a href="#team">Equipe</a></li>
           <li><a href="#contact">Contato</a></li>
+          <li><a href="#apoie">Apoie</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -36,7 +37,7 @@
           com <span> tecnologias livres! </span> </h2>
           <br><br>
           <h5>Especialistas em desenvolvimento web, aplicativos e hospedagem.<br>
-          Empresa autogerenciada e igualitária.</h5>
+          Empresa autogestionária e igualitária.</h5>
           
 
       </div>
@@ -535,6 +536,58 @@
 
     </section>
 
+    <!--==========================
+      Apoie Section
+    ============================-->
+    <section id="apoie" class="clearfix">
+      <div class="container">
+        <div class="section-header">
+          <h3>Apoie</h3>
+          <p>Se você utiliza ou deseja utilizar nossos produtos e gostaria de contribuir com o desenvolvimento deles.
+            Existem diversas formas de você nos apioar:</p>
+        </div>
+        <div class="row apoie-wrap clearfix wow fadeInUp">
+          <div class="col-lg-4 col-md-4 col-xs-6">
+            <div class="apoie-logo">
+                <img src="{{ $page->baseUrl }}assets/images/apoie/rysolv.png" class="img-fluid apoie" alt="">
+            </div>
+            <p>
+              Rysolv é uma plataforma de financiamento coletivo para desenvolvimento de projetos de código aberto. 
+              Lá você vai encontrar todas as funcionalidades pendentes de serem desenvolvidas em nossos produtos. 
+              Você poderá contribuir com algum valor para o desenvolvimento delas ou contribuir desenvolvendo a solução.
+            </p>
+            <a href="https://www.rysolv.com/repos/detail/b9e2ce14-b53c-43df-84b6-632bb2daec7b" target=“_blank”>
+              Ir para Rysolv
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-6">
+            <div class="apoie-logo">
+              <img src="{{ $page->baseUrl }}assets/images/apoie/patreon.png" class="img-fluid apoie" alt="">
+            </div>
+            <p>
+              Patreon é um portal de financiamento coletivo de projetos independentes. <br>
+              Lá você poderá escolher nos apoiar com um valor mensal em troca de algumas recompensas no uso de nossos produtos.
+            </p>
+            <a href="https://www.patreon.com/librecode" target=“_blank”>
+              Ir para Patreon
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-6">
+            <div class="apoie-logo">
+              <img src="{{ $page->baseUrl }}assets/images/apoie/bountysource.svg" class="img-fluid apoie" alt="">
+            </div>
+            <p>
+              Bountysource é um site de financimanto de projetos de código aberto.
+              Lá você pode financiar a solução de alguma melhoria, correção ou desenvolvimento de nova funcionalidade em nossos produtos, 
+              ou desenvolver a solução para as tarefas pendentes.
+            </p>
+            <a href="https://www.bountysource.com/teams/libresign/issues" target=“_blank”>
+              Ir para Bountysource
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- #intro -->
     <!--==========================
       Contact Section
     ============================-->
