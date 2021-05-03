@@ -1259,6 +1259,46 @@ h6 {
   cursor: pointer;
 }
 
+/* Apoie Section
+--------------------------------*/
+
+#apoie {
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#apoie .apoie-wrap {
+  margin-bottom: 30px;
+}
+
+#apoie .apoie-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+  height: 100px;
+}
+
+#apoie .apoie-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#apoie img {
+  transition: all 0.4s ease-in-out;
+  max-width: 200px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
