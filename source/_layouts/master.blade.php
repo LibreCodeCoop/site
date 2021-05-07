@@ -47,7 +47,7 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="copyright">
-              &copy; Copyright <strong>Lyseon Tech</strong>. Todos os direitos reservados
+              &copy; Copyright <strong>LibreCode</strong>. Todos os direitos reservados
             </div>
             <div class="credits">
               <!--

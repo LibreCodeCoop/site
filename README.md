@@ -1,6 +1,6 @@
-# [Lyseon Tech](http://LT.coop.br) site
+# [LibreCode](http://LT.coop.br) site
 
-Repositório do site corporativo da Lyseon Tech
+Repositório do site corporativo da LibreCode
 
 ## Instalação
 
