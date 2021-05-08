@@ -1,6 +1,6 @@
 {
     "name": "lyseontech/site",
-    "description": "Site corporativo da Lyseon Tech Soluções Tecnológicas",
+    "description": "Site corporativo da LibreCode Soluções Tecnológicas",
     "type": "project",
     "require": {
         "tightenco/jigsaw": "^1.3"

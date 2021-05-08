@@ -25,7 +25,7 @@
             <div class="icon-box wow fadeInUp">
               <p class="description">
               O número de usuários de smartphones cresce a cada dia e por conta disso, investir em aplicações mobile são essenciais para sucesso de toda empresa.
-              A Lyseon Tech possui um time de profissionais especializados tanto em desenvolvimento nativo (iOS e Android) como utilizando as melhores e mais recentes práticas de desenvolvimento híbrido.
+              A LibreCode possui um time de profissionais especializados tanto em desenvolvimento nativo (iOS e Android) como utilizando as melhores e mais recentes práticas de desenvolvimento híbrido.
               Quer saber mais? Solicite já um orçamento.
               </p>
             </div>              

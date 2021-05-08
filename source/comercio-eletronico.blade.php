@@ -24,7 +24,7 @@
 
             <div class="icon-box wow fadeInUp">
               <p class="description">
-                Vender online atualmente é fundamental para qualquer empresa e a Lyseon Tech possui time especializado para dar aquele up na sua loja virtual ou até mesmo criar uma do zero, totalmente customizada e com integração com diversos meios de pagamento de forma segura. Quer saber mais? Solicite já seu orçamento e começe a faturar com suas vendas. 
+                Vender online atualmente é fundamental para qualquer empresa e a LibreCode possui time especializado para dar aquele up na sua loja virtual ou até mesmo criar uma do zero, totalmente customizada e com integração com diversos meios de pagamento de forma segura. Quer saber mais? Solicite já seu orçamento e começe a faturar com suas vendas. 
 
               </p>
             </div>              
