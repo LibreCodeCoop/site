@@ -7,12 +7,12 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: build_production
-  repo: LyseonTech/lyseontech.github.io
+  repo: LyseonTech/static
   target_branch: master
   keep-history: true
-  email: travis-ci@lyseon.tech
+  email: travis-ci@librecode.coop
   name: Travis-CI
-  fqdn: lt.coop.br
+  fqdn: librecode.coop
   on:
     branch: master
 
