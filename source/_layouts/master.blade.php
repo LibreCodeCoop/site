@@ -36,7 +36,7 @@
           <div class="col-lg-6 col-md-6">
 
             <div class="social-links">
-              <a href="https://t.me/LyseonTech" class="telegram"><i class="fa fa-telegram"></i></a>
+              <a href="https://t.me/LibreCodeCoop" class="telegram"><i class="fa fa-telegram"></i></a>
               <a href="https://www.facebook.com/lyseontech/" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="https://www.instagram.com/lyseontech/" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="https://github.com/lyseontech" class="github"><i class="fa fa-github"></i></a>
