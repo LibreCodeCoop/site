@@ -81,16 +81,16 @@
     (function(w, d, s, u) {
       w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
       var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-      j.async = true; j.src = 'https://chat.lt.coop.br/livechat/rocketchat-livechat.min.js?_=201903270000';
+      j.async = true; j.src = 'https://chat.librecode.coop/livechat/rocketchat-livechat.min.js?_=201903270000';
       h.parentNode.insertBefore(j, h);
-    })(window, document, 'script', 'https://chat.lt.coop.br/livechat');
+    })(window, document, 'script', 'https://chat.librecode.coop/livechat');
   </script>
   <script type="text/javascript">
     var _paq = window._paq || [];
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-      var u="//matomo.lt.coop.br/";
+      var u="//matomo.librecode.coop/";
       _paq.push(['setTrackerUrl', u+'matomo.php']);
       _paq.push(['setSiteId', '2']);
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -98,7 +98,7 @@
     })();
   </script>
   <noscript>
-    <img src="https://matomo.lt.coop.br/matomo.php?idsite=2&amp;rec=1&amp;action_name={{ $page->getUrl() }}" style="border:0" alt="" />
+    <img src="https://matomo.librecode.coop/matomo.php?idsite=2&amp;rec=1&amp;action_name={{ $page->getUrl() }}" style="border:0" alt="" />
   </noscript>
   @endif
 </body>
