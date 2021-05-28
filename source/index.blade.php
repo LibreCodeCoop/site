@@ -614,7 +614,7 @@
               </div>
               <div class="col-md-4 info">
                 <i class="ion-ios-email-outline"></i>
-                <p>contato@lt.coop.br</p>
+                <p>contato@librecode.coop</p>
               </div>
               <div class="col-md-3 info">
                 <i class="ion-ios-telephone-outline"></i>
