@@ -1,4 +1,4 @@
-# [LibreCode](https:/librecode.coop) site
+# [LibreCode](https://librecode.coop) site
 
 Repositório do site corporativo da LibreCode
 
