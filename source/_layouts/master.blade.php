@@ -40,7 +40,7 @@
               <a href="https://www.facebook.com/lyseontech/" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="https://www.instagram.com/lyseontech/" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="https://github.com/lyseontech" class="github"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/company/lyseontech/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/librecode/" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
           </div>
