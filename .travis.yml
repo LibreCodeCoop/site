@@ -7,7 +7,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: build_production
-  repo: LyseonTech/static
+  repo: LibreCodeCoop/static
   target_branch: master
   keep-history: true
   email: travis-ci@librecode.coop
