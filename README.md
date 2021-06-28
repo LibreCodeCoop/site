@@ -5,7 +5,7 @@ Repositório do site corporativo da LibreCode
 ## Instalação
 
 ```bash
-git clone git@github.com:LyseonTech/site.git
+git clone git@github.com:librecodecoop/site.git
 cd site
 docker-compose up
 ```
