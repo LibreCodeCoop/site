@@ -359,7 +359,7 @@
                 <img src="{{ $page->baseUrl }}assets/images/linguagens/php.jpeg" alt="" class="php">
               </div>
               <h4 class="title"><a href="#" target=“_blank”>PHP</a></h4>
-              <p class="description-php">O PHP é uma linguagem de script open source de uso geral, usada por mais de 70% dos sites da wolrd wide web.</p>
+              <p class="description-php">O PHP é uma linguagem de script open source de uso geral, usada por mais de 70% dos sites da world wide web.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
