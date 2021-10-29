@@ -1,6 +1,6 @@
 # [LibreCode](https://librecode.coop) site
 
-Repositório do site corporativo da LibreCode
+Repositório do site institucional da LibreCode
 
 ## Instalação
 
