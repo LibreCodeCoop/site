@@ -6,15 +6,10 @@ interface IGerMarkdownFileProps {
   filename: String;
 }
 
-interface IGetMarkdownFileReturn {
+export interface IGetMarkdownFileReturn {
   slug: string;
   frontmatter: { [key: string]: any };
   content: string;
-}
-
-interface IFrontMatterHeader {
-  title: string;
-  created_at: string;
 }
 
 export const getMarkdownFile = async ({
