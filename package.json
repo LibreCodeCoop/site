@@ -18,11 +18,18 @@
     "sass": "^1.43.4"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.11.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
     "@types/marked": "^3.0.2",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.34",
+    "babel-jest": "^27.3.1",
     "eslint": "7",
     "eslint-config-next": "12.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
+    "jest-dom": "^4.0.0",
     "typescript": "^4.4.4"
   }
 }
