@@ -1,11 +1,11 @@
-version: '3.3'
+version: "3.7"
+
 services:
-  php7:
-    build: .docker/php7
-    ports:
-      - 80:3000
+  nodejs:
+    image: node:lts
+    working_dir: "/app"
     volumes:
-      - .:/jigsaw
-      - ~/.composer:/root/.composer
-    environment:
-      XDEBUG_CONFIG: "remote_host=172.17.0.1 remote_enable=1"
+      - ./:/app
+    ports:
+      - 3000:3000
+    command: bash -c "sh .docker/node/entrypoint.sh"
