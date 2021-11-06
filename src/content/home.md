@@ -2,44 +2,52 @@
 title: "Home Page"
 ---
 
-### O que fazemos
+# O que fazemos
 
-### Guiamso
+<section>
+  <h2>Guiamos</h2>
+  <span>Analizamos suas demandas e apontamos para melhor solução.</span>
+  <button>Peça seu Diagnóstico</button>
+</section>
 
-Analizamos suas demandas e apontamos para melhor solução.
-[Peça seu Diagnóstico]()
+<section>
+  <h2>Criamos</h2>
+  <span>Soluções adaptáveis as suas necessidades.</span>
+  <button>Saiba Mais</button>
+</section>
 
-### Criamos
+<section>
+  <h2>Desenvolvemos</h2>
+  <span>Soluções sob medida, simples e funcionais.</span>
+  <button>Fale Conosco</button>
+</section>
 
-Soluções adaptáveis as suas necessidades.
-[Saiba Mais]()
+<section>
+  <h2>Implantamos</h2>
+  <span>Melhorias tecnológicas com impacto direto no resultado do seu negócio</span>
+  <button>Saiba Mais</button>
+</section>
 
-### Desenvolvemos
+<section>
+  <h2>Aprimoramos</h2>
+  <span>O seu processo operacional com recursos vindos de software livre.</span>
+  <button>Fale Conosco</button>
+</section>
 
-Soluções sob medida, simples e funcionais.
-[Fale Conosco]()
+<section>
+  <h2>Integramos</h2>
+  <span>Nossas soluções com sistemas já existentes.</span>
+  <button>Saiba mais</button>
+</section>
 
-### Implantamos
+<section>
+  <h2>Treinamos</h2>
+  <span>Conduzimos treinamento em todas as tecnologias livres que utilizamos.</span>
+  <button>Fale Conosco</button>
+</section>
 
-Melhorias tecnológicas com impacto direto no resultado do seu negócio
-[Saiba Mais]()
-
-### Aprimoramos
-
-O seu processo operacional com recursos vindos de software livre.
-[Fale Conosco]()
-
-### Integramos
-
-Nossas soluções com sistemas já existentes.
-[Saiba mais]()
-
-### Treinamos
-
-Conduzimos treinamento em todas as tecnologias livres que utilizamos.
-[Fale Conosco]()
-
-### Mantemos
-
-Monitoramos as soluções para manter a sua integridade e resolver problemas.
-[Saiba Mais]()
+<section>
+  <h2>Mantemos</span>
+  <span>Monitoramos as soluções para manter a sua integridade e resolver problemas.</span>
+  <button>Saiba Mais</button>
+</section>
