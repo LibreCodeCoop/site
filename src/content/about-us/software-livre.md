@@ -13,4 +13,4 @@ Trabalhamos juntos, focados no cooperar mas extremamente comprometidos com o liv
 
 ### Quer ir mais a fundo no Software Livre?
 
-Para conhecer mais sobre Software Livre recomendamos ``
+Para conhecer mais sobre Software Livre recomendamos []()
