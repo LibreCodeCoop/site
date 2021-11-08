@@ -1,5 +1,5 @@
 ---
-title: "Apie"
+title: "Apoie"
 ---
 
 Todos os projetos da LibreCode são de código aberto. E é aberto também qualquer tipo de ajuda, aquelas vindas em forma de ideias, de novos projetos, de ajuda na melhoria dos códigos e também em forma de doação.
