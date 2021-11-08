@@ -22,17 +22,18 @@ Por ser um sistema de código aberto, permite auuditoria total do código garant
 
 ## Távola
 
-A LibreCode desevolvel o Távola especialmente para a realização de assembleias online.
+A LibreCode desevolveu o Távola especialmente para a realização de assembleias online.
 
 Algumas das funcionalidades do Távola:
 
-- Ambiente com acesso restrito por autenticaçwão
+- Ambiente com acesso restrito por autenticação
 - Sala de videoconferência com acesso restrito
-- Gerenciamento de pautas de votações (criação, edição e exclusão)
+- Utilizar chat para se comunicar nan assembléia
+- Gerenciamento de pautas de votações com possibilidade de voto ser secreto ou nominal
 - Histórico de presença
-- Gravação da assembleia
 - Painel de exibição dos resultados da votação em tempo real
 - Suporte técnico imediato durante a assembleia
+- Gravação da assembleia
 
 <button>Fale conosto</button>
 
