@@ -56,6 +56,7 @@ O mautic é um sistema de automação de marketing:
 
   </article>
 </section>
+
 <section class="more-services">
 
 ## Conheça ainda mais serviços
@@ -98,7 +99,7 @@ Suporte e gerenciamento de sistemas ded tecnologias livres tais quais como:
   </article>
 
   <article>
-  
+
   ## Manutenção e atualização de sistemas legados em linguagem PHP e Javascript
 
 Suporte e gerenciamento de sistemas ded tecnologias livres tais quais como:
