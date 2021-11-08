@@ -17,11 +17,13 @@ Com o Nextcloud você pode manter e gerenciar seus documentos com a segurança d
 Algumas funcionalidades:
 
 - Criar, editar e compartilhar documentos, planilhas e apresentações
+- Infraestrutura customizada
 - Editar Colaborativamente
 - Gerenciar agendas
 - Conversar por chat
 - Realizar videoconferência
 - Criar e gerencia de grupos com diferentes perfis de acesso
+- Segurança
 
 <button>Saiba mais </button>
 
