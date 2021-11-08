@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev:up": "docker-compose up -d",
+    "dev:up": "docker-compose up",
     "dev:down": "docker-compose down"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
     "next": "12.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
     "sass": "^1.43.4"
   },
   "devDependencies": {
