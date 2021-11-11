@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "Quem Somos",
+      "link": "/about-us"
+    },
+    {
+      "name": "Produtos e Servicos",
+      "link": "/products-and-services"
+    },
+    {
+      "name": "Blog",
+      "link": "/blog"
+    },
+    {
+      "name": "Eventos",
+      "link": "/events"
+    },
+    {
+      "name": "Apoie",
+      "link": "/apoie"
+    },
+    {
+      "name": "Contato",
+      "link": "/contacts"
+    }
+  ]
+}
