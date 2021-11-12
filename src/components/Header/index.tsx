@@ -1,6 +1,15 @@
-import { Flex, Stack, Text, Link as ChakraLink } from "@chakra-ui/react";
-import { ActiveLink } from "@/components/ActiveLink";
-import Logo from "./Logo";
+import {
+  Icon,
+  Flex,
+  Box,
+  IconButton,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { HeaderNav } from "@/components/Header/HeaderNav";
+import { SearchBox } from "./SearchBox";
+import { useHeaderDrawer } from "@/context/HeaderDrawerContext";
+import { RiMenuLine } from "react-icons/ri";
+import { HeaderDrawer } from "./HeaderDrawer";
 
 interface IProps {
   name: string;
@@ -12,59 +21,44 @@ interface ComponentProps {
 }
 
 export const Header = ({ menuLinks }: ComponentProps) => {
+  const { onOpen } = useHeaderDrawer();
+  const isDrawerSidebar = useBreakpointValue({
+    base: true,
+    md: false,
+  });
+
   return (
     <Flex
       bg="gray.100"
-      h="150px"
-      justify="space-around"
-      align="center"
+      h={["250px", "250px", "170px", "170px"]}
+      justify="center"
+      align={["center", "center", "flex-end"]}
+      pb={["0", "0", "20", "8"]}
+      mb="4"
+      pl={["10", "10", "1"]}
       bgImage={[
+        "url('/static/background-hover-mobile.svg')",
         "url('/static/background-hover-mobile.svg')",
         "url('/static/background-hover-desktop.svg')",
       ]}
+      bgRepeat="no-repeat"
+      bgSize={["contain", "cover", "contain"]}
     >
-      <Flex
-        flexDir={["column", "column", "row", "row"]}
-        mt="20"
-        ml="40"
-        spacing="4"
-      >
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Home</Text>
-          </ChakraLink>
-        </ActiveLink>
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Quem Somos</Text>
-          </ChakraLink>
-        </ActiveLink>
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Produtos e Serviços</Text>
-          </ChakraLink>
-        </ActiveLink>
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Blog</Text>
-          </ChakraLink>
-        </ActiveLink>
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Eventos</Text>
-          </ChakraLink>
-        </ActiveLink>
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Apoie</Text>
-          </ChakraLink>
-        </ActiveLink>
-        <ActiveLink href="/" passHref>
-          <ChakraLink>
-            <Text ml="4">Contato</Text>
-          </ChakraLink>
-        </ActiveLink>
-      </Flex>
+      {isDrawerSidebar ? (
+        <Box alignSelf={["center", "flex-end"]}>
+          <IconButton
+            icon={<Icon as={RiMenuLine} />}
+            variant="unstyled"
+            aria-label="Open Header Navigation"
+            onClick={() => onOpen()}
+            mr="2"
+            fontSize="24"
+          ></IconButton>
+          <HeaderDrawer />
+        </Box>
+      ) : (
+        <HeaderNav />
+      )}
     </Flex>
   );
 };
