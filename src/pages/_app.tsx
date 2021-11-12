@@ -4,12 +4,15 @@ import { AppProps } from "next/app";
 import { theme } from "../styles/theme";
 
 import LinksMenus from "@/content/menu.json";
+import { HeaderDrawerProdiver } from "@/context/HeaderDrawerContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Header menuLinks={LinksMenus.menu} />
-      <Component {...pageProps} />
+      <HeaderDrawerProdiver>
+        <Header menuLinks={LinksMenus.menu} />
+        <Component {...pageProps} />
+      </HeaderDrawerProdiver>
     </ChakraProvider>
   );
 }
