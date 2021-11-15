@@ -11,11 +11,7 @@ interface IProps {
   link: string;
 }
 
-interface ComponentProps {
-  menuLinks: IProps[];
-}
-
-export const Header = ({ menuLinks }: ComponentProps) => {
+export const Header = () => {
   const { onOpen } = useHeaderDrawer();
   const isDrawerSidebar = useBreakpointValue({
     base: true,
@@ -37,7 +33,7 @@ export const Header = ({ menuLinks }: ComponentProps) => {
           base: "url('/static/texture-right-Mobile.png')",
           lg: "url('/static/texture-right-Desktop.png')",
         },
-        bgPos: "top left",
+        bgPos: { base: "center left", lg: "bottom left" },
         bgRepeat: "no-repeat",
         bgSize: "auto auto",
         backgroundOrigin: "border-box",
@@ -51,7 +47,7 @@ export const Header = ({ menuLinks }: ComponentProps) => {
           base: "url('/static/texture-left-Mobile.png')",
           lg: "url('/static/texture-left-Desktop.png')",
         },
-        bgPos: "top right",
+        bgPos: { base: "center right", lg: "bottom right" },
         bgRepeat: "no-repeat",
         bgSize: "auto",
         backgroundOrigin: "border-box",
