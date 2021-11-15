@@ -17,7 +17,6 @@ export default function Home({ data }: HomeProps) {
 
 export async function getStaticProps() {
   const file = await getMarkdownFile({ filename: "home" });
-  console.info(file);
   return {
     props: {
       data: file,
