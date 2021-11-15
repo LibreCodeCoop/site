@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Container } from "@/components/Layouts/Container";
 import { ReactNode } from "react";
 import { HeaderDrawerProdiver } from "@/context/HeaderDrawerContext";
 
@@ -17,7 +17,7 @@ export default function DefaultLayout({ children }: DefaultLayoutProps) {
           <Header />
         </SearchBoxProvider>
       </HeaderDrawerProdiver>
-      <main>{children}</main>
+      <Container as="main">{children}</Container>
       <Footer />
     </>
   );
