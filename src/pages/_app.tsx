@@ -6,16 +6,15 @@ import { theme } from "../styles/theme";
 import LinksMenus from "@/content/menu.json";
 import { HeaderDrawerProdiver } from "@/context/HeaderDrawerContext";
 import { SearchBoxProvider } from "@/context/SearchBarContext";
+import Footer from "@/components/Footer";
+import DefaultLayout from "@/components/Layouts/DefaultLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <HeaderDrawerProdiver>
-        <SearchBoxProvider>
-          <Header />
-        </SearchBoxProvider>
-      </HeaderDrawerProdiver>
-      <Component {...pageProps} />
+      <DefaultLayout>
+        <Component {...pageProps} />
+      </DefaultLayout>
     </ChakraProvider>
   );
 }
