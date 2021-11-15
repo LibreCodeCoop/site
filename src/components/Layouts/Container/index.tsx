@@ -5,7 +5,7 @@ import {
 
 export function Container({ children, ...rest }: ContainerProps) {
   return (
-    <ChakraContainer paddingX={8} {...rest} maxW="full">
+    <ChakraContainer maxH="full" minH="xl" paddingX={8} {...rest} maxW="full">
       {children}
     </ChakraContainer>
   );
