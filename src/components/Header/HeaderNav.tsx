@@ -7,7 +7,13 @@ export function HeaderNav() {
       justify={["space-evenly", "space-evenly", "flex-end"]}
       flexDir={["column", "column", "row"]}
       spacing="4"
-      ml="28"
+      align={["center", "center", "flex-end"]}
+      mb={["0", "0", "10"]}
+      ml={["0", "0", "28"]}
+      h={{
+        base: "80vh",
+        lg: "100%",
+      }}
     >
       <HeaderLink title="Home" url="/" />
       <HeaderLink title="Quem Somos" url="/about-us" />

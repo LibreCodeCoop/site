@@ -33,7 +33,7 @@ export const Header = ({ menuLinks }: ComponentProps) => {
       h={["250px", "250px", "170px", "170px"]}
       justify="center"
       align={["center", "center", "flex-end"]}
-      pb={["0", "0", "20", "8"]}
+      pb={["0", "4", "10", "8"]}
       mb="4"
       pl={["10", "10", "1"]}
       bgImage={[
@@ -42,10 +42,10 @@ export const Header = ({ menuLinks }: ComponentProps) => {
         "url('/static/background-hover-desktop.svg')",
       ]}
       bgRepeat="no-repeat"
-      bgSize={["contain", "cover", "contain"]}
+      bgSize={{ base: "contain", "2xl": "cover" }}
     >
       {isDrawerSidebar ? (
-        <Box alignSelf={["center", "flex-end"]}>
+        <Flex alignSelf={["center", "flex-end"]}>
           <IconButton
             icon={<Icon as={RiMenuLine} />}
             variant="unstyled"
@@ -55,7 +55,8 @@ export const Header = ({ menuLinks }: ComponentProps) => {
             fontSize="24"
           ></IconButton>
           <HeaderDrawer />
-        </Box>
+          <SearchBox />
+        </Flex>
       ) : (
         <HeaderNav />
       )}

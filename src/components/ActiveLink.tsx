@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Link, { LinkProps } from "next/link";
 import { cloneElement, ReactElement } from "react";
+import { useHeaderDrawer } from "@/context/HeaderDrawerContext";
 
 interface ActiveLinkProps extends LinkProps {
   children: ReactElement;
@@ -13,6 +14,8 @@ export function ActiveLink({
   ...rest
 }: ActiveLinkProps) {
   const { asPath } = useRouter();
+  const { isOpen } = useHeaderDrawer();
+
   let isActive = false;
 
   if (shouldMatchExactHref && (asPath === rest.href || asPath === rest.as)) {
@@ -30,8 +33,8 @@ export function ActiveLink({
     <Link {...rest}>
       {cloneElement(children, {
         color: "gray.600",
-        borderBottom: isActive && "1px",
-        borderColor: "red.600",
+        borderBottom: !isOpen && isActive && "1px",
+        borderColor: !isOpen && "red.600",
       })}
     </Link>
   );
