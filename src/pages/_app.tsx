@@ -5,12 +5,15 @@ import { theme } from "../styles/theme";
 
 import LinksMenus from "@/content/menu.json";
 import { HeaderDrawerProdiver } from "@/context/HeaderDrawerContext";
+import { SearchBoxProvider } from "@/context/SearchBarContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <HeaderDrawerProdiver>
-        <Header />
+        <SearchBoxProvider>
+          <Header />
+        </SearchBoxProvider>
       </HeaderDrawerProdiver>
       <Component {...pageProps} />
     </ChakraProvider>
