@@ -9,6 +9,9 @@ import { HeaderDrawerProdiver } from "@/context/HeaderDrawerContext";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
+      <HeaderDrawerProdiver>
+        <Header />
+      </HeaderDrawerProdiver>
       <Component {...pageProps} />
     </ChakraProvider>
   );

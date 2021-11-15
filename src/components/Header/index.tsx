@@ -11,11 +11,7 @@ interface IProps {
   link: string;
 }
 
-interface ComponentProps {
-  menuLinks: IProps[];
-}
-
-export const Header = ({ menuLinks }: ComponentProps) => {
+export const Header = () => {
   const { onOpen } = useHeaderDrawer();
   const isDrawerSidebar = useBreakpointValue({
     base: true,
