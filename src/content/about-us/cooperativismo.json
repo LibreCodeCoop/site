@@ -1,0 +1,18 @@
+{
+  "title": "Cooperativismo",
+  "description": "Acreditamos em trabalho cooperativo e democrático e nos esforçamos para sempre manter o crescimento coletivo. Servimos nossos clientes, membros e o movimento cooperativista e seus princípios.",
+  "principles": [
+    "Adesão Livre e Voluntária",
+    "Gestão democrática",
+    "Participação econômica dos membros",
+    "Autonomia e independência",
+    "Educação, formação e informação",
+    "Intercooperação",
+    "Interesse pela comunidade"
+  ],
+  "sub_section": {
+    "title": "Quer ir mais afundo no Cooperativismo ?",
+    "description": "Para conhecer mais sobre o cooperativismo recomendamos que acesse o site da OCB (Organização das Cooperativas do Brasil.) Lá você poderá conhecer um pouco mais desse movimento incrível que nos move e é a nossa razão de ser.",
+    "anchor_link": "https://www.ocb.org.br/"
+  }
+}

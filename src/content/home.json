@@ -1,0 +1,45 @@
+{
+  "title": "O que fazemos",
+  "sections": [
+    {
+      "title": "Guiamos",
+      "description": "Analizamos suas demandas e apontamos para melhor solução.",
+      "anchor": "Peça seu diagnóstico"
+    },
+    {
+      "title": "Criamos",
+      "description": "Soluções adaptáveis as suas necessidades.",
+      "anchor": "Saiba Mais"
+    },
+    {
+      "title": "Desenvolvemos",
+      "description": "Soluções sob medida, simples e funcionais.",
+      "anchor": "Fale Conosco"
+    },
+    {
+      "title": "Implantamos",
+      "description": "Melhorias tecnológicas com impacto direto no resultado do seu negócio.",
+      "anchor": "Saiba Mais"
+    },
+    {
+      "title": "Aprimoramos",
+      "description": "O seu processo operacional com recursos vindos de software livre.",
+      "anchor": "Fale Conosco"
+    },
+    {
+      "title": "Integramos",
+      "description": "Nossas soluções com sistemas já existentes.",
+      "anchor": "Saiba Mais"
+    },
+    {
+      "title": "Treinamos",
+      "description": "Conduzimos treinamento em todas as tecnologias livres que utilizamos.",
+      "anchor": "Fale Conosco"
+    },
+    {
+      "title": "Mantemos",
+      "description": "Monitoramos as soluções para manter a sua integridade e resolver problemas.",
+      "anchor": "Saiba Mais"
+    }
+  ]
+}
