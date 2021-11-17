@@ -1,4 +1,10 @@
-import { Flex, Link as ChakraLink, FlexProps, Text } from "@chakra-ui/react";
+import {
+  Flex,
+  Stack,
+  Link as ChakraLink,
+  FlexProps,
+  Text,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { ButtonTypes } from "./types";
@@ -7,13 +13,20 @@ interface ButtonLinkProps {
   type: ButtonTypes;
   text: string;
   url: string;
+  font_size?: number;
 }
 interface LettersReturn {
   firstLetters: string;
   lastLetters: string;
 }
 
-export function ButtonLink({ text, type, url, ...rest }: ButtonLinkProps) {
+export function ButtonLink({
+  text,
+  font_size = 23,
+  type,
+  url,
+  ...rest
+}: ButtonLinkProps) {
   let bgImagePath;
 
   if (type === ButtonTypes.hexagonal) {
@@ -59,17 +72,23 @@ export function ButtonLink({ text, type, url, ...rest }: ButtonLinkProps) {
           align="center"
           {...rest}
         >
-          <Text fontWeight="light" fontSize="20">
-            {letters().firstLetters}
-          </Text>
-          <Text
-            fontSize="20"
-            textTransform="capitalize"
-            fontWeight="extrabold"
-            color="red.800"
-          >
-            {letters().lastLetters}
-          </Text>
+          <Stack spacing="-2">
+            <Text
+              fontWeight="light"
+              fontSize={font_size}
+              textTransform="uppercase"
+            >
+              {letters().firstLetters}
+            </Text>
+            <Text
+              fontSize="23"
+              textTransform="uppercase"
+              fontWeight="bold"
+              color="red.800"
+            >
+              {letters().lastLetters}
+            </Text>
+          </Stack>
         </Flex>
       </ChakraLink>
     </Link>
