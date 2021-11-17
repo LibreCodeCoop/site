@@ -1,0 +1,32 @@
+{
+  "title": "Apoie",
+  "description": "Todos os projetos da LibreCode são de código aberto. E é aberto também qualquer tipo de ajuda, aquelas vindas em forma de ideias, de novos projetos, de ajuda na melhoria dos códigos e também em forma de doação. Você pode ser um patrocinador LibreCode por acreditar nos nossos projetos.",
+  "support_sources": [
+    {
+      "title": "Patreon",
+      "description": "Você pode escolher o Patreon para apoiar a LibreCode. Acreditamos nos nossos valores e com seu apoio vamos continuar criando e aprimorando soluções tecnológicas livres para todos. Você dará suporte a LibreCode através de seus projetos. Aqui estão eles:",
+      "image": "/assets/apoie/patreon.png"
+    },
+    {
+      "title": "Bounty",
+      "description": "Você pode escolher o Bounty source para apoiar a LibreCode. Acreditamos nos nossos valores e com seu apoio vamos continuar criando e aprimorando soluções tecnológicas livres para todos. Você dará suporte a LibreCode através de seus projetos. Aqui estão eles",
+      "image": "/assets/apoie/bountysource.svg"
+    }
+  ],
+  "code_source": {
+    "title": "Nossos Sources",
+    "description": "Todos os sistemas que desenvolvemos estão sob licença livre e os repositórios com os códigos-fonte podem ser encontrados aqui.",
+    "source": [
+      {
+        "title": "Github",
+        "anchor_link": "https://github.com/LibreCodeCoop",
+        "image": "/assets/apoie/github.png"
+      },
+      {
+        "title": "Gitlab",
+        "anchor_link": "https://gitlab.com/librecodecoop",
+        "image": "/assets/apoie/gitlab.png"
+      }
+    ]
+  }
+}
