@@ -94,6 +94,7 @@ export default function Home({ data }: HomeProps) {
             type={ReturnTypeButton(section.anchor.type)}
             url={section.anchor.url}
             text={section.anchor.name}
+            font_size={section.title.name === "Guiamos" ? 34 : 23}
           />
         </Flex>
       ))}
