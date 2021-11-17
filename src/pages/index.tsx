@@ -1,25 +1,8 @@
-import {
-  getMarkdownFile,
-  IGetMarkdownFileReturn,
-} from "../utils/getMarkdownFile";
-
-interface HomeProps {
-  data: IGetMarkdownFileReturn;
-}
-
-export default function Home({ data }: HomeProps) {
+import { Flex, Text } from "@chakra-ui/react";
+export default function Home() {
   return (
-    <>
-      <h1>{data.frontmatter.title}</h1>
-    </>
+    <Flex>
+      <Text>Home Page</Text>
+    </Flex>
   );
-}
-
-export async function getStaticProps() {
-  const file = await getMarkdownFile({ filename: "home" });
-  return {
-    props: {
-      data: file,
-    },
-  };
 }
