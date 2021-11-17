@@ -1,54 +1,113 @@
 {
-  "title": "O que fazemos",
+  "title": {
+    "name": "O que fazemos",
+    "font_color": "gray.50"
+  },
   "image": "/static/home/o-que-fazemos.png",
   "sections": [
     {
-      "title": "Guiamos",
+      "title": {
+        "name": "Guiamos",
+        "font_color": "gray.50"
+      },
       "description": "Analizamos suas demandas e apontamos para melhor solução.",
       "image": "/static/home/guiamos.png",
-      "anchor": "Peça seu diagnóstico"
+      "anchor": {
+        "name": "Peça seu diagnóstico",
+        "type": "right",
+        "url": "/"
+      }
     },
     {
-      "title": "Criamos",
+      "title": {
+        "name": "Criamos",
+        "font_color": "purple.950"
+      },
       "description": "Soluções adaptáveis as suas necessidades.",
       "image": "/static/home/criamos.png",
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Desenvolvemos",
+      "title": {
+        "name": "Desenvolvemos",
+        "font_color": "blue.900"
+      },
       "description": "Soluções sob medida, simples e funcionais.",
       "image": "/static/home/desenvolvemos.png",
-      "anchor": "Fale Conosco"
+      "anchor": {
+        "name": "Fale Conosco",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Implantamos",
+      "title": {
+        "name": "Implantamos",
+        "font_color": "blue.900"
+      },
       "description": "Melhorias tecnológicas com impacto direto no resultado do seu negócio.",
       "image": "/static/home/implantamos.png",
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "hexagonal",
+        "url": "/"
+      }
     },
     {
-      "title": "Aprimoramos",
+      "title": {
+        "name": "Aprimoramos",
+        "font_color": "red.800"
+      },
       "description": "O seu processo operacional com recursos vindos de software livre.",
       "image": "/static/home/aprimoramos.png",
-      "anchor": "Fale Conosco"
+      "anchor": {
+        "name": "Fale Conosco",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Integramos",
+      "title": {
+        "name": "Integramos",
+        "font_color": "gray.50"
+      },
       "description": "Nossas soluções com sistemas já existentes.",
       "image": "/static/home/integramos.png",
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "right",
+        "url": "/"
+      }
     },
     {
-      "title": "Treinamos",
+      "title": {
+        "name": "Treinamos",
+        "font_color": "gray.50"
+      },
       "description": "Conduzimos treinamento em todas as tecnologias livres que utilizamos.",
       "image": "/static/home/treinamos.png",
-      "anchor": "Fale Conosco"
+      "anchor": {
+        "name": "Fale Conosco",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Mantemos",
+      "title": {
+        "name": "Mantemos",
+        "font_color": "gray.50"
+      },
       "description": "Monitoramos as soluções para manter a sua integridade e resolver problemas.",
       "image": "/static/home/mantemos.png",
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "right",
+        "url": "/"
+      }
     }
   ]
 }
