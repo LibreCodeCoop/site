@@ -1,15 +1,19 @@
-import { Flex, Link as ChakraLink, FlexProps } from "@chakra-ui/react";
+import { Flex, Link as ChakraLink, FlexProps, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { ButtonTypes } from "./types";
 
 interface ButtonLinkProps {
   type: ButtonTypes;
+  text: string;
   url: string;
-  children: ReactNode;
+}
+interface LettersReturn {
+  firstLetters: string;
+  lastLetters: string;
 }
 
-export function ButtonLink({ type, children, url, ...rest }: ButtonLinkProps) {
+export function ButtonLink({ text, type, url, ...rest }: ButtonLinkProps) {
   let bgImagePath;
 
   if (type === ButtonTypes.hexagonal) {
@@ -19,6 +23,17 @@ export function ButtonLink({ type, children, url, ...rest }: ButtonLinkProps) {
   } else if (type === ButtonTypes.right) {
     bgImagePath = "url('static/background-btn-right.svg')";
   }
+
+  const letters = (): LettersReturn => {
+    const splitText = text.split(" ");
+    const lastValue = splitText[splitText.length - 1];
+    splitText.pop();
+
+    return {
+      firstLetters: splitText.join(" "),
+      lastLetters: lastValue,
+    };
+  };
 
   return (
     <Link href={url} passHref>
@@ -44,7 +59,17 @@ export function ButtonLink({ type, children, url, ...rest }: ButtonLinkProps) {
           align="center"
           {...rest}
         >
-          {children}
+          <Text fontWeight="light" fontSize="20">
+            {letters().firstLetters}
+          </Text>
+          <Text
+            fontSize="20"
+            textTransform="capitalize"
+            fontWeight="extrabold"
+            color="red.800"
+          >
+            {letters().lastLetters}
+          </Text>
         </Flex>
       </ChakraLink>
     </Link>
