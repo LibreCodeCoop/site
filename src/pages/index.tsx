@@ -106,6 +106,13 @@ export default function Home({ data }: HomeProps) {
     }
   }
 
+  function getFontColor(section: ContentSections) {
+    if (section.title.name.toLowerCase() == "aprimoramos") {
+      return { base: "gray.800", lg: section.description.font_color };
+    }
+    return section.description.font_color;
+  }
+
   return (
     <Flex direction="column">
       <Head>
@@ -153,7 +160,7 @@ export default function Home({ data }: HomeProps) {
           px={{ lg: "4" }}
         >
           <Text
-            fontSize={["2xl", "5xl", "5xl", "9xl"]}
+            fontSize={["5xl", "5xl", "6xl", "9xl"]}
             color={section.title.font_color}
             fontWeight="bold"
             alignSelf={getAlign(section).alignDescription}
@@ -168,9 +175,9 @@ export default function Home({ data }: HomeProps) {
             w={["full", "full", "full", "md"]}
           >
             <Text
-              fontSize={["xl", "xl", "4xl"]}
+              fontSize={["xl", "xl", "2xl", "4xl"]}
               fontWeight="medium"
-              color={section.description.font_color}
+              color={getFontColor(section)}
               mb="10"
               mx={2}
               textAlign="center"
