@@ -114,23 +114,23 @@ export default function Home({ data }: HomeProps) {
       <Flex
         bgImage={data.image}
         bgSize="cover"
-        h="600px"
+        h="100vh"
         bgRepeat="no-repeat"
-        bgPos="left center"
+        bgPos={{ base: "center", xl: "bottom center" }}
         zIndex="-1"
         justify="center"
         align="center"
         direction="column"
       >
         <Text
-          fontSize={["5xl", "8xl"]}
+          fontSize={["5xl", "9xl"]}
           color={data.title.font_color}
           fontWeight="bold"
         >
           {data.title.name}
         </Text>
         <Divider w="40px" />
-        <Icon mt="10" as={MouseScroll} fontSize="5xl" />
+        <Icon mt={{ base: "14", lg: "24" }} as={MouseScroll} fontSize="5xl" />
       </Flex>
 
       {data.sections.map((section, index) => (
@@ -140,7 +140,8 @@ export default function Home({ data }: HomeProps) {
           key={`${section.title.name}-${index}`}
           bgImage={section.image}
           bgSize="cover"
-          h="950px"
+          minH="950px"
+          h="100vh"
           bgRepeat="no-repeat"
           bgPos="top center"
           zIndex={index}
