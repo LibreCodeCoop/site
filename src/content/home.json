@@ -4,7 +4,7 @@
     "font_color": "gray.50"
   },
   "bgColor": "red.700",
-  "image": "/static/home/o-que-fazemo.png",
+  "image": "/static/home/o-que-fazemos.png",
   "sections": [
     {
       "title": {
