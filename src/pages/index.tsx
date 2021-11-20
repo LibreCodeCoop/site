@@ -1,9 +1,10 @@
-import { Flex, Divider, Text } from "@chakra-ui/react";
+import { Flex, Divider, Text, Icon } from "@chakra-ui/react";
 import HomeContent from "@/content/home.json";
 import { ButtonTypes } from "@/components/ButtonLink/types";
 import { ButtonLink } from "@/components/ButtonLink";
+import { MouseScroll } from "@/components/MouseScroolIcon";
 
-interface TitleProps {
+interface DescriptionProps {
   name: string;
   font_color: string;
 }
@@ -14,14 +15,15 @@ interface AnchorProps {
 }
 
 interface ContentSections {
-  title: TitleProps;
+  title: DescriptionProps;
   image: string;
-  description: string;
+  description: DescriptionProps;
   anchor: AnchorProps;
+  bgColor: string;
 }
 
 interface ContentProps {
-  title: TitleProps;
+  title: DescriptionProps;
   image: string;
   sections: ContentSections[];
 }
@@ -41,20 +43,36 @@ export default function Home({ data }: HomeProps) {
         return ButtonTypes.hexagonal;
     }
   }
-  function splitValuePhrase(value) {
-    const valueSplited = value.split(" ");
-    const lastValue = valueSplited[valueSplited.length - 1];
-    valueSplited.pop();
-    const returnValue = valueSplited.join(" ");
-    return `${returnValue} ${String(lastValue).fontcolor("red")}`;
+
+  function getMarginTop(section: ContentSections) {
+    switch (section.title.name.toLowerCase()) {
+      case "guiamos":
+        return "-80px";
+      case "criamos":
+        return "-130px";
+      case "desenvolvemos":
+        return "-165px";
+      case "implantamos":
+        return "-110px";
+      case "aprimoramos":
+        return "-165px";
+      case "integramos":
+        return "-80px";
+      case "treinamos":
+        return "-15px";
+      case "mantemos":
+        return "-155px";
+      default:
+        return "0";
+    }
   }
 
   return (
     <Flex direction="column">
       <Flex
         bgImage={data.image}
-        bgSize="auto auto"
-        h="400px"
+        bgSize="cover"
+        h="600px"
         bgRepeat="no-repeat"
         bgPos="left center"
         zIndex="-1"
@@ -66,6 +84,8 @@ export default function Home({ data }: HomeProps) {
           {data.title.name}
         </Text>
         <Divider w="40px" />
+
+        <Icon as={MouseScroll} fontSize="3xl" />
       </Flex>
       {data.sections.map((section, index) => (
         <Flex
@@ -73,14 +93,15 @@ export default function Home({ data }: HomeProps) {
           w="100%"
           key={`${section.title.name}-${index}`}
           bgImage={section.image}
-          bgSize="auto auto"
-          h="400px"
+          bgSize="cover"
+          h="920px"
           bgRepeat="no-repeat"
-          bgPos="left center"
-          zIndex="-1"
+          bgPos="top center"
+          zIndex={index}
           justify="center"
           align="center"
           direction="column"
+          mt={getMarginTop(section)}
         >
           <Text
             fontSize="6xl"
@@ -89,7 +110,7 @@ export default function Home({ data }: HomeProps) {
           >
             {section.title.name}
           </Text>
-          <Text>{section.description}</Text>
+          <Text>{section.description.name}</Text>
           <ButtonLink
             type={ReturnTypeButton(section.anchor.type)}
             url={section.anchor.url}
