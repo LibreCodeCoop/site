@@ -3,14 +3,19 @@
     "name": "O que fazemos",
     "font_color": "gray.50"
   },
-  "image": "/static/home/o-que-fazemos.png",
+  "bgColor": "red.700",
+  "image": "/static/home/o-que-fazemo.png",
   "sections": [
     {
       "title": {
         "name": "Guiamos",
         "font_color": "gray.50"
       },
-      "description": "Analizamos suas demandas e apontamos para melhor solução.",
+      "description": {
+        "name": "Analizamos suas demandas e apontamos para melhor solução.",
+        "font_color": "gray.50"
+      },
+      "bgColor": "blue.800",
       "image": "/static/home/guiamos.png",
       "anchor": {
         "name": "Peça seu diagnóstico",
@@ -23,7 +28,12 @@
         "name": "Criamos",
         "font_color": "purple.950"
       },
-      "description": "Soluções adaptáveis as suas necessidades.",
+      "description": {
+        "name": "Soluções adaptáveis as suas necessidades.",
+        "font_color": "gray.800"
+      },
+      "bgColor": "red.700",
+
       "image": "/static/home/criamos.png",
       "anchor": {
         "name": "Saiba Mais",
@@ -36,7 +46,11 @@
         "name": "Desenvolvemos",
         "font_color": "blue.900"
       },
-      "description": "Soluções sob medida, simples e funcionais.",
+      "description": {
+        "name": "Soluções sob medida, simples e funcionais.",
+        "font_color": "gray.800"
+      },
+      "bgColor": "blue.800",
       "image": "/static/home/desenvolvemos.png",
       "anchor": {
         "name": "Fale Conosco",
@@ -49,7 +63,11 @@
         "name": "Implantamos",
         "font_color": "blue.900"
       },
-      "description": "Melhorias tecnológicas com impacto direto no resultado do seu negócio.",
+      "description": {
+        "name": "Melhorias tecnológicas com impacto direto no resultado do seu negócio.",
+        "font_color": "gray.800"
+      },
+      "bgColor": "yellow.400",
       "image": "/static/home/implantamos.png",
       "anchor": {
         "name": "Saiba Mais",
@@ -62,7 +80,10 @@
         "name": "Aprimoramos",
         "font_color": "red.800"
       },
-      "description": "O seu processo operacional com recursos vindos de software livre.",
+      "description": {
+        "name": "O seu processo operacional com recursos vindos de software livre.",
+        "font_color": "gray.50"
+      },
       "image": "/static/home/aprimoramos.png",
       "anchor": {
         "name": "Fale Conosco",
@@ -75,7 +96,10 @@
         "name": "Integramos",
         "font_color": "gray.50"
       },
-      "description": "Nossas soluções com sistemas já existentes.",
+      "description": {
+        "name": "Nossas soluções com sistemas já existentes.",
+        "font_color": "gray.50"
+      },
       "image": "/static/home/integramos.png",
       "anchor": {
         "name": "Saiba Mais",
@@ -88,7 +112,10 @@
         "name": "Treinamos",
         "font_color": "gray.50"
       },
-      "description": "Conduzimos treinamento em todas as tecnologias livres que utilizamos.",
+      "description": {
+        "name": "Conduzimos treinamento em todas as tecnologias livres que utilizamos.",
+        "font_color": "gray.50"
+      },
       "image": "/static/home/treinamos.png",
       "anchor": {
         "name": "Fale Conosco",
@@ -101,7 +128,10 @@
         "name": "Mantemos",
         "font_color": "gray.50"
       },
-      "description": "Monitoramos as soluções para manter a sua integridade e resolver problemas.",
+      "description": {
+        "name": "Monitoramos as soluções para manter a sua integridade e resolver problemas.",
+        "font_color": "gray.50"
+      },
       "image": "/static/home/mantemos.png",
       "anchor": {
         "name": "Saiba Mais",
