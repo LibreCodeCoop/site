@@ -1,4 +1,4 @@
-import { Icon, IconProps, createIcon } from "@chakra-ui/react";
+import { createIcon } from "@chakra-ui/react";
 
 export const MouseScroll = createIcon({
   displayName: "MouseScrollIcon",
