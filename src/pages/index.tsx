@@ -1,4 +1,5 @@
 import { Flex, Divider, Text, Icon } from "@chakra-ui/react";
+import Head from "next/head";
 import HomeContent from "@/content/home.json";
 import { ButtonTypes } from "@/components/ButtonLink/types";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -107,6 +108,9 @@ export default function Home({ data }: HomeProps) {
 
   return (
     <Flex direction="column">
+      <Head>
+        <title>Home</title>
+      </Head>
       <Flex
         bgImage={data.image}
         bgSize="cover"
