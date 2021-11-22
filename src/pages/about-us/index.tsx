@@ -33,6 +33,13 @@ interface AboutUsProps {
   data: ContentProps;
 }
 
+enum SectionMarginTop {
+  cooperativismo = "-50px",
+  softwarelivre = "-60px",
+  nossoscooperados = "-80px",
+  futuroscooperados = "-200px",
+}
+
 export default function AboutUs({ data }: AboutUsProps) {
   function ReturnTypeButton(type) {
     switch (type) {
@@ -44,6 +51,20 @@ export default function AboutUs({ data }: AboutUsProps) {
         return ButtonTypes.hexagonal;
     }
   }
+
+  function getSectionMarginTop(section: ISections) {
+    switch (section.title.name.split(" ").join("").toLowerCase().trim()) {
+      case "cooperativismo":
+        return SectionMarginTop.cooperativismo;
+      case "softwarelivre":
+        return SectionMarginTop.softwarelivre;
+      case "nossoscooperados":
+        return SectionMarginTop.nossoscooperados;
+      case "futuroscooperados":
+        return SectionMarginTop.futuroscooperados;
+    }
+  }
+
   return (
     <Flex direction="column">
       <Head>
@@ -54,7 +75,7 @@ export default function AboutUs({ data }: AboutUsProps) {
         bgSize="cover"
         h="100vh"
         bgRepeat="no-repeat"
-        bgPos={{ base: "center", xl: "bottom center" }}
+        bgPos={{ base: "bottom right", xl: "bottom center" }}
         zIndex="-1"
         justify="center"
         align="center"
@@ -82,17 +103,24 @@ export default function AboutUs({ data }: AboutUsProps) {
           key={`${section.title.name}-${index}`}
           bgImage={section.image}
           bgSize="cover"
-          h="full"
-          minH="500px"
+          minH="100vh"
           bgRepeat="no-repeat"
-          bgPos="top center"
+          bgPos={{ base: "top center", xl: "top center" }}
           zIndex={index}
-          mt="-22px"
           justify="center"
+          align="center"
           direction="column"
-          px={{ lg: "4" }}
+          h="full"
+          mt={getSectionMarginTop(section)}
+          maxH="883px"
         >
-          <Text>{section.title.name}</Text>
+          <Text
+            fontSize={["3xl", "4xl", "6xl", "8xl", "9xl"]}
+            color={section.title.fontColor}
+            fontWeight="bold"
+          >
+            {section.title.name}
+          </Text>
           {section.anchor ? (
             <ButtonLink
               type={ReturnTypeButton(section.anchor.type)}
@@ -101,7 +129,13 @@ export default function AboutUs({ data }: AboutUsProps) {
               font_size={23}
             />
           ) : (
-            <Text>{section.description}</Text>
+            <Text
+              fontSize={["2xl", "4xl"]}
+              fontWeight="bold"
+              color={section.title.fontColor}
+            >
+              {section.description}
+            </Text>
           )}
         </Flex>
       ))}
