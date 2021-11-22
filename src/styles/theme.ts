@@ -18,6 +18,7 @@ export const theme = extendTheme({
       "50": "#EBEBEB",
     },
     blue: {
+      "950": "#1F1C58",
       "900": "#0C0255",
       "800": "#050055",
     },
@@ -46,6 +47,7 @@ export const theme = extendTheme({
       "50": "##EDFDFD",
     },
     purple: {
+      "1000": "#481A4D",
       "950": "#441048",
       "900": "#322659",
       "800": "#44337A",
