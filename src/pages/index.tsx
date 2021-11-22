@@ -130,14 +130,18 @@ export default function Home({ data }: HomeProps) {
         direction="column"
       >
         <Text
-          fontSize={["5xl", "9xl"]}
+          fontSize={["3xl", "4xl", "6xl", "8xl", "9xl"]}
           color={data.title.font_color}
           fontWeight="bold"
         >
           {data.title.name}
         </Text>
         <Divider w="40px" />
-        <Icon mt={{ base: "14", lg: "24" }} as={MouseScroll} fontSize="5xl" />
+        <Icon
+          mt={{ base: "14", lg: "24" }}
+          as={MouseScroll}
+          fontSize={["3xl", "4xl", "5xl"]}
+        />
       </Flex>
 
       {data.sections.map((section, index) => (
@@ -160,7 +164,7 @@ export default function Home({ data }: HomeProps) {
           px={{ lg: "4" }}
         >
           <Text
-            fontSize={["5xl", "5xl", "6xl", "9xl"]}
+            fontSize={["3xl", "5xl", "6xl", "8xl"]}
             color={section.title.font_color}
             fontWeight="bold"
             alignSelf={getAlign(section).alignDescription}
@@ -175,7 +179,7 @@ export default function Home({ data }: HomeProps) {
             w={["full", "full", "full", "md"]}
           >
             <Text
-              fontSize={["xl", "xl", "2xl", "4xl"]}
+              fontSize={["lg", "2xl", "3xl", "4xl"]}
               fontWeight="medium"
               color={getFontColor(section)}
               mb="10"
