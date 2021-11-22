@@ -1,6 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
+  config: {
+    cssVarPrefix: "LibreCode",
+  },
   colors: {
     gray: {
       "900": "#181B23",
@@ -15,10 +18,20 @@ export const theme = extendTheme({
       "50": "#EBEBEB",
     },
     blue: {
-      "900": "#15153F",
+      "900": "#0C0255",
+      "800": "#050055",
     },
     red: {
-      "600": "#ff0000",
+      "900": "#ff0000",
+      "800": "#E5332A",
+      "700": "#F73F20",
+      "600": "#C53030",
+      "500": "#E53E3E",
+      "400": "#F56565",
+      "300": "#FC8181",
+      "200": "#FEB2B2",
+      "100": "#FED7D7",
+      "50": "#FFF5F5",
     },
     cyan: {
       "900": "#065666",
@@ -31,6 +44,22 @@ export const theme = extendTheme({
       "200": "#9DECF9",
       "100": "#C4F1F9",
       "50": "##EDFDFD",
+    },
+    purple: {
+      "950": "#441048",
+      "900": "#322659",
+      "800": "#44337A",
+      "700": "#553C9A",
+      "600": "#6B46C1",
+      "500": "#805AD5",
+      "400": "#9F7AEA",
+      "300": "#B794F4",
+      "200": "#D6BCFA",
+      "100": "#E9D8FD",
+      "50": "#FAF5FF",
+    },
+    yellow: {
+      "400": "#E2C619",
     },
   },
 

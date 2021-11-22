@@ -1,45 +1,142 @@
 {
-  "title": "O que fazemos",
+  "title": {
+    "name": "O que fazemos",
+    "font_color": "gray.50"
+  },
+  "bgColor": "red.700",
+  "image": "/static/home/o-que-fazemos.png",
   "sections": [
     {
-      "title": "Guiamos",
-      "description": "Analizamos suas demandas e apontamos para melhor solução.",
-      "anchor": "Peça seu diagnóstico"
+      "title": {
+        "name": "Guiamos",
+        "font_color": "gray.50"
+      },
+      "description": {
+        "name": "Analizamos suas demandas e apontamos para melhor solução.",
+        "font_color": "gray.50"
+      },
+      "bgColor": "blue.800",
+      "image": "/static/home/guiamos.png",
+      "anchor": {
+        "name": "Peça seu diagnóstico",
+        "type": "right",
+        "url": "/"
+      }
     },
     {
-      "title": "Criamos",
-      "description": "Soluções adaptáveis as suas necessidades.",
-      "anchor": "Saiba Mais"
+      "title": {
+        "name": "Criamos",
+        "font_color": "purple.950"
+      },
+      "description": {
+        "name": "Soluções adaptáveis as suas necessidades.",
+        "font_color": "gray.800"
+      },
+      "bgColor": "red.700",
+
+      "image": "/static/home/criamos.png",
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Desenvolvemos",
-      "description": "Soluções sob medida, simples e funcionais.",
-      "anchor": "Fale Conosco"
+      "title": {
+        "name": "Desenvolvemos",
+        "font_color": "blue.900"
+      },
+      "description": {
+        "name": "Soluções sob medida, simples e funcionais.",
+        "font_color": "gray.800"
+      },
+      "bgColor": "blue.800",
+      "image": "/static/home/desenvolvemos.png",
+      "anchor": {
+        "name": "Fale Conosco",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Implantamos",
-      "description": "Melhorias tecnológicas com impacto direto no resultado do seu negócio.",
-      "anchor": "Saiba Mais"
+      "title": {
+        "name": "Implantamos",
+        "font_color": "blue.900"
+      },
+      "description": {
+        "name": "Melhorias tecnológicas com impacto direto no resultado do seu negócio.",
+        "font_color": "gray.800"
+      },
+      "bgColor": "yellow.400",
+      "image": "/static/home/implantamos.png",
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "hexagonal",
+        "url": "/"
+      }
     },
     {
-      "title": "Aprimoramos",
-      "description": "O seu processo operacional com recursos vindos de software livre.",
-      "anchor": "Fale Conosco"
+      "title": {
+        "name": "Aprimoramos",
+        "font_color": "red.800"
+      },
+      "description": {
+        "name": "O seu processo operacional com recursos vindos de software livre.",
+        "font_color": "gray.50"
+      },
+      "image": "/static/home/aprimoramos.png",
+      "anchor": {
+        "name": "Fale Conosco",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Integramos",
-      "description": "Nossas soluções com sistemas já existentes.",
-      "anchor": "Saiba Mais"
+      "title": {
+        "name": "Integramos",
+        "font_color": "gray.50"
+      },
+      "description": {
+        "name": "Nossas soluções com sistemas já existentes.",
+        "font_color": "gray.50"
+      },
+      "image": "/static/home/integramos.png",
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "right",
+        "url": "/"
+      }
     },
     {
-      "title": "Treinamos",
-      "description": "Conduzimos treinamento em todas as tecnologias livres que utilizamos.",
-      "anchor": "Fale Conosco"
+      "title": {
+        "name": "Treinamos",
+        "font_color": "gray.50"
+      },
+      "description": {
+        "name": "Conduzimos treinamento em todas as tecnologias livres que utilizamos.",
+        "font_color": "gray.50"
+      },
+      "image": "/static/home/treinamos.png",
+      "anchor": {
+        "name": "Fale Conosco",
+        "type": "left",
+        "url": "/"
+      }
     },
     {
-      "title": "Mantemos",
-      "description": "Monitoramos as soluções para manter a sua integridade e resolver problemas.",
-      "anchor": "Saiba Mais"
-    }
+      "title": {
+        "name": "Mantemos",
+        "font_color": "gray.50"
+      },
+      "description": {
+        "name": "Monitoramos as soluções para manter a sua integridade e resolver problemas.",
+        "font_color": "gray.50"
+      },
+      "image": "/static/home/mantemos.png",
+      "anchor": {
+        "name": "Saiba Mais",
+        "type": "right",
+        "url": "/"
+      }
   ]
 }
