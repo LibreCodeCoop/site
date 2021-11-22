@@ -1,21 +1,36 @@
 {
-  "title": "Quem Somos",
+  "title": {
+    "name": "Quem Somos",
+    "fontColor": "gray.50"
+  },
+  "image": "/static/about-us.png",
   "sections": [
     {
-      "title": "Cooperativismo",
+      "title": {
+        "name": "Cooperativismo",
+        "fontColor": "purple.1000"
+      },
       "description": "Saiba mais sobre Cooperativismo."
     },
     {
-      "title": "Software Livre",
+      "title": {
+        "name": "Software Livre",
+        "fontColor": "blue.950"
+      },
       "description": "Saiba mais sobre Software Livre."
     },
     {
-      "title": "Nossos Cooperados",
+      "title": {
+        "name": "Nossos Cooperados",
+        "fontColor": "gray.50"
+      },
       "description": "Conheça nossos cooperados."
     },
     {
-      "title": "Futuros Cooperados",
-      "description": "",
+      "title": {
+        "name": "Futuros Cooperados",
+        "fontColor": "gray.50"
+      },
       "anchor": "Envie seu curriculo"
     }
   ]
