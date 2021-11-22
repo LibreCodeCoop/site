@@ -1,6 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
+  config: {
+    cssVarPrefix: "LibreCode",
+  },
   colors: {
     gray: {
       "900": "#181B23",
