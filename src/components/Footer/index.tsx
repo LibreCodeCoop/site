@@ -11,6 +11,7 @@ export default function Footer() {
       justify="space-around"
       align="flex-end"
       pb="10"
+      mx={2}
       zIndex="20"
       _after={{
         content: `""`,
