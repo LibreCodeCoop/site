@@ -41,19 +41,52 @@ export default function ProductsAndServices({
   }
 
   return (
-    <Flex h="100vh" color="gray.50" bg="gray.900" direction="column">
+    <Flex bg="gray.900" direction="column">
       <Head>
         <title>Produtos e Serviços</title>
       </Head>
-      <Flex bgImage={data.image}>
-        <Text>{data.title}</Text>
+      <Flex
+        h="100vh"
+        bgImage={data.image}
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        bgPos="center"
+        justify="center"
+        align="center"
+        zIndex="auto"
+        direction="column"
+      >
+        <Text
+          color="gray.50"
+          fontWeight="bold"
+          fontSize={["4xl", "7xl", "9xl"]}
+        >
+          {data.title}
+        </Text>
       </Flex>
 
       {data.sections.map((section, index) => (
-        <Flex key={`${section.title}-${index}`}>
-          <Text>{section.title}</Text>
+        <Flex
+          key={`${section.title}-${index}`}
+          h="100vh"
+          bgImage={section.image}
+          bgSize="cover"
+          bgRepeat="no-repeat"
+          bgPos="center"
+          justify="center"
+          align="center"
+          direction="column"
+        >
+          <Text
+            color="gray.50"
+            fontWeight="bold"
+            fontSize={["4xl", "7xl", "9xl"]}
+          >
+            {section.title}
+          </Text>
 
           <ButtonLink
+            font_size={25}
             text={section.anchor.name}
             url={section.anchor.url}
             type={getTypeOfButton(section.anchor.type)}
