@@ -1,4 +1,4 @@
-import { Flex, Text, Divider, Icon } from "@chakra-ui/react";
+import { Flex, Text, Divider, Link, Icon } from "@chakra-ui/react";
 import Head from "next/head";
 
 import AboutUsContent from "@/content/about-us/index.json";
@@ -23,16 +23,13 @@ interface ISections {
   url?: string;
   image: string;
 }
-
 interface IDescription {
   name: string;
   fontColor: string;
 }
-
 interface AboutUsProps {
   data: ContentProps;
 }
-
 enum SectionMarginTop {
   cooperativismo = "-50px",
   softwarelivre = "-60px",
@@ -84,7 +81,7 @@ export default function AboutUs({ data }: AboutUsProps) {
         <Text
           color={data.title.fontColor}
           fontWeight="bold"
-          fontSize={["3xl", "4xl", "6xl", "8xl", "9xl"]}
+          fontSize={["4xl", "6xl", "8xl", "9xl"]}
         >
           {data.title.name}
         </Text>
@@ -115,9 +112,10 @@ export default function AboutUs({ data }: AboutUsProps) {
           maxH="883px"
         >
           <Text
-            fontSize={["3xl", "4xl", "6xl", "8xl", "9xl"]}
+            fontSize={["4xl", "6xl", "8xl", "9xl"]}
             color={section.title.fontColor}
             fontWeight="bold"
+            mb="10"
           >
             {section.title.name}
           </Text>
@@ -129,13 +127,15 @@ export default function AboutUs({ data }: AboutUsProps) {
               font_size={23}
             />
           ) : (
-            <Text
-              fontSize={["2xl", "4xl"]}
-              fontWeight="bold"
-              color={section.title.fontColor}
-            >
-              {section.description}
-            </Text>
+            <Link variant="" to={section.url}>
+              <Text
+                fontSize={["2xl", "4xl"]}
+                fontWeight="bold"
+                color={section.title.fontColor}
+              >
+                {section.description}
+              </Text>
+            </Link>
           )}
         </Flex>
       ))}
