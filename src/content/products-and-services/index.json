@@ -6,9 +6,9 @@
       "title": "Produtos",
       "image": "/static/products.png",
       "anchor": {
-        "name": "Saiba mais"
-      },
-      "type": "right"
+        "name": "Saiba mais",
+        "type": "right"
+      }
     },
     {
       "title": "serviços",
