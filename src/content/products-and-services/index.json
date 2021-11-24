@@ -1,21 +1,23 @@
 {
   "title": "Produtos e Serviços",
-  "image": "/static/products-and-services.png",
+  "image": "/static/products-and-servicesproducts-and-services/.png",
   "sections": [
     {
       "title": "Produtos",
-      "image": "/static/products.png",
+      "image": "/static/products-and-services/products.png",
       "anchor": {
         "name": "Saiba mais",
-        "type": "right"
+        "type": "right",
+        "url": "/products"
       }
     },
     {
       "title": "serviços",
-      "image": "/static/services.png",
+      "image": "/static/products-and-services/services.png",
       "anchor": {
         "name": "Fale Conosco",
-        "type": "left"
+        "type": "left",
+        "url": "/services"
       }
     }
   ]
