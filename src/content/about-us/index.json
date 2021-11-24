@@ -10,7 +10,7 @@
         "name": "Cooperativismo",
         "fontColor": "purple.1000"
       },
-      "url": "cooperativismo",
+      "url": "/about-us/cooperativism",
       "image": "/static/about-us/cooperativismo.png",
       "description": "Saiba mais sobre Cooperativismo."
     },
@@ -20,7 +20,7 @@
         "fontColor": "blue.950"
       },
 
-      "url": "/software-livre",
+      "url": "/about-us/software-livre",
       "image": "/static/about-us/software-livre.png",
       "description": "Saiba mais sobre Software Livre."
     },
@@ -29,7 +29,7 @@
         "name": "Nossos Cooperados",
         "fontColor": "gray.50"
       },
-      "url": "/nossos-cooperados",
+      "url": "/about-us/members",
       "image": "/static/about-us/nossos-cooperados.png",
       "description": "Conheça nossos cooperados."
     },
@@ -38,12 +38,12 @@
         "name": "Futuros Cooperados",
         "fontColor": "gray.50"
       },
-      "url": "/futuros-cooperados",
+      "url": "/about-us/future-members",
       "image": "/static/about-us/futuros-cooperados.png",
       "anchor": {
         "name": "Envie seu curriculo",
         "type": "right",
-        "url": "/futuros-cooperados"
+        "url": "/about-us/future-members"
       }
     }
   ]
