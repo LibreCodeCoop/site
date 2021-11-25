@@ -27,17 +27,10 @@ export default function Cooperativism({ data }: CooperativismProps) {
   return (
     <Flex
       direction="column"
-      _after={{
-        content: `""`,
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        bgImage: data.background,
-        bgPos: "left",
-        zIndex: "-1",
-        bgSize: "cover",
-        bgRepeat: "no-repeat",
-      }}
+      bgPos="left"
+      bgSize="cover"
+      bgRepeat="no-repeat"
+      bgImage={data.background}
     >
       <Flex
         direction="column"
@@ -79,7 +72,7 @@ export default function Cooperativism({ data }: CooperativismProps) {
           my="10"
           borderTop="1px solid black"
           borderBottom="1px solid black"
-          w={{ base: "full", xl: "lg" }}
+          w={{ base: "full", xl: "3xl" }}
           py="4"
           px="2"
         >
