@@ -1,7 +1,15 @@
-import { Text, Flex, Box } from "@chakra-ui/react";
+import {
+  Text,
+  UnorderedList,
+  ListItem,
+  Flex,
+  Icon,
+  Box,
+} from "@chakra-ui/react";
 import Content from "@/content/products-and-services/produtos.json";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ButtonTypes } from "@/components/ButtonLink/types";
+import { LibreCodeDarkIcon } from "@/components/Logo/Dark";
 
 interface ProductsProps {
   data: IContent;
@@ -79,22 +87,26 @@ export default function Products({ data }: ProductsProps) {
           direction="column"
           key={`${product.title}-${index}`}
         >
+          <Icon as={LibreCodeDarkIcon} fontSize="9xl" />
           <Text color="gray.900" fontWeight="bold" fontSize="5xl">
             {product.title}
           </Text>
-          <Text fontSize="xl" color="gray.900">
+          <Text w="3xl" m="10" textAlign="left" fontSize="xl" color="gray.900">
             {product.description}
           </Text>
           {product.features && (
-            <Flex direction="column">
+            <UnorderedList>
               {product.features.map((feature, index) => (
-                <Text key={`${feature}-index`}>{feature}</Text>
+                <ListItem my="2" key={`${feature}-index`}>
+                  {feature}
+                </ListItem>
               ))}
-            </Flex>
+            </UnorderedList>
           )}
           <ButtonLink
             text={product.anchor.name}
             url={product.anchor.url}
+            my="16"
             type={getTypeButton(product.anchor.type)}
           />
         </Flex>
