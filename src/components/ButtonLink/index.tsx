@@ -6,10 +6,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { ReactNode } from "react";
 import { ButtonTypes } from "./types";
 
-interface ButtonLinkProps {
+interface ButtonLinkProps extends FlexProps {
   type: ButtonTypes;
   text: string;
   url: string;
@@ -30,11 +29,11 @@ export function ButtonLink({
   let bgImagePath;
 
   if (type === ButtonTypes.hexagonal) {
-    bgImagePath = "url('static/background-btn-hexagon.svg')";
+    bgImagePath = "/static/background-btn-hexagon.svg";
   } else if (type === ButtonTypes.left) {
-    bgImagePath = "url('static/background-btn-left.svg')";
+    bgImagePath = "/static/background-btn-left.svg";
   } else if (type === ButtonTypes.right) {
-    bgImagePath = "url('static/background-btn-right.svg')";
+    bgImagePath = "/static/background-btn-right.svg";
   }
 
   const letters = (): LettersReturn => {
