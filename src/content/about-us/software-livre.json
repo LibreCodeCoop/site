@@ -12,9 +12,10 @@
     "A liberdade de redistribuir os sistemas.",
     "A liberdade de contribuir para o aperfeiçoamento dos sistemas."
   ],
-  "sub_section": {
+  "mainSectionTitle": "Os 4 Pilares da Licença Livre",
+  "subSection": {
     "title": "Quer ir mais a fundo no Software Livre?",
     "description": "Para conhecer mais sobre Software Livre recomendamos",
-    "anchor": ""
+    "anchor": "https://www.gnu.org/licenses/licenses.pt-br.html"
   }
 }
