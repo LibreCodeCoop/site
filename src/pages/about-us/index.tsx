@@ -127,7 +127,7 @@ export default function AboutUs({ data }: AboutUsProps) {
               font_size={23}
             />
           ) : (
-            <Link variant="" to={section.url}>
+            <Link variant="" href={section.url}>
               <Text
                 fontSize={["2xl", "4xl"]}
                 fontWeight="bold"
