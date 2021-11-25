@@ -15,13 +15,21 @@
         "Criar e gerencia de grupos com diferentes perfis de acesso",
         "Segurança"
       ],
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "type": "",
+        "name": "Saiba Mais",
+        "url": "/"
+      }
     },
     {
       "title": "OJS",
       "description": "O OJS(Open Journal Systems) é um software para gerenciamento de periódicos acadêmicos. O sistema possui todas as funcionalidades necessárias para o fluxo de publicação de uma revista cientifica desde a submissão de artigos, passando por sua revisão, aceite, diagramação e publicação contemplando também todos os atores dentro deste fluxo como autores, editores, avaliadores e diagramadores. O sistema é utilizado por instituições de pesquisa em todo o mundo e é atualizado periodicamente por sua comunidade de desenvolvedores com novas funcionalidades e melhorias.",
       "features": [],
-      "anchor": "Fale Conosco"
+      "anchor": {
+        "type": "",
+        "name": "Fale Conosco",
+        "url": "/"
+      }
     },
     {
       "title": "Mautic",
@@ -35,7 +43,11 @@
         "Editor de e-mail drag drop(arrastar e soltar), landing pages, formulários de contato e integrados ao site, mídias sociais, sistemas de CRMs e muitos outros",
         "Gerador de relatorios de audiencia no site, camapnhas, e-mails e relatórios personalizados permitingo tomada de decisão baseada em informações."
       ],
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "type": "",
+        "name": "Saiba Mais",
+        "url": "/"
+      }
     }
   ],
   "more_services": [
