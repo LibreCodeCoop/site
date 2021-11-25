@@ -1,6 +1,9 @@
 {
   "title": "Serviços",
+  "image": "/static/products-and-services/services.png",
   "description": "Nossos produtos foram criados de forma cooperativista, baseado no livre e com o pensamento em você e o seu negócio.",
+  "background": "/static/products-and-services/background.png",
+  "callServices": "Conheça algumas de nossas bases Livres",
   "services": [
     {
       "title": "Nextcloud",
