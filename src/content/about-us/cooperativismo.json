@@ -1,11 +1,12 @@
 {
   "title": {
     "name": "Cooperativismo",
-    "color": "purple.1000"
+    "color": "darkBlue.100"
   },
   "image": "/static/about-us/cooperativismo.png",
   "background": "/static/background.png",
   "description": "Acreditamos em trabalho cooperativo e democrático e nos esforçamos para sempre manter o crescimento coletivo. Servimos nossos clientes, membros e o movimento cooperativista e seus princípios.",
+  "mainSectionTitle": "Os 7 Princípios do Cooperativismo",
   "principles": [
     "Adesão Livre e Voluntária",
     "Gestão democrática",
