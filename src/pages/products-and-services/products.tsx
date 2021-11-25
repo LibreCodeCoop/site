@@ -72,7 +72,10 @@ export default function Products({ data }: ProductsProps) {
           </Flex>
         </Box>
         <Box m="10">
-          <Text w="4xl" fontSize="2xl">
+          <Text
+            w={{ base: "full", xl: "4xl" }}
+            fontSize={{ base: "xl", xl: "2xl" }}
+          >
             {data.description}
           </Text>
         </Box>
@@ -91,7 +94,13 @@ export default function Products({ data }: ProductsProps) {
           <Text color="gray.900" fontWeight="bold" fontSize="5xl">
             {product.title}
           </Text>
-          <Text w="3xl" m="10" textAlign="left" fontSize="xl" color="gray.900">
+          <Text
+            w={{ base: "full", xl: "3xl" }}
+            m="10"
+            textAlign="left"
+            fontSize="xl"
+            color="gray.900"
+          >
             {product.description}
           </Text>
           {product.features && (
