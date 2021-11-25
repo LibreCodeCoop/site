@@ -22,6 +22,9 @@ export const theme = extendTheme({
       "900": "#0C0255",
       "800": "#050055",
     },
+    darkBlue: {
+      "100": "#1c1f3d",
+    },
     red: {
       "900": "#ff0000",
       "800": "#E5332A",
