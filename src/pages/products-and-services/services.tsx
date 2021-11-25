@@ -124,6 +124,7 @@ export default function Services({ data }: ServicesProps) {
           )}
 
           <ButtonLink
+            my="8"
             text={service.anchor.name}
             url={service.anchor.url}
             type={ReturnTypeButtonByString(service.anchor.type)}
