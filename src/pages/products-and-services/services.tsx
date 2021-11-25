@@ -19,6 +19,8 @@ interface IContent {
   callServices: string;
   description: string;
   services: IServices[];
+  callMoreServices: string;
+  moreServices: IServices[];
 }
 
 interface IServices {
@@ -102,6 +104,43 @@ export default function Services({ data }: ServicesProps) {
           <Icon as={LibreCodeDarkIcon} fontSize="5xl" />
           <Text>{service.title}</Text>
           <Text>{service.description}</Text>
+          {service.features && (
+            <UnorderedList>
+              {service.features.map((feature, index) => (
+                <ListItem my="2" key={`${feature}-${index}`}>
+                  {feature}
+                </ListItem>
+              ))}
+            </UnorderedList>
+          )}
+        </Flex>
+      ))}
+      <Text
+        bg="gray.50"
+        w="full"
+        p="10"
+        textAlign="center"
+        fontWeight="bold"
+        fontSize="3xl"
+      >
+        {data.callMoreServices}
+      </Text>
+      {data.moreServices.map((service, index) => (
+        <Flex
+          justify="center"
+          align="center"
+          bg="gray.50"
+          m="10"
+          p="14"
+          w="full"
+          direction="column"
+          key={`${service.title}-${index}`}
+        >
+          <Icon as={LibreCodeDarkIcon} fontSize="5xl" />
+          <Text fontWeight="bold" my="4" fontSize={["xl", "2xl"]}>
+            {service.title}
+          </Text>
+          <Text m="2">{service.description}</Text>
           {service.features && (
             <UnorderedList>
               {service.features.map((feature, index) => (
