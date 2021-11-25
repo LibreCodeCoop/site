@@ -8,6 +8,8 @@ import {
 } from "@chakra-ui/react";
 import Content from "@/content/products-and-services/services.json";
 import { LibreCodeDarkIcon } from "@/components/Logo/Dark";
+import { ButtonLink } from "@/components/ButtonLink";
+import { ReturnTypeButtonByString } from "@/components/ButtonLink/helper";
 
 interface ServicesProps {
   data: IContent;
@@ -102,8 +104,15 @@ export default function Services({ data }: ServicesProps) {
           key={`${service.title}-${index}`}
         >
           <Icon as={LibreCodeDarkIcon} fontSize="5xl" />
-          <Text>{service.title}</Text>
-          <Text>{service.description}</Text>
+          <Text
+            textAlign="justify"
+            fontSize={["xl", "3xl"]}
+            fontWeight="bold"
+            my="4"
+          >
+            {service.title}
+          </Text>
+          <Text my="2">{service.description}</Text>
           {service.features && (
             <UnorderedList>
               {service.features.map((feature, index) => (
@@ -113,6 +122,12 @@ export default function Services({ data }: ServicesProps) {
               ))}
             </UnorderedList>
           )}
+
+          <ButtonLink
+            text={service.anchor.name}
+            url={service.anchor.url}
+            type={ReturnTypeButtonByString(service.anchor.type)}
+          />
         </Flex>
       ))}
       <Text
@@ -140,7 +155,9 @@ export default function Services({ data }: ServicesProps) {
           <Text fontWeight="bold" my="4" fontSize={["xl", "2xl"]}>
             {service.title}
           </Text>
-          <Text m="2">{service.description}</Text>
+          <Text textAlign="justify" m="2">
+            {service.description}
+          </Text>
           {service.features && (
             <UnorderedList>
               {service.features.map((feature, index) => (
