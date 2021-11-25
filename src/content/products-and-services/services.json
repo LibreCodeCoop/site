@@ -19,7 +19,7 @@
         "Segurança"
       ],
       "anchor": {
-        "type": "",
+        "type": "right",
         "name": "Saiba Mais",
         "url": "/"
       }
@@ -29,7 +29,7 @@
       "description": "O OJS(Open Journal Systems) é um software para gerenciamento de periódicos acadêmicos. O sistema possui todas as funcionalidades necessárias para o fluxo de publicação de uma revista cientifica desde a submissão de artigos, passando por sua revisão, aceite, diagramação e publicação contemplando também todos os atores dentro deste fluxo como autores, editores, avaliadores e diagramadores. O sistema é utilizado por instituições de pesquisa em todo o mundo e é atualizado periodicamente por sua comunidade de desenvolvedores com novas funcionalidades e melhorias.",
       "features": [],
       "anchor": {
-        "type": "",
+        "type": "left",
         "name": "Fale Conosco",
         "url": "/"
       }
@@ -47,7 +47,7 @@
         "Gerador de relatorios de audiencia no site, camapnhas, e-mails e relatórios personalizados permitingo tomada de decisão baseada em informações."
       ],
       "anchor": {
-        "type": "",
+        "type": "right",
         "name": "Saiba Mais",
         "url": "/"
       }
