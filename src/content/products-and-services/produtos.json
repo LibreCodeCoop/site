@@ -1,12 +1,18 @@
 {
   "title": "Produtos",
+  "image": "/static/products-and-services/products.png",
+  "background": "/static/products-and-services/background.png",
   "description": "Nossos produtos foram criados de forma cooperativista, baseado no livre e com o pensamento em você e o seu negócio.",
   "products": [
     {
       "title": "LibreSign",
       "description": "O LibreSign é o assinador digital da LibreCode. O sistema utiliza PKI como infraestrutura de assinatura (a mesma utilizada pelo ICP Brasil Um sistema totalmente seguro que garante a integridade na assinatura de documentos. Por ser um sistema de código aberto, permite auuditoria total do código garantindo que os dados dos usuários não sejam vazados ou utilizados para outros fins.",
       "features": [],
-      "anchor": "Saiba Mais"
+      "anchor": {
+        "type": "left",
+        "name": "Saiba Mais",
+        "url": "/"
+      }
     },
     {
       "title": "Tavola",
@@ -21,7 +27,11 @@
         "Suporte técnico imediato durante a assembleia",
         "Gravação da assembleia"
       ],
-      "anchor": "Fale conosco"
+      "anchor": {
+        "type": "right",
+        "name": "Fale conosco",
+        "url": "/"
+      }
     }
   ]
 }
