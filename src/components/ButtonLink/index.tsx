@@ -32,9 +32,9 @@ export function ButtonLink({
   if (type === ButtonTypes.hexagonal) {
     bgImagePath = "/static/background-btn-hexagon.svg";
   } else if (type === ButtonTypes.left) {
-    bgImagePath = "static/background-btn-left.svg";
+    bgImagePath = "/static/background-btn-left.svg";
   } else if (type === ButtonTypes.right) {
-    bgImagePath = "static/background-btn-right.svg";
+    bgImagePath = "/static/background-btn-right.svg";
   }
 
   const letters = (): LettersReturn => {
