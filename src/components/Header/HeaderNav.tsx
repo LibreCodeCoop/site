@@ -20,7 +20,7 @@ export function HeaderNav({ ...rest }) {
     >
       <HeaderLink title="Home" url="/" />
       <HeaderLink title="Quem Somos" url="/about-us" />
-      <HeaderLink title="Produtos e Serviços" url="products-and-services" />
+      <HeaderLink title="Produtos e Serviços" url="/products-and-services" />
       <HeaderLink title="Blog" url="/blog" />
       <HeaderLink title="Eventos" url="/events" />
       <HeaderLink title="Apoie" url="/apoie" />
