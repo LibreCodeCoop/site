@@ -53,7 +53,8 @@
       }
     }
   ],
-  "more_services": [
+  "callMoreServices": "Conheça ainda mais Serviços",
+  "moreServices": [
     {
       "title": "Consultoria em tecnologias e projetos",
       "description": "",
