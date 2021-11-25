@@ -1,5 +1,10 @@
 {
-  "title": "Software Livre",
+  "title": {
+    "name": "Software Livre",
+    "color": "darkBlue.100"
+  },
+  "image": "/static/about-us/software-livre.png",
+  "background": "/static/background.png",
   "description": "Trabalhamos juntos, focados no cooperar mas extremamente comprometidos com o livre. Estamos convencidos de que compartilhar código contribui para o bem comum, e melhor, sistemas livres estão em constante atualização e melhoria, deste modo, são sistemas mais eficientes e confiáveis já que são auditados coletivamente.",
   "pilars": [
     "A liberdade de utilizá-los para qualquer fim.",
