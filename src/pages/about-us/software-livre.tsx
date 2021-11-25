@@ -1,4 +1,4 @@
-import { Text } from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 import Content from "@/content/about-us/software-livre.json";
 
 interface SoftwareLivreProps {
@@ -6,10 +6,16 @@ interface SoftwareLivreProps {
 }
 
 interface IContent {
-  title: string;
+  title: ITitle;
   description: string;
   pilars: string[];
   subSection: ISubSection;
+  image: string;
+  background: string;
+}
+interface ITitle {
+  name: string;
+  color: string;
 }
 
 interface ISubSection {
