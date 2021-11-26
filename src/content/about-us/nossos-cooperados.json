@@ -1,40 +1,60 @@
 {
   "title": "Nossos Cooperados",
+  "image": "/static/about-us/nossos-cooperados.png",
+  "background": "/static/background.png",
   "description": "Aqui estão aqueles que trabalham cooperativamente com sistemas livres e para o seu sucesso.",
   "cooperados": [
     {
       "name": "Daiane Alves",
-      "avatar": "assets/members/daiane.png",
+      "avatar": {
+        "useGravatarApi": false,
+        "localPath": "assets/members/daiane.png"
+      },
       "position": "Administrativo",
       "email": "daiane@librecode.coop"
     },
     {
       "name": "Livia Gouvea",
-      "avatar": "assets/members/livia.jpg",
+      "avatar": {
+        "useGravatarApi": false,
+        "localPath": "assets/members/livia.jpg"
+      },
       "position": "Desenvolvedora BackEnd",
       "email": "livia@librecode.coop"
     },
     {
       "name": "Vitor Mattos",
-      "avatar": "assets/members/vitor.png",
+      "avatar": {
+        "useGravatarApi": false,
+        "localPath": "assets/members/vitor.png"
+      },
       "position": "Desenvolvedor BackEnd",
       "email": "vitor@librecode.coop"
     },
     {
       "name": "Vinicios Gomes",
-      "avatar": "assets/members/vinicios.png",
+      "avatar": {
+        "useGravatarApi": true,
+        "localPath": "assets/members/vinicios.png"
+      },
       "position": "Desenvolvedor FrontEnd",
       "email": "vinicios@librecode.coop"
     },
     {
       "name": "Antonio Coelho",
-      "avatar": "assets/members/antonio.png",
+      "avatar": {
+        "useGravatarApi": false,
+        "localPath": "assets/members/antonio.png"
+      },
       "position": "Comercial",
       "email": "antonio@librecode.coop"
     },
     {
       "name": "Fabricio Machado",
-      "avatar": "assets/members/fabricio.png",
+      "avatar": {
+        "useGravatarApi": false,
+        "localPath": "assets/members/fabricio.png"
+      },
       "position": "DevOps",
       "email": "fabricio@librecode.coop"
     }
