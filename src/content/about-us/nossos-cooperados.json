@@ -8,7 +8,7 @@
       "name": "Daiane Alves",
       "avatar": {
         "useGravatarApi": false,
-        "localPath": "assets/members/daiane.png"
+        "localPath": "/static/about-us/members/daiane.png"
       },
       "position": "Administrativo",
       "email": "daiane@librecode.coop"
@@ -17,7 +17,7 @@
       "name": "Livia Gouvea",
       "avatar": {
         "useGravatarApi": false,
-        "localPath": "assets/members/livia.jpg"
+        "localPath": "/static/about-us/members/livia.jpg"
       },
       "position": "Desenvolvedora BackEnd",
       "email": "livia@librecode.coop"
@@ -25,8 +25,8 @@
     {
       "name": "Vitor Mattos",
       "avatar": {
-        "useGravatarApi": false,
-        "localPath": "assets/members/vitor.png"
+        "useGravatarApi": true,
+        "localPath": "/static/about-us/members/vitor.png"
       },
       "position": "Desenvolvedor BackEnd",
       "email": "vitor@librecode.coop"
@@ -35,7 +35,7 @@
       "name": "Vinicios Gomes",
       "avatar": {
         "useGravatarApi": true,
-        "localPath": "assets/members/vinicios.png"
+        "localPath": ""
       },
       "position": "Desenvolvedor FrontEnd",
       "email": "vinicios@librecode.coop"
@@ -43,8 +43,8 @@
     {
       "name": "Antonio Coelho",
       "avatar": {
-        "useGravatarApi": false,
-        "localPath": "assets/members/antonio.png"
+        "useGravatarApi": true,
+        "localPath": ""
       },
       "position": "Comercial",
       "email": "antonio@librecode.coop"
@@ -52,8 +52,8 @@
     {
       "name": "Fabricio Machado",
       "avatar": {
-        "useGravatarApi": false,
-        "localPath": "assets/members/fabricio.png"
+        "useGravatarApi": true,
+        "localPath": ""
       },
       "position": "DevOps",
       "email": "fabricio@librecode.coop"
