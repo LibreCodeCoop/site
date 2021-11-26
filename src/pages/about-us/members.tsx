@@ -1,6 +1,7 @@
 import { Text, Flex, UnorderedList, ListItem, Avatar } from "@chakra-ui/react";
 import { MD5 } from "crypto-js";
 import Content from "@/content/about-us/nossos-cooperados.json";
+import { MemberCard } from "@/components/MemberCard";
 
 interface MembersProps {
   data: IContent;
@@ -24,10 +25,6 @@ interface IAvatar {
 }
 
 export default function Members({ data }: MembersProps) {
-  function gravatarUrl(email: string) {
-    const encodedEmail = MD5(email.trim()).toString();
-    return `https://gravatar.com/avatar/${encodedEmail}`;
-  }
   return (
     <Flex direction="column">
       <Flex>
@@ -37,17 +34,13 @@ export default function Members({ data }: MembersProps) {
       <UnorderedList>
         {data.cooperados.map((cooperado, index) => (
           <ListItem key={`${cooperado.name}-${index}`}>
-            <Avatar
+            <MemberCard
               name={cooperado.name}
-              src={
-                cooperado.avatar.useGravatarApi
-                  ? gravatarUrl(cooperado.email)
-                  : cooperado.avatar.localPath
-              }
+              avatar={cooperado.avatar}
+              jobPosition={cooperado.position}
+              email={cooperado.email}
+              key={`${cooperado.name}-${index}`}
             />
-            <Text>{cooperado.name}</Text>
-            <Text>{cooperado.position}</Text>
-            <Text>{cooperado.email}</Text>
           </ListItem>
         ))}
       </UnorderedList>
