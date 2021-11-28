@@ -59,20 +59,35 @@ export default function Members({ data }: MembersProps) {
           {data.title}
         </Text>
       </Flex>
-      <Text>{data.description}</Text>
-      <UnorderedList>
+      <Text
+        alignSelf="center"
+        m="10"
+        p="4"
+        fontWeight="normal"
+        fontSize="2xl"
+        textAlign="justify"
+        lineHeight="10"
+        color="gray.700"
+      >
+        {data.description}
+      </Text>
+      <Flex
+        justify="center"
+        align="center"
+        mx="20"
+        direction="row"
+        flexWrap="wrap"
+      >
         {data.cooperados.map((cooperado, index) => (
-          <ListItem key={`${cooperado.name}-${index}`}>
-            <MemberCard
-              name={cooperado.name}
-              avatar={cooperado.avatar}
-              jobPosition={cooperado.position}
-              email={cooperado.email}
-              key={`${cooperado.name}-${index}`}
-            />
-          </ListItem>
+          <MemberCard
+            key={`${cooperado.name}-${index}`}
+            name={cooperado.name}
+            avatar={cooperado.avatar}
+            jobPosition={cooperado.position}
+            email={cooperado.email}
+          />
         ))}
-      </UnorderedList>
+      </Flex>
     </Flex>
   );
 }
