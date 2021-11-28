@@ -26,9 +26,38 @@ interface IAvatar {
 
 export default function Members({ data }: MembersProps) {
   return (
-    <Flex direction="column">
-      <Flex>
-        <Text>{data.title}</Text>
+    <Flex
+      direction="column"
+      _before={{
+        content: `""`,
+        position: "absolute",
+        width: "100%",
+        height: "80%",
+        bgImage: data.background,
+        bgPos: "left",
+        zIndex: "-1",
+        transform: "scaleX(-1)",
+        bgSize: "cover",
+        bgRepeat: "no-repeat",
+      }}
+    >
+      <Flex
+        direction="column"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        justify="center"
+        align="center"
+        h="400px"
+        bgPos="bottom"
+        bgImage={data.image}
+      >
+        <Text
+          color="gray.50"
+          fontSize={["3xl", "5xl", "7xl"]}
+          fontWeight="bold"
+        >
+          {data.title}
+        </Text>
       </Flex>
       <Text>{data.description}</Text>
       <UnorderedList>
