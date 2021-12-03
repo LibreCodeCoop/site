@@ -1,0 +1,21 @@
+{
+  "header": "/static/about-us/futuros-cooperados.png",
+  "title": "Futuros Cooperados",
+  "background": "/static/background.png",
+  "description": "Adoramos novos projetos, parcerias e cooperados.",
+  "callToOpenPosition": "Conheça as vagas em aberto:",
+  "jobs": [
+    {
+      "title": "Desenvolvedor Frontend",
+      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-frontend.md"
+    },
+    {
+      "title": "Desenvolvedor Backend",
+      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-backend.md"
+    },
+    {
+      "title": "Infraestrutura",
+      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-infraestrutura.md"
+    }
+  ]
+}
