@@ -2,8 +2,7 @@ import { Text, Flex, Box } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 
 import Content from "@/content/about-us/future-members.json";
-import { getJobByNameOfTheMarkdown } from "@/services/githubAPIService";
-import { decodeBase64 } from "@/utils/decodeBase64";
+import { OportunitiesCard } from "@/components/OportunitiesCard";
 
 interface FutureMembersProps {
   data: IContent;
@@ -50,13 +49,28 @@ export default function FutureMembers({ data }: FutureMembersProps) {
           {data.title}
         </Text>
       </Flex>
-      <Flex direction="column" my="10" mx="14" w="full" justify="center">
+      <Flex
+        direction="column"
+        my="10"
+        px={{ base: "4", md: "24" }}
+        w="full"
+        justify="center"
+      >
         <Text fontWeight="light" fontSize={["2xl", "3xl"]} textAlign="left">
           {data.description}
         </Text>
         <Text fontWeight="light" fontSize={["2xl", "3xl"]} textAlign="left">
           {data.callToOpenPosition}
         </Text>
+      </Flex>
+      <Flex direction="column">
+        {data.jobs.map((job, index) => (
+          <OportunitiesCard
+            ml={{ base: "2", md: "24" }}
+            title={job.title}
+            key={`${job.title}-${index}`}
+          />
+        ))}
       </Flex>
     </Flex>
   );
