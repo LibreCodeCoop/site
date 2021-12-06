@@ -68,6 +68,7 @@ export default function FutureMembers({ data }: FutureMembersProps) {
           <OportunitiesCard
             ml={{ base: "2", md: "24" }}
             title={job.title}
+            url={job.url}
             key={`${job.title}-${index}`}
           />
         ))}
