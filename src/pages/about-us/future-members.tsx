@@ -8,7 +8,7 @@ interface FutureMembersProps {
   data: IContent;
 }
 
-interface IContent {
+export interface IContent {
   header: string;
   title: string;
   description?: string;
@@ -19,6 +19,7 @@ interface IContent {
 interface IJob {
   title: string;
   url: string;
+  githubSha: string;
 }
 
 export default function FutureMembers({ data }: FutureMembersProps) {
