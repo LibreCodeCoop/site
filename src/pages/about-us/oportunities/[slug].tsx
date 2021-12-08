@@ -71,16 +71,6 @@ export default function Oportunitie({ data }: OportunitieProps) {
           {data.content.callToOpenPosition}
         </Text>
         <Flex direction="column">
-          {/*
-          <Text fontWeight="medium" fontSize={{ base: "xl", md: "3xl" }}>
-            {metadata[0].text}
-          </Text>
-          <UnorderedList>
-            {metadata[1].items.map((item) => (
-              <ListItem key={item.raw}>{item.text}</ListItem>
-            ))}
-          </UnorderedList>
-            */}
           {meta.map((metadataJob) => {
             switch (metadataJob.type) {
               case "heading":
@@ -94,10 +84,11 @@ export default function Oportunitie({ data }: OportunitieProps) {
                   </Text>
                 );
               case "list":
+                const items = metadataJob.items;
                 return (
-                  <UnorderedList>
-                    {metadataJob.items.map((item) => (
-                      <ListItem key={item.raw}>{item.text}</ListItem>
+                  <UnorderedList key={metadataJob.raw}>
+                    {items.map((item) => (
+                      <Text key={item.raw}>{item.text}</Text>
                     ))}
                   </UnorderedList>
                 );
