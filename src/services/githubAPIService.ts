@@ -19,7 +19,7 @@ interface IJob {
   url: string;
 }
 
-interface Blob {
+export interface Blob {
   content: string;
   encoding: string;
   node_id: string;

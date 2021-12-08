@@ -7,15 +7,18 @@
   "jobs": [
     {
       "title": "Desenvolvedor Frontend",
-      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-frontend.md"
+      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-frontend.md",
+      "githubSha": "09a42b76756f6841936b6d5ae90f5526bfe3847a"
     },
     {
       "title": "Desenvolvedor Backend",
-      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-backend.md"
+      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-backend.md",
+      "githubSha": "e20903f621032c2757887837dadddc04cd2010ab"
     },
     {
       "title": "Infraestrutura",
-      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-infraestrutura.md"
+      "url": "https://github.com/LibreCodeCoop/jobs/blob/main/docs/requisitos-infraestrutura.md",
+      "githubSha": "ba0d1d9c82428837f5ba95b310f2cbf985fc8a87"
     }
   ]
 }
