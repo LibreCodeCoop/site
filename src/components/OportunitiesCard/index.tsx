@@ -20,8 +20,8 @@ export function OportunitiesCard({
     <Flex {...rest} direction="row" p="4">
       <LogoLibreCode />
       <Flex color="darkBlue.100" direction="column" my="4" ml="6">
-        <Link href={"/about-us/oportunities/" + title} passHref>
-          <ChakraLink>
+        <Link href={url} passHref>
+          <ChakraLink target="_blank">
             <Text fontWeight="bold">{title}</Text>
           </ChakraLink>
         </Link>
