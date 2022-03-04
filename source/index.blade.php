@@ -16,11 +16,11 @@
         <ul>
           <li><a href="#about">Quem somos</a></li>
           <li><a href="#why-us">Soluções</a></li>
-          <li><a href="#testimonials">Produtos</a></li>
-          <li><a href="#services">Tecnologias</a></li>
-          <li><a href="#team">Equipe</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#clients">Clientes</a></li>
+          <!-- <li><a href="#services">Tecnologias</a></li> -->
+          <!-- <li><a href="#team">Equipe</a></li> -->
           <li><a href="#apoie">Apoie</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -32,18 +32,12 @@
   ============================-->
   <section id="intro" class="clearfix">
     <div class="container">
-      <div class="intro-info">
-          <h2>Soluções personalizadas<br> 
-          com <span> tecnologias livres! </span> </h2>
-          <br><br>
-          <h5>Especialistas em desenvolvimento web, aplicativos e hospedagem.<br>
-          Empresa autogestionária e igualitária.</h5>
-          
-
+        <div class="intro-info">
+           <h2>Tecnologia com <br> <span>transparência</span> e <span>liberdade</span></h2>
+           <p>Somos uma cooperativa digital de especialistas em desenvolvimento de software livre</p>
       </div>
-
-    </div>
-  </section><!-- #intro -->
+  </div>
+</section>
 
   <main id="main">
 
@@ -52,28 +46,18 @@
     ============================-->
     <section id="about">
       <div class="container">
-
-        <header class="section-header">
-          <h3>Quem somos?</h3>
-
-          <p>Somos uma cooperativa de trabalho que desenvolve soluções em software livre, formada por profissionais com ampla experiência de mercado e reconhecidos nacionalmente em eventos de software livre.</p>
-        </header>
-
         <div class="row about-container">
-
-          <div class="col-lg-12 content order-lg-1 order-2">
-
-            <div class="icon-box wow fadeInUp">
+            <div class="col-lg-6 icon-box wow fadeInUp">
               <div class="icon">
                 <img src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="">
               </div>
               <h4 class="title"><a href="">Por que uma cooperativa?</a></h4>
-              <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente com um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade e produtividade e a economia de escala nos serviços.
+              <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente dentro de um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade, produtividade e a economia de escala nos serviços.
                 <br>
                 O movimento cooperativista trabalha para o desenvolvimento sustentável da comunidade na qual está inserido.</p>
             </div>
 
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-6 icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon">
                 <i>
                   <img src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="">
@@ -83,15 +67,56 @@
               <p class="description">
                 Um projeto de licença livre é construído colaborativamente, de modo que está em constante crescimento e sendo constantemente testado e corrigido em suas atualizações.
                 Por ser aberto, o código de um SL é 100% auditável, permitindo identificar a existência de qualquer erro ou falha de segurança em seu interior que possa deixar vulnerável os dados trafegados no sistema. 
-                Por isso, um SL permite uma política de segurança de dados mais transparente do que um software proprietário.
+                Por isso, um SL permite uma política de segurança de dados muito mais transparente do que um software proprietário.
               </p>
             </div>
-          </div>
 
         </div>
       </div>
     </section><!-- #about -->
+<!--     <section id="intro" class="clearfix">
+    <div class="container">
+      <div id="testimonials" class="intro-info">
+        <div class="owl-carousel testimonials-carousel wow fadeInUp">
+          <div class="testimonial-item">
+            <h2>
+              Gestão de documentos em nuvem
+            </h2>
+            <img src="{{ $page->baseUrl }}assets/images/solucoes/nextcloud-150.png" class="testimonial-img" alt="">
+            <br>
+            <a href="#" class="readmore">Saiba mais</a>
+          </div>
 
+          <div class="testimonial-item">
+            <h2>
+              Assinatura digital de documentos
+            </h2>
+            <img src="{{ $page->baseUrl }}assets/images/solucoes/libresign-150.png" class="testimonial-img" alt="">
+            <br><br>
+            <a href="#" class="readmore">Saiba mais</a>
+          </div>
+
+          <div class="testimonial-item">
+            <h2>
+              Tecnologias auditáveisde a LGPD
+            </h2>
+            <img src="{{ $page->baseUrl }}assets/images/cadeado.png" class="testimonial-img" alt="">
+            <br>
+            <a href="#" class="readmore">Saiba mais</a>
+          </div>
+
+          <div class="testimonial-item">
+            <h2>
+              Empresa autogestionária e igualitária.
+            </h2>
+            <img src="{{ $page->baseUrl }}assets/images/coop-150.png" class="testimonial-img" alt="">
+            <br>
+            <a href="#" class="readmore">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
     <!--==========================
       Why Us Section
     ============================-->
@@ -104,162 +129,43 @@
 
         <div class="row row-eq-height justify-content-center">
 
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp">
               <i>
-                <ion-icon name="school-outline"></ion-icon>
+                <ion-icon name="cloud-outline"></ion-icon>
                 <br>
-                Educação a distância
+                Gestão de documentos em nuvem <br> exclusiva
               </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}ead" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="folder-open-outline"></ion-icon>
-                  <br>
-                  Gestão de documentos
-                </i>
               <div class="card-body">
                 <a href="{{ $page->baseUrl }}nextcloud" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp">
                 <i>
-                  <ion-icon name="globe-outline"></ion-icon>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
                   <br>
-                  Web scrapping
+                  Assinatura eletrônica de documentos ilimitada
                 </i>
               <div class="card-body">
-                <a href="{{ $page->baseUrl }}webscraping" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}libresign" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
-
         </div>
-
+        <br>
         <div class="row row-eq-height justify-content-center">
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-              <i>
-                <ion-icon name="fitness-outline"></ion-icon>
-                <br>
-                Telemedicina
-              </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}telemedicina" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp">
                 <i>
-                  <ion-icon name="analytics-outline"></ion-icon>
+                  <ion-icon name="videocam"></ion-icon>
                   <br>
-                  Web Analytics
+                  Assembleia digital
                 </i>
               <div class="card-body">
-                <a href="{{ $page->baseUrl }}web-analitics" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="grid-outline"></ion-icon>
-                  <br>
-                  Aplicativos
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}aplicativos" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="desktop-outline"></ion-icon>
-                  <br>
-                  Sites
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}sites" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="layers-outline"></ion-icon>
-                  <br>
-                  ERP
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}erp" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="people-outline"></ion-icon>
-                  <br>
-                  CRM
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}crm" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="wallet-outline"></ion-icon>
-                  <br>
-                  Comércio eletrônico
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}comercio-eletronico" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="file-tray-full-outline"></ion-icon>
-                  <br>
-                  Gestão acadêmica
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}gestao-academica" class="readmore">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="videocam-outline"></ion-icon>
-                  <br>
-                  Assembléias on-line
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}assembleias-online" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}tavola" class="readmore">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -269,7 +175,7 @@
 
     <!--==========================
       Clients Section
-    ============================-->
+
     <section id="testimonials" class="section-bg">
       <div class="container">
 
@@ -338,12 +244,12 @@
 
 
       </div>
-    </section><!-- #testimonials -->
+    </section> #testimonials -->
 
     <!--==========================
       Services Section
     ============================-->
-    <section id="services" class="section-bg">
+<!--     <section id="services" class="section-bg">
       <div class="container">
 
         <header class="section-header">
@@ -393,11 +299,11 @@
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section> #services --> 
 
     <!--==========================
       Team Section
-    ============================-->
+    
     <section id="team">
       <div class="container">
         <div class="section-header">
@@ -471,20 +377,20 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="section-bg">
+    <section id="clients">
 
       <div class="container">
 
         <div class="section-header">
           <h3>Clientes</h3>
-          <p>Nos orgulhamos pelos cases de sucesso e por proporcionar excelentes resultados aos nossos parceiros. Confira alguns deles!</p>
+          <p>Nossa reconhecida expertise e a singularidade de nosso modelo de negócio é creditada por diversos atores dos setores público, privado e do terceiro setor.</p>
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-1.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/prefeitura-nikiti.png" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -520,13 +426,13 @@
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-7.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="">
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-8.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -534,12 +440,12 @@
 
       </div>
 
-    </section>
+    </section> 
 
     <!--==========================
       Apoie Section
     ============================-->
-    <section id="apoie" class="clearfix">
+    <section id="apoie" class="section-bg">
       <div class="container">
         <div class="section-header">
           <h3>Apoie</h3>
@@ -547,20 +453,7 @@
             Existem diversas formas de você nos apioar:</p>
         </div>
         <div class="row apoie-wrap clearfix wow fadeInUp">
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="apoie-logo">
-                <img src="{{ $page->baseUrl }}assets/images/apoie/rysolv.png" class="img-fluid apoie" alt="">
-            </div>
-            <p>
-              Rysolv é uma plataforma de financiamento coletivo para desenvolvimento de projetos de código aberto. 
-              Lá você vai encontrar todas as funcionalidades pendentes de serem desenvolvidas em nossos produtos. 
-              Você poderá contribuir com algum valor para o desenvolvimento delas ou contribuir desenvolvendo a solução.
-            </p>
-            <a href="https://www.rysolv.com/repos/detail/b9e2ce14-b53c-43df-84b6-632bb2daec7b" target=“_blank”>
-              Ir para Rysolv
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-xs-6">
+          <div class="col-lg-6 col-md-6 col-xs-6">
             <div class="apoie-logo">
               <img src="{{ $page->baseUrl }}assets/images/apoie/patreon.png" class="img-fluid apoie" alt="">
             </div>
@@ -572,7 +465,7 @@
               Ir para Patreon
             </a>
           </div>
-          <div class="col-lg-4 col-md-4 col-xs-6">
+          <div class="col-lg-6 col-md-6 col-xs-6">
             <div class="apoie-logo">
               <img src="{{ $page->baseUrl }}assets/images/apoie/bountysource.svg" class="img-fluid apoie" alt="">
             </div>

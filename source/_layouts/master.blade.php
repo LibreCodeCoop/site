@@ -9,7 +9,7 @@
   <meta name="description" content="{{ $page->description }}">
 
   <!-- Favicons -->
-  <link href="assets/images/favicon.png" rel="icon">
+  <link href="assets/images/favico.png" rel="icon">
   <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
