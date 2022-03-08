@@ -1,92 +1,76 @@
 @extends('_layouts.master')
 
 @section('body')
+<header id="header" class="fixed-top">
+  <div class="container">
+    <div class="logo float-left">
+      <a href="/" class="scrollto"><img src="../assets/images/logo.png" alt="" class="img-fluid"></a>
+    </div>
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li><a href="/">Voltar</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+  </div>
+</header><!-- #header -->
 
 <section id="intro" class="clearfix">
     <div class="container">
       <div class="intro-info">
-          <h2>NextCloud</h2>   
+          <h3>Gestão de documentos em <span>nuvem exclusiva</span></h3>
+          <p>Muito mais do que uma nuvem, um hub de aplicações com tudo necessário para a gestão</p>
       </div>
     </div>    
-  </section><!-- #intro -->
+</section>
 
-  <main id="main">
-
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about" class="clearfix">
-      <div class="container">
-
-        <div class="row about-container">
-
-          <div class="col-lg-12 content order-lg-1 order-2">
-
-            <div class="icon-box wow fadeInUp">
-              <p class="description">
-                <b>NextCloud</b> é um software livre para armazenamento, sincronização e compartilhamento de arquivo, semelhante ao Google Drive, Dropbox ou One Drive, porém, com a garantia de segurança que os outros sistemas não proveêm. Veja as vantagens que uma implantação customizada deste sistema pode trazer para sua empresa:
-              </p>
-            </div>              
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Sem "porta dos fundos" 
-              </h4>
-              <p class="description">
-                Soluções gratuitas de gerenciamento de arquivos online, videoconferência e chat possuem as chamadas "back-doors" que captam metadados dos usuários e das conversas para poderem recomendar produtos em redes sociais. Já o NextCloud, por ser um sistema de código aberto, seu código é 100% transparente e auditável, o que dá a garantia de que este o sistema não capta dados do usuários de forma não autorizada.
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Controle e monitoração
-              </h4>
-              <p class="description">
-                O sistema permite a geração de relatórios de acesso e rastreabilidade da movimentação dos usuários, o que permite ao administradores terem total controle do uso do sistema.
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Infraestrutura customizada
-              </h4>
-              <p class="description">
-                Em soluções gratuitas, as opções de customização são extremamente limitadas, enquanto um serviço exclusivo pode ser configurado exatamente de acordo com as necessidades da empresa.
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Disponibilidade
-              </h4>
-              <p class="description">
-                Enquanto a nuvem pública lida com muitos clientes simultaneamente e fica mais sujeita a instabilidades, uma infraestrutura exclusiva torna mais fácil a sua manutenção, permitindo garantir uma maior disponibilidade.
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Suporte exclusivo
-              </h4>
-              <p class="description">
-                Contar com a agilidade do suporte é essencial para garantir a disponibilidade do serviço. Um suporte exclusivo tende a prestar um atendimento muito mais objetivo, estando mais facilmente disponível e tendo um conhecimento mais pormenorizado de todo o ambiente.
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Segurança
-              </h4>
-              <p class="description">
-                Embora nuvens públicas sejam reconhecidamente seguras, um serviço exclusivo oferece uma maior blindagem do ambiente, com um monitoramento próprio, que permite identificar com rapidez qualquer anormalidade.
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <h4 class="title">
-                Atualização
-              </h4>
-              <p class="description">
-                Por ser um sistema open-source, a comunidade de desenvolvedores está constantemente desenvolvendo atualizaçẽos gratuitas com melhorias para o software e criação de novas funcionalidades.
-              </p>
-            </div>                        
+<main id="main">
+  <section id="about">
+    <div class="container">
+      <div class="row about-container">
+        <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
+          <h4>Gestão de arquivos</h4>
+          <p>Crie, e modifique arquivos de forma segura e colaborativamente<p>
+        </div>
+        <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">
+          <a href="../assets/images/nextcloud/arquivos.png" class="glightbox3" data-gallery="gallery1">
+            <img src="../assets/images/nextcloud/arquivos.png" alt="image" width="400px"/>
+          </a>
         </div>
       </div>
-    </section><!-- #about -->
-
-
-  </main>
+      <div class="row about-container">
+        <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: right;">
+          <a href="../assets/images/nextcloud/logs.png" class="glightbox3" data-gallery="gallery1">
+            <img src="../assets/images/nextcloud/logs.png" alt="image" width="400px"/>
+          </a>
+        </div>
+        <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
+          <h4>Log de alterações</h4>
+          <p>Acompanhe o histórico de alterações dos arquivos e seus responsáveis</p>
+        </div>
+      </div>
+      <div class="row about-container">
+        <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
+          <h4>Gestão de usários</h4>
+          <p>Crie grupos com diferentes permissões de acesso e gerencie as permissões de usuários</p>
+        </div>
+        <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">
+          <a href="../assets/images/nextcloud/usuarios.png" class="glightbox3" data-gallery="gallery1">
+            <img src="../assets/images/nextcloud/usuarios.png" alt="image" width="400px"/>
+          </a>
+        </div>
+      </div>
+      <div class="row about-container">
+        <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: right;">
+          <a href="../assets/images/nextcloud/agenda.png" class="glightbox3" data-gallery="gallery1">
+            <img src="../assets/images/nextcloud/agenda.png" alt="image" width="400px"/>
+          </a>
+        </div>
+        <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
+          <h4>Agenda</h4>
+          <p>Agendas para cada necessidade e associe participantes a elas.<p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 @endsection
