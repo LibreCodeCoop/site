@@ -73,7 +73,7 @@
       <div class="container">
         <header class="section-header">
           <h3>Soluções</h3>
-          <p>Desenvolvemos soluções completas e personalizadas de acordo com as necessidades de cada cliente.</p>
+          <p>Todas as nossas soluções podem ser customizadas e adaptadas às necessidades de cada cliente.Confira!</p>
         </header>
         <div class="row row-eq-height justify-content-center">
           <div class="col-lg-6 mb-6">
@@ -84,7 +84,7 @@
                 Gestão de documentos em nuvem <br> exclusiva
               </i>
               <div class="card-body">
-                <a href="{{ $page->baseUrl }}nextcloud" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}nextcloud" class="readmore">Conheça!</a>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
                   Assinatura eletrônica de documentos ilimitada
                 </i>
               <div class="card-body">
-                <a href="{{ $page->baseUrl }}libresign" class="readmore">Saiba mais</a>
+                <a href="https://libresign.coop/" class="readmore" target=“_blank”>Conheça!</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
                   Assembleia digital
                 </i>
               <div class="card-body">
-                <a href="{{ $page->baseUrl }}tavola" class="readmore">Saiba mais</a>
+                <a href="{{ $page->baseUrl }}tavola" class="readmore">Conheça!</a>
               </div>
             </div>
           </div>
@@ -210,37 +210,6 @@
         </div>
       </div>
     </section><!-- #intro -->
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h3>Contato</h3>
-        </div>
-        <div class="row wow fadeInUp">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-5 info">
-                <i class="ion-ios-location-outline"></i>
-                <p>Rua Miguel Couto, 318</p>
-              </div>
-              <div class="col-md-4 info">
-                <i class="ion-ios-email-outline"></i>
-                <p>contato@librecode.coop</p>
-              </div>
-              <div class="col-md-3 info">
-                <i class="ion-ios-telephone-outline"></i>
-                <p>+55(21)2042-2073</p>
-              </div>
-            </div>
-            <div class="form">
-              <iframe id="form-contato" src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y" style="width: 100%;height:460px;border: 0;overflow:hidden;" scrolling="no"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- #contact -->
   </main>
 @endsection
 @section('footer_scripts')

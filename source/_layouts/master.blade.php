@@ -9,21 +9,52 @@
   <meta name="description" content="{{ $page->description }}">
 
   <!-- Favicons -->
-  <link href="assets/images/favico.png" rel="icon">
-  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/images/favico.png" rel="icon">
+  <link href="../assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="{{ $page->baseUrl }}assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
 </head>
 
 <body>
     @yield('body')
+  <!--==========================
+    Contact Section
+  ============================-->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h3>Contato</h3>
+      </div>
+      <div class="row wow fadeInUp">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-md-6 info">
+              <i class="ion-ios-email-outline"></i>
+              <p>contato@librecode.coop</p>
+            </div>
+            <div class="col-md-6 info" style="text-align: right;">
+              <i class="ion-ios-telephone-outline"></i>
+              <p>+55(21)2042-2073</p>
+            </div>
+          </div>
+          <div class="form">
+            <iframe id="form-contato" src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y" style="width: 100%;height:460px;border: 0;overflow:hidden;" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #contact -->
   <!--==========================
     Footer
   ============================-->
@@ -36,11 +67,11 @@
           <div class="col-lg-6 col-md-6">
 
             <div class="social-links">
-              <a href="https://t.me/LibreCodeCoop" class="telegram"><i class="fa fa-telegram"></i></a>
-              <a href="https://www.facebook.com/librecodecoop/" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/librecodecoop/" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="https://github.com/librecodecoop" class="github"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/company/librecode/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://t.me/LibreCodeCoop" class="telegram" target=“_blank”><i class="fa fa-telegram"></i></a>
+              <a href="https://www.facebook.com/librecodecoop/" class="facebook" target=“_blank”><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/librecodecoop/" class="instagram" target=“_blank”><i class="fa fa-instagram"></i></a>
+              <a href="https://github.com/librecodecoop" class="github" target=“_blank”><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target=“_blank”><i class="fa fa-linkedin"></i></a>
             </div>
 
           </div>
@@ -101,5 +132,48 @@
     <img src="https://matomo.librecode.coop/matomo.php?idsite=2&amp;rec=1&amp;action_name={{ $page->getUrl() }}" style="border:0" alt="" />
   </noscript>
   @endif
+<script>
+  var lightbox = GLightbox();
+  lightbox.on('open', (target) => {
+      console.log('lightbox opened');
+  });
+  var lightboxDescription = GLightbox({
+      selector: '.glightbox2'
+  });
+  var lightboxVideo = GLightbox({
+      selector: '.glightbox3'
+  });
+  lightboxVideo.on('slide_changed', ({ prev, current }) => {
+      console.log('Prev slide', prev);
+      console.log('Current slide', current);
+
+      const { slideIndex, slideNode, slideConfig, player } = current;
+
+      if (player) {
+          if (!player.ready) {
+              // If player is not ready
+              player.on('ready', (event) => {
+                  // Do something when video is ready
+              });
+          }
+
+          player.on('play', (event) => {
+              console.log('Started play');
+          });
+
+          player.on('volumechange', (event) => {
+              console.log('Volume change');
+          });
+
+          player.on('ended', (event) => {
+              console.log('Video ended');
+          });
+      }
+  });
+
+  var lightboxInlineIframe = GLightbox({
+      selector: '.glightbox4'
+  });
+</script>
 </body>
 </html>
