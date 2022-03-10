@@ -41,12 +41,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # Git domain (default github.com)
-          domain: librecode.coop
           # Build directory to deploy
           build_dir: build_production
           # Write the given domain name to the CNAME file
           fqdn: librecode.coop
           # Allow Jekyll to build your site
           jekyll: false
-          repo: https://github.com/LibreCodeCoop/site
