@@ -18,19 +18,12 @@
     <div class="container">
       <div class="intro-info">
           <h3>Gestão de documentos em <span>nuvem exclusiva</span></h3>
-          <p>Muito mais do que uma nuvem, um hub de aplicações com tudo necessário para gestão.</p>
+          <p>Conheça o <b>Nextcloud</b>, muito mais do que uma nuvem, um hub de aplicações com tudo necessário para gestão.</p>
       </div>
     </div>    
 </section>
 <main id="main">
   <section id="about">
-    <div class="container">
-      <div class="row about-container">
-          <div class="col-lg-12 icon-box wow fadeInUp">
-            <h3 style="text-align: center;">Conheça o Nextcloud, uma nuvem livre e totalmente auditável <br>com inúmeras funcionalidades.</h3>
-          </div>
-      </div>
-    </div>
     <div class="container">
       <div class="row about-container">
         <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
