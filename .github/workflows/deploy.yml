@@ -49,3 +49,4 @@ jobs:
           fqdn: librecode.coop
           # Allow Jekyll to build your site
           jekyll: false
+          repo: https://github.com/LibreCodeCoop/site
