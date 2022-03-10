@@ -1,100 +1,77 @@
 @extends('_layouts.master')
 
 @section('body')
+<header id="header" class="fixed-top">
+  <div class="container">
+    <div class="logo float-left">
+      <a href="/" class="scrollto"><img src="../assets/images/logo.png" alt="" class="img-fluid"></a>
+    </div>
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li><a href="/">Voltar</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+  </div>
+</header><!-- #header -->
 
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro" class="clearfix">
+<section id="intro" class="clearfix">
     <div class="container">
       <div class="intro-info">
-          <h2>Assembléias on-line</h2>   
+          <h3>Assembléias on-line</h3>
+          <p>Conheça o <b>Távola</b>, um sistema com todo o necessário para a realização de assembléias de forma remota e com validade jurídica.</p>
       </div>
     </div>    
-  </section><!-- #intro -->
-
-  <main id="main">
-
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about" class="clearfix">
-      <div class="container">
-
-        <div class="row about-container">
-
-          <div class="col-lg-12 content order-lg-1 order-2">
-
-            <div class="icon-box wow fadeInUp">
-              <p class="description">
-                A realização de assembléias de forma remota por meios digitais pode permitir a participação em maior número e reduzir custos e tempo para a realização da mesma. 
-                Nossa solução permite a realização de assembléias de forma remota e com validade jurídica. Com ela é possível:
-              </p>
-            </div>
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Produzir editais de convocação
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Criar sala de videoconferência para realização da aseembléia
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Utilizar chat para se comunicar na assembléia
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Ordenação automática de inscrição para falas
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Gerar de relatório de presença na assembléia
-                  </h4>
-                </div>                                                
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Criar votações com possibilidade de voto ser secreto ou nominal
-                  </h4>
-                </div>                                                
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Gerar de boletim dos votos
-                  </h4>
-                </div>                                                
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Suspender a sessão a qualquer momento
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Armazenar os arquivos da assembléia por tempo determinado
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Gravar e armazenar a gravação da assembléia
-                  </h4>
-                </div>
-                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="title">
-                    <i class="fa fa-check"></i> Emitir relatório com todos os dados de registro da assembleia para anexar a ata
-                  </h4>
-                </div>
-
-            </div>
+</section>
+<main id="main">
+  <section id="about">
+    <div class="container">
+      <div class="row about-container">
+        <div class="col-lg-12 content order-lg-1 order-2">
+          <div class="icon-box wow fadeInUp">
+            <h3>
+              Funcionalidades:
+            </h3>
           </div>
-
+          <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Criação e edição colaborativa de editais de convocação
+                </h4>
+              </div>
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Sala de videoconferência para realização da assembleia
+                </h4>
+              </div>
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Chat para comunicação durante a assembleia
+                </h4>
+              </div>                                               
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Criação de votações com possibilidade de voto secreto ou nominal
+                </h4>
+              </div>    
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Geração de boletim dos votos
+                </h4>
+              </div> 
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Geração de relatório de presença e de votação
+                </h4>
+              </div> 
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="title">
+                  <i class="fa fa-check"></i> Gravação da assembléia
+                </h4>
+              </div>
+          </div>
         </div>
       </div>
-    </section><!-- #about -->
-  </main>
-
+    </div>
+  </section>
+</main>
 @endsection
