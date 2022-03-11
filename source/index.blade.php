@@ -88,6 +88,7 @@
               </div>
             </div>
           </div>
+          <br>
           <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp">
                 <i>
@@ -108,7 +109,7 @@
                 <i>
                   <ion-icon name="videocam"></ion-icon>
                   <br>
-                  Assembleia digital
+                  Assembleias on-line
                 </i>
               <div class="card-body">
                 <a href="{{ $page->baseUrl }}tavola" class="readmore">Conheça!</a>

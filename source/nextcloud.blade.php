@@ -17,7 +17,7 @@
 <section id="intro" class="clearfix">
     <div class="container">
       <div class="intro-info">
-          <h3>Gestão de documentos em <span>nuvem exclusiva</span></h3>
+          <h2>Gestão de documentos em <span>nuvem exclusiva</span></h2>
           <p>Conheça o <b>Nextcloud</b>, muito mais do que uma nuvem, um hub de aplicações com tudo necessário para gestão.</p>
       </div>
     </div>    
