@@ -18,7 +18,7 @@
     <div class="container">
       <div class="intro-info">
           <h2>Assembleias on-line</h2>
-          <p>Conheça o <b>Távola</b>, um sistema com todo o necessário para a realização de assembléias de forma remota e com validade jurídica.</p>
+          <p>Conheça o <b>Távola</b>, um sistema com todo o necessário para a realização de assembleias de forma remota e com validade jurídica.</p>
       </div>
     </div>    
 </section>
