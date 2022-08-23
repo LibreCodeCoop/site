@@ -179,7 +179,7 @@
         <div class="section-header">
           <h3>Apoie</h3>
           <p>Se você utiliza ou deseja utilizar nossos produtos e gostaria de contribuir com o desenvolvimento deles.
-            Existem diversas formas de você nos apioar:</p>
+            Existem diversas formas de você nos apoiar:</p>
         </div>
         <div class="row apoie-wrap clearfix wow fadeInUp">
           <div class="col-lg-6 col-md-6 col-xs-6">
