@@ -63,8 +63,17 @@
       <div class="container">
         <div class="row">
 
+          <div>
+              <a href="https://www.somos.coop.br/" target="_blank">
+                <img
+                  src="../assets/images/somoscoop-horizontal.png"
+                  alt="somos coop logo imagem"
+                  width="220" height="200"
+                />
+              </a>
+          </div>
 
-          <div class="col-lg-6 col-md-6">
+          <div>
 
             <div class="social-links">
               <a href="https://t.me/LibreCodeCoop" class="telegram" target=“_blank”><i class="fa fa-telegram"></i></a>
@@ -76,7 +85,9 @@
 
           </div>
 
-          <div class="col-lg-6 col-md-6">
+      </div>
+      <div class="item">
+          <div>
             <div class="copyright">
               &copy; Copyright <strong>LibreCode</strong>. Todos os direitos reservados
             </div>
