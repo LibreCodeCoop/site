@@ -1410,6 +1410,25 @@ h6 {
   color: #74b5fc;
 }
 
+.footer-top .container {
+  display: flex;
+  flex-direction: column;
+  
+  .row  {
+    justify-content: space-between;
+    
+    img {
+        height: auto;
+    } 
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -1427,6 +1446,7 @@ h6 {
   padding: 6px 8px;
   width: 65%;
 }
+
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
   background: #e5332aff;
