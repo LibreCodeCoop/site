@@ -1,15 +1,14 @@
 #!/bin/bash
 
-# Set uid of host machine
-usermod --non-unique --uid "${HOST_UID}" www-data
-groupmod --non-unique --gid "${HOST_GID}" www-data
-
+# Composer
 if [ ! -d "vendor" ]; then
-    composer i
+    composer global require hirak/prestissimo
 fi
-php-fpm &
-if [[ "$SERVER_MODE" == 'watch' ]]; then
-    npm run watch
-else
-    php ./vendor/bin/jigsaw serve --host 0.0.0.0 --port 3000
+composer install
+
+# NPM
+. $NVM_DIR/nvm.sh
+if [ ! -d "node_modules" ]; then
+    npm install
 fi
+npm run watch
