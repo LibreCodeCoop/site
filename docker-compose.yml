@@ -1,7 +1,6 @@
-version: '3.3'
 services:
-  php7:
-    build: .docker/php7
+  php:
+    build: .docker/php
     ports:
       - 80:3000
     volumes:
