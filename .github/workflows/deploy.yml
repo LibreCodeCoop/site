@@ -40,6 +40,6 @@ jobs:
           # Build directory to deploy
           build_dir: build_production
           # Write the given domain name to the CNAME file
-          fqdn: libresign.coop
+          fqdn: librecode.coop
           # Allow Jekyll to build your site
           jekyll: false
