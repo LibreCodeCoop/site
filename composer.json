@@ -6,8 +6,8 @@
         "tightenco/jigsaw": "^1.7",
         "gregwar/captcha": "^1.2",
         "libresign/espeak": "dev-main",
-        "elaborate-code/jigsaw-localization": "dev-fix/use-package-default-locale",
-        "nesbot/carbon": "^3.3"
+        "nesbot/carbon": "^3.3",
+        "elaborate-code/jigsaw-localization": "dev-main"
     },
     "autoload": {
         "psr-4": {
