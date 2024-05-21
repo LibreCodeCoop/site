@@ -6,18 +6,6 @@ RUN apt-get update \
     && apt-get install -y \
         git \
         espeak-ng \
-    # Install node
-        ca-certificates \
-        curl \
-        gnupg \
-    # see https://github.com/nodesource/distributions
-    && mkdir -p /etc/apt/keyrings \
-    && curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg \
-    && echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list \
-    && apt-get update \
-    && apt-get install nodejs -y \
-    && node --version \
-    && npm --version \
     # Clean package cache
     && rm -rf /var/lib/apt/lists/*
 
@@ -32,6 +20,13 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions && sync \
     && rm /usr/local/bin/install-php-extensions
 
 COPY xdebug.ini /usr/local/etc/php/conf.d/
+
+# Install NVM
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash \
+    && export NVM_DIR="/root/.nvm" \
+    && . "$NVM_DIR/nvm.sh" \
+    && nvm install 20 \
+    && nvm alias default 20
 
 RUN echo "alias jigsaw=./vendor/bin/jigsaw" >> /etc/bash.bashrc && \
     echo "alias compile='./vendor/bin/jigsaw build'" >> /etc/bash.bashrc && \
