@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
 <header id="header" class="fixed-top">
