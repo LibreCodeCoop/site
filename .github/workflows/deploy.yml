@@ -1,14 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push events but only for the main branch
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -20,30 +18,28 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: '13'
-      - name: Install node dependencies
-        run: npm install -g gulp
-      - name: Set up php 7.4
+          node-version: 20
+      - name: Set up php 8.3
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: 8.3
       - name: Set up PHP dependencie
         run: composer i
       - name: Run composer command
         run: composer prod
       - name: Deploy to GitHub Pages
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           # Build directory to deploy
           build_dir: build_production
           # Write the given domain name to the CNAME file
-          fqdn: librecode.coop
+          fqdn: libresign.coop
           # Allow Jekyll to build your site
           jekyll: false

@@ -1,21 +1,21 @@
 {
     "private": true,
     "scripts": {
-        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "dev": "npm run local",
-        "prod": "npm run production",
-        "watch": "npm run local -- --watch"
+        "dev": "mix",
+        "watch": "mix watch",
+        "staging": "NODE_ENV=staging mix",
+        "prod": "mix --production"
     },
     "devDependencies": {
-        "cross-env": "^3.2.3",
-        "file-loader": "^6.0.0",
-        "laravel-mix": "^4.0.0",
-        "laravel-mix-jigsaw": "^1.1.0",
-        "sass": "^1.15.2",
-        "sass-loader": "^7.1.0",
-        "vue-template-compiler": "^2.6.11"
+        "browser-sync": "^3.0.2",
+        "browser-sync-webpack-plugin": "https://github.com/madbucket/browser-sync-webpack-plugin",
+        "laravel-mix": "^6.0.39",
+        "laravel-mix-jigsaw": "^2.0.0",
+        "postcss": "^8.4.14",
+        "postcss-import": "^14.0.0",
+        "sass": "^1.72.0",
+        "sass-loader": "^12.6.0",
+        "tailwindcss": "^3.1.6"
     },
     "dependencies": {
         "animate.css": "^4.1.0",
