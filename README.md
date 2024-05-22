@@ -33,5 +33,5 @@ git push fork <nome_da_branch>
 ```
 
 Após o seu pull request ser aceito, faça um pull request da branch develop para
-a master. Quando este pull request também for aceito, irá iniciar o deploy
+a main. Quando este pull request também for aceito, irá iniciar o deploy
 pelo Travis, caso não ocorram erros o site estará atualizado em produção.
