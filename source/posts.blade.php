@@ -13,161 +13,25 @@
         <section class="blog-posts">
             <div class="container padding-auto">
                 <div class="row gy-4">
-                    <div class="col-lg-3 mb-3">
-                        <article class="article-blog">
-
-                        <div class="post-img">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid">
+                    @foreach ($posts as $post)
+                        @if (current_path_locale($post) !== current_path_locale($page))
+                            @continue
+                        @endif
+                        <div class="col-lg-3 mb-3">
+                            <article class="article-blog">
+                                <div class="post-img">
+                                    <a href="{{ $post->getUrl }}">
+                                        <img src="{{ $post->cover_image }}" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="post-category">{{ date('F j, Y', $post->date) }}</p>
+                                <h2 class="title">
+                                    <a href="{{ $post->getUrl }}">{{ $post->title }}</a>
+                                </h2>
+                                <p>{{ $post->description }}</p>
+                            </article>
                         </div>
-
-                        <p class="post-category">Politics</p>
-
-                        <h2 class="title">
-                            <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                        </h2>
-
-                        <div class="d-flex align-items-center">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/daiane.png" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                            </div>
-                        </div>
-
-                        </article>
-                    </div>
-
-                    <div class="col-lg-3 mb-3">
-                        <article class="article-blog">
-
-                        <div class="post-img">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid">
-                        </div>
-
-                        <p class="post-category">Politics</p>
-
-                        <h2 class="title">
-                            <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                        </h2>
-
-                        <div class="d-flex align-items-center">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/daiane.png" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                            </div>
-                        </div>
-
-                        </article>
-                    </div>
-
-                    <div class="col-lg-3 mb-3">
-                        <article class="article-blog">
-
-                        <div class="post-img">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid">
-                        </div>
-
-                        <p class="post-category">Politics</p>
-
-                        <h2 class="title">
-                            <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                        </h2>
-
-                        <div class="d-flex align-items-center">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/daiane.png" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                            </div>
-                        </div>
-
-                        </article>
-                    </div>
-
-                    <div class="col-lg-3 mb-3">
-                        <article class="article-blog">
-
-                        <div class="post-img">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid">
-                        </div>
-
-                        <p class="post-category">Politics</p>
-
-                        <h2 class="title">
-                            <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                        </h2>
-
-                        <div class="d-flex align-items-center">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/daiane.png" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                            </div>
-                        </div>
-
-                        </article>
-                    </div>
-
-                    <div class="col-lg-3 mb-3">
-                        <article class="article-blog">
-
-                        <div class="post-img">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid">
-                        </div>
-
-                        <p class="post-category">Politics</p>
-
-                        <h2 class="title">
-                            <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                        </h2>
-
-                        <div class="d-flex align-items-center">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/daiane.png" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                            </div>
-                        </div>
-
-                        </article>
-                    </div>
-
-                    <div class="col-lg-3 mb-3">
-                        <article class="article-blog">
-
-                        <div class="post-img">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid">
-                        </div>
-
-                        <p class="post-category">Politics</p>
-
-                        <h2 class="title">
-                            <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                        </h2>
-
-                        <div class="d-flex align-items-center">
-                            <img src="{{ locale_path($page, $page->baseUrl) }}assets/images/daiane.png" alt="" class="img-fluid post-author-img flex-shrink-0">
-                            <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                            </div>
-                        </div>
-
-                        </article>
-                    </div>
+                    @endforeach    
                 </div>
             </div>
         </section>
