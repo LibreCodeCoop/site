@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => '/',
     'title' => 'LibreCode',
     'description' => 'Website description.',
     'collections' => [
@@ -42,8 +42,8 @@ return [
                     } else {
                         $post->set('banner',$post->baseUrl.'assets/images/logo/logo.png');
                     }
-                }  
-                
+                }
+
                 return $post;
             }
         ],
