@@ -19,10 +19,6 @@
               <div class="container">
 
                 <article class="article">
-                  @php
-                    $test = $page->banner;
-                    xdebug_break();
-                  @endphp
                   <div>
                     <img src="{{ $page->banner }}" alt="banner-image" class="img-fluid">
                   </div>
