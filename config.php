@@ -47,5 +47,28 @@ return [
                 return $post;
             }
         ],
+        'team' => [
+            'items' => [
+                [
+                    'name' => 'Crisciany Silva',
+                    'gravatar' => 'f2f64ea713b5c39cb64268a0eda7e022',
+                    'bio' => 'I\'m a Developer. I currently study the PHP language with a focus on the Laravel framework. I have professional experience in PHP on a web-oriented system and some system maintenance such as screen creation, reports with jasper reports and mpdf and system versioning with git.',
+                    'role' => 'Software Engineer',
+                    'social' => [
+                        'github' => 'https://github.com/Any97Cris',
+                        'linkedin' => 'https://www.linkedin.com/in/criscianysilva/'
+                    ],
+                ],
+                [
+                    'name' => 'Daiane Alves',
+                    'gravatar' => 'fe9fbbf8677e78931af9a4a5da35e1ee' ,
+                    'bio' => 'Passionate about technology and project management',
+                    'role' => 'IT Project Management Specialist',
+                    'social' => [
+                        'linkedin' => 'https://www.linkedin.com/in/daianealvesrj/',
+                    ]
+                ],
+            ],
+        ]
     ],
 ];
