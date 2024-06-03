@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 title: Test Title
-author: Fulano
+author: Crisciany Silva
 date: 2024-05-28
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur, nunc in bibendum porttitor, metus diam euismod mauris, vel tristique nunc dui ac sapien. Sed vitae pretium augue.
 ---

@@ -1,9 +1,10 @@
 ---
 extends: _layouts.post
 title: Test Two Title
-author: Ciclano
+author: Daiane Alves
 date: 2024-05-31
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur, nunc in bibendum porttitor, metus diam euismod mauris, vel tristique nunc dui ac sapien. Sed vitae pretium augue.
+bio: teste biografia autor
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur, nunc in bibendum porttitor, metus diam euismod mauris, vel tristique nunc dui ac sapien. Sed vitae pretium augue. Ut et pharetra orci, non faucibus magna. Donec blandit vehicula feugiat. Aenean quis odio id justo maximus feugiat. Quisque erat sem, tincidunt ut maximus sit amet, imperdiet ac nulla. Nam sodales sagittis neque, et rutrum neque tempor efficitur. Nulla ut lacus interdum, hendrerit elit faucibus, interdum tortor. Sed luctus mauris ut nibh rutrum iaculis. Nulla facilisi. Mauris at risus bibendum, imperdiet dui non, sollicitudin dolor. Praesent fermentum risus non nibh auctor congue. Fusce pellentesque leo in justo efficitur facilisis. Proin dolor tortor, semper id enim ut, auctor malesuada dui. Etiam vel felis aliquam ante facilisis porta at vel ex.
