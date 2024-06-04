@@ -20,13 +20,11 @@
                     <img src="{{ $page->banner }}" alt="banner-image" class="img-fluid">
                   </div>
 
-                  <h2 class="title p-3 mt-3">{{ $page->title }}</h2>
-
                   <div class="container mt-4 mb-5 p-3">
                     <div class="row">
                       <div class="col-3">
                         <i class="lni lni-user mr-2"></i>
-                        <a href="{{ locale_path($page, $page->getUrl()) }}#blog-author">Daiane Alves</a>
+                        <a href="{{ locale_path($page, $page->getUrl()) }}#blog-author">{{ $page->author }}</a>
                       </div>
                       <div class="col-8">
                         <i class="lni lni-calendar"></i>
