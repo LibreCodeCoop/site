@@ -24,6 +24,7 @@ return [
                     $author = current($author);
                     $post->set('gravatar', $author->gravatar);
                 }
+
                 if(empty($post->cover_image)){
                     if(file_exists(__DIR__.'/source/'.$path.'/cover.jpg')){
                         $post->set('cover_image',$post->baseUrl.$path.'/cover.jpg');
@@ -66,6 +67,19 @@ return [
                     'role' => 'IT Project Management Specialist',
                     'social' => [
                         'linkedin' => 'https://www.linkedin.com/in/daianealvesrj/',
+                    ]
+                ],
+                [
+                    'name' => 'LibreCode',
+                    'gravatar' => '' ,
+                    'bio' => 'We are a digital cooperative of experts in free software development',
+                    'role' => 'Cooperative',
+                    'social' => [
+                        'linkedin' => 'https://www.linkedin.com/company/librecodecoop/mycompany/',
+                        'telegram' => 'https://t.me/LibreCodeCoop',
+                        'instagram' => 'https://www.instagram.com/librecodecoop/',
+                        'facebook' => 'https://www.facebook.com/librecodecoop/',
+                        'github' => 'https://github.com/librecodecoop',
                     ]
                 ],
             ],
