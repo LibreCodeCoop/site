@@ -3,7 +3,7 @@
 @section('body')
   <section id="intro-blog">
     <div class="container">
-      <h1 class="text-center font-weight-bold mt-5">Blog</h1>
+      <h1 class="text-center font-weight-bold mt-5">{{ $page->title }}</h1>
       <p class="description mt-5 mb-5 text-justify">{{ $page->description }}</p>
     </div>
   </section>
