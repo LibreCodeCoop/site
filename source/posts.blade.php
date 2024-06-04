@@ -2,10 +2,7 @@
 @section('body')
     <section id="intro-blog">
         <div class="container">
-            <h1 class="text-center font-weight-bold mt-5">Blog</h1>
-            <p class="description mt-5 mb-5 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius molestie pharetra. Curabitur et est sagittis, elementum magna et, sodales ante. Cras sit amet consequat dolor. Nulla ac nisi metus. Suspendisse fermentum purus vitae ante imperdiet ornare. Duis aliquam rutrum semper. Ut egestas a ligula mollis dictum.
-            </p>
+            <h1 class="text-center font-weight-bold mt-5">Blog Page</h1>
         </div>
     </section>
 
@@ -31,7 +28,7 @@
                                 <p>{{ $post->description }}</p>
                             </article>
                         </div>
-                    @endforeach    
+                    @endforeach
                 </div>
             </div>
         </section>
