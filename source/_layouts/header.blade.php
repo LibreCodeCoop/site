@@ -10,7 +10,7 @@
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#clients">Clientes</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#apoie">Apoie</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#contact">Contato</a></li>
-                <li><a href="{{ locale_path($page, $page->baseUrl) }}#blog">Contato</a></li>
+                <li><a href="{{ locale_path($page, $page->baseUrl) }}jobs">Coopere Conosco</a></li>
             </ul>
         </nav>
     </div>
