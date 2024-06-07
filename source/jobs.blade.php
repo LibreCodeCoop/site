@@ -1,12 +1,58 @@
 @extends('_layouts.main')
 @section('body')
 <main id="main" class="hight-jobs-page">
+
+    <section id="about">
+        <div class="container" data-aos="fade-up">
+  
+          <header class="section-header mb-5">
+            <h1 class="display-4">Faça parte da LibreCode</h1>
+          </header>
+  
+          <div class="row about-container">
+  
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <p>
+                A LibreCode é uma cooperativa de devs de software livre em busca de uma forma de trabalhar diferente das que já experimentamos no mundo corporativo.
+              </p>
+              
+              <div>
+                {{-- <div class="icon"><i class="bi bi-card-checklist"></i></div> --}}
+                <h5 class="font-weight-bold">Cooperativa de profissionais da tecnologia da informação</h5>
+                <p class="h6">
+                    Somos uma cooperativa de profissionais da tecnologia da informação especializados em desenvolvimento e implantação de software livre.
+                </p>
+              </div>
+  
+              <div>
+                {{-- <div class="icon"><i class="bi bi-brightness-high"></i></div> --}}
+                <h5 class="font-weight-bold mt-3">Magni Dolores</h5>
+                <p class="h6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+  
+              <div>
+                {{-- <div class="icon">
+                    <img src="{{ $page->baseUrl }}assets/images/logo.png" class="img-fluid" alt="">
+                </div> --}}
+                <h5 class="font-weight-bold mt-3">Dolor Sitema</h5>
+                <p class="h6">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6 background order-lg-2 mt-3">
+              <img src="{{ $page->baseUrl }}assets/images/librecode_team.jpeg" class="img-fluid" alt="imagem_grupo_librecode">
+            </div>
+          </div>
+        </div>
+    </section>
+
     <section id="about" class="products">
         <div class="container">
-            <h1 class="display-4">Faça parte da LibreCode</h1>
-            <p class="lead mb-5">A LibreCode é uma cooperativa de devs de software livre em busca de uma forma de trabalhar diferente das que já experimentamos no mundo corporativo.</p>
+            
+            <h1>Coopere Conosco</h1>
 
-            <h4>Local de trabalho</h4>
+            <h4 class="mt-5">Local de trabalho</h4>
             <div class="ml-5">
                 <i class="lni lni-home"></i>
                 <span>0.0.0.0 ou 127.0.0.1</span>
