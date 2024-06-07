@@ -17,25 +17,15 @@
               </p>
               
               <div>
-                {{-- <div class="icon"><i class="bi bi-card-checklist"></i></div> --}}
-                <h5 class="font-weight-bold">Cooperativa de profissionais da tecnologia da informação</h5>
+                <h5 class="font-weight-bold">Cooperativa de TI</h5>
                 <p class="h6">
                     Somos uma cooperativa de profissionais da tecnologia da informação especializados em desenvolvimento e implantação de software livre.
                 </p>
               </div>
   
               <div>
-                {{-- <div class="icon"><i class="bi bi-brightness-high"></i></div> --}}
-                <h5 class="font-weight-bold mt-3">Magni Dolores</h5>
-                <p class="h6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-  
-              <div>
-                {{-- <div class="icon">
-                    <img src="{{ $page->baseUrl }}assets/images/logo.png" class="img-fluid" alt="">
-                </div> --}}
-                <h5 class="font-weight-bold mt-3">Dolor Sitema</h5>
-                <p class="h6">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <h5 class="font-weight-bold mt-3">Apaixonados por Software Livre</h5>
+                <p class="h6">Software livre é o software que concede liberdade ao usuário para executar, acessar e modificar o código fonte, e redistribuir cópias com ou sem modificações. </p>
               </div>
   
             </div>
