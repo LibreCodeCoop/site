@@ -162,6 +162,70 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Blog Posts Section
+--------------------------------------------------------------*/
+.blog-posts {
+  padding: 60px 0 20px 0;
+}
+
+.blog-posts .article-blog {
+  box-shadow: 0 4px 10px gray;
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog-posts .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.blog-posts .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, #212529, transparent 40%);
+  margin-bottom: 10px;
+}
+
+.blog-posts .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.blog-posts .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.blog-posts .title a:hover {
+  color: var(--accent-color);
+}
+
+.blog-posts .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.blog-posts .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.blog-posts .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 0;
+}
+
+.padding-auto {
+  padding: auto;
+}
+
+/*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
@@ -646,7 +710,7 @@ h6 {
 
 #services .icon .mariadb {
   position: absolute;
-  width: 300px;  
+  width: 300px;
   left: -600px;
   top: 60px;
 }
@@ -669,7 +733,7 @@ h6 {
 #services .title{
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;  
+  font-size: 18px;
   margin-right: 40px;
 }
 
@@ -693,28 +757,28 @@ h6 {
 #services .description-php{
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 0;  
+  margin-bottom: 0;
   margin-right: 100px;
 }
 
 #services .description-js{
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 0;  
+  margin-bottom: 0;
   margin-right: 50px;
 }
 
 #services .description-mariadb{
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 0;  
+  margin-bottom: 0;
   margin-left: 85px;
 }
 
 #services .description-postgre{
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 0;  
+  margin-bottom: 0;
   margin-right: 115px;
 }
 
@@ -967,7 +1031,7 @@ h6 {
   border: 4px solid #fff; */
   /* float: left; */
   float: none;
-  margin: auto;  
+  margin: auto;
 }
 
 
@@ -1413,13 +1477,13 @@ h6 {
 .footer-top .container {
   display: flex;
   flex-direction: column;
-  
+
   .row  {
     justify-content: space-between;
-    
+
     img {
         height: auto;
-    } 
+    }
   }
 
   .item {
@@ -1585,3 +1649,55 @@ h6 {
 .owl-carousel .owl-item img{
   width: unset !important;
 }
+
+.container .article-detail-blog {
+    box-shadow: 0 4px 16px color-mix(in srgb, #212529, transparent 80%);
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .article-img .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*--------------------------------------------------------------
+# Blog Author Section
+--------------------------------------------------------------*/
+.blog-author {
+    padding: 10px 0 40px 0;
+  }
+
+  .blog-author .author-container {
+    width: 63%;
+    padding: 20px;
+    box-shadow: 0 4px 16px color-mix(in srgb, #212529, transparent 80%);
+  }
+
+  .blog-author img {
+    max-width: 120px;
+    margin-right: 20px;
+  }
+
+  .blog-author h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding: 0;
+    color: color-mix(in srgb, #212529, transparent 20%);
+  }
+
+  .blog-author .social-links {
+    margin: 0 10px 10px 0;
+  }
+
+  .blog-author .social-links a {
+    color: color-mix(in srgb, #212529, transparent 60%);
+    margin-right: 5px;
+  }
+
+  .blog-author p {
+    font-style: italic;
+    color: color-mix(in srgb, #212529, transparent 30%);
+    margin-bottom: 0;
+  }
