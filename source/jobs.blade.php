@@ -50,11 +50,11 @@
 
             <h4 class="mb-5"><a href="{{ $page->baseUrl }}jobs/forma-contratacao">Forma de contratação</a></h4>
 
-            <h4 class="mb-5"><a href="">Benefícios</a></h4>
+            <h4 class="mb-5"><a href="{{ $page->baseUrl }}jobs/beneficios">Benefícios</a></h4>
 
-            <h4 id="pre-requisito" class="mb-5"><a href="">Pré-requisitos</a></h4>
+            <h4 id="pre-requisito" class="mb-5"><a href="{{ $page->baseUrl }}jobs/pre-requisitos">Pré-requisitos</a></h4>
 
-            <h4 class="mb-5"><a href="">Área de atuação</a></h4>
+            <h4 class="mb-5"><a href="{{ $page->baseUrl }}jobs/area-de-atuacao">Área de atuação</a></h4>
 
             <h4>Como se candidatar</h4>
 

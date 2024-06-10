@@ -1,3 +1,7 @@
+---
+extends: _layouts.jobs
+---
+
 # Benefícios
 
 * Seguro de vida
@@ -6,5 +10,3 @@
 * Formações na área do cooperativismo
 * Férias remuneradas
 * Renda mensal variável de acordo com produção
-
-[🔙 Voltar para a home](../README.md)

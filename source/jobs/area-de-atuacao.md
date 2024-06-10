@@ -1,3 +1,7 @@
+---
+extends: _layouts.jobs
+---
+
 # Área de atuação
 
 A LibreCode é composta por profissionais de tecnologia que trabalham com soluções livres com os quais você poderá desenvolver o teu potencial como empreendedor.
@@ -12,5 +16,3 @@ Hoje temos:
 * [Infraestrutura](requisitos-infraestrutura.md)
 
 Porém, não se limite ao que temos hoje, venha cooperar conosco!
-
-[🔙 Voltar para a home](../README.md)

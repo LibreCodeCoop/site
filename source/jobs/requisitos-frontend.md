@@ -1,3 +1,7 @@
+---
+extends: _layouts.jobs
+---
+
 ## Requisitos
 * Utilizar e compreender os valores do software livre
 * Tecnologias
@@ -17,7 +21,3 @@
 
 ## Como candidatar-se?
 * Instruções na [home](../README.md) deste repositório
-
-🔙 Voltar para:
-* [🏘 Home](../README.md)
-* [💼 Lista de oportunidades](https://github.com/LibreCodeCoop/jobs/blob/main/docs/oportunidades.md)

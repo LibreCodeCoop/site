@@ -1,3 +1,7 @@
+---
+extends: _layouts.jobs
+---
+
 # Pré-requisitos
 
 * Conhecer as leis que regem o nosso ramo do cooperativismo:
@@ -14,5 +18,3 @@
     > Crescer e fomentar a criação de novas cooperativas de tecnologias livres com o objetivo de construir uma federação, nos fortalecer mutuamente, atingir visibilidade na sociedade e representatividade em decisões públicas.
   * Valores
     > Economia solidária, Segurança e privacidade, Comunidade, Transparência, Copyleft: libre code
-
-[🔙 Voltar para a home](../README.md)
