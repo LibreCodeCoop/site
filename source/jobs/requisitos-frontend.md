@@ -1,5 +1,5 @@
 ---
-extends: _layouts.jobs
+extends: _layouts.job
 ---
 
 ## Requisitos
@@ -20,4 +20,4 @@ extends: _layouts.jobs
 * Projetar e implementar frontend para aplicações web diversas
 
 ## Como candidatar-se?
-* Instruções na [home](../README.md) deste repositório
+* Instruções na [home](/jobs) deste repositório

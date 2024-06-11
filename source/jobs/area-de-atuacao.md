@@ -1,5 +1,5 @@
 ---
-extends: _layouts.jobs
+extends: _layouts.job
 ---
 
 # Área de atuação
@@ -11,8 +11,8 @@ Caso tenha interesse em empreender conosco, submeta seu pedido de associação e
 Hoje temos:
 
 * Desenvolvimento
-  * [Backend](requisitos-backend.md)
-  * [Frontend](requisitos-frontend.md)
-* [Infraestrutura](requisitos-infraestrutura.md)
+  * [Backend](requisitos-backend)
+  * [Frontend](requisitos-frontend)
+* [Infraestrutura](requisitos-infraestrutura)
 
 Porém, não se limite ao que temos hoje, venha cooperar conosco!
