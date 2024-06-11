@@ -1,5 +1,5 @@
 ---
-extends: _layouts.jobs
+extends: _layouts.job
 ---
 
 # Benefícios

@@ -1,5 +1,5 @@
 ---
-extends: _layouts.jobs
+extends: _layouts.job
 ---
 
 ## Requisitos
@@ -17,4 +17,4 @@ extends: _layouts.jobs
 * Auxiliar no suporte a clientes
 
 ## Como candidatar-se?
-* Instruções na [home](../README.md) deste repositório
+* Instruções na [home](/jobs) deste repositório

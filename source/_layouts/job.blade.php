@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 @section('body')
 
-<main id="main">
+<main id="main" class="p-5 hight-jobs-page">
   <section>
     <div class="container">
       <div>
@@ -13,3 +13,4 @@
 </main>
 
 @endsection
+

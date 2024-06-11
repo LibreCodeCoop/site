@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" class="fixed-top">
     <div class="container">
         <div class="logo float-left">
             <a href="#intro" class="scrollto"><img src="{{ locale_path($page, $page->baseUrl) }}assets/images/logo.png" alt="" class="img-fluid"></a>

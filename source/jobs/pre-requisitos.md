@@ -1,5 +1,5 @@
 ---
-extends: _layouts.jobs
+extends: _layouts.job
 ---
 
 # Pré-requisitos
@@ -10,7 +10,7 @@ extends: _layouts.jobs
 * Conhecer e aceitar os termos de nosso [Estatuto](https://gitlab.com/librecodecoop/estatuto) e [Regimento Interno](https://gitlab.com/librecodecoop/regimento-interno)
 * Atuar na atividade fim da cooperativa
 * Não atuar como sócio em empresa na atividade fim da LibreCode
-* Dar uma olhada nos [materiais de apoio](materiais-de-apoio.md)
+* Dar uma olhada nos [materiais de apoio](materiais-de-apoio)
 * Estar de acordo com nossa
   * Missão
     > Colaborar para a construção de uma economia solidária por meio do cooperativismo, democratizando a tecnologia da informação, a segurança e a privacidade de dados com software livre.

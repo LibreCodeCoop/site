@@ -1,5 +1,5 @@
 ---
-extends: _layouts.jobs
+extends: _layouts.job
 ---
 
 ## Requisitos
@@ -14,4 +14,4 @@ extends: _layouts.jobs
 * Projetar e implementar aplicações web diversas (principalmente PHP)
 
 ## Como candidatar-se?
-* Instruções na [home](../README.md) deste repositório
+* Instruções na [home](/jobs) deste repositório
