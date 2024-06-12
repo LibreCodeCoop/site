@@ -1382,9 +1382,8 @@ h6 {
 
 #footer {
   background: #e5332aff;
-  /* padding: 0 0 30px 0; */
+  padding: 30px;
   color: #eee;
-  margin-top: auto;
 }
 
 #footer .container{
@@ -1394,7 +1393,6 @@ h6 {
 
 #footer .footer-top {
   background: #e5332aff;
-  /* padding: 60px 0 30px 0; */
 }
 
 #footer .footer-top .footer-info {
@@ -1717,3 +1715,19 @@ End jobs page style
   /*---------------------------------------------------------
    Margin to page area of acting, benefs,
   ---------------------------------------------------------*/
+
+/*-----------------------------------------------------
+  Start size-jobs-page
+*/
+.size-jobs-page{
+    min-height: calc(87.4vh - 180px);
+}
+
+@media (max-width: 430px) {
+    .size-jobs-page{
+        min-height: calc(70vh - 180px);
+    }
+}
+/*-----------------------------------------------------
+  Start size-jobs-page
+*/
