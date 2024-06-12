@@ -11,8 +11,8 @@ Caso tenha interesse em empreender conosco, submeta seu pedido de associação e
 Hoje temos:
 
 * Desenvolvimento
-  * [Backend](../jobs/requisitos-backend)
-  * [Frontend](../jobs/requisitos-frontend)
-* [Infraestrutura](../jobs/requisitos-infraestrutura)
+  * [Backend](../requisitos-backend)
+  * [Frontend](../requisitos-frontend)
+* [Infraestrutura](../requisitos-infraestrutura)
 
 Porém, não se limite ao que temos hoje, venha cooperar conosco!
