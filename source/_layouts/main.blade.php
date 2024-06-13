@@ -9,14 +9,14 @@
   <meta name="description" content="{{ $page->description }}">
 
   <!-- Favicons -->
-  <link href="../assets/images/favico.png" rel="icon">
-  <link href="../assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ $page->baseUrl }}assets/images/favico.png" rel="icon">
+  <link href="{{ $page->baseUrl }}assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ $page->baseUrl }}assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
