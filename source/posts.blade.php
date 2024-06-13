@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 @section('body')
     <section id="intro-blog">
-        <div class="container">
+        <div class="container hight-blog-page">
             <h1 class="text-center font-weight-bold mt-5">Blog Page</h1>
         </div>
     </section>
