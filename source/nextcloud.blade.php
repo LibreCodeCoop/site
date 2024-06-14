@@ -20,7 +20,7 @@
           <h2>Gestão de documentos em <span>nuvem exclusiva</span></h2>
           <p>Conheça o <b>Nextcloud</b>, muito mais do que uma nuvem, um hub de aplicações com tudo necessário para gestão.</p>
       </div>
-    </div>    
+    </div>
 </section>
 <main id="main">
   <section id="about" class="products">
@@ -161,7 +161,7 @@
               </i>
           </div>
         </div>
-        <div class="col-lg-3 mb-3">
+        <div class="col-lg-3 mb-5">
           <div class="card wow bounceInUp">
               <i>
                 <ion-icon name="finger-print"></ion-icon>
@@ -171,12 +171,16 @@
               </i>
           </div>
         </div>
+        <div class="col text-center mt-5">
+          <p class="h2 mb-5 text-light">Gostou? Agende uma demonstração conosco!</p>
+          <a href="https://t.me/LibreCodeCoop" target="blank" class="btn btn-light btn-lg mt-2">Saiba mais</a>
+        </div>
       </div>
     </div>
-    <header class="section-header">
-      <br><br>
-      <h3>Gostou? Agende uma demonstração conosco!</h3>
-    </header>
+
+    <p class="texto-nextcloud text-center text-light">Nextcloud é uma marca registrada de Nextcloud GmbH.</p>
+
   </section>
+
 </main>
 @endsection
