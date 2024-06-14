@@ -38,7 +38,7 @@
               <h4 class="title"><a href="">Por que software livre (SL)?</a></h4>
               <p class="description">
                 Um projeto de licença livre é construído colaborativamente, de modo que está em constante crescimento e sendo constantemente testado e corrigido em suas atualizações.
-                Por ser aberto, o código de um SL é 100% auditável, permitindo identificar a existência de qualquer erro ou falha de segurança em seu interior que possa deixar vulnerável os dados trafegados no sistema. 
+                Por ser aberto, o código de um SL é 100% auditável, permitindo identificar a existência de qualquer erro ou falha de segurança em seu interior que possa deixar vulnerável os dados trafegados no sistema.
                 Por isso, um SL permite uma política de segurança de dados muito mais transparente do que um software proprietário.
               </p>
             </div>
@@ -56,41 +56,20 @@
         </header>
         <div class="row row-eq-height justify-content-center">
           <div class="col-lg-6 mb-6">
-            <div class="card wow bounceInUp">
-              <i>
-                <ion-icon name="cloud-outline"></ion-icon>
-                <br>
-                Gestão de documentos em nuvem <br> exclusiva
-              </i>
+            <div class="card wow bounceInUp pr-5 pl-5">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud_logo.png" alt="nextcloud logo" width="150px">
+              <p class="mb-4 mt-2 h4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <div class="card-body">
-                <a href="{{ $page->baseUrl }}nextcloud" class="readmore">Conheça!</a>
+                <a href="{{ $page->baseUrl }}nextcloud" class="btn btn-secondary btn-lg btn-block">Conheça!</a>
               </div>
             </div>
           </div>
           <div class="col-lg-6 mb-6">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-                  <br>
-                  Assinatura eletrônica de documentos ilimitada
-                </i>
+            <div class="card wow bounceInUp pr-5 pl-5">
+               <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/libresign_logo.png" alt="libresign logo" width="150px">
+               <p class="mt-5 mb-4 h4">Plataforma completa para assinatura digital de documentos, com praticidade e segurança e validade jurídica.</p>
               <div class="card-body">
-                <a href="https://libresign.coop/" class="readmore" target=“_blank”>Conheça!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row row-eq-height justify-content-center">
-          <div class="col-lg-6 mb-6">
-            <div class="card wow bounceInUp">
-                <i>
-                  <ion-icon name="videocam"></ion-icon>
-                  <br>
-                  Assembleias on-line
-                </i>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}tavola" class="readmore">Conheça!</a>
+                <a href="https://libresign.coop/" class="btn btn-secondary btn-lg btn-block" target=“_blank”>Conheça!</a>
               </div>
             </div>
           </div>
@@ -149,7 +128,7 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <!--==========================
       Apoie Section
     ============================-->
@@ -179,7 +158,7 @@
             </div>
             <p>
               Bountysource é um site de financimanto de projetos de código aberto.
-              Lá você pode financiar a solução de alguma melhoria, correção ou desenvolvimento de nova funcionalidade em nossos produtos, 
+              Lá você pode financiar a solução de alguma melhoria, correção ou desenvolvimento de nova funcionalidade em nossos produtos,
               ou desenvolver a solução para as tarefas pendentes.
             </p>
             <a href="https://www.bountysource.com/teams/libresign/issues" target=“_blank”>
