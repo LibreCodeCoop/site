@@ -15,11 +15,11 @@
 
             <div>
                 <div class="social-links">
-                    <a href="https://t.me/LibreCodeCoop" class="telegram" target=“_blank”><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.facebook.com/librecodecoop/" class="facebook" target=“_blank”><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/librecodecoop/" class="instagram" target=“_blank”><i class="fa fa-instagram"></i></a>
-                    <a href="https://github.com/librecodecoop" class="github" target=“_blank”><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target=“_blank”><i class="fa fa-linkedin"></i></a>
+                    <a href="https://t.me/LibreCodeCoop" class="telegram" target="_blank"><i class="fa fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/librecodecoop/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/librecodecoop/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/librecodecoop" class="github" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
 
