@@ -1,18 +1,8 @@
 @extends('_layouts.main')
 
 @section('body')
-<header id="header" class="fixed-top">
-  <div class="container">
-    <div class="logo float-left">
-      <a href="/" class="scrollto"><img src="../assets/images/logo.png" alt="" class="img-fluid"></a>
-    </div>
-    <nav class="main-nav float-right d-none d-lg-block">
-      <ul>
-        <li><a href="/">Voltar</a></li>
-      </ul>
-    </nav><!-- .main-nav -->
-  </div>
-</header><!-- #header -->
+
+@extends('_layouts.header')
 
 <section id="intro" class="clearfix">
     <div class="container">
@@ -171,15 +161,24 @@
               </i>
           </div>
         </div>
-        <div class="col text-center mt-5">
-          <p class="h2 mb-5 text-light">Gostou? Agende uma demonstração conosco!</p>
-          <a href="https://t.me/LibreCodeCoop" target="blank" class="btn btn-light btn-lg mt-2">Saiba mais</a>
-        </div>
       </div>
     </div>
 
-    <p class="texto-nextcloud text-center text-light">Nextcloud é uma marca registrada de Nextcloud GmbH.</p>
 
+  </section>
+
+  <section id="about" class="products">
+    <div class="container">
+      <div class="row about-container">
+        <div class="col-lg-12 icon-box wow fadeInUp" style="text-align: center;">
+          <p class="h2 mb-5 text-dark">Gostou? Agende uma demonstração conosco!</p>
+          <a href="https://t.me/LibreCodeCoop" target="blank" class="btn btn-light btn-lg mt-2">Saiba mais</a>
+        </div>
+        <div class="col-lg-12 icon-box wow fadeInUp" style="text-align: center;">
+          <p class="texto-nextcloud text-center text-dark">Nextcloud é uma marca registrada de Nextcloud GmbH.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
 </main>
