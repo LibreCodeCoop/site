@@ -6,7 +6,7 @@
 /.vscode/
 npm-debug.log
 yarn-error.log
-
+/source/assets/sitemap.xml
 # Optional ignores
 # /build_staging/
 # /build_production/
