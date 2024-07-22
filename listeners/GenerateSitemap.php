@@ -7,15 +7,12 @@ class GenerateSitemap
 {
     public function handle(Jigsaw $jigsaw)
     {
-        $locale = file_get_contents('CNAME');
+        $baseUrl = trim(file_get_contents('CNAME'));
         $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
 
-        collect($jigsaw->getOutputPaths())->each(function ($path) use ($locale, $sitemap) {
-            echo $path;
+        collect($jigsaw->getOutputPaths())->each(function ($path) use ($baseUrl, $sitemap) {
             if (! $this->isAsset($path)) {
-                $path = count(explode('/', $path)) === 1 ? '/'.$path : $path;
-                $url = 'https://'. $locale . $path;
-                $sitemap->addItem($url, time(), Sitemap::DAILY);
+                $sitemap->addItem('https://'.$baseUrl . $path, time(), Sitemap::DAILY);
             }
         });
 
