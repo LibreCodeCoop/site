@@ -144,7 +144,7 @@
             <div class="apoie-logo">
               <img src="{{ $page->baseUrl }}assets/images/apoie/patreon.png" class="img-fluid apoie" alt="">
             </div>
-            <p>
+            <p class="text-justify p-5">
               Patreon é um portal de financiamento coletivo de projetos independentes. <br>
               Lá você poderá escolher nos apoiar com um valor mensal em troca de algumas recompensas no uso de nossos produtos.
             </p>
@@ -154,15 +154,13 @@
           </div>
           <div class="col-lg-6 col-md-6 col-xs-6">
             <div class="apoie-logo">
-              <img src="{{ $page->baseUrl }}assets/images/apoie/bountysource.svg" class="img-fluid apoie" alt="">
+              <i class="fa fa-github fa-5x" aria-hidden="true"></i>
             </div>
-            <p>
-              Bountysource é um site de financimanto de projetos de código aberto.
-              Lá você pode financiar a solução de alguma melhoria, correção ou desenvolvimento de nova funcionalidade em nossos produtos,
-              ou desenvolver a solução para as tarefas pendentes.
+            <p class="text-justify p-5">
+              O GitHub Sponsors permite à comunidade de desenvolvedores apoiar financeiramente as pessoas e organizações que projetam, criam e mantêm projetos de código aberto do qual dependem, diretamente no GitHub.
             </p>
-            <a href="https://www.bountysource.com/teams/libresign/issues" target=“_blank”>
-              Ir para Bountysource
+            <a href="https://github.com/sponsors/LibreSign" target=“_blank”>
+              Ir para Github Sponsor
             </a>
           </div>
         </div>
