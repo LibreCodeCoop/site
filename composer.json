@@ -7,7 +7,8 @@
         "gregwar/captcha": "^1.2",
         "libresign/espeak": "dev-main",
         "nesbot/carbon": "^3.3",
-        "elaborate-code/jigsaw-localization": "dev-main"
+        "elaborate-code/jigsaw-localization": "dev-main",
+        "samdark/sitemap": "^2.4"
     },
     "autoload": {
         "psr-4": {
