@@ -5,14 +5,12 @@ services:
     ports:
       - 127.0.0.1:${HTTP_PORT:-80}:80
     volumes:
-      - .docker/nginx/:/etc/nginx/conf.d/ 
+      - .docker/nginx/:/etc/nginx/conf.d/
       - ./build_local:/var/www/html
 
   php:
     build:
       context: .docker/php
-      args:
-        - NODE_MAJOR=${NODE_MAJOR:-20}
     ports:
       - "127.0.0.1:${HTTP_PORT:-3000}:3000"
       - "127.0.0.1:${HTTP_PORT_BROWSERSYNC:-3001}:3001"

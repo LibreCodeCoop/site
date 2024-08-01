@@ -1,7 +1,5 @@
 FROM php:8.3-fpm
 
-ARG NODE_MAJOR=20
-
 RUN apt-get update \
     && apt-get install -y \
         git \
@@ -27,6 +25,10 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | ba
     && . "$NVM_DIR/nvm.sh" \
     && nvm install 20 \
     && nvm alias default 20
+
+ENV NVM_DIR   /root/.nvm
+ENV NODE_PATH $NVM_DIR/v20/lib/node_modules
+ENV PATH      $NVM_DIR/v20/bin:$PATH
 
 RUN echo "alias jigsaw=./vendor/bin/jigsaw" >> /etc/bash.bashrc && \
     echo "alias compile='./vendor/bin/jigsaw build'" >> /etc/bash.bashrc && \
