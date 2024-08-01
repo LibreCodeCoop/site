@@ -6,7 +6,7 @@ return [
     'production' => false,
     'baseUrl' => '/',
     'title' => 'LibreCode',
-    'description' => 'Website description.',
+    'description' => 'Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre.',
     'collections' => [
         'posts' => [
             'path' => 'posts/{-title}',
