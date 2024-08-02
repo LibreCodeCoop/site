@@ -5,6 +5,16 @@
   <title>{{ $page->title }}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
+  @if (!empty($og_image))
+    <meta property="og:image" content="{{ $og_image }}"/>
+  @else
+    <meta property="og:image" content="{{ $page->baseUrl }}assets/images/coop.png"/>
+  @endif
+  <meta property="og:url" content="{{ $page->getUrl() }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LibreCode">
+  <meta property="og:description" content="{{ $page->description }}">
+
   <link rel="canonical" href="{{ $page->getUrl() }}">
   <meta name="description" content="{{ $page->description }}">
 
