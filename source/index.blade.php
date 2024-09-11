@@ -155,4 +155,7 @@
       </div>
     </section><!-- #intro -->
   </main>
+
+  @include('_partials.contact_form')
+
 @endsection
