@@ -139,19 +139,7 @@
           <p>Se você utiliza ou deseja utilizar nossos produtos e gostaria de contribuir com o desenvolvimento deles.
             Existem diversas formas de você nos apoiar:</p>
         </div>
-        <div class="row apoie-wrap clearfix wow fadeInUp">
-          <div class="col-lg-6 col-md-6 col-xs-6">
-            <div class="apoie-logo">
-              <img src="{{ $page->baseUrl }}assets/images/apoie/patreon.png" class="img-fluid apoie" alt="">
-            </div>
-            <p class="text-justify p-5">
-              Patreon é um portal de financiamento coletivo de projetos independentes. <br>
-              Lá você poderá escolher nos apoiar com um valor mensal em troca de algumas recompensas no uso de nossos produtos.
-            </p>
-            <a href="https://www.patreon.com/librecode" target=“_blank”>
-              Ir para Patreon
-            </a>
-          </div>
+        <div class="row apoie-wrap clearfix wow fadeInUp justify-content-md-center">
           <div class="col-lg-6 col-md-6 col-xs-6">
             <div class="apoie-logo">
               <i class="fa fa-github fa-5x" aria-hidden="true"></i>
@@ -159,7 +147,7 @@
             <p class="text-justify p-5">
               O GitHub Sponsors permite à comunidade de desenvolvedores apoiar financeiramente as pessoas e organizações que projetam, criam e mantêm projetos de código aberto do qual dependem, diretamente no GitHub.
             </p>
-            <a href="https://github.com/sponsors/LibreSign" target=“_blank”>
+            <a class="pl-5" href="https://github.com/sponsors/LibreSign" target=“_blank”>
               Ir para Github Sponsor
             </a>
           </div>
