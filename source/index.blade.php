@@ -156,6 +156,6 @@
     </section><!-- #intro -->
   </main>
 
-  @include('_partials.contact_form')
+  @include('_partials.contato_form')
 
 @endsection
