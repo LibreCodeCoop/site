@@ -17,7 +17,6 @@
                 <div class="col-lg-8 pt-5">
                     <h4 class="text-center mb-5">Vamos quebrar o gelo.</h4>
                     <p class="text-center mb-5 p-3">Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de mais informações sobre nossos produtos e serviços, não hesite em nos contatar. </p>
-                    {{-- <h5 class="text-center">Contate-nos</h5> --}}
                     <iframe id="form-contato" src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y" style="width: 100%;height:460px;border: 0;overflow:hidden;" scrolling="no"></iframe>
                 </div>
                 
