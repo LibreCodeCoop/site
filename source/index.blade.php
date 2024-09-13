@@ -154,33 +154,8 @@
         </div>
       </div>
     </section><!-- #intro -->
-
-     <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h3>Contato</h3>
-        </div>
-        <div class="row wow fadeInUp">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-6 info">
-                <i class="ion-ios-email-outline"></i>
-                <p>contato@librecode.coop</p>
-              </div>
-              <div class="col-md-6 info" style="text-align: right;">
-                <i class="ion-ios-telephone-outline"></i>
-                <p>+55(21)2042-2073</p>
-              </div>
-            </div>
-            <div class="form">
-              <iframe id="form-contato" src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y" style="width: 100%;height:460px;border: 0;overflow:hidden;" scrolling="no"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- #contact -->
   </main>
+
+  @include('_partials.contact_form')
+
 @endsection
