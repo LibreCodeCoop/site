@@ -8,7 +8,7 @@
   @if (!empty($og_image))
     <meta property="og:image" content="{{ $og_image }}"/>
   @else
-    <meta property="og:image" content="{{ $page->baseUrl }}assets/images/coop.png"/>
+    <meta property="og:image" content="{{ $page->baseUrl }}assets/images/logo.png"/>
   @endif
   <meta property="og:url" content="{{ $page->getUrl() }}">
   <meta property="og:type" content="website">
