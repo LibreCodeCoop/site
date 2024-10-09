@@ -4,7 +4,7 @@
 <header id="header" class="fixed-top">
   <div class="container">
     <div class="logo float-left">
-      <a href="/" class="scrollto"><img src="../assets/images/logo.png" alt="" class="img-fluid"></a>
+      <a href="/" class="scrollto"><img src="../assets/images/logo/librecode.png" alt="" class="img-fluid"></a>
     </div>
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
@@ -20,7 +20,7 @@
           <h2>Assembleias on-line</h2>
           <p>Conheça o <b>Távola</b>, um sistema com todo o necessário para a realização de assembleias de forma remota e com validade jurídica.</p>
       </div>
-    </div>    
+    </div>
 </section>
 <main id="main">
   <section id="about">
@@ -47,22 +47,22 @@
                 <h4 class="title">
                   <i class="fa fa-check"></i> Chat para comunicação durante a assembleia
                 </h4>
-              </div>                                               
+              </div>
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                 <h4 class="title">
                   <i class="fa fa-check"></i> Criação de votações com possibilidade de voto secreto ou nominal
                 </h4>
-              </div>    
+              </div>
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                 <h4 class="title">
                   <i class="fa fa-check"></i> Geração de boletim dos votos
                 </h4>
-              </div> 
+              </div>
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                 <h4 class="title">
                   <i class="fa fa-check"></i> Geração de relatório de presença e de votação
                 </h4>
-              </div> 
+              </div>
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                 <h4 class="title">
                   <i class="fa fa-check"></i> Gravação da assembléia
