@@ -6,7 +6,7 @@
                 <div>
                     <a href="https://www.somos.coop.br/" target="_blank">
                         <img
-                        src="{{ $page->baseUrl }}assets/images/somoscoop-horizontal-light.png"
+                        src="{{ $page->baseUrl }}assets/images/logo/somoscoop-horizontal-light.png"
                         alt="somos coop logo imagem"
                         width="220" height="200"
                         />
