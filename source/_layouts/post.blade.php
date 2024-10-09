@@ -17,7 +17,7 @@
 
                 <article class="article-detail-blog">
                   <div class="article-img">
-                    <img src="{{ $page->banner }}" alt="banner-image" class="img-fluid">
+                    <img src="{{ $page->banner }}" alt="banner-image" class="img-fluid rounded mx-auto d-block">
                   </div>
 
                   <div class="container mt-4 mb-5 p-3">
