@@ -1,6 +1,6 @@
 ---
 extends: _layouts.post
-title: Cooperativismo e Tecnológia - A união que transforma!
+title: Cooperativismo e Tecnologia - A união que transforma!
 author: LibreCode
 date: 2024-10-09
 description: Descubra como a LibreCode une cooperativismo e tecnologia para criar soluções de software livre, promovendo impacto social, colaboração e liberdade na transformação digital das empresas.
