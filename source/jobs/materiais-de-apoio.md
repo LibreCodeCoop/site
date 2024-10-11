@@ -13,8 +13,11 @@ extends: _layouts.job
         - [Revolution OS](https://libreflix.org/i/revolution-os)
         - [The Code](https://libreflix.org/i/the-code)
 * Cursos
-  * Faça cadastro no site https://www.capacita.coop.br
-    * Selecione "não se aplica" no campo inscrição - quando solicitado a cooperativa.
+  * Faça cadastro no site [Capacita Coop](https://www.capacita.coop.br)
+    * Preencha:
+      * **Unidade da Federação de Residência**: Rio de Janeiro
+      * **É vinculado à alguma cooperativa?**: Cooperativa
+      * **Cooperativa**: LibreCode
   * Cursos obrigatórios
     * Nacionais
       * [Cooperativismo - Primeiras lições](https://capacita.coop.br/cursos-studion/cooperativismo-primeiras-licoes)
