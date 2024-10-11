@@ -17,6 +17,6 @@ extends: _layouts.job
     * Selecione "não se aplica" no campo inscrição - quando solicitado a cooperativa.
   * Cursos obrigatórios
     * Nacionais
-      * Cooperativismo - Primeiras lições
-      * Entendendo a sociedade cooperativa
+      * [Cooperativismo - Primeiras lições](https://capacita.coop.br/cursos-studion/cooperativismo-primeiras-licoes)
+      * [Entendendo a sociedade cooperativa](https://capacita.coop.br/cursos-studion/entendendo-a-sociedade-cooperativa-2)
   * Ao concluir os cursos, envie em nosso grupo o comprovante de conclusão
