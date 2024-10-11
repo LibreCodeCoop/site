@@ -57,7 +57,7 @@
         <div class="row row-eq-height justify-content-center">
           <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp pr-5 pl-5">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud_logo.png" alt="nextcloud logo" width="150px">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="nextcloud logo" width="150px">
               <p class="mb-4 mt-2 h4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <div class="card-body">
                 <a href="{{ $page->baseUrl }}nextcloud" class="btn btn-secondary btn-lg btn-block">Conheça!</a>
@@ -66,7 +66,7 @@
           </div>
           <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp pr-5 pl-5">
-               <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/libresign_logo.png" alt="libresign logo" width="150px">
+               <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="libresign logo" width="150px">
                <p class="mt-5 mb-4 h4">Plataforma completa para assinatura digital de documentos, com praticidade e segurança e validade jurídica.</p>
               <div class="card-body">
                 <a href="https://libresign.coop/" class="btn btn-secondary btn-lg btn-block" target=“_blank”>Conheça!</a>
