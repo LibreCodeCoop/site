@@ -75,8 +75,13 @@
         <div class="author-container d-flex align-items-center">
           @foreach($team as $item => $option)
             @if($option->name == $page->author)
-              <img src="https://www.gravatar.com/avatar/{{$option->gravatar}}?size=170"
-              alt="{{ $option->name }}" class="rounded-circle flex-shrink-0" alt="author_image">
+              @if($option->name == 'LibreCode')
+                <img src="{{$page->baseUrl }}assets/images/logo/librecode_author.jpg"
+                alt="{{ $option->name }}" class="rounded-circle flex-shrink-0" alt="author_image">
+              @else
+                <img src="https://www.gravatar.com/avatar/{{$option->gravatar}}?size=170"
+                alt="{{ $option->name }}" class="rounded-circle flex-shrink-0" alt="author_image">
+              @endif
               <div>
                 <h4>{{ $option->name }}</h4>
                 <div class="social-links">
