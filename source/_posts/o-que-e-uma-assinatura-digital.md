@@ -16,11 +16,52 @@ A assinatura digital utiliza criptografia para validar a identidade do usuário 
 ### Quais os tipos de assinatura digital?
 Como vimos, a assinatura digital é uma tecnologia para confirmar a identidade do signatário, seja pessoa ou empresa e autenticidade do documento. Mas para entender os tipos de assinaturas digitais precisamos entender quais as categorias de assinaturas que existem. Atualmente temos quatro tipos de assinaturas - a manuscrita, a digitalizada, a eletrônica e a digital.
 
-Tipo de Assinatura | Descrição | Características e Segurança | Exemplos de Uso
--- | -- | -- | --
-Assinatura Manuscrita | Tipo mais tradicional de autenticação, feita manualmente com caneta em documentos físicos. | - Requer assinatura presencial com cópia física do documento. - Segurança depende de fatores externos, como reconhecimento de firma em cartório. - Necessidade de armazenamento físico dos documentos. | - Assinatura de contratos de empresas. - Reconhecimento de firma em cartório. - Documentos físicos formais.
-Assinatura Eletrônica | Assinatura realizada digitalmente, podendo ter diferentes níveis de segurança conforme a Lei 14.063/20 (Assinatura Simples, Avançada e Qualificada). | - Simples: Identifica o signatário com evidências básicas (e-mail, senha, telefone). Indicada para situações de baixo risco. - Avançada: Usa métodos criptográficos e certificados digitais corporativos (ICP-Brasil ou fora). Apropriada para transações legais e financeiras. - Qualificada: Exige certificado digital emitido por uma AC credenciada na ICP-Brasil. Altíssima segurança, detecta qualquer alteração no documento após a assinatura. | - Simples: Relatórios, recibos, agendamento de serviços. - Avançada: Transações financeiras, contratos sensíveis. - Qualificada: Notas fiscais eletrônicas, documentos de saúde, registros imobiliários.
-Assinatura Digital | É um tipo de assinatura eletrônica qualificada, com alto nível de segurança. | - Requer certificado digital emitido por uma AC no padrão ICP-Brasil. - É a forma mais segura de assinatura eletrônica. - Garante integridade e autenticidade do documento, impedindo alterações sem detecção. | - Assinatura de documentos oficiais. - Transferência de imóveis. - Emissão de notas fiscais eletrônicas.
+#### 1 - Assinatura Manuscrita
+
+##### Descrição
+Tipo mais tradicional de autenticação, feita manualmente com caneta em documentos físicos.
+
+##### Características e Segurança
+- Requer assinatura presencial com cópia física do documento.
+- Segurança depende de fatores externos, como reconhecimento de firma em cartório.
+- Necessidade de armazenamento físico dos documentos.
+
+##### Exemplos de Uso
+- Assinatura de contratos de empresas.
+- Reconhecimento de firma em cartório.
+- Documentos físicos formais.
+
+
+#### 2 - Assinatura Eletrônica
+
+##### Descrição
+Assinatura realizada digitalmente, podendo ter diferentes níveis de segurança conforme a Lei 14.063/20 (Assinatura Simples, Avançada e Qualificada).
+
+##### Características e Segurança
+- Simples: Identifica o signatário com evidências básicas (e-mail, senha, telefone). Indicada para situações de baixo risco.
+- Avançada: Usa métodos criptográficos e certificados digitais corporativos (ICP-Brasil ou fora). Apropriada para transações legais e financeiras.
+- Qualificada: Exige certificado digital emitido por uma AC credenciada na ICP-Brasil. Altíssima segurança, detecta qualquer alteração no documento após a assinatura.
+
+##### Exemplos de Uso
+- Simples: Relatórios, recibos, agendamento de serviços.
+- Avançada: Transações financeiras, contratos sensíveis.
+- Qualificada: Notas fiscais eletrônicas, documentos de saúde, registros imobiliários.
+
+
+#### 3 - Assinatura Digital
+
+##### Descrição
+É um tipo de assinatura eletrônica qualificada, com alto nível de segurança.
+
+##### Características e Segurança
+- Requer certificado digital emitido por uma AC no padrão ICP-Brasil.
+- É a forma mais segura de assinatura eletrônica. - Garante integridade e autenticidade do documento, impedindo alterações sem detecção.
+
+##### Exemplos de Uso
+- Assinatura de documentos oficiais.
+- Transferência de imóveis.
+- Emissão de notas fiscais eletrônicas.
+
 
 ### Quais as vantagens da assinatura digital?
 
