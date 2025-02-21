@@ -18,15 +18,13 @@ Como vimos, a assinatura digital é uma tecnologia para confirmar a identidade d
 
 #### 1 - Assinatura Manuscrita
 
-##### Descrição
 Tipo mais tradicional de autenticação, feita manualmente com caneta em documentos físicos.
 
-##### Características e Segurança
 - Requer assinatura presencial com cópia física do documento.
 - Segurança depende de fatores externos, como reconhecimento de firma em cartório.
 - Necessidade de armazenamento físico dos documentos.
 
-##### Exemplos de Uso
+##### Usado em:
 - Assinatura de contratos de empresas.
 - Reconhecimento de firma em cartório.
 - Documentos físicos formais.
@@ -34,15 +32,13 @@ Tipo mais tradicional de autenticação, feita manualmente com caneta em documen
 
 #### 2 - Assinatura Eletrônica
 
-##### Descrição
 Assinatura realizada digitalmente, podendo ter diferentes níveis de segurança conforme a Lei 14.063/20 (Assinatura Simples, Avançada e Qualificada).
 
-##### Características e Segurança
 - Simples: Identifica o signatário com evidências básicas (e-mail, senha, telefone). Indicada para situações de baixo risco.
 - Avançada: Usa métodos criptográficos e certificados digitais corporativos (ICP-Brasil ou fora). Apropriada para transações legais e financeiras.
 - Qualificada: Exige certificado digital emitido por uma AC credenciada na ICP-Brasil. Altíssima segurança, detecta qualquer alteração no documento após a assinatura.
 
-##### Exemplos de Uso
+##### Usado em:
 - Simples: Relatórios, recibos, agendamento de serviços.
 - Avançada: Transações financeiras, contratos sensíveis.
 - Qualificada: Notas fiscais eletrônicas, documentos de saúde, registros imobiliários.
@@ -50,14 +46,12 @@ Assinatura realizada digitalmente, podendo ter diferentes níveis de segurança 
 
 #### 3 - Assinatura Digital
 
-##### Descrição
 É um tipo de assinatura eletrônica qualificada, com alto nível de segurança.
 
-##### Características e Segurança
 - Requer certificado digital emitido por uma AC no padrão ICP-Brasil.
 - É a forma mais segura de assinatura eletrônica. - Garante integridade e autenticidade do documento, impedindo alterações sem detecção.
 
-##### Exemplos de Uso
+##### Usado em:
 - Assinatura de documentos oficiais.
 - Transferência de imóveis.
 - Emissão de notas fiscais eletrônicas.
