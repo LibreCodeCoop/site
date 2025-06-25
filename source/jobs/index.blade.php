@@ -45,26 +45,16 @@
             <h4 class="mt-5">Local de trabalho</h4>
             <div class="ml-5 mb-5">
                 <i class="lni lni-home"></i>
-                <span>0.0.0.0 ou 127.0.0.1</span>
+                <span><code>0.0.0.0</code> ou <code>127.0.0.1</code></span>
             </div>
 
             <h4 class="mb-5"><a href="{{ $page->baseUrl }}jobs/forma-contratacao">Forma de contratação</a></h4>
 
             <h4 class="mb-5"><a href="{{ $page->baseUrl }}jobs/beneficios">Benefícios</a></h4>
 
-            <h4 id="pre-requisito" class="mb-5"><a href="{{ $page->baseUrl }}jobs/pre-requisitos">Pré-requisitos</a></h4>
-
             <h4 class="mb-5"><a href="{{ $page->baseUrl }}jobs/area-de-atuacao">Área de atuação</a></h4>
 
-            <h4>Como se candidatar</h4>
-
-            <ul>
-                <li>Dê estrelinhas neste e em outros repos da LibreCode que curtir</li>
-                <li>Atender aos <a href="{{ locale_path($page, $page->baseUrl) }}jobs/#pre-requisito">pré-requisitos</a></li>
-                <li>Dar um oi em nosso <a href="https://t.me/LibreCodeCoop" target="blank">grupo público informando que tem interesse em fazer parte do time</li>
-                <li>Submeter <a href="https://ls.librecode.coop/index.php?r=survey/index&sid=154438&lang=pt-BR" target="blank">proposta de admissão</a></li>
-            </ul>
-
+            <h4 id="pre-requisito" class="mb-5"><a href="{{ $page->baseUrl }}jobs/pre-requisitos">Vamos juntos cooperar!</a></h4>
 
         </div>
     </section>
