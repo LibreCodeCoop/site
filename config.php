@@ -4,6 +4,7 @@ use Illuminate\Support\Str;
 
 return [
     'production' => false,
+    'matomo_container' => 'Ux1Y5m98_dev_08f02616a270a3d80b35beb7',
     'baseUrl' => '/',
     'title' => 'LibreCode',
     'description' => 'Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre.',
