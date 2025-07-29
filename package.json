@@ -7,7 +7,7 @@
         "prod": "mix --production"
     },
     "devDependencies": {
-        "browser-sync": "^3.0.2",
+        "browser-sync": "^3.0.4",
         "browser-sync-webpack-plugin": "https://github.com/madbucket/browser-sync-webpack-plugin",
         "laravel-mix": "^6.0.39",
         "laravel-mix-jigsaw": "^2.0.0",
