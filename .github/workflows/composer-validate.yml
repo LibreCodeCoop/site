@@ -11,9 +11,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      - name: Set up php 8.3
+      - name: Set up php 8.4
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.3
+          php-version: 8.4
       - name: Validate composer files
         run: composer validate --strict
