@@ -57,6 +57,16 @@
   <!-- <script src="contactform/contactform.js"></script>-->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   @yield('footer_scripts')
+    <script>
+      var _mtm = window._mtm = window._mtm || [];
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true;
+        g.src='https://matomo.librecode.coop/js/container_{{ $page->matomo_container }}.js';
+        s.parentNode.insertBefore(g,s);
+      })();
+    </script>
   @if ($page->production)
 	<script type="text/javascript">
     (function(w, d, s, u) {
@@ -66,21 +76,6 @@
       h.parentNode.insertBefore(j, h);
     })(window, document, 'script', 'https://chat.librecode.coop/livechat');
   </script>
-  <script type="text/javascript">
-    var _paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matomo.librecode.coop/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '2']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript>
-    <img src="https://matomo.librecode.coop/matomo.php?idsite=2&amp;rec=1&amp;action_name={{ $page->getUrl() }}" style="border:0" alt="" />
-  </noscript>
   @endif
 <script>
   var lightbox = GLightbox();
