@@ -17,4 +17,4 @@ extends: _layouts.job
 * Auxiliar no suporte a clientes
 
 ## Como candidatar-se?
-* Instruções na [home](/jobs) deste repositório
+* Instruções [aqui](../)

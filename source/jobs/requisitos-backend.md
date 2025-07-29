@@ -14,4 +14,4 @@ extends: _layouts.job
 * Projetar e implementar aplicações web diversas (principalmente PHP)
 
 ## Como candidatar-se?
-* Instruções na [home](/jobs) deste repositório
+* Instruções [aqui](../)

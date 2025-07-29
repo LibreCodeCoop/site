@@ -20,4 +20,4 @@ extends: _layouts.job
 * Projetar e implementar frontend para aplicações web diversas
 
 ## Como candidatar-se?
-* Instruções na [home](/jobs) deste repositório
+* Instruções [aqui](../)
