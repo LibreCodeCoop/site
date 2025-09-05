@@ -93,22 +93,63 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
   });
 
   // Navigation active state on scroll
-  var nav_sections = $('section');
+  var nav_sections = $('section[id], main[id]');
   var main_nav = $('.main-nav, .mobile-nav');
   var main_nav_height = $('#header').outerHeight();
 
-  $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
-  
+  function updateActiveNavOnScroll(current_scroll_position) {
+    var matched = false;
     nav_sections.each(function() {
-      var top = $(this).offset().top - main_nav_height,
-          bottom = top + $(this).outerHeight();
-  
-      if (cur_pos >= top && cur_pos <= bottom) {
-        main_nav.find('li').removeClass('active');
-        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+      var $section = $(this);
+      var top = $section.offset().top - main_nav_height;
+      var bottom = top + $section.outerHeight();
+
+      if (current_scroll_position >= top && current_scroll_position <= bottom) {
+        var id = $section.attr('id');
+        var current_path = window.location.pathname.replace(/\/+$/, '');
+        var $link = main_nav
+          .find('a[href$="#' + id + '"]')
+          .filter(function() {
+            try {
+              var url = new URL(this.getAttribute('href'), window.location.origin);
+              var link_path = url.pathname.replace(/\/+$/, '');
+              return link_path === current_path;
+            } catch (e) { return false; }
+          });
+        if ($link.length) {
+          main_nav.find('li').removeClass('active');
+          $link.parent('li').addClass('active');
+          matched = true;
+          return false;
+        }
       }
     });
+    return matched;
+  }
+
+  $(window).on('scroll', function () {
+    updateActiveNavOnScroll($(this).scrollTop());
+  });
+
+  $(window).on('load', function () {
+    var hadMatch = updateActiveNavOnScroll($(window).scrollTop());
+
+    if (!hadMatch && main_nav.find('li.active').length === 0) {
+      var current_path = window.location.pathname.replace(/\/+$/, '');
+      main_nav.find('a').each(function() {
+        var href = this.getAttribute('href');
+        if (!href || href.indexOf('#') !== -1) return;
+        try {
+          var url = new URL(href, window.location.origin);
+          var link_path = url.pathname.replace(/\/+$/, '');
+          if (link_path === current_path) {
+            main_nav.find('li').removeClass('active');
+            $(this).parent('li').addClass('active');
+            return false;
+          }
+        } catch (e) { console.log(e); }
+      });
+    }
   });
 
   // Porfolio isotope and filter

@@ -351,6 +351,35 @@ h6 {
   text-decoration: none;
 }
 
+.main-nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  height: 3px;
+  background: transparent;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease, background-color 0.25s ease, bottom 0.5s ease;
+  border-radius: 2px;
+  will-change: bottom;
+}
+
+.main-nav > ul > li.active > a::after {
+  background: #e5332aff;
+  transform: scaleX(1);
+}
+
+#header.header-scrolled .main-nav > ul > li > a::after,
+#header.header-pages .main-nav > ul > li > a::after {
+  bottom: -10px;
+}
+
+.main-nav > ul > li.active > a {
+  font-weight: 600;
+}
+
 .main-nav .drop-down ul {
   display: block;
   position: absolute;
