@@ -11,6 +11,7 @@ Para ser sócio você precisa conhecer sobre cooperativismo. Seguem alguns passo
     * **Unidade da Federação de Residência**: Rio de Janeiro
     * **É vinculado à alguma cooperativa?**: Cooperativa
     * **Cooperativa**: LibreCode
+    * **Tipo de Vínculo com a Cooperativa**: Cooperado
 * Realizar os seguintes cursos (pelo menos)
   * Nacionais
     * [Cooperativismo - Primeiras lições](https://capacita.coop.br/cursos-studion/cooperativismo-primeiras-licoes)
