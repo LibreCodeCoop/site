@@ -813,32 +813,43 @@ h6 {
 
 #why-us {
   padding: 60px 0;
-  background: #e5332a;;;
+  background: #f8f9fa;
 }
 
 #why-us p {
   color: #444;
 }
 
-#why-us .section-header h3,
+#why-us .section-header h3 {
+  color: #333;
+}
+
 #why-us .section-header p {
-  color: #fff;
+  color: #666;
+}
+
+#why-us h4 {
+  color: #333;
+  font-weight: 600;
 }
 
 #why-us .card {
-  border-color: rgb(197, 212, 245);
-  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
   margin: 0 15px;
   padding: 15px 0;
   text-align: center;
-  color: #fff;
-  transition: 0.3s ease-in-out;
+  color: #333;
+  transition: all 0.3s ease-in-out;
   height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #why-us .card:hover {
-  background: white;
-  border-color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(229, 51, 42, 0.15);
+  border-color: #e5332a;
 }
 
 #why-us .card i {
@@ -854,6 +865,49 @@ h6 {
 #why-us .card h5 {
   font-size: 22px;
   font-weight: 600;
+  color: #333;
+}
+
+#why-us .card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+#why-us .btn-secondary {
+  background-color: #e5332a;
+  border-color: #e5332a;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#why-us .btn-secondary:hover {
+  background-color: #c72a23;
+  border-color: #c72a23;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 51, 42, 0.3);
+}
+
+#why-us .btn-primary {
+  background-color: #e5332a;
+  border-color: #e5332a;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 40px;
+  transition: all 0.3s ease;
+}
+
+#why-us .btn-primary:hover {
+  background-color: #c72a23;
+  border-color: #c72a23;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229, 51, 42, 0.4);
+}
+
+#why-us .text-muted {
+  color: #666 !important;
 }
 
 #why-us .card .readmore {
