@@ -74,9 +74,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
-                <i class="fa fa-clock-o" style="font-size: 80px; color: #50a5f1;"></i>
-              </div>
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/kimai.png" alt="kimai logo" width="120px">
               <h5 class="text-center mt-3">Kimai</h5>
               <p class="mb-4">Controle de horas e gestão de tempo para projetos. Acompanhe o tempo investido em cada atividade e melhore a produtividade.</p>
               <div class="card-body pb-3 mt-auto">
@@ -86,9 +84,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.2s">
-              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
-                <i class="fa fa-usd" style="font-size: 80px; color: #50a5f1;"></i>
-              </div>
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/akaunting.png" alt="akaunting logo" width="120px">
               <h5 class="text-center mt-3">Akaunting</h5>
               <p class="mb-4">Software de gestão financeira completo. Controle receitas, despesas, faturamento e tenha visão total das finanças da sua organização.</p>
               <div class="card-body pb-3 mt-auto">
@@ -136,9 +132,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
-                <i class="fa fa-bar-chart" style="font-size: 80px; color: #50a5f1;"></i>
-              </div>
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/limesurvey.png" alt="limesurvey logo" width="120px">
               <h5 class="text-center mt-3">LimeSurvey</h5>
               <p class="mb-4">Crie pesquisas e formulários profissionais. Colete dados, analise respostas e tome decisões baseadas em informações concretas.</p>
               <div class="card-body pb-3 mt-auto">
@@ -157,9 +151,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
-                <i class="fa fa-users" style="font-size: 80px; color: #50a5f1;"></i>
-              </div>
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/suitecrm.png" alt="suitecrm logo" width="120px">
               <h5 class="text-center mt-3">SuiteCRM</h5>
               <p class="mb-4">Gestão completa de relacionamento com clientes. Organize vendas, marketing e atendimento em uma única plataforma integrada.</p>
               <div class="card-body pb-3 mt-auto">
@@ -178,9 +170,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
-                <i class="fa fa-link" style="font-size: 80px; color: #50a5f1;"></i>
-              </div>
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/yourls.png" alt="yourls logo" width="120px">
               <h5 class="text-center mt-3">Yourls</h5>
               <p class="mb-4">Encurtador de URLs personalizado. Crie links curtos com sua própria marca e tenha controle total sobre estatísticas de acesso.</p>
               <div class="card-body pb-3 mt-auto">
