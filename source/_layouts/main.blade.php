@@ -40,5 +40,22 @@
     @include('_layouts.header')
     @yield('body')
     @include('_layouts.footer')
+
+    <!-- Chatwoot widget -->
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://chatwoot.librecode.coop";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: '1FWLmSUAXnZd8qhUB5rsPCdq',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
 </body>
 </html>
