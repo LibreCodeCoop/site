@@ -52,7 +52,6 @@ jobs:
             const runId = context.runId;
             const artifactUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId}`;
             
-            // Buscar comentários existentes do bot
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -61,26 +60,27 @@ jobs:
             
             const botComment = comments.find(comment => 
               comment.user.type === 'Bot' && 
-              comment.body.includes('🔍 Preview do Site')
+              comment.body.includes('Preview do Site')
             );
             
-            const commentBody = `## 🔍 Preview do Site
-            
-✅ O preview foi gerado com sucesso!
-
-### Como visualizar:
-1. Acesse a [página da Action](${artifactUrl})
-2. Role até a seção "Artifacts"
-3. Baixe o arquivo \`preview-pr-${prNumber}\`
-4. Descompacte e abra \`index.html\` no navegador
-
-🔄 O preview é atualizado automaticamente a cada novo commit neste PR.
-
----
-<sub>Preview gerado pela GitHub Action • Artefato disponível por 7 dias</sub>`;
+            const commentBody = [
+              '## \ud83d\udd0d Preview do Site',
+              '',
+              '\u2705 O preview foi gerado com sucesso!',
+              '',
+              '### Como visualizar:',
+              `1. Acesse a [p\u00e1gina da Action](${artifactUrl})`,
+              '2. Role at\u00e9 a se\u00e7\u00e3o "Artifacts"',
+              `3. Baixe o arquivo \`preview-pr-${prNumber}\``,
+              '4. Descompacte e abra \`index.html\` no navegador',
+              '',
+              '\ud83d\udd04 O preview \u00e9 atualizado automaticamente a cada novo commit neste PR.',
+              '',
+              '---',
+              '<sub>Preview gerado pela GitHub Action \u2022 Artefato dispon\u00edvel por 7 dias</sub>'
+            ].join('\n');
             
             if (botComment) {
-              // Atualizar comentário existente
               await github.rest.issues.updateComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -88,7 +88,6 @@ jobs:
                 body: commentBody,
               });
             } else {
-              // Criar novo comentário
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
