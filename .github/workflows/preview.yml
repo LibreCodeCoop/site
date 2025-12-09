@@ -37,20 +37,20 @@ jobs:
       - name: Build site
         run: npm run prod
 
-      - name: Deploy preview to GitHub Pages
-        uses: rossjrw/pr-preview-action@v1
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
         with:
-          source-dir: build_production
-          preview-branch: gh-pages-preview
-          umbrella-dir: pr-preview
-          action: auto
+          name: preview-pr-${{ github.event.pull_request.number }}
+          path: build_production/
+          retention-days: 7
 
       - name: Comment preview URL
         uses: actions/github-script@v7
         with:
           script: |
             const prNumber = context.issue.number;
-            const previewUrl = `https://librecode.coop/pr-preview/pr-${prNumber}/`;
+            const runId = context.runId;
+            const artifactUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId}`;
             
             // Buscar comentários existentes do bot
             const { data: comments } = await github.rest.issues.listComments({
@@ -66,13 +66,18 @@ jobs:
             
             const commentBody = `## 🔍 Preview do Site
             
-O preview do site está disponível em:
-🔗 **${previewUrl}**
+✅ O preview foi gerado com sucesso!
 
-✅ O preview é atualizado automaticamente a cada novo commit neste PR.
+### Como visualizar:
+1. Acesse a [página da Action](${artifactUrl})
+2. Role até a seção "Artifacts"
+3. Baixe o arquivo \`preview-pr-${prNumber}\`
+4. Descompacte e abra \`index.html\` no navegador
+
+🔄 O preview é atualizado automaticamente a cada novo commit neste PR.
 
 ---
-<sub>Preview gerado pela GitHub Action</sub>`;
+<sub>Preview gerado pela GitHub Action • Artefato disponível por 7 dias</sub>`;
             
             if (botComment) {
               // Atualizar comentário existente
