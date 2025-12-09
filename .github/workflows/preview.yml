@@ -1,0 +1,93 @@
+name: Preview
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          tools: composer
+
+      - name: Install PHP dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run prod
+
+      - name: Deploy preview to GitHub Pages
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: build_production
+          preview-branch: gh-pages-preview
+          umbrella-dir: pr-preview
+          action: auto
+
+      - name: Comment preview URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.issue.number;
+            const previewUrl = `https://librecode.coop/pr-preview/pr-${prNumber}/`;
+            
+            // Buscar comentários existentes do bot
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('🔍 Preview do Site')
+            );
+            
+            const commentBody = `## 🔍 Preview do Site
+            
+O preview do site está disponível em:
+🔗 **${previewUrl}**
+
+✅ O preview é atualizado automaticamente a cada novo commit neste PR.
+
+---
+<sub>Preview gerado pela GitHub Action</sub>`;
+            
+            if (botComment) {
+              // Atualizar comentário existente
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: commentBody,
+              });
+            } else {
+              // Criar novo comentário
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: commentBody,
+              });
+            }
