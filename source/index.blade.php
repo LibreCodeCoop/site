@@ -52,26 +52,167 @@
       <div class="container">
         <header class="section-header">
           <h3>Soluções</h3>
-          <p>Todas as nossas soluções podem ser customizadas e adaptadas às necessidades de cada cliente.Confira!</p>
+          <p>Todas as nossas soluções podem ser customizadas e adaptadas às necessidades de cada cliente. Confira!</p>
         </header>
-        <div class="row row-eq-height justify-content-center">
-          <div class="col-lg-6 mb-6">
-            <div class="card wow bounceInUp pr-5 pl-5">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="nextcloud logo" width="150px">
-              <p class="mb-4 mt-2 h4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
-              <div class="card-body">
-                <a href="{{ $page->baseUrl }}nextcloud" class="btn btn-secondary btn-lg btn-block">Conheça!</a>
+
+        <!-- Gestão e Produtividade -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <h4 class="text-center mb-4">📊 Gestão e Produtividade</h4>
+          </div>
+        </div>
+        <div class="row row-eq-height justify-content-center mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="nextcloud logo" width="120px">
+              <h5 class="text-center mt-3">Nextcloud</h5>
+              <p class="mb-4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="{{ $page->baseUrl }}nextcloud" class="btn btn-secondary btn-block">Conheça!</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 mb-6">
-            <div class="card wow bounceInUp pr-5 pl-5">
-               <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="libresign logo" width="150px">
-               <p class="mt-5 mb-4 h4">Plataforma completa para assinatura digital de documentos, com praticidade e segurança e validade jurídica.</p>
-              <div class="card-body">
-                <a href="https://libresign.coop/" class="btn btn-secondary btn-lg btn-block" target=“_blank”>Conheça!</a>
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
+              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
+                <i class="fa fa-clock-o" style="font-size: 80px; color: #50a5f1;"></i>
+              </div>
+              <h5 class="text-center mt-3">Kimai</h5>
+              <p class="mb-4">Controle de horas e gestão de tempo para projetos. Acompanhe o tempo investido em cada atividade e melhore a produtividade.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
               </div>
             </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.2s">
+              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
+                <i class="fa fa-usd" style="font-size: 80px; color: #50a5f1;"></i>
+              </div>
+              <h5 class="text-center mt-3">Akaunting</h5>
+              <p class="mb-4">Software de gestão financeira completo. Controle receitas, despesas, faturamento e tenha visão total das finanças da sua organização.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Assinaturas e Documentos -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">📝 Assinaturas e Documentos</h4>
+          </div>
+        </div>
+        <div class="row row-eq-height justify-content-center mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="libresign logo" width="120px">
+              <h5 class="text-center mt-3">LibreSign</h5>
+              <p class="mb-4">Plataforma completa para assinatura digital de documentos, com praticidade, segurança e validade jurídica.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://libresign.coop/" class="btn btn-secondary btn-block" target="_blank">Conheça!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Analytics e Dados -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">📈 Analytics e Dados</h4>
+          </div>
+        </div>
+        <div class="row row-eq-height justify-content-center mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/matomo.png" alt="matomo logo" width="120px">
+              <h5 class="text-center mt-3">Matomo</h5>
+              <p class="mb-4">Analytics web com total privacidade. Alternativa ética ao Google Analytics, 100% LGPD compliance e dados sob seu controle.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
+              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
+                <i class="fa fa-bar-chart" style="font-size: 80px; color: #50a5f1;"></i>
+              </div>
+              <h5 class="text-center mt-3">LimeSurvey</h5>
+              <p class="mb-4">Crie pesquisas e formulários profissionais. Colete dados, analise respostas e tome decisões baseadas em informações concretas.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRM e Relacionamento -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">🤝 CRM e Relacionamento</h4>
+          </div>
+        </div>
+        <div class="row row-eq-height justify-content-center mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4">
+              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
+                <i class="fa fa-users" style="font-size: 80px; color: #50a5f1;"></i>
+              </div>
+              <h5 class="text-center mt-3">SuiteCRM</h5>
+              <p class="mb-4">Gestão completa de relacionamento com clientes. Organize vendas, marketing e atendimento em uma única plataforma integrada.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ferramentas Web -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">🔗 Ferramentas Web</h4>
+          </div>
+        </div>
+        <div class="row row-eq-height justify-content-center mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4">
+              <div class="d-flex justify-content-center align-items-center" style="height: 120px; margin-top: 12px;">
+                <i class="fa fa-link" style="font-size: 80px; color: #50a5f1;"></i>
+              </div>
+              <h5 class="text-center mt-3">Yourls</h5>
+              <p class="mb-4">Encurtador de URLs personalizado. Crie links curtos com sua própria marca e tenha controle total sobre estatísticas de acesso.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publicação Acadêmica -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">📚 Publicação Acadêmica</h4>
+          </div>
+        </div>
+        <div class="row row-eq-height justify-content-center mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/ojs.png" alt="ojs logo" width="120px">
+              <h5 class="text-center mt-3">OJS</h5>
+              <p class="mb-4">Open Journal Systems - Plataforma completa para publicação de periódicos científicos com fluxo editorial profissional.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p class="h5 text-muted">Precisa de uma solução específica ou integração personalizada?</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Entre em contato</a>
           </div>
         </div>
       </div>
