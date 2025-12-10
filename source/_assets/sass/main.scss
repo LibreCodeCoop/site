@@ -125,7 +125,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #fff;
+  background: #f3f0ff; /* Lilás claro para melhor contraste */
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
@@ -811,34 +811,98 @@ h6 {
   margin-right: 115px;
 }
 
+/* Diferenciais Section
+--------------------------------*/
+
+#diferenciais {
+  padding: 60px 0;
+}
+
+#diferenciais .section-header h3 {
+  color: #333;
+}
+
+#diferenciais .section-header p {
+  color: #666;
+}
+
+#diferenciais .diferencial-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+#diferenciais .diferencial-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(229, 51, 42, 0.15);
+}
+
+#diferenciais .diferencial-icon {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+#diferenciais .diferencial-box:hover .diferencial-icon i {
+  transform: scale(1.1);
+}
+
+#diferenciais .diferencial-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#diferenciais .diferencial-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0;
+}
+
 #why-us {
   padding: 60px 0;
-  background: #e5332a;;;
+  background: #f8f9fa;
 }
 
 #why-us p {
   color: #444;
 }
 
-#why-us .section-header h3,
+#why-us .section-header h3 {
+  color: #333;
+}
+
 #why-us .section-header p {
-  color: #fff;
+  color: #666;
+}
+
+#why-us h4 {
+  color: #333;
+  font-weight: 600;
 }
 
 #why-us .card {
-  border-color: rgb(197, 212, 245);
-  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
   margin: 0 15px;
   padding: 15px 0;
   text-align: center;
-  color: #fff;
-  transition: 0.3s ease-in-out;
+  color: #333;
+  transition: all 0.3s ease-in-out;
   height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #why-us .card:hover {
-  background: white;
-  border-color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(229, 51, 42, 0.15);
+  border-color: #e5332a;
 }
 
 #why-us .card i {
@@ -854,6 +918,49 @@ h6 {
 #why-us .card h5 {
   font-size: 22px;
   font-weight: 600;
+  color: #333;
+}
+
+#why-us .card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+#why-us .btn-secondary {
+  background-color: #e5332a;
+  border-color: #e5332a;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#why-us .btn-secondary:hover {
+  background-color: #c72a23;
+  border-color: #c72a23;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 51, 42, 0.3);
+}
+
+#why-us .btn-primary {
+  background-color: #e5332a;
+  border-color: #e5332a;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 40px;
+  transition: all 0.3s ease;
+}
+
+#why-us .btn-primary:hover {
+  background-color: #c72a23;
+  border-color: #c72a23;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229, 51, 42, 0.4);
+}
+
+#why-us .text-muted {
+  color: #666 !important;
 }
 
 #why-us .card .readmore {
