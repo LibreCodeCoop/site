@@ -22,7 +22,7 @@
         <div class="row about-container">
             <div class="col-lg-6 icon-box wow fadeInUp">
               <div class="icon">
-                <img src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="">
+                <img loading="lazy" src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="">
               </div>
               <h4 class="title"><a href="">Por que uma cooperativa?</a></h4>
               <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente dentro de um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade, produtividade e a economia de escala nos serviços.
@@ -32,7 +32,7 @@
             <div class="col-lg-6 icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon">
                 <i>
-                  <img src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="">
+                  <img loading="lazy" src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="">
                 </i>
               </div>
               <h4 class="title"><a href="">Por que software livre (SL)?</a></h4>
@@ -131,7 +131,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="nextcloud logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="nextcloud logo" width="120px">
               <h5 class="text-center mt-3">Nextcloud</h5>
               <p class="mb-4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <div class="card-body pb-3 mt-auto">
@@ -141,7 +141,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/kimai.png" alt="kimai logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/kimai.png" alt="kimai logo" width="120px">
               <h5 class="text-center mt-3">Kimai</h5>
               <p class="mb-4">Controle de horas e gestão de tempo para projetos. Acompanhe o tempo investido em cada atividade e melhore a produtividade.</p>
               <div class="card-body pb-3 mt-auto">
@@ -151,7 +151,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.2s">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/akaunting.png" alt="akaunting logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/akaunting.png" alt="akaunting logo" width="120px">
               <h5 class="text-center mt-3">Akaunting</h5>
               <p class="mb-4">Software de gestão financeira completo. Controle receitas, despesas, faturamento e tenha visão total das finanças da sua organização.</p>
               <div class="card-body pb-3 mt-auto">
@@ -170,7 +170,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="libresign logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="libresign logo" width="120px">
               <h5 class="text-center mt-3">LibreSign</h5>
               <p class="mb-4">Plataforma completa para assinatura digital de documentos, com praticidade, segurança e validade jurídica.</p>
               <div class="card-body pb-3 mt-auto">
@@ -189,7 +189,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/matomo.png" alt="matomo logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/matomo.png" alt="matomo logo" width="120px">
               <h5 class="text-center mt-3">Matomo</h5>
               <p class="mb-4">Analytics web com total privacidade. Alternativa ética ao Google Analytics, 100% LGPD compliance e dados sob seu controle.</p>
               <div class="card-body pb-3 mt-auto">
@@ -199,7 +199,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/limesurvey.png" alt="limesurvey logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/limesurvey.png" alt="limesurvey logo" width="120px">
               <h5 class="text-center mt-3">LimeSurvey</h5>
               <p class="mb-4">Crie pesquisas e formulários profissionais. Colete dados, analise respostas e tome decisões baseadas em informações concretas.</p>
               <div class="card-body pb-3 mt-auto">
@@ -218,7 +218,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/suitecrm.png" alt="suitecrm logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/suitecrm.png" alt="suitecrm logo" width="120px">
               <h5 class="text-center mt-3">SuiteCRM</h5>
               <p class="mb-4">Gestão completa de relacionamento com clientes. Organize vendas, marketing e atendimento em uma única plataforma integrada.</p>
               <div class="card-body pb-3 mt-auto">
@@ -228,7 +228,7 @@
           </div>
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/mautic.png" alt="mautic logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/mautic.png" alt="mautic logo" width="120px">
               <h5 class="text-center mt-3">Mautic</h5>
               <p class="mb-4">Automação de marketing open-source. Crie campanhas personalizadas, gerencie leads e automatize comunicações para maximizar conversões.</p>
               <div class="card-body pb-3 mt-auto">
@@ -247,7 +247,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/yourls.png" alt="yourls logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/yourls.png" alt="yourls logo" width="120px">
               <h5 class="text-center mt-3">Yourls</h5>
               <p class="mb-4">Encurtador de URLs personalizado. Crie links curtos com sua própria marca e tenha controle total sobre estatísticas de acesso.</p>
               <div class="card-body pb-3 mt-auto">
@@ -266,7 +266,7 @@
         <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp h-100 px-4">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/ojs.png" alt="ojs logo" width="120px">
+              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/ojs.png" alt="ojs logo" width="120px">
               <h5 class="text-center mt-3">OJS</h5>
               <p class="mb-4">Open Journal Systems - Plataforma completa para publicação de periódicos científicos com fluxo editorial profissional.</p>
               <div class="card-body pb-3 mt-auto">
@@ -296,42 +296,42 @@
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/prefeitura-nikiti.png" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/prefeitura-nikiti.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="">
             </div>
           </div>
         </div>

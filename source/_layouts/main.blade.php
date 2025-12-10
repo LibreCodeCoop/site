@@ -1,22 +1,71 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html lang="{{ $page->language ?? 'pt-BR' }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ $page->title }}</title>
+  <title>{{ $page->title ?? 'LibreCode - Cooperativa de Software Livre' }}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
+  <meta name="keywords" content="software livre, open source, cooperativa tecnologia, nextcloud, libresign, suitecrm, mautic, desenvolvimento software, hospedagem brasil, LGPD, soberania digital, automação marketing, CRM, assinatura digital">
+  <meta name="description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções com software livre. Nextcloud, LibreSign, SuiteCRM, Mautic e mais. Hospedagem no Brasil, suporte em português e 100% LGPD compliance.' }}">
+  <meta name="author" content="LibreCode Cooperativa">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ $page->getUrl() }}">
+  <meta property="og:title" content="{{ $page->title ?? 'LibreCode - Cooperativa de Software Livre' }}">
+  <meta property="og:description" content="{{ $page->description }}">
   @if (!empty($og_image))
     <meta property="og:image" content="{{ $og_image }}"/>
   @else
     <meta property="og:image" content="{{ $page->baseUrl }}assets/images/logo.png"/>
   @endif
-  <meta property="og:url" content="{{ $page->getUrl() }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="LibreCode">
-  <meta property="og:description" content="{{ $page->description }}">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ $page->getUrl() }}">
+  <meta property="twitter:title" content="{{ $page->title ?? 'LibreCode' }}">
+  <meta property="twitter:description" content="{{ $page->description }}">
+  <meta property="twitter:image" content="{{ $page->baseUrl }}assets/images/logo.png">
 
   <link rel="canonical" href="{{ $page->getUrl() }}">
-  <meta name="description" content="{{ $page->description }}">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LibreCode",
+    "legalName": "LibreCode Cooperativa de Tecnologia",
+    "url": "https://librecode.coop",
+    "logo": "{{ $page->baseUrl }}assets/images/logo/librecode.png",
+    "description": "Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre",
+    "foundingDate": "2018",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": ["Portuguese", "English"]
+    },
+    "sameAs": [
+      "https://github.com/librecodecoop",
+      "https://www.linkedin.com/company/librecodecoop",
+      "https://t.me/LibreCodeCoop",
+      "https://www.instagram.com/librecodecoop/",
+      "https://www.facebook.com/librecodecoop/"
+    ],
+    "serviceType": [
+      "Software Development",
+      "Cloud Hosting",
+      "IT Consulting",
+      "Digital Signature Solutions",
+      "CRM Solutions",
+      "Marketing Automation"
+    ]
+  }
+  </script>
 
   <!-- Favicons -->
   <link href="{{ $page->baseUrl }}assets/images/favico.png" rel="icon">
