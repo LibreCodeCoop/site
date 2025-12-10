@@ -159,6 +159,16 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/mautic.png" alt="mautic logo" width="120px">
+              <h5 class="text-center mt-3">Mautic</h5>
+              <p class="mb-4">Automação de marketing open-source. Crie campanhas personalizadas, gerencie leads e automatize comunicações para maximizar conversões.</p>
+              <div class="card-body pb-3 mt-auto">
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Ferramentas Web -->
