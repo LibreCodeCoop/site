@@ -811,6 +811,59 @@ h6 {
   margin-right: 115px;
 }
 
+/* Diferenciais Section
+--------------------------------*/
+
+#diferenciais {
+  padding: 60px 0;
+}
+
+#diferenciais .section-header h3 {
+  color: #333;
+}
+
+#diferenciais .section-header p {
+  color: #666;
+}
+
+#diferenciais .diferencial-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+#diferenciais .diferencial-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(229, 51, 42, 0.15);
+}
+
+#diferenciais .diferencial-icon {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+#diferenciais .diferencial-box:hover .diferencial-icon i {
+  transform: scale(1.1);
+}
+
+#diferenciais .diferencial-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#diferenciais .diferencial-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0;
+}
+
 #why-us {
   padding: 60px 0;
   background: #f8f9fa;

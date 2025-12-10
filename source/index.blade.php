@@ -46,6 +46,73 @@
       </div>
     </section>
     <!--==========================
+      Why Choose LibreCode Section
+    ============================-->
+    <section id="diferenciais" class="section-bg">
+      <div class="container">
+        <header class="section-header">
+          <h3>Por que escolher a LibreCode?</h3>
+          <p>Combinamos expertise técnica com valores cooperativistas para entregar soluções que fazem a diferença</p>
+        </header>
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="diferencial-box wow fadeInUp">
+              <div class="diferencial-icon">
+                <i class="fa fa-server" style="font-size: 48px; color: #e5332a;"></i>
+              </div>
+              <h4>Hospedagem em Servidores Próprios</h4>
+              <p>Infraestrutura brasileira com total controle e privacidade. Seus dados permanecem no Brasil, garantindo soberania digital e conformidade legal.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="diferencial-box wow fadeInUp" data-wow-delay="0.1s">
+              <div class="diferencial-icon">
+                <i class="fa fa-users" style="font-size: 48px; color: #e5332a;"></i>
+              </div>
+              <h4>Suporte Técnico Especializado</h4>
+              <p>Time de especialistas que fala sua língua e entende suas necessidades. Atendimento personalizado, ágil e focado em resultados.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="diferencial-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="diferencial-icon">
+                <i class="fa fa-cogs" style="font-size: 48px; color: #e5332a;"></i>
+              </div>
+              <h4>Customização Sob Demanda</h4>
+              <p>Adaptamos cada solução às suas necessidades específicas. Desenvolvimento personalizado para atender exatamente o que seu negócio precisa.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="diferencial-box wow fadeInUp" data-wow-delay="0.3s">
+              <div class="diferencial-icon">
+                <i class="fa fa-lock" style="font-size: 48px; color: #e5332a;"></i>
+              </div>
+              <h4>Dados Sob Seu Controle</h4>
+              <p>Você é o proprietário dos seus dados. Sem vendor lock-in, com liberdade para migrar quando quiser e transparência total sobre onde seus dados estão.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="diferencial-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="diferencial-icon">
+                <i class="fa fa-shield" style="font-size: 48px; color: #e5332a;"></i>
+              </div>
+              <h4>100% LGPD Compliance</h4>
+              <p>Soluções desenvolvidas com privacidade desde o design. Conformidade total com a Lei Geral de Proteção de Dados e regulamentações internacionais.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="diferencial-box wow fadeInUp" data-wow-delay="0.5s">
+              <div class="diferencial-icon">
+                <i class="fa fa-unlock-alt" style="font-size: 48px; color: #e5332a;"></i>
+              </div>
+              <h4>Sem Dependência de Big Techs</h4>
+              <p>Independência tecnológica com software livre. Sem taxas abusivas, sem bloqueios arbitrários, sem surpresas no contrato.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==========================
       Why Us Section
     ============================-->
     <section id="why-us" class="wow fadeIn">
