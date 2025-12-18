@@ -249,20 +249,23 @@ h6 {
 }
 
 #intro .intro-info p {
-  color: #e5332a;;
+  color: #e5332a;
   text-align: left;
   font-size: 25px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #intro .intro-info h2 {
   padding: 20px;
   font-size: 70px;
   text-align: left;
+  font-family: "Montserrat", sans-serif;
 }
 
 #intro .intro-info h3 {
   text-align: left;
   font-size: 60px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #intro .intro-info h2 span {
@@ -307,6 +310,97 @@ h6 {
   background: #e5332aff;
   border-color: #e5332aff;
   color: #fff;
+}
+
+/* Contact CTA Buttons */
+#intro .intro-cta {
+  margin-top: 35px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#intro .btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 14px 32px;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#intro .btn-contact:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+#intro .btn-contact:active {
+  transform: translateY(0);
+}
+
+#intro .btn-contact i {
+  font-size: 20px;
+}
+
+/* WhatsApp Button */
+#intro .btn-whatsapp {
+  background: #e5332a;
+  border-color: #e5332a;
+  box-shadow: 0 4px 15px rgba(229, 51, 42, 0.3);
+}
+
+#intro .btn-whatsapp:hover {
+  background: #c72b23;
+  border-color: #c72b23;
+  box-shadow: 0 6px 20px rgba(229, 51, 42, 0.4);
+}
+
+#intro .btn-whatsapp:active {
+  box-shadow: 0 2px 10px rgba(229, 51, 42, 0.3);
+}
+
+/* Telegram Button */
+#intro .btn-telegram {
+  background: #e5332a;
+  border-color: #e5332a;
+  box-shadow: 0 4px 15px rgba(229, 51, 42, 0.3);
+}
+
+#intro .btn-telegram:hover {
+  background: #c72b23;
+  border-color: #c72b23;
+  box-shadow: 0 6px 20px rgba(229, 51, 42, 0.4);
+}
+
+#intro .btn-telegram:active {
+  box-shadow: 0 2px 10px rgba(229, 51, 42, 0.3);
+}
+
+/* Email Button */
+#intro .btn-email {
+  background: #e5332a;
+  border-color: #e5332a;
+  box-shadow: 0 4px 15px rgba(229, 51, 42, 0.3);
+}
+
+#intro .btn-email:hover {
+  background: #c72b23;
+  border-color: #c72b23;
+  box-shadow: 0 6px 20px rgba(229, 51, 42, 0.4);
+}
+
+#intro .btn-email:active {
+  box-shadow: 0 2px 10px rgba(229, 51, 42, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -1741,6 +1835,15 @@ h6 {
     font-size: 20px;
   }
 
+  #intro .btn-contact {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  #intro .btn-contact i {
+    font-size: 18px;
+  }
+
   .section-header p {
     width: 100%;
   }
@@ -1765,6 +1868,24 @@ h6 {
   #intro {
     padding: 100px 0 20px 0;
   }
+  
+  #intro .intro-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #intro .btn-contact {
+    font-size: 14px;
+    padding: 12px 28px;
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+  
+  #intro .btn-contact i {
+    font-size: 18px;
+  }
+  
   .products img{
     max-width: 350px;
   }

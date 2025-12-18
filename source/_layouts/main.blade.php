@@ -32,8 +32,8 @@
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
+    "@@context": "https://schema.org",
+    "@@type": "Organization",
     "name": "LibreCode",
     "legalName": "LibreCode Cooperativa de Tecnologia",
     "url": "https://librecode.coop",
@@ -41,11 +41,11 @@
     "description": "Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre",
     "foundingDate": "2018",
     "address": {
-      "@type": "PostalAddress",
+      "@@type": "PostalAddress",
       "addressCountry": "BR"
     },
     "contactPoint": {
-      "@type": "ContactPoint",
+      "@@type": "ContactPoint",
       "contactType": "customer support",
       "availableLanguage": ["Portuguese", "English"]
     },

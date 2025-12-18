@@ -9,6 +9,17 @@
         <div class="intro-info">
           <h2>Tecnologia com <br> <span>transparência</span> e <span>liberdade</span></h2>
           <p>Somos uma cooperativa digital de especialistas em desenvolvimento de software livre</p>
+          <div class="intro-cta">
+            <a href="https://wa.me/552120422073" target="_blank" rel="noopener noreferrer" class="btn-contact btn-whatsapp" aria-label="Fale conosco no WhatsApp">
+              <i class="fa fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://t.me/LibreCodeCoop" target="_blank" rel="noopener noreferrer" class="btn-contact btn-telegram" aria-label="Fale conosco no Telegram">
+              <i class="fa fa-telegram"></i> Telegram
+            </a>
+            <a href="mailto:contato@librecode.coop" class="btn-contact btn-email" aria-label="Envie-nos um email">
+              <i class="fa fa-envelope"></i> Email
+            </a>
+          </div>
       </div>
     </div>
   </section>
@@ -135,7 +146,7 @@
               <h5 class="text-center mt-3">Nextcloud</h5>
               <p class="mb-4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <div class="card-body pb-3 mt-auto">
-                <a href="{{ $page->baseUrl }}nextcloud" class="btn btn-secondary btn-block">Conheça!</a>
+                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
               </div>
             </div>
           </div>
