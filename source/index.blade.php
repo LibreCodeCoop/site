@@ -6,20 +6,37 @@
   ============================-->
   <section id="intro" class="clearfix">
     <div class="container">
-        <div class="intro-info">
-          <h2>Tecnologia com <br> <span>transparência</span> e <span>liberdade</span></h2>
-          <p>Somos uma cooperativa digital de especialistas em desenvolvimento de software livre</p>
-          <div class="intro-cta">
-            <a href="https://wa.me/552120422073" target="_blank" rel="noopener noreferrer" class="btn-contact btn-whatsapp" aria-label="Fale conosco no WhatsApp">
-              <i class="fa fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://t.me/LibreCodeCoop" target="_blank" rel="noopener noreferrer" class="btn-contact btn-telegram" aria-label="Fale conosco no Telegram">
-              <i class="fa fa-telegram"></i> Telegram
-            </a>
-            <a href="mailto:contato@librecode.coop" class="btn-contact btn-email" aria-label="Envie-nos um email">
-              <i class="fa fa-envelope"></i> Email
-            </a>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="intro-info">
+            <div class="intro-badge mb-3">
+              <i class="fa fa-users"></i> Cooperativa de especialistas
+            </div>
+            <h2>Simplifique sua gestão com <br><span>tecnologia segura</span>, <span>ética</span> e livre de amarras.</h2>
+            <p>Do armazenamento em nuvem à assinatura eletrônica: ferramentas completas que colocam sua empresa no controle, com o suporte humanizado de uma cooperativa.</p>
+            <div class="intro-cta">
+              <a class="btn btn-primary btn-lg mr-2 mb-2" href="#why-us">
+                Conheça nossas Soluções <i class="fa fa-arrow-right ml-2"></i>
+              </a>
+              <a class="btn btn-outline-primary btn-lg mb-2" href="#about">Por que Software Livre?</a>
+            </div>
+            <ul class="intro-features mt-4">
+              <li><i class="fa fa-check-circle"></i> Equipe dedicada ao seu projeto</li>
+              <li><i class="fa fa-check-circle"></i> Metodologia ágil e transparente</li>
+              <li><i class="fa fa-check-circle"></i> Suporte contínuo pós-entrega</li>
+            </ul>
+            <div class="intro-lead-form mt-4 pt-4">
+              <p class="lead-form-title">Ou deixe seu contato para falar com um especialista:</p>
+              <form action="#contact" method="get" class="lead-form">
+                <div class="form-group-inline">
+                  <input type="email" class="form-control" placeholder="Seu melhor e-mail" required>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                <p class="lead-form-note">Resposta em até 24h. Sem compromisso.</p>
+              </form>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </section>
