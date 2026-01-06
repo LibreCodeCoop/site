@@ -28,6 +28,14 @@ jobs:
       - name: Run composer command
         run: composer prod
 
+      - name: Fix asset paths for subdirectory deployment
+        run: |
+          BASE_PATH="/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}"
+          find build_production -type f -name "*.html" -exec sed -i "s|href=\"/assets/|href=\"$BASE_PATH/assets/|g" {} +
+          find build_production -type f -name "*.html" -exec sed -i "s|src=\"/assets/|src=\"$BASE_PATH/assets/|g" {} +
+          find build_production -type f -name "*.css" -exec sed -i "s|url(/assets/|url($BASE_PATH/assets/|g" {} +
+          find build_production -type f -name "*.css" -exec sed -i "s|url(\"/assets/|url(\"$BASE_PATH/assets/|g" {} +
+
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
