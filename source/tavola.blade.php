@@ -1,10 +1,14 @@
+---
+title: Távola para Assembleias Online
+description: Conheça o Távola, solução da LibreCode para assembleias remotas com validade jurídica.
+---
 @extends('_layouts.main')
 
 @section('body')
 <header id="header" class="fixed-top">
   <div class="container">
     <div class="logo float-left">
-      <a href="/" class="scrollto"><img src="../assets/images/logo/librecode.png" alt="" class="img-fluid"></a>
+      <a href="/" class="scrollto"><img src="../assets/images/logo/librecode.png" alt="Logo da LibreCode" class="img-fluid"></a>
     </div>
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>

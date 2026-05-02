@@ -1,3 +1,7 @@
+---
+title: Nextcloud para Empresas
+description: Solução Nextcloud da LibreCode para nuvem privada, colaboração e gestão segura de documentos.
+---
 @extends('_layouts.main')
 
 @section('body')
@@ -22,14 +26,14 @@
         </div>
         <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">
           <a href="../assets/images/nextcloud/arquivos.png" class="glightbox" >
-            <img src="../assets/images/nextcloud/arquivos.png" alt="image" />
+            <img src="../assets/images/nextcloud/arquivos.png" alt="Tela do Nextcloud para gestão de arquivos" />
           </a>
         </div>
       </div>
       <div class="row about-container">
         <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: right;">
           <a href="../assets/images/nextcloud/logs.png" class="glightbox" >
-            <img src="../assets/images/nextcloud/logs.png" alt="image" />
+            <img src="../assets/images/nextcloud/logs.png" alt="Tela do Nextcloud com histórico e logs de alterações" />
           </a>
         </div>
         <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
@@ -44,14 +48,14 @@
         </div>
         <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">
           <a href="../assets/images/nextcloud/usuarios.png" class="glightbox" >
-            <img src="../assets/images/nextcloud/usuarios.png" alt="image" />
+            <img src="../assets/images/nextcloud/usuarios.png" alt="Tela do Nextcloud para gestão de usuários e permissões" />
           </a>
         </div>
       </div>
       <div class="row about-container">
         <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: right;">
           <a href="../assets/images/nextcloud/agenda.png" class="glightbox" >
-            <img src="../assets/images/nextcloud/agenda.png" alt="image" />
+            <img src="../assets/images/nextcloud/agenda.png" alt="Tela do Nextcloud com agenda e calendário compartilhado" />
           </a>
         </div>
         <div class="col-lg-3 icon-box wow fadeInUp" style="text-align: center;">
@@ -66,7 +70,7 @@
         </div>
         <div class="col-lg-9 icon-box wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">
           <a href="../assets/images/nextcloud/onlyoffice.png" class="glightbox" >
-            <img src="../assets/images/nextcloud/onlyoffice.png" alt="image" />
+            <img src="../assets/images/nextcloud/onlyoffice.png" alt="Tela do Nextcloud com edição colaborativa de documentos" />
           </a>
         </div>
       </div>
