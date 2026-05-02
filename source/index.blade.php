@@ -22,7 +22,7 @@
         <div class="row about-container">
             <div class="col-lg-6 icon-box wow fadeInUp">
               <div class="icon">
-                <img src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="">
+                <img src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="Ilustração sobre cooperativismo e trabalho coletivo">
               </div>
               <h4 class="title"><a href="">Por que uma cooperativa?</a></h4>
               <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente dentro de um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade, produtividade e a economia de escala nos serviços.
@@ -32,7 +32,7 @@
             <div class="col-lg-6 icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon">
                 <i>
-                  <img src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="">
+                  <img src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="Mascote GNU representando software livre">
                 </i>
               </div>
               <h4 class="title"><a href="">Por que software livre (SL)?</a></h4>
@@ -57,7 +57,7 @@
         <div class="row row-eq-height justify-content-center">
           <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp pr-5 pl-5">
-              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="nextcloud logo" width="150px">
+              <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="Logo do Nextcloud" width="150px">
               <p class="mb-4 mt-2 h4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <div class="card-body">
                 <a href="{{ $page->baseUrl }}nextcloud" class="btn btn-secondary btn-lg btn-block">Conheça!</a>
@@ -66,10 +66,10 @@
           </div>
           <div class="col-lg-6 mb-6">
             <div class="card wow bounceInUp pr-5 pl-5">
-               <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="libresign logo" width="150px">
+               <img class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="Logo do LibreSign" width="150px">
                <p class="mt-5 mb-4 h4">Plataforma completa para assinatura digital de documentos, com praticidade e segurança e validade jurídica.</p>
               <div class="card-body">
-                <a href="https://libresign.coop/" class="btn btn-secondary btn-lg btn-block" target=“_blank”>Conheça!</a>
+                <a href="https://libresign.coop/" class="btn btn-secondary btn-lg btn-block" target="_blank">Conheça!</a>
               </div>
             </div>
           </div>
@@ -88,44 +88,62 @@
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/prefeitura-nikiti.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/prefeitura-nikiti.png" class="img-fluid" alt="Logo da Prefeitura de Niterói">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="Logo do cliente apresentado pela LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="Logo do cliente apresentado pela LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="Logo do cliente apresentado pela LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="Logo do cliente apresentado pela LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="Logo do cliente apresentado pela LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="Logo do NIC.br">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="">
+              <img src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="Logo da AMPERJ">
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3>Perguntas frequentes</h3>
+          <p>Respostas objetivas para facilitar a compreensão do trabalho da LibreCode por pessoas e mecanismos de busca baseados em IA.</p>
+        </div>
+        <div class="row">
+          @foreach ($page->homepageFaq as $item)
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100 p-4">
+                <h4 class="h5">{{ $item['question'] }}</h4>
+                <p class="mb-0">{{ $item['answer'] }}</p>
+              </div>
+            </div>
+          @endforeach
         </div>
       </div>
     </section>
@@ -147,7 +165,7 @@
             <p class="text-justify p-5">
               O GitHub Sponsors permite à comunidade de desenvolvedores apoiar financeiramente as pessoas e organizações que projetam, criam e mantêm projetos de código aberto do qual dependem, diretamente no GitHub.
             </p>
-            <a class="pl-5" href="https://github.com/sponsors/LibreSign" target=“_blank”>
+            <a class="pl-5" href="https://github.com/sponsors/LibreSign" target="_blank">
               Ir para Github Sponsor
             </a>
           </div>

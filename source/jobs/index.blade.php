@@ -1,3 +1,7 @@
+---
+title: Coopere com a LibreCode
+description: Conheça a cultura cooperativista da LibreCode e as oportunidades para colaborar com a cooperativa.
+---
 @extends('_layouts.main')
 @section('body')
 <main id="main" class="hight-jobs-page">
@@ -31,7 +35,7 @@
             </div>
 
             <div class="col-lg-6 background order-lg-2 mt-3">
-              <img src="{{ $page->baseUrl }}assets/images/librecode_team.jpeg" class="img-fluid" alt="imagem_grupo_librecode">
+              <img src="{{ $page->baseUrl }}assets/images/librecode_team.jpeg" class="img-fluid" alt="Equipe da LibreCode reunida">
             </div>
           </div>
         </div>
