@@ -25,8 +25,16 @@
                     
                     <div class="row justify-content-md-center">
                         <div class="col-lg-12 col-sm-6 text-center mb-5">
-                            <a href="tel:+55(21)2042-2073"><i class="lni lni-phone contact-icon"></i></a>
-                            <p class="mt-3">+55(21)2042-2073</p>
+                            <a href="tel:+55(21)2042-2073" style="display: inline-block; text-decoration: none;">
+                                <img src="assets/images/Phone_logo.png" alt="Telefone" style="width: 50px;">
+                            </a>
+                            <a href="https://web.whatsapp.com/send/?phone=55nosso-numero-com-ddd" style="display: inline-block;">
+                                <img src="assets/images/wpp.png" alt="WhatsApp" style="width: 50px;">
+                            </a>
+                            <a href="https://t.me/LibreCodeCoop" style="display: inline-block;">
+                                <img src="assets/images/Telegram.png" alt="WhatsApp" style="width: 50px;">
+                            </a>
+                            <p>+55(21)2042-2073</p>
                         </div>
                         <div class="col-lg-12 col-sm-6 text-center">
                             <a href="mailto:contato@librecode.coop"><i class="lni lni-envelope text-center contact-icon"></i></a>
