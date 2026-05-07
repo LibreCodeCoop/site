@@ -1,0 +1,97 @@
+name: Preview
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          tools: composer
+
+      - name: Install PHP dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run prod
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-pr-${{ github.event.pull_request.number }}
+          path: build_production/
+          retention-days: 7
+
+      - name: Comment preview URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.issue.number;
+            const runId = context.runId;
+            const artifactUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId}`;
+            
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Preview do Site')
+            );
+            
+            const commentBody = [
+              '## \ud83d\udd0d Preview do Site',
+              '',
+              '\u2705 O preview foi gerado com sucesso!',
+              '',
+              '### Como visualizar:',
+              `1. Acesse a [p\u00e1gina da Action](${artifactUrl})`,
+              '2. Role at\u00e9 a se\u00e7\u00e3o "Artifacts"',
+              `3. Baixe o arquivo \`preview-pr-${prNumber}\``,
+              '4. Descompacte e abra \`index.html\` no navegador',
+              '',
+              '\ud83d\udd04 O preview \u00e9 atualizado automaticamente a cada novo commit neste PR.',
+              '',
+              '---',
+              '<sub>Preview gerado pela GitHub Action \u2022 Artefato dispon\u00edvel por 7 dias</sub>'
+            ].join('\n');
+            
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: commentBody,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: commentBody,
+              });
+            }

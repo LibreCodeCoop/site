@@ -1,0 +1,46 @@
+name: Deploy PR previews
+
+on: pull_request
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Set up php 8.4
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+      - name: Set up PHP dependencie
+        run: composer i
+      - name: Change config.php
+        run: |
+          sed -i "s|librecode.coop|LibreCodeCoop.github.io|g" CNAME
+          sed -i "s|'baseUrl' => '/'|'baseUrl' => 'https://LibreCodeCoop.github.io/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}/'|g" config.php
+          cat config.php|grep "'baseUrl' => "
+          sed -i "/'matomo_container'/d" config.production.php
+      - name: Run composer command
+        run: composer prod
+
+      - name: Fix asset paths for subdirectory deployment
+        run: |
+          BASE_PATH="/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}"
+          find build_production -type f -name "*.html" -exec sed -i "s|href=\"/assets/|href=\"$BASE_PATH/assets/|g" {} +
+          find build_production -type f -name "*.html" -exec sed -i "s|src=\"/assets/|src=\"$BASE_PATH/assets/|g" {} +
+          find build_production -type f -name "*.css" -exec sed -i "s|url(/assets/|url($BASE_PATH/assets/|g" {} +
+          find build_production -type f -name "*.css" -exec sed -i "s|url(\"/assets/|url(\"$BASE_PATH/assets/|g" {} +
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build_production/
+          pages-base-url: LibreCodeCoop.github.io/site-preview
+          deploy-repository: LibreCodeCoop/site-preview
+          preview-branch: main
+          token: ${{ secrets.PREVIEW_TOKEN }}

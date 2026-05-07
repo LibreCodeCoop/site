@@ -22,4 +22,9 @@ mix.jigsaw()
             ]
         };
     })
+    .override(config => {
+        config.plugins = (config.plugins || []).filter(
+            plugin => !['WebpackBar', 'WebpackBarPlugin'].includes(plugin?.constructor?.name)
+        );
+    })
     .version();

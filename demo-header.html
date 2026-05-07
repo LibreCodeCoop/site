@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>LibreCode - Demo Header</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+    
+    #intro {
+      width: 100%;
+      position: relative;
+      background-color: #d8d7d7ff;
+      padding: 180px 0 120px 0;
+      display: flex;
+      align-items: center;
+      min-height: 600px;
+    }
+    
+    #intro .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    #intro .intro-info {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    #intro .intro-info h2 {
+      padding: 0;
+      font-size: 64px;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #2c3e50;
+      margin-bottom: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    #intro .intro-info h2 span {
+      color: #e5332a;
+      text-decoration: none;
+      font-weight: 800;
+      position: relative;
+      display: inline-block;
+    }
+    
+    #intro .intro-info h2 span::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      right: 0;
+      height: 12px;
+      background: rgba(229, 51, 42, 0.2);
+      z-index: -1;
+      border-radius: 2px;
+    }
+    
+    #intro .intro-info p {
+      color: #333;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    /* Contact CTA Buttons */
+    #intro .intro-cta {
+      margin-top: 35px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    #intro .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 14px 32px;
+      color: #fff;
+      border: 2px solid;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    #intro .btn-contact:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    
+    #intro .btn-contact:active {
+      transform: translateY(0);
+    }
+    
+    #intro .btn-contact i {
+      font-size: 20px;
+    }
+    
+    /* WhatsApp Button */
+    #intro .btn-whatsapp {
+      background: #25D366;
+      border-color: #25D366;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+    
+    #intro .btn-whatsapp:hover {
+      background: #20BA5A;
+      border-color: #20BA5A;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+    
+    #intro .btn-whatsapp:active {
+      box-shadow: 0 2px 10px rgba(37, 211, 102, 0.3);
+    }
+    
+    /* Telegram Button */
+    #intro .btn-telegram {
+      background: #0088cc;
+      border-color: #0088cc;
+      box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
+    }
+    
+    #intro .btn-telegram:hover {
+      background: #006fa8;
+      border-color: #006fa8;
+      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
+    }
+    
+    #intro .btn-telegram:active {
+      box-shadow: 0 2px 10px rgba(0, 136, 204, 0.3);
+    }
+    
+    /* Email Button */
+    #intro .btn-email {
+      background: #e5332a;
+      border-color: #e5332a;
+      box-shadow: 0 4px 15px rgba(229, 51, 42, 0.3);
+    }
+    
+    #intro .btn-email:hover {
+      background: #c72b23;
+      border-color: #c72b23;
+      box-shadow: 0 6px 20px rgba(229, 51, 42, 0.4);
+    }
+    
+    #intro .btn-email:active {
+      box-shadow: 0 2px 10px rgba(229, 51, 42, 0.3);
+    }
+    
+    /* Responsividade */
+    @media (max-width: 991px) {
+      #intro {
+        padding: 140px 0 60px 0;
+      }
+      
+      #intro .intro-info h2 {
+        font-size: 48px;
+      }
+      
+      #intro .intro-info p {
+        font-size: 24px;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      #intro {
+        padding: 120px 0 80px 0;
+        min-height: 500px;
+      }
+      
+      #intro .intro-info h2 {
+        font-size: 36px;
+        line-height: 1.3;
+      }
+      
+      #intro .intro-info h2 span::after {
+        height: 8px;
+        bottom: 4px;
+      }
+      
+      #intro .intro-info p {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      
+      #intro .btn-contact {
+        font-size: 14px;
+        padding: 12px 24px;
+      }
+      
+      #intro .btn-contact i {
+        font-size: 18px;
+      }
+    }
+    
+    @media (max-width: 574px) {
+      #intro {
+        padding: 100px 0 60px 0;
+        min-height: 450px;
+      }
+      
+      #intro .intro-info h2 {
+        font-size: 28px;
+      }
+      
+      #intro .intro-info p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+      #intro .intro-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #intro .btn-contact {
+        font-size: 14px;
+        padding: 12px 28px;
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+      
+      #intro .btn-contact i {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="intro" class="clearfix">
+    <div class="container">
+        <div class="intro-info">
+          <h2>Tecnologia com<br><span>transparência</span> e <span>liberdade</span></h2>
+          <p>Somos uma cooperativa digital de especialistas em desenvolvimento de software livre</p>
+          <div class="intro-cta">
+            <a href="https://wa.me/552120422073" target="_blank" rel="noopener noreferrer" class="btn-contact btn-whatsapp" aria-label="Fale conosco no WhatsApp">
+              <i class="fa fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://t.me/LibreCodeCoop" target="_blank" rel="noopener noreferrer" class="btn-contact btn-telegram" aria-label="Fale conosco no Telegram">
+              <i class="fa fa-telegram"></i> Telegram
+            </a>
+            <a href="mailto:contato@librecode.coop" class="btn-contact btn-email" aria-label="Envie-nos um email">
+              <i class="fa fa-envelope"></i> Email
+            </a>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <section style="padding: 60px 20px; text-align: center; background: #f8f9fa;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h3 style="margin-bottom: 20px; color: #2c3e50;">Demonstração do Novo Header</h3>
+      <p style="color: #666; line-height: 1.6;">
+        Esta é uma demonstração do novo header com o botão de call-to-action do WhatsApp.
+        O botão está completamente responsivo e funcional, redimensione a janela para ver
+        as adaptações para diferentes tamanhos de tela.
+      </p>
+      <p style="color: #666; margin-top: 20px;">
+        <strong>Melhorias implementadas:</strong>
+      </p>
+      <ul style="text-align: left; color: #666; line-height: 1.8; max-width: 600px; margin: 20px auto;">
+        <li><strong>WhatsApp:</strong> Botão verde (#25D366) com link direto para iniciar conversa</li>
+        <li><strong>Telegram:</strong> Botão azul (#0088cc) com link para o canal da cooperativa</li>
+        <li><strong>Email:</strong> Botão vermelho (#e5332a) com link mailto para contato@librecode.coop</li>
+        <li>Efeito hover com elevação e mudança de cor em todos os botões</li>
+        <li>Totalmente responsivo: empilham verticalmente em telas pequenas</li>
+        <li>Ícones e textos bem alinhados com Font Awesome</li>
+        <li>Sombras suaves e animações de transição</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
