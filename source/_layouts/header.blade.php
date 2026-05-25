@@ -8,7 +8,6 @@
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#about">Quem somos</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#why-us">Soluções</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#clients">Clientes</a></li>
-                <li><a href="{{ locale_path($page, $page->baseUrl) }}#apoie">Apoie</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#contact">Contato</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}posts">Blog</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}jobs">Coopere Conosco</a></li>

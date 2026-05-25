@@ -6,25 +6,20 @@
   ============================-->
   <section id="intro" class="clearfix">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
           <div class="intro-info">
             <div class="intro-badge mb-3">
-              <i class="fa fa-users"></i> Cooperativa de especialistas
+              <i class="fa fa-shield"></i> Cooperativa de software livre
             </div>
             <h2>Simplifique sua gestão com <br><span>tecnologia segura</span>, <span>ética</span> e livre de amarras.</h2>
-            <p>Do armazenamento em nuvem à assinatura eletrônica: ferramentas completas que colocam sua empresa no controle, com o suporte humanizado de uma cooperativa.</p>
+            <p>Desenvolvemos e hospedamos soluções livres que colocam sua organização no controle, com suporte humano, soberania digital e sem vendor lock-in.</p>
             <div class="intro-cta">
               <a class="btn btn-primary btn-lg mr-2 mb-2" href="#why-us">
-                Conheça nossas Soluções <i class="fa fa-arrow-right ml-2"></i>
+                Conheça as soluções <i class="fa fa-arrow-right ml-2"></i>
               </a>
               <a class="btn btn-outline-primary btn-lg mb-2" href="#about">Por que Software Livre?</a>
             </div>
-            <ul class="intro-features mt-4">
-              <li><i class="fa fa-check-circle"></i> Equipe dedicada ao seu projeto</li>
-              <li><i class="fa fa-check-circle"></i> Metodologia ágil e transparente</li>
-              <li><i class="fa fa-check-circle"></i> Suporte contínuo pós-entrega</li>
-            </ul>
             <div class="intro-lead-form mt-4 pt-4">
               <p class="lead-form-title">Ou deixe seu contato para falar com um especialista:</p>
               <form action="#contact" method="get" class="lead-form">
@@ -34,6 +29,86 @@
                 </div>
                 <p class="lead-form-note">Resposta em até 24h. Sem compromisso.</p>
               </form>
+            </div>
+            <ul class="intro-features mt-4">
+              <li><i class="fa fa-check-circle"></i> Você é dono do código, dos dados e da infraestrutura</li>
+              <li><i class="fa fa-check-circle"></i> Sem limites de licença ou renovações abusivas</li>
+              <li><i class="fa fa-check-circle"></i> Zero vendor lock-in e liberdade para migrar quando quiser</li>
+              <li><i class="fa fa-check-circle"></i> Hospedagem no Brasil com foco em LGPD e soberania digital</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <div class="visual-card">
+            <div class="float-card float-top-left" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <div class="float-card-texto">Código 100% auditável</div>
+                <div class="float-card-sub">Open source, sem segredos</div>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-inner">
+                <div class="cert-header">
+                  <span class="cert-logo">LIBRE<span>CODE</span></span>
+                  <span class="cert-tag">Software Livre</span>
+                </div>
+
+                <div class="cert-titulo-bloco">Proprietário do software</div>
+                <div class="cert-empresa">Sua Organização</div>
+                <div class="cert-sub">Direitos plenos de uso, cópia, modificação e distribuição</div>
+
+                <div class="cert-divisor"></div>
+
+                <div class="cert-items">
+                  <div class="cert-item">
+                    <div class="cert-item-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="cert-item-texto"><strong>Licença irrestrita</strong> — sem limite de usuários ou instâncias</div>
+                  </div>
+                  <div class="cert-item">
+                    <div class="cert-item-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="cert-item-texto"><strong>Sem dependência</strong> — troque de fornecedor a qualquer hora</div>
+                  </div>
+                  <div class="cert-item">
+                    <div class="cert-item-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="cert-item-texto"><strong>Seus dados</strong> — armazenados onde você decidir</div>
+                  </div>
+                  <div class="cert-item">
+                    <div class="cert-item-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="cert-item-texto"><strong>Código fonte</strong> — acesso e modificação garantidos</div>
+                  </div>
+                </div>
+
+                <div class="cert-rodape">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                  </svg>
+                  <div>
+                    <div class="cert-rodape-titulo">Cooperativa certificada</div>
+                    <div class="cert-rodape-desc">Especialistas em software livre com valores cooperativistas</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card float-bottom-right" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+              </svg>
+              <div>
+                <div class="float-card-texto">Sem vendor lock-in</div>
+                <div class="float-card-sub">Migre quando quiser</div>
+              </div>
             </div>
           </div>
         </div>
@@ -365,31 +440,6 @@
         </div>
       </div>
     </section>
-    <!--==========================
-      Apoie Section
-    ============================-->
-    <section id="apoie" class="section-bg">
-      <div class="container">
-        <div class="section-header">
-          <h3>Apoie</h3>
-          <p>Se você utiliza ou deseja utilizar nossos produtos e gostaria de contribuir com o desenvolvimento deles.
-            Existem diversas formas de você nos apoiar:</p>
-        </div>
-        <div class="row apoie-wrap clearfix wow fadeInUp justify-content-md-center">
-          <div class="col-lg-6 col-md-6 col-xs-6">
-            <div class="apoie-logo">
-              <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-            </div>
-            <p class="text-justify p-5">
-              O GitHub Sponsors permite à comunidade de desenvolvedores apoiar financeiramente as pessoas e organizações que projetam, criam e mantêm projetos de código aberto do qual dependem, diretamente no GitHub.
-            </p>
-            <a class="pl-5" href="https://github.com/sponsors/LibreSign" target=“_blank”>
-              Ir para Github Sponsor
-            </a>
-          </div>
-        </div>
-      </div>
-    </section><!-- #intro -->
   </main>
 
   @include('_partials.contact_form')
