@@ -50,7 +50,6 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
                   <span class="cert-tag">3 pilares corporativos</span>
                 </div>
 
-                <div class="cert-titulo-bloco">Portfólio por valor de negócio</div>
                 <div class="cert-empresa">Soluções sob medida</div>
                 <div class="cert-sub">Mais clareza para decidir em ambientes públicos e corporativos</div>
 
