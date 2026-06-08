@@ -12,6 +12,7 @@ extends: _layouts.job
   * Sobre software livre
         - [Revolution OS](https://libreflix.org/i/revolution-os)
         - [The Code](https://libreflix.org/i/the-code)
+* [Cooperativismo de Plataforma](https://www.youtube.com/playlist?list=PLBkJLI8oXeXceUVEXbhUF0urqfj_qWKa8)
 * Cursos
   * Faça cadastro no site [Capacita Coop](https://www.capacita.coop.br)
     * Preencha:
