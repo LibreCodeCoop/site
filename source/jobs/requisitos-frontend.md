@@ -9,15 +9,15 @@ extends: _layouts.job
   * JavaScript
   * Docker
   * VueJS
-  * webpack
-* Conhecimento e interesse em UX / UI
+  * Webpack
+* Conhecimento e interesse em UX/UI
 * Habilidades com análise e gestão de projetos
-* Qualidade de software (CI/CD)
+* Qualidade de software e entrega contínua (CI/CD)
 
 ## Tipos de trabalhos a executar
 * Desenvolvimento para Nextcloud
 * Análise de sistemas e gestão de projetos
-* Projetar e implementar frontend para aplicações web diversas
+* Projetar e implementar front ends para aplicações web diversas
 
 ## Como candidatar-se?
 * Instruções [aqui](../)

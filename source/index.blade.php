@@ -1,3 +1,8 @@
+---
+title: LibreCode - Cooperativa de Software Livre
+description: Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil.
+---
+
 @extends('_layouts.main')
 
 @section('body')
@@ -12,28 +17,18 @@
             <div class="intro-badge mb-3">
               <i class="fa fa-shield"></i> Cooperativa de software livre
             </div>
-            <h2>Simplifique sua gestão com <br><span>tecnologia segura</span>, <span>ética</span> e livre de amarras.</h2>
-            <p>Desenvolvemos e hospedamos soluções livres que colocam sua organização no controle, com suporte humano, soberania digital e sem vendor lock-in.</p>
+            <h2>O controle total dos seus sistemas e dados. Sem taxas abusivas, sem termos que prendem sua empresa.</h2>
+            <p>Implementamos e hospedamos soluções customizadas que garantem autonomia jurídica e operacional para sua organização. Conecte sua equipe em um ambiente seguro, auditável e livre de licenças proprietárias por usuário.</p>
             <div class="intro-cta">
-              <a class="btn btn-primary btn-lg mr-2 mb-2" href="#why-us">
-                Conheça as soluções <i class="fa fa-arrow-right ml-2"></i>
+              <a class="btn btn-primary btn-lg mr-2 mb-2" href="#contact">
+                Solicitar diagnóstico de infraestrutura <i class="fa fa-arrow-right ml-2"></i>
               </a>
-              <a class="btn btn-outline-primary btn-lg mb-2" href="#about">Por que Software Livre?</a>
             </div>
-            <div class="intro-lead-form mt-4 pt-4">
-              <p class="lead-form-title">Ou deixe seu contato para falar com um especialista:</p>
-              <form action="#contact" method="get" class="lead-form">
-                <div class="form-group-inline">
-                  <input type="email" class="form-control" placeholder="Seu melhor e-mail" required>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-                <p class="lead-form-note">Resposta em até 24h. Sem compromisso.</p>
-              </form>
-            </div>
+            <p class="intro-support">Fale com um especialista e receba uma proposta sob medida para sua operação.</p>
             <ul class="intro-features mt-4">
               <li><i class="fa fa-check-circle"></i> Você é dono do código, dos dados e da infraestrutura</li>
               <li><i class="fa fa-check-circle"></i> Sem limites de licença ou renovações abusivas</li>
-              <li><i class="fa fa-check-circle"></i> Zero vendor lock-in e liberdade para migrar quando quiser</li>
+              <li><i class="fa fa-check-circle"></i> Suporte humano especializado e liberdade para migrar quando quiser</li>
               <li><i class="fa fa-check-circle"></i> Hospedagem no Brasil com foco em LGPD e soberania digital</li>
             </ul>
           </div>
@@ -43,8 +38,8 @@
             <div class="float-card float-top-left" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <div class="float-card-texto">Código 100% auditável</div>
-                <div class="float-card-sub">Open source, sem segredos</div>
+                <div class="float-card-texto">Diagnóstico consultivo</div>
+                <div class="float-card-sub">Entenda o cenário antes de contratar</div>
               </div>
             </div>
 
@@ -52,12 +47,12 @@
               <div class="cert-inner">
                 <div class="cert-header">
                   <span class="cert-logo">LIBRE<span>CODE</span></span>
-                  <span class="cert-tag">Software Livre</span>
+                  <span class="cert-tag">3 pilares corporativos</span>
                 </div>
 
-                <div class="cert-titulo-bloco">Proprietário do software</div>
-                <div class="cert-empresa">Sua Organização</div>
-                <div class="cert-sub">Direitos plenos de uso, cópia, modificação e distribuição</div>
+                <div class="cert-titulo-bloco">Portfólio organizado por valor de negócio</div>
+                <div class="cert-empresa">Soluções sob medida</div>
+                <div class="cert-sub">Menos catálogo, mais clareza para decisão em ambientes públicos e corporativos</div>
 
                 <div class="cert-divisor"></div>
 
@@ -66,25 +61,19 @@
                     <div class="cert-item-check">
                       <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                     </div>
-                    <div class="cert-item-texto"><strong>Licença irrestrita</strong> — sem limite de usuários ou instâncias</div>
+                    <div class="cert-item-texto"><strong>Produtividade e nuvem</strong> — e-mail, arquivos, agenda e videoconferência</div>
                   </div>
                   <div class="cert-item">
                     <div class="cert-item-check">
                       <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                     </div>
-                    <div class="cert-item-texto"><strong>Sem dependência</strong> — troque de fornecedor a qualquer hora</div>
+                    <div class="cert-item-texto"><strong>Gestão e comercial</strong> — financeiro, ERP e relacionamento com o cliente</div>
                   </div>
                   <div class="cert-item">
                     <div class="cert-item-check">
                       <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                     </div>
-                    <div class="cert-item-texto"><strong>Seus dados</strong> — armazenados onde você decidir</div>
-                  </div>
-                  <div class="cert-item">
-                    <div class="cert-item-check">
-                      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="cert-item-texto"><strong>Código fonte</strong> — acesso e modificação garantidos</div>
+                    <div class="cert-item-texto"><strong>Comunicação e marketing</strong> — atendimento, automação e relacionamento</div>
                   </div>
                 </div>
 
@@ -94,8 +83,8 @@
                     <polyline points="9 12 11 14 15 10"/>
                   </svg>
                   <div>
-                    <div class="cert-rodape-titulo">Cooperativa certificada</div>
-                    <div class="cert-rodape-desc">Especialistas em software livre com valores cooperativistas</div>
+                    <div class="cert-rodape-titulo">Validação técnica com foco em negócio</div>
+                    <div class="cert-rodape-desc">Nextcloud, Jitsi, Odoo, SuiteCRM, Akaunting, Chatwoot e Mautic</div>
                   </div>
                 </div>
               </div>
@@ -106,8 +95,8 @@
                 <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
               </svg>
               <div>
-                <div class="float-card-texto">Sem vendor lock-in</div>
-                <div class="float-card-sub">Migre quando quiser</div>
+                <div class="float-card-texto">Sem catálogo disperso</div>
+                <div class="float-card-sub">A solução certa aparece primeiro</div>
               </div>
             </div>
           </div>
@@ -128,7 +117,7 @@
                 <img loading="lazy" src="{{ $page->baseUrl }}assets/images/coop.png" class="img-fluid" alt="Ícone representando cooperativismo e trabalho em equipe">
               </div>
               <h2 class="title"><a href="">Por que uma cooperativa?</a></h2>
-              <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente dentro de um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade, produtividade e a economia de escala nos serviços.
+              <p class="description">Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente. Os cooperados contribuem de forma equitativa, com base na intercooperação e no trabalho em conjunto, o que potencializa a qualidade, a produtividade e a economia de escala nos serviços.
                 <br>
                 O movimento cooperativista trabalha para o desenvolvimento sustentável da comunidade na qual está inserido.</p>
             </div>
@@ -138,11 +127,11 @@
                   <img loading="lazy" src="{{ $page->baseUrl }}assets/images/gnu.png" class="img-fluid" alt="Logo do projeto GNU representando software livre">
                 </i>
               </div>
-              <h2 class="title"><a href="">Por que software livre (SL)?</a></h2>
+              <h2 class="title"><a href="">Por que software livre?</a></h2>
               <p class="description">
-                Um projeto de licença livre é construído colaborativamente, de modo que está em constante crescimento e sendo constantemente testado e corrigido em suas atualizações.
-                Por ser aberto, o código de um SL é 100% auditável, permitindo identificar a existência de qualquer erro ou falha de segurança em seu interior que possa deixar vulnerável os dados trafegados no sistema.
-                Por isso, um SL permite uma política de segurança de dados muito mais transparente do que um software proprietário.
+                Um projeto de licença livre é construído colaborativamente, cresce de forma contínua e passa por testes e correções ao longo de suas atualizações.
+                Por ser aberto, o código de um software livre é totalmente auditável, permitindo identificar erros ou falhas de segurança que possam expor os dados trafegados no sistema.
+                Por isso, um software livre permite uma política de segurança de dados mais transparente do que um software proprietário.
               </p>
             </div>
         </div>
@@ -161,7 +150,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="diferencial-box wow fadeInUp">
               <div class="diferencial-icon">
-                <i class="fa fa-server" style="font-size: 48px; color: #e5332a;"></i>
+                <i class="fa fa-server diferencial-icon-dark"></i>
               </div>
               <h4>Hospedagem em Servidores Próprios</h4>
               <p>Infraestrutura brasileira com total controle e privacidade. Seus dados permanecem no Brasil, garantindo soberania digital e conformidade legal.</p>
@@ -170,7 +159,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="diferencial-box wow fadeInUp" data-wow-delay="0.1s">
               <div class="diferencial-icon">
-                <i class="fa fa-users" style="font-size: 48px; color: #e5332a;"></i>
+                <i class="fa fa-users diferencial-icon-dark"></i>
               </div>
               <h4>Suporte Técnico Especializado</h4>
               <p>Time de especialistas que fala sua língua e entende suas necessidades. Atendimento personalizado, ágil e focado em resultados.</p>
@@ -179,7 +168,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="diferencial-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="diferencial-icon">
-                <i class="fa fa-cogs" style="font-size: 48px; color: #e5332a;"></i>
+                <i class="fa fa-cogs diferencial-icon-dark"></i>
               </div>
               <h4>Customização Sob Demanda</h4>
               <p>Adaptamos cada solução às suas necessidades específicas. Desenvolvimento personalizado para atender exatamente o que seu negócio precisa.</p>
@@ -188,25 +177,25 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="diferencial-box wow fadeInUp" data-wow-delay="0.3s">
               <div class="diferencial-icon">
-                <i class="fa fa-lock" style="font-size: 48px; color: #e5332a;"></i>
+                <i class="fa fa-lock diferencial-icon-dark"></i>
               </div>
               <h4>Dados Sob Seu Controle</h4>
-              <p>Você é o proprietário dos seus dados. Sem vendor lock-in, com liberdade para migrar quando quiser e transparência total sobre onde seus dados estão.</p>
+              <p>Você é o proprietário dos seus dados. Sem dependência de fornecedor único, com liberdade para migrar quando quiser e transparência total sobre onde seus dados estão.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="diferencial-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="diferencial-icon">
-                <i class="fa fa-shield" style="font-size: 48px; color: #e5332a;"></i>
+                <i class="fa fa-shield diferencial-icon-dark"></i>
               </div>
-              <h4>100% LGPD Compliance</h4>
-              <p>Soluções desenvolvidas com privacidade desde o design. Conformidade total com a Lei Geral de Proteção de Dados e regulamentações internacionais.</p>
+              <h4>Conformidade com a LGPD</h4>
+              <p>Soluções desenvolvidas com privacidade desde o design e alinhadas à Lei Geral de Proteção de Dados e a outras exigências regulatórias.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="diferencial-box wow fadeInUp" data-wow-delay="0.5s">
               <div class="diferencial-icon">
-                <i class="fa fa-unlock-alt" style="font-size: 48px; color: #e5332a;"></i>
+                <i class="fa fa-unlock-alt diferencial-icon-dark"></i>
               </div>
               <h4>Sem Dependência de Big Techs</h4>
               <p>Independência tecnológica com software livre. Sem taxas abusivas, sem bloqueios arbitrários, sem surpresas no contrato.</p>
@@ -221,159 +210,47 @@
     <section id="why-us" class="wow fadeIn">
       <div class="container">
         <header class="section-header">
-          <h2>Soluções</h2>
-          <p>Todas as nossas soluções podem ser customizadas e adaptadas às necessidades de cada cliente. Confira!</p>
+          <h2>3 pilares corporativos</h2>
+          <p>Em vez de listar ferramentas soltas, organizamos o portfólio em pilares que ajudam gestores, cooperativas e equipes jurídicas a decidir com mais clareza.</p>
         </header>
 
-        <!-- Gestão e Produtividade -->
         <div class="row mt-4">
-          <div class="col-12">
-            <h4 class="text-center mb-4">📊 Gestão e Produtividade</h4>
-          </div>
-        </div>
-        <div class="row row-eq-height justify-content-center mb-5">
           <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="Logo do Nextcloud - plataforma de nuvem privada" width="120px">
-              <h5 class="text-center mt-3">Nextcloud</h5>
-              <p class="mb-4">Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+            <div class="pillar-card wow bounceInUp h-100">
+              <div class="pillar-icon">
+                <i class="fa fa-cloud"></i>
+              </div>
+              <h4>Produtividade e Nuvem Corporativa</h4>
+              <p>Substitua Google Workspace e Microsoft 365 com e-mail, videoconferência, arquivos e agendas em um ambiente único e privado.</p>
+              <div class="pillar-validation">
+                <span>Validação técnica</span>
+                <p>Nextcloud e Jitsi.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/kimai.png" alt="Logo do Kimai - software de controle de tempo" width="120px">
-              <h5 class="text-center mt-3">Kimai</h5>
-              <p class="mb-4">Controle de horas e gestão de tempo para projetos. Acompanhe o tempo investido em cada atividade e melhore a produtividade.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+            <div class="pillar-card wow bounceInUp h-100" data-wow-delay="0.1s">
+              <div class="pillar-icon">
+                <i class="fa fa-sitemap"></i>
+              </div>
+              <h4>Gestão, ERP e Comercial</h4>
+              <p>Centralize faturamento, controle financeiro e relacionamento com o cliente sem pagar licenças abusivas por usuário.</p>
+              <div class="pillar-validation">
+                <span>Validação técnica</span>
+                <p>Odoo, SuiteCRM e Akaunting.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.2s">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/akaunting.png" alt="Logo do Akaunting - software de gestão financeira" width="120px">
-              <h5 class="text-center mt-3">Akaunting</h5>
-              <p class="mb-4">Software de gestão financeira completo. Controle receitas, despesas, faturamento e tenha visão total das finanças da sua organização.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+            <div class="pillar-card wow bounceInUp h-100" data-wow-delay="0.2s">
+              <div class="pillar-icon">
+                <i class="fa fa-comments"></i>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Assinaturas e Documentos -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h4 class="text-center mb-4">📝 Assinaturas e Documentos</h4>
-          </div>
-        </div>
-        <div class="row row-eq-height justify-content-center mb-5">
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="Logo do LibreSign - plataforma de assinatura digital" width="120px">
-              <h5 class="text-center mt-3">LibreSign</h5>
-              <p class="mb-4">Plataforma completa para assinatura digital de documentos, com praticidade, segurança e validade jurídica.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://libresign.coop/" class="btn btn-secondary btn-block" target="_blank">Conheça!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Analytics e Dados -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h4 class="text-center mb-4">📈 Analytics e Dados</h4>
-          </div>
-        </div>
-        <div class="row row-eq-height justify-content-center mb-5">
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/matomo.png" alt="Logo do Matomo - plataforma de analytics com privacidade" width="120px">
-              <h5 class="text-center mt-3">Matomo</h5>
-              <p class="mb-4">Analytics web com total privacidade. Alternativa ética ao Google Analytics, 100% LGPD compliance e dados sob seu controle.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/limesurvey.png" alt="Logo do LimeSurvey - plataforma de pesquisas e formulários" width="120px">
-              <h5 class="text-center mt-3">LimeSurvey</h5>
-              <p class="mb-4">Crie pesquisas e formulários profissionais. Colete dados, analise respostas e tome decisões baseadas em informações concretas.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CRM e Relacionamento -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h4 class="text-center mb-4">🤝 CRM e Relacionamento</h4>
-          </div>
-        </div>
-        <div class="row row-eq-height justify-content-center mb-5">
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/suitecrm.png" alt="Logo do SuiteCRM - sistema de gestão de relacionamento com clientes" width="120px">
-              <h5 class="text-center mt-3">SuiteCRM</h5>
-              <p class="mb-4">Gestão completa de relacionamento com clientes. Organize vendas, marketing e atendimento em uma única plataforma integrada.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4" data-wow-delay="0.1s">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/mautic.png" alt="Logo do Mautic - plataforma de automação de marketing" width="120px">
-              <h5 class="text-center mt-3">Mautic</h5>
-              <p class="mb-4">Automação de marketing open-source. Crie campanhas personalizadas, gerencie leads e automatize comunicações para maximizar conversões.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Ferramentas Web -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h4 class="text-center mb-4">🔗 Ferramentas Web</h4>
-          </div>
-        </div>
-        <div class="row row-eq-height justify-content-center mb-5">
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/yourls.png" alt="Logo do Yourls - encurtador de URLs personalizado" width="120px">
-              <h5 class="text-center mt-3">Yourls</h5>
-              <p class="mb-4">Encurtador de URLs personalizado. Crie links curtos com sua própria marca e tenha controle total sobre estatísticas de acesso.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Publicação Acadêmica -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <h4 class="text-center mb-4">📚 Publicação Acadêmica</h4>
-          </div>
-        </div>
-        <div class="row row-eq-height justify-content-center mb-5">
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp h-100 px-4">
-              <img loading="lazy" class="rounded mx-auto d-block mt-3" src="{{ $page->baseUrl }}assets/images/solucoes/ojs.png" alt="Logo do OJS (Open Journal Systems) - sistema de publicação científica" width="120px">
-              <h5 class="text-center mt-3">OJS</h5>
-              <p class="mb-4">Open Journal Systems - Plataforma completa para publicação de periódicos científicos com fluxo editorial profissional.</p>
-              <div class="card-body pb-3 mt-auto">
-                <a href="https://t.me/LibreCodeCoop" target="_blank" class="btn btn-secondary btn-block">Saiba mais</a>
+              <h4>Comunicação, Marketing e Atendimento</h4>
+              <p>Centralize o atendimento dos seus canais de comunicação e automatize suas réguas de marketing sem depender de plataformas proprietárias caras.</p>
+              <div class="pillar-validation">
+                <span>Validação técnica</span>
+                <p>Chatwoot e Mautic.</p>
               </div>
             </div>
           </div>
@@ -382,7 +259,7 @@
         <div class="row mt-5">
           <div class="col-12 text-center">
             <p class="h5 text-muted">Precisa de uma solução específica ou integração personalizada?</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">Entre em contato</a>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Quero uma solução sob medida</a>
           </div>
         </div>
       </div>
@@ -404,37 +281,37 @@
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="Logo de cliente parceiro">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-2.png" class="img-fluid" alt="Logo de cliente parceiro da LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="Logo de cliente parceiro">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-3.png" class="img-fluid" alt="Logo de cliente parceiro da LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="Logo de cliente parceiro">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-4.jpg" class="img-fluid" alt="Logo de cliente parceiro da LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="Logo de cliente parceiro">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-5.png" class="img-fluid" alt="Logo de cliente parceiro da LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="Logo de cliente parceiro">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/client-6.png" class="img-fluid" alt="Logo de cliente parceiro da LibreCode">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="Logo do NIC.br - N00facleo de Informa00e700e3o e Coordena00e700e3o">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/nicbr.png" class="img-fluid" alt="Logo do NIC.br - Núcleo de Informação e Coordenação">
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="Logo da AMPERJ - Associa00e700e3o do Minist00e9rio P00fablico do Estado do Rio de Janeiro">
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/amperj.jpg" class="img-fluid" alt="Logo da AMPERJ - Associação do Ministério Público do Estado do Rio de Janeiro">
             </div>
           </div>
         </div>

@@ -4,11 +4,11 @@ extends: _layouts.job
 
 ## Requisitos
 * Utilizar e compreender os valores do software livre
-* Conhecimentos de sysadmin Linux
+* Conhecimentos de administração Linux
 * Docker
 
 ## Diferenciais
-* Banco de dados relacionais
+* Bancos de dados relacionais
 * Noções de programação
 
 ## Tipos de trabalhos a executar

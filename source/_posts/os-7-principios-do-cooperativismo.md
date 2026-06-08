@@ -3,7 +3,7 @@ extends: _layouts.post
 title: Os 7 princípios do cooperativismo
 author: LibreCode
 date: 2024-05-28
-description: Os princípios cooperativistas são uma série de alinhamentos gerais pelos quais se regem as cooperativas e constituem a base do movimento cooperativo.
+description: Conheça os sete princípios que orientam o cooperativismo e sustentam a forma como as cooperativas organizam trabalho, decisão e participação.
 ---
 
 ### 1. Adesão livre e voluntária

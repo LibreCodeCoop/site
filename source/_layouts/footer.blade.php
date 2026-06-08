@@ -4,10 +4,10 @@
             <div class="row">
 
                 <div>
-                    <a href="https://www.somos.coop.br/" target="_blank">
+                    <a href="https://www.somos.coop.br/" target="_blank" rel="noopener noreferrer">
                         <img
                         src="{{ $page->baseUrl }}assets/images/logo/somoscoop-horizontal-light.png"
-                        alt="somos coop logo imagem"
+                        alt="Logo da Somos Coop"
                         width="220" height="200"
                         />
                     </a>
@@ -15,11 +15,11 @@
 
             <div>
                 <div class="social-links">
-                    <a href="https://t.me/LibreCodeCoop" class="telegram" target="_blank"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.facebook.com/librecodecoop/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/librecodecoop/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://github.com/librecodecoop" class="github" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://t.me/LibreCodeCoop" class="telegram" target="_blank" rel="noopener noreferrer"><i class="fa fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/librecodecoop/" class="facebook" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/librecodecoop/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/librecodecoop" class="github" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
 
@@ -30,13 +30,7 @@
                         &copy; Copyright <strong>LibreCode</strong>. Todos os direitos reservados
                     </div>
                     <div class="credits">
-                        <!--
-                        All the links in the footer should remain intact.
-                        You can delete the links only if you purchased the pro version.
-                        Licensing information: https://bootstrapmade.com/license/
-                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-                        -->
-                        Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+                        Site desenvolvido por <a href="{{ locale_path($page, $page->baseUrl) }}">LibreCode</a>
                     </div>
                 </div>
 

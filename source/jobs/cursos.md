@@ -4,7 +4,7 @@ extends: _layouts.job
 
 # Cursos
 
-Para ser sócio você precisa conhecer sobre cooperativismo. Seguem alguns passos necessários para demonstrar este conhecimento:
+Para ser sócio, você precisa conhecer cooperativismo. Estes são os passos necessários para demonstrar esse conhecimento:
 
 * Faça cadastro no site [Capacita Coop](https://www.capacita.coop.br)
   * Preencha:
@@ -12,9 +12,9 @@ Para ser sócio você precisa conhecer sobre cooperativismo. Seguem alguns passo
     * **É vinculado à alguma cooperativa?**: Cooperativa
     * **Cooperativa**: LibreCode
     * **Tipo de Vínculo com a Cooperativa**: Cooperado
-* Realizar os seguintes cursos (pelo menos)
+* Realizar pelo menos os seguintes cursos
   * Nacionais
     * [Cooperativismo - Primeiras lições](https://capacita.coop.br/cursos-studion/cooperativismo-primeiras-licoes)
     * [Entendendo a sociedade cooperativa](https://capacita.coop.br/cursos-studion/entendendo-a-sociedade-cooperativa-2)
     * [Formação de cooperados](https://capacita.coop.br/cursos-studion/formacao-de-cooperados)
-* Ao concluir os cursos, comente em [nosso grupo no Telegram](https://t.me/LibreCodeCoop) quais cursos fez e o que achou. Se quer ser sócio, é importante também demonstrar habilidades em promover conhecimento dentro da área da coop.
+* Ao concluir os cursos, comente em [nosso grupo no Telegram](https://t.me/LibreCodeCoop) quais cursos fez e o que achou. Se quer ser sócio, também é importante demonstrar disposição para compartilhar conhecimento dentro da cooperativa.

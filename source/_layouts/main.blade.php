@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>{{ $page->title ?? 'LibreCode - Cooperativa de Software Livre' }}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="keywords" content="software livre, open source, cooperativa tecnologia, nextcloud, libresign, suitecrm, mautic, desenvolvimento software, hospedagem brasil, LGPD, soberania digital, automação marketing, CRM, assinatura digital">
-  <meta name="description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções com software livre. Nextcloud, LibreSign, SuiteCRM, Mautic e mais. Hospedagem no Brasil, suporte em português e 100% LGPD compliance.' }}">
+  <meta name="keywords" content="software livre, cooperativa tecnologia, nuvem corporativa, ERP, CRM, automação de marketing, hospedagem Brasil, LGPD, soberania digital, suporte em português">
+  <meta name="description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil, suporte em português e foco em LGPD.' }}">
   <meta name="author" content="LibreCode Cooperativa">
   <meta name="robots" content="index, follow">
   
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ $page->getUrl() }}">
   <meta property="og:title" content="{{ $page->title ?? 'LibreCode - Cooperativa de Software Livre' }}">
-  <meta property="og:description" content="{{ $page->description }}">
+  <meta property="og:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil, suporte em português e foco em LGPD.' }}">
   @if (!empty($og_image))
     <meta property="og:image" content="{{ $og_image }}"/>
   @else
@@ -24,7 +24,7 @@
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{{ $page->getUrl() }}">
   <meta property="twitter:title" content="{{ $page->title ?? 'LibreCode' }}">
-  <meta property="twitter:description" content="{{ $page->description }}">
+  <meta property="twitter:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil, suporte em português e foco em LGPD.' }}">
   <meta property="twitter:image" content="{{ $page->baseUrl }}assets/images/logo.png">
 
   <link rel="canonical" href="{{ $page->getUrl() }}">

@@ -4,7 +4,7 @@ extends: _layouts.job
 
 # Vídeos
 
-É essencial que assista os seguintes materiais em vídeo para compreender mais sobre cooperativismo e software livre.
+É essencial assistir aos materiais em vídeo abaixo para compreender melhor cooperativismo e software livre.
 
 * História de como surgiu o cooperativismo:
     * [Os Pioneiros de Rochdale](https://www.youtube.com/watch?v=L-oXL6g00Og)
