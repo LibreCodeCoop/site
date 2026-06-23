@@ -15,7 +15,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
         <div class="col-lg-7">
           <div class="intro-info">
             <div class="intro-badge mb-3">
-              <i class="fa fa-shield"></i> Cooperativa de software livre
+              <i class="fa fa-shield"></i> Proteção Máxima
             </div>
             <h2>O controle total dos seus sistemas e dados. Sem taxas abusivas, sem termos que prendem sua empresa.</h2>
             <p>Implementamos e hospedamos soluções sob medida para dar mais controle, segurança e autonomia à sua operação.</p>
@@ -52,6 +52,8 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
 
                 <div class="cert-empresa">Soluções sob medida</div>
                 <div class="cert-sub">Mais clareza para decidir em ambientes públicos e corporativos</div>
+                <div class="cert-sub">Também desenvolvemos o LibreSign, nossa solução de assinatura digital.</div>
+                <div class="cert-sub">Conheça: <a href="https://libresign.coop" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">libresign.coop</a></div>
 
                 <div class="cert-divisor"></div>
 
@@ -218,11 +220,11 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
               <div class="pillar-icon">
                 <i class="fa fa-cloud"></i>
               </div>
-              <h4>Produtividade e Nuvem Corporativa</h4>
+              <h4>Produtividade e Nuvem Empresarial</h4>
               <p>Substitua Google Workspace e Microsoft 365 com e-mail, videoconferência, arquivos e agenda em um ambiente privado.</p>
               <div class="pillar-validation">
                 <span>Validação técnica</span>
-                <p>Nextcloud e Jitsi.</p>
+                <p>Uma base pronta para gerar resultado no seu negócio.</p>
               </div>
             </div>
           </div>
@@ -235,7 +237,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
               <p>Centralize faturamento, controle financeiro e relacionamento com o cliente sem licenças por usuário.</p>
               <div class="pillar-validation">
                 <span>Validação técnica</span>
-                <p>SuiteCRM e Akaunting.</p>
+                <p>Estrutura pensada para ganhar eficiência e escala.</p>
               </div>
             </div>
           </div>
@@ -248,7 +250,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
               <p>Centralize o atendimento e automatize campanhas sem depender de plataformas caras.</p>
               <div class="pillar-validation">
                 <span>Validação técnica</span>
-                <p>Chatwoot e Mautic.</p>
+                <p>Tudo alinhado para acelerar operação e atendimento.</p>
               </div>
             </div>
           </div>
