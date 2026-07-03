@@ -1,9 +1,11 @@
 <header id="header" class="fixed-top">
     <div class="container">
-        <div class="logo float-left">
-            <a href="{{ locale_path($page, $page->baseUrl) }}" class="scrollto"><img src="{{ $page->baseUrl }}assets/images/logo/librecode.png" alt="" class="img-fluid"></a>
+        <div class="logo">
+            <a href="{{ locale_path($page, $page->baseUrl) }}" class="scrollto" aria-label="LibreCode — página inicial">
+                <img src="{{ $page->baseUrl }}assets/images/logo/librecode.png" alt="LibreCode" class="img-fluid">
+            </a>
         </div>
-        <nav class="main-nav float-right d-none d-lg-block">
+        <nav class="main-nav d-none d-lg-block" aria-label="Navegação principal">
             <ul>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#about">Quem somos</a></li>
                 <li><a href="{{ locale_path($page, $page->baseUrl) }}#why-us">Soluções</a></li>
