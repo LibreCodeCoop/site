@@ -1238,8 +1238,8 @@ End blog page style
   --red-glow:   rgba(229, 51, 42, 0.45);
 
   --on-ink:       #e9ebf2;
-  --on-ink-soft:  #a3a9ba;
-  --on-ink-faint: #6b7183;
+  --on-ink-soft:  #c3c9d6;
+  --on-ink-faint: #8b93a6;
   --on-paper:      #12141b;
   --on-paper-soft: #4c5261;
 
@@ -1358,6 +1358,9 @@ button:focus-visible,
 #about.lc-section h1, #about.lc-section h2, #about.lc-section h3,
 #why-us.lc-section h1, #why-us.lc-section h2, #why-us.lc-section h3,
 #apoie.lc-section h1, #apoie.lc-section h2, #apoie.lc-section h3 { color: #fff; }
+
+#why-us.lc-section .lc-head p,
+#why-us.lc-section .lc-solution p { color: var(--on-ink-soft); }
 
 .lc-section--ink h1, .lc-section--ink h2, .lc-section--ink h3,
 .lc-section--ink h4 { color: #fff; }
@@ -1782,7 +1785,7 @@ main.size-jobs-page { padding-top: 100px; }
   margin-bottom: 22px;
   display: flex; align-items: center; justify-content: center;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.04);
+  background: #e9ebf2;
   border: 1px solid var(--ink-line);
 }
 .lc-why__icon img { max-width: 38px; max-height: 38px; }

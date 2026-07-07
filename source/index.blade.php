@@ -117,19 +117,6 @@
             </div>
           </article>
 
-          <article class="lc-solution" data-reveal="up" data-tilt-media>
-            <div class="lc-solution__body">
-              <span class="lc-solution__idx">03 — assembleias on-line</span>
-              <div class="lc-solution__logo"><h3 style="margin:0">Távola</h3></div>
-              <h3>Assembleias com validade jurídica</h3>
-              <p>Sistema com tudo o que é necessário para a realização de assembleias de forma remota — convocação, votação secreta ou nominal, atas e relatórios.</p>
-              <a href="{{ $page->baseUrl }}tavola" class="lc-btn">Conheça <span class="lc-btn__arrow">→</span></a>
-            </div>
-            <div class="lc-solution__media">
-              <ion-icon name="people-outline" style="font-size:96px;color:var(--red-2)" data-media></ion-icon>
-            </div>
-          </article>
-
         </div>
       </div>
     </section>

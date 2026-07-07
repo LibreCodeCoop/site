@@ -28,13 +28,6 @@
             <a href="mailto:contato@librecode.coop">contato@librecode.coop</a>
           </div>
         </div>
-        <div class="lc-contact__item">
-          <i class="lni lni-map-marker" aria-hidden="true"></i>
-          <div>
-            <span class="k">Onde estamos</span>
-            <span class="v">Rio de Janeiro · Brasil</span>
-          </div>
-        </div>
         <p style="font:500 13px/1.7 var(--font-mono);color:var(--on-paper-soft);margin:6px 0 0">
           Agradecemos pelo seu contato e estaremos ansiosos para ajudar!
         </p>
