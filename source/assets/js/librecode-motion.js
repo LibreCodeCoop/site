@@ -121,8 +121,26 @@
     // Infinite marquees
     gsap.utils.toArray("[data-marquee]").forEach(function (track) {
       var speed = parseFloat(track.dataset.speed || "40");
-      var dur = track.scrollWidth / 2 / speed;
-      gsap.to(track, { xPercent: -50, duration: dur, ease: "none", repeat: -1 });
+      var originals = Array.prototype.slice.call(track.children);
+      var setWidth = track.scrollWidth;
+      if (!setWidth) return;
+      var minWidth = track.parentElement.offsetWidth + setWidth;
+      var guard = 0;
+      while (track.scrollWidth < minWidth && guard++ < 40) {
+        originals.forEach(function (node) {
+          track.appendChild(node.cloneNode(true));
+        });
+      }
+      var loopDuration = setWidth / speed;
+      gsap.to(track, {
+        x: -setWidth,
+        duration: loopDuration,
+        ease: "none",
+        repeat: -1,
+        modifiers: {
+          x: gsap.utils.unitize(gsap.utils.wrap(-setWidth, 0))
+        }
+      });
     });
 
     // Magnetic buttons (pointer, non-touch)

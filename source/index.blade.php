@@ -56,7 +56,7 @@
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
           <p class="lc-eyebrow lc-eyebrow--index"><b>01</b> / Quem somos</p>
-          <h2>Duas ideias, um mesmo princípio: <span class="lc-accent">poder distribuído</span>.</h2>
+          <h2>Duas ideias, um mesmo princípio: <span class="lc-accent">poder distribuído</span></h2>
           <p>Nossa forma de trabalhar e o software que construímos nascem da mesma convicção — decisões e código devem estar à vista de todos.</p>
         </div>
 
@@ -85,7 +85,7 @@
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
           <p class="lc-eyebrow lc-eyebrow--index"><b>02</b> / Soluções</p>
-          <h2>Ferramentas livres, prontas para o seu contexto.</h2>
+          <h2>Ferramentas livres, prontas para o seu contexto</h2>
           <p>Todas as nossas soluções podem ser customizadas e adaptadas às necessidades de cada cliente. Confira!</p>
         </div>
 
@@ -126,7 +126,7 @@
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
           <p class="lc-eyebrow lc-eyebrow--index"><b>03</b> / Clientes</p>
-          <h2>Reconhecidos por quem constrói o país.</h2>
+          <h2>Reconhecidos por quem constrói o país</h2>
           <p>Nossa expertise e a singularidade de nosso modelo de negócio são creditadas por diversos atores dos setores público, privado e do terceiro setor.</p>
         </div>
       </div>
@@ -151,7 +151,7 @@
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
           <p class="lc-eyebrow lc-eyebrow--index"><b>04</b> / Apoie</p>
-          <h2>Software livre se sustenta com <span class="lc-accent">comunidade</span>.</h2>
+          <h2>Software livre se sustenta com <span class="lc-accent">comunidade</span></h2>
           <p>Se você utiliza ou deseja utilizar nossos produtos e gostaria de contribuir com o desenvolvimento deles, existem diversas formas de nos apoiar.</p>
         </div>
 

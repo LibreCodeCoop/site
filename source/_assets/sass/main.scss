@@ -1401,6 +1401,10 @@ button:focus-visible,
               box-shadow 0.35s var(--ease), color 0.3s var(--ease);
   will-change: transform;
 }
+.lc-btn:link,
+.lc-btn:visited {
+  color: var(--fg);
+}
 .lc-btn:hover {
   color: #fff;
   box-shadow: 0 14px 40px -12px var(--red-glow);
@@ -1718,7 +1722,7 @@ main.size-jobs-page { padding-top: 100px; }
   padding: 26px 0;
 }
 .lc-principles .lc-marquee__track > span {
-  font: 600 clamp(1.4rem, 3.4vw, 2.4rem)/1 var(--font-display);
+  font: 600 clamp(0.95rem, 2vw, 1.4rem)/1 var(--font-display);
   letter-spacing: -0.01em;
   padding: 0 30px;
   display: inline-flex;
