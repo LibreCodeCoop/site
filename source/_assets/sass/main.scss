@@ -1910,10 +1910,10 @@ main.size-jobs-page { padding-top: 100px; }
   width: 52px; height: 52px;
   margin-bottom: 20px;
   display: flex; align-items: center; justify-content: center;
-  border-radius: 12px;
-  background: rgba(229, 51, 42, 0.12);
+  border-radius: 14px;
+  background: #e9ebf2;
   border: 1px solid var(--ink-line);
-  color: var(--red-2);
+  color: #0f1220;
   font-size: 22px;
 }
 .lc-diff__card h3 {
