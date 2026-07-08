@@ -1254,7 +1254,9 @@ End blog page style
 /*--------------------------------------------------------------
   Base
 --------------------------------------------------------------*/
-html { scroll-behavior: smooth; }
+/* Keep native smooth-scroll off — JS (GSAP ScrollToPlugin) owns it;
+   `smooth` here would hijack the JS scroll and stall it. */
+html { scroll-behavior: auto; }
 
 body {
   font-family: var(--font-body);

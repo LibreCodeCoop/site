@@ -18,6 +18,19 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
 (function ($) {
   "use strict";
 
+  // Smooth scroll via GSAP ScrollToPlugin, falling back to jQuery.
+  function smoothScrollTo(scrollTop) {
+    if (window.gsap && window.ScrollToPlugin) {
+      window.gsap.to(window, {
+        duration: 0.8,
+        ease: 'power2.inOut',
+        scrollTo: { y: scrollTop, autoKill: false }
+      });
+    } else {
+      $('html, body').animate({ scrollTop: scrollTop }, 800, 'easeInOutExpo');
+    }
+  }
+
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
@@ -36,7 +49,7 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    smoothScrollTo(0);
     return false;
   });
 
@@ -73,9 +86,7 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
           }
         }
 
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+        smoothScrollTo(target.offset().top - top_space);
 
         if ($(this).parents('.main-nav, .mobile-nav').length) {
           $('.main-nav .active, .mobile-nav .active').removeClass('active');
