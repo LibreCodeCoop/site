@@ -1237,6 +1237,9 @@ End blog page style
   --red-2:      #ff4b3e;
   --red-glow:   rgba(229, 51, 42, 0.45);
 
+  --dpg:        #7ad3de;          /* teal do selo DPG */
+  --dpg-deep:   #3333ab;          /* índigo do selo DPG */
+
   --on-ink:       #e9ebf2;
   --on-ink-soft:  #c3c9d6;
   --on-ink-faint: #8b93a6;
@@ -1870,6 +1873,59 @@ main.size-jobs-page { padding-top: 100px; }
   filter: drop-shadow(0 20px 50px rgba(0,0,0,0.5));
   will-change: transform;
 }
+
+/* Selo Digital Public Good (destaque do LibreSign) */
+.lc-dpg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: -4px 0 28px;
+  padding: 13px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--ink-line);
+  background:
+    radial-gradient(130% 200% at 0% 0%, rgba(229, 51, 42, 0.14), transparent 58%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  text-decoration: none;
+  color: var(--on-ink);
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+.lc-dpg:hover {
+  border-color: var(--ink-line-2);
+  transform: translateY(-2px);
+  color: var(--on-ink);
+}
+.lc-dpg__seal {
+  height: 30px;
+  width: auto;
+  flex: none;
+  opacity: 0.96;
+}
+.lc-dpg__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.lc-dpg__text b {
+  font: 600 0.94rem/1.2 var(--font-display);
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.lc-dpg__meta {
+  font: 500 0.68rem/1.35 var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--on-ink-faint);
+}
+.lc-dpg__go {
+  margin-left: auto;
+  align-self: flex-start;
+  font-size: 1.05rem;
+  color: var(--red);
+  transition: transform 0.3s var(--ease);
+}
+.lc-dpg:hover .lc-dpg__go { transform: translate(3px, -3px); }
 
 /*--------------------------------------------------------------
   Diferenciais  (Por que a LibreCode)

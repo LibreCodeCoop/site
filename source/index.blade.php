@@ -152,11 +152,24 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
             </div>
           </article>
 
-          <article class="lc-solution" data-reveal="up" data-tilt-media>
+          <article class="lc-solution lc-solution--dpg" data-reveal="up" data-tilt-media>
             <div class="lc-solution__body">
               <span class="lc-solution__idx">02 — assinatura digital</span>
               <h3>LibreSign</h3>
               <p>Plataforma completa para assinatura digital de documentos, com praticidade, segurança e validade jurídica.</p>
+
+              <a class="lc-dpg" href="https://www.digitalpublicgoods.net/r/libresign" target="_blank" rel="noopener"
+                 title="Ver o registro do LibreSign na Digital Public Goods Alliance">
+                <img class="lc-dpg__seal" loading="lazy"
+                     src="{{ $page->baseUrl }}assets/images/dpg/dpg-badge-w.svg"
+                     alt="Selo Digital Public Good (Bem Público Digital)">
+                <span class="lc-dpg__text">
+                  <b>Reconhecido como Bem Público Digital</b>
+                  <span class="lc-dpg__meta">Verificado pela Digital Public Goods Alliance</span>
+                </span>
+                <span class="lc-dpg__go" aria-hidden="true">↗</span>
+              </a>
+
               <a href="https://libresign.coop/" target="_blank" rel="noopener" class="lc-btn">Conheça <span class="lc-btn__arrow">→</span></a>
             </div>
             <div class="lc-solution__media">
