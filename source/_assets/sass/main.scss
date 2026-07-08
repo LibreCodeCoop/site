@@ -1362,7 +1362,10 @@ button:focus-visible,
 #apoie.lc-section h1, #apoie.lc-section h2, #apoie.lc-section h3 { color: #fff; }
 
 #why-us.lc-section .lc-head p,
-#why-us.lc-section .lc-solution p { color: var(--on-ink-soft); }
+#why-us.lc-section .lc-solution p,
+#why-us.lc-section .lc-tools-head p,
+#why-us.lc-section .lc-tool p,
+#why-us.lc-section .lc-tools-cta p { color: var(--on-ink-soft); }
 
 .lc-section--ink h1, .lc-section--ink h2, .lc-section--ink h3,
 .lc-section--ink h4 { color: #fff; }
@@ -1875,6 +1878,115 @@ main.size-jobs-page { padding-top: 100px; }
 }
 
 /*--------------------------------------------------------------
+  Diferenciais  (Por que a LibreCode)
+--------------------------------------------------------------*/
+.lc-diff {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.lc-diff__card {
+  position: relative;
+  padding: 34px;
+  border: 1px solid var(--ink-line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--ink-2), var(--ink-1));
+  overflow: hidden;
+  transition: border-color 0.4s var(--ease), transform 0.5s var(--ease);
+}
+.lc-diff__card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--red), transparent 70%);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.6s var(--ease);
+}
+.lc-diff__card:hover { border-color: var(--ink-line-2); transform: translateY(-4px); }
+.lc-diff__card:hover::before { transform: scaleX(1); }
+.lc-diff__icon {
+  width: 52px; height: 52px;
+  margin-bottom: 20px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 12px;
+  background: rgba(229, 51, 42, 0.12);
+  border: 1px solid var(--ink-line);
+  color: var(--red-2);
+  font-size: 22px;
+}
+.lc-diff__card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 0 12px;
+}
+.lc-diff__card p {
+  color: var(--on-ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+  Tools grid  (soluções complementares)
+--------------------------------------------------------------*/
+.lc-tools-head {
+  max-width: 640px;
+  margin: clamp(48px, 7vw, 80px) 0 34px;
+}
+.lc-tools-head h3 {
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  color: #fff;
+  margin: 0 0 12px;
+}
+.lc-tools-head p { color: var(--on-ink-soft); font-size: 1.02rem; line-height: 1.6; margin: 0; }
+
+.lc-tools {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+.lc-tool {
+  padding: 26px 22px;
+  border: 1px solid var(--ink-line);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--ink-2), var(--ink-1));
+  transition: border-color 0.4s var(--ease), transform 0.5s var(--ease);
+}
+.lc-tool:hover { border-color: var(--ink-line-2); transform: translateY(-4px); }
+.lc-tool__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 14px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--ink-line);
+}
+.lc-tool__logo img { max-height: 32px; max-width: 116px; width: auto; }
+.lc-tool h4 { font-size: 1.05rem; color: #fff; margin: 0 0 8px; }
+.lc-tool p { color: var(--on-ink-soft); font-size: 0.9rem; line-height: 1.55; margin: 0; }
+
+.lc-tools-cta {
+  margin-top: clamp(40px, 6vw, 64px);
+  padding: 34px;
+  border: 1px solid var(--ink-line);
+  border-radius: 20px;
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(229,51,42,0.10), transparent 55%),
+    linear-gradient(180deg, var(--ink-2), var(--ink-1));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.lc-tools-cta p { color: var(--on-ink-soft); font-size: 1.1rem; margin: 0; max-width: 52ch; }
+
+/*--------------------------------------------------------------
   Apoie
 --------------------------------------------------------------*/
 .lc-support {
@@ -2046,6 +2158,10 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
 /*--------------------------------------------------------------
   Responsive
 --------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .lc-diff { grid-template-columns: repeat(2, 1fr); }
+  .lc-tools { grid-template-columns: repeat(3, 1fr); }
+}
 @media (max-width: 900px) {
   .lc-why { grid-template-columns: 1fr; }
   .lc-solution { grid-template-columns: 1fr; padding: 34px; }
@@ -2055,12 +2171,16 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   .lc-contact { grid-template-columns: 1fr; }
   .lc-footer__grid { grid-template-columns: 1fr 1fr; }
   .lc-footer__brand { grid-column: 1 / -1; }
+  .lc-tools { grid-template-columns: repeat(2, 1fr); }
+  .lc-tools-cta { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 560px) {
   .lc-why__card, .lc-solution, .lc-support { padding: 26px; }
   .lc-footer__grid { grid-template-columns: 1fr; }
   .lc-hero__actions { width: 100%; }
   .lc-hero__actions .lc-btn { flex: 1 1 auto; justify-content: center; }
+  .lc-diff { grid-template-columns: 1fr; }
+  .lc-tools { grid-template-columns: 1fr; }
 }
 
 /*--------------------------------------------------------------

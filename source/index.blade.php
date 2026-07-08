@@ -1,3 +1,8 @@
+---
+title: LibreCode — Cooperativa de Software Livre
+description: Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil.
+---
+
 @extends('_layouts.main')
 
 @section('body')
@@ -80,11 +85,55 @@
       </div>
     </section>
 
+    {{-- ==========================  DIFERENCIAIS  ========================== --}}
+    <section id="diferenciais" class="lc-section lc-section--ink" style="padding-top:0">
+      <div class="lc-shell">
+        <div class="lc-head" data-reveal="up">
+          <p class="lc-eyebrow lc-eyebrow--index"><b>02</b> / Por que a LibreCode</p>
+          <h2>Controle, autonomia e <span class="lc-accent">dados no Brasil</span></h2>
+          <p>Unimos experiência técnica e valores cooperativistas para entregar soluções úteis, seguras e sustentáveis — sem prender a sua operação a um fornecedor.</p>
+        </div>
+
+        <div class="lc-diff" data-reveal="stagger">
+          <article class="lc-diff__card">
+            <div class="lc-diff__icon"><i class="fa fa-server" aria-hidden="true"></i></div>
+            <h3>Hospedagem própria</h3>
+            <p>Infraestrutura brasileira com controle e privacidade. Seus dados ficam no Brasil.</p>
+          </article>
+          <article class="lc-diff__card">
+            <div class="lc-diff__icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+            <h3>Suporte especializado</h3>
+            <p>Atendimento direto, ágil e no seu idioma, focado no que a sua operação precisa.</p>
+          </article>
+          <article class="lc-diff__card">
+            <div class="lc-diff__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+            <h3>Customização sob demanda</h3>
+            <p>Adaptamos cada solução ao que a sua operação realmente precisa.</p>
+          </article>
+          <article class="lc-diff__card">
+            <div class="lc-diff__icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+            <h3>Dados sob seu controle</h3>
+            <p>Você decide onde os dados ficam e para onde migrar, sem dependência de fornecedor único.</p>
+          </article>
+          <article class="lc-diff__card">
+            <div class="lc-diff__icon"><i class="fa fa-shield" aria-hidden="true"></i></div>
+            <h3>Conformidade com a LGPD</h3>
+            <p>Soluções pensadas para privacidade desde o início e alinhadas à LGPD.</p>
+          </article>
+          <article class="lc-diff__card">
+            <div class="lc-diff__icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+            <h3>Sem dependência de Big Techs</h3>
+            <p>Independência tecnológica com software livre e sem surpresas no contrato.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     {{-- ==========================  SOLUÇÕES  ========================== --}}
     <section id="why-us" class="lc-section lc-section--ink" style="padding-top:0">
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
-          <p class="lc-eyebrow lc-eyebrow--index"><b>02</b> / Soluções</p>
+          <p class="lc-eyebrow lc-eyebrow--index"><b>03</b> / Soluções</p>
           <h2>Ferramentas livres, prontas para o seu contexto</h2>
           <p>Todas as nossas soluções podem ser customizadas e adaptadas às necessidades de cada cliente. Confira!</p>
         </div>
@@ -94,29 +143,92 @@
           <article class="lc-solution" data-reveal="up" data-tilt-media>
             <div class="lc-solution__body">
               <span class="lc-solution__idx">01 — nuvem privada</span>
-              <div class="lc-solution__logo"><img src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="Nextcloud"></div>
+              <div class="lc-solution__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="Logo do Nextcloud"></div>
               <h3>Nextcloud</h3>
               <p>Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <a href="{{ $page->baseUrl }}nextcloud" class="lc-btn">Conheça <span class="lc-btn__arrow">→</span></a>
             </div>
             <div class="lc-solution__media">
-              <img src="{{ $page->baseUrl }}assets/images/solucoes/nextcloud.png" alt="Nextcloud" data-media>
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/nextcloud.png" alt="Nextcloud — nuvem privada" data-media>
             </div>
           </article>
 
           <article class="lc-solution" data-reveal="up" data-tilt-media>
             <div class="lc-solution__body">
               <span class="lc-solution__idx">02 — assinatura digital</span>
-              <div class="lc-solution__logo"><img src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="LibreSign"></div>
+              <div class="lc-solution__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="Logo do LibreSign"></div>
               <h3>LibreSign</h3>
               <p>Plataforma completa para assinatura digital de documentos, com praticidade, segurança e validade jurídica.</p>
               <a href="https://libresign.coop/" target="_blank" rel="noopener" class="lc-btn">Conheça <span class="lc-btn__arrow">→</span></a>
             </div>
             <div class="lc-solution__media">
-              <img src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="LibreSign" data-media>
+              <img loading="lazy" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="LibreSign — assinatura digital" data-media>
             </div>
           </article>
 
+        </div>
+
+        <div class="lc-tools-head" data-reveal="up">
+          <h3>E todo o ecossistema livre que a sua operação precisa</h3>
+          <p>Implantamos, hospedamos e damos suporte a uma ampla gama de aplicações livres — da gestão ao ensino.</p>
+        </div>
+
+        <div class="lc-tools" data-reveal="stagger">
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/matomo.png" alt="Logo do Matomo"></div>
+            <h4>Matomo</h4>
+            <p>Analytics web com total privacidade e dados sob seu controle.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/suitecrm.png" alt="Logo do SuiteCRM"></div>
+            <h4>SuiteCRM</h4>
+            <p>Gestão de relacionamento com clientes, sem licença por usuário.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/mautic.png" alt="Logo do Mautic"></div>
+            <h4>Mautic</h4>
+            <p>Automação de marketing para campanhas e gestão de leads.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/akaunting.png" alt="Logo do Akaunting"></div>
+            <h4>Akaunting</h4>
+            <p>Gestão financeira e contábil online para a sua organização.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/kimai.png" alt="Logo do Kimai"></div>
+            <h4>Kimai</h4>
+            <p>Controle de tempo e apontamento de horas trabalhadas.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/limesurvey.png" alt="Logo do LimeSurvey"></div>
+            <h4>LimeSurvey</h4>
+            <p>Pesquisas e formulários avançados com dados soberanos.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/yourls.png" alt="Logo do Yourls"></div>
+            <h4>Yourls</h4>
+            <p>Encurtador de URLs próprio, com métricas e sob seu domínio.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/moodle.png" alt="Logo do Moodle"></div>
+            <h4>Moodle</h4>
+            <p>Ambiente completo de ensino a distância e cursos online.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/ieducar.png" alt="Logo do iEducar"></div>
+            <h4>iEducar</h4>
+            <p>Gestão escolar pública, da matrícula ao histórico acadêmico.</p>
+          </article>
+          <article class="lc-tool">
+            <div class="lc-tool__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/solucoes/ojs.png" alt="Logo do OJS"></div>
+            <h4>OJS</h4>
+            <p>Publicação e gestão de periódicos científicos (Open Journal Systems).</p>
+          </article>
+        </div>
+
+        <div class="lc-tools-cta" data-reveal="up">
+          <p>Precisa de algo específico? Desenhamos a arquitetura sob medida para o seu caso.</p>
+          <a href="#contact" class="lc-btn">Solicitar diagnóstico <span class="lc-btn__arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -125,7 +237,7 @@
     <section id="clients" class="lc-section lc-section--paper">
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
-          <p class="lc-eyebrow lc-eyebrow--index"><b>03</b> / Clientes</p>
+          <p class="lc-eyebrow lc-eyebrow--index"><b>04</b> / Clientes</p>
           <h2>Reconhecidos por quem constrói o país</h2>
           <p>Nossa expertise e a singularidade de nosso modelo de negócio são creditadas por diversos atores dos setores público, privado e do terceiro setor.</p>
         </div>
@@ -140,7 +252,7 @@
             ];
           @endphp
           @foreach (array_merge($clients, $clients) as $c)
-            <span class="lc-client"><img src="{{ $page->baseUrl }}assets/images/clients/{{ $c }}" alt="Cliente LibreCode"></span>
+            <span class="lc-client"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/clients/{{ $c }}" alt="Cliente LibreCode"></span>
           @endforeach
         </div>
       </div>
@@ -150,7 +262,7 @@
     <section id="apoie" class="lc-section lc-section--ink">
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
-          <p class="lc-eyebrow lc-eyebrow--index"><b>04</b> / Apoie</p>
+          <p class="lc-eyebrow lc-eyebrow--index"><b>05</b> / Apoie</p>
           <h2>Software livre se sustenta com <span class="lc-accent">comunidade</span></h2>
           <p>Se você utiliza ou deseja utilizar nossos produtos e gostaria de contribuir com o desenvolvimento deles, existem diversas formas de nos apoiar.</p>
         </div>

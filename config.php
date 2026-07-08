@@ -5,6 +5,9 @@ use Illuminate\Support\Str;
 return [
     'production' => false,
     'matomo_container' => 'Ux1Y5m98_dev_08f02616a270a3d80b35beb7',
+    // Public client-side widget identifier (not a secret): it is always visible in the rendered HTML.
+    // Kept in config so it is configurable per environment, like matomo_container.
+    'chatwoot_token' => '1FWLmSUAXnZd8qhUB5rsPCdq',
     'baseUrl' => '/',
     'title' => 'LibreCode',
     'description' => 'Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre.',
