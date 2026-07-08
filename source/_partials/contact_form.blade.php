@@ -6,14 +6,27 @@
       <p>Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de mais informações sobre nossos produtos e serviços, não hesite em nos contatar.</p>
     </div>
 
-    <div class="lc-contact" data-reveal="up">
-      <div class="lc-contact__form">
-        <iframe id="form-contato" title="Formulário de contato"
-                src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y"
-                scrolling="no"></iframe>
+    <div class="lc-contact">
+      <div class="lc-contact__form" data-reveal="up">
+        <div class="lc-window" data-contact-window>
+          <div class="lc-window__bar">
+            <i></i><i></i><i></i>
+            <span>formulário seguro · librecode.coop</span>
+          </div>
+          <div class="lc-window__body">
+            <div class="lc-window__loader" data-contact-loader aria-hidden="true">
+              <span class="lc-window__spinner"></span>
+              <p>carregando formulário…</p>
+            </div>
+            <iframe id="form-contato" title="Formulário de contato"
+                    src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y"
+                    loading="lazy" scrolling="no"
+                    onload="this.closest('[data-contact-window]').classList.add('is-loaded')"></iframe>
+          </div>
+        </div>
       </div>
 
-      <div class="lc-contact__aside">
+      <div class="lc-contact__aside" data-reveal="stagger">
         <div class="lc-contact__item">
           <i class="lni lni-phone" aria-hidden="true"></i>
           <div>
@@ -28,7 +41,7 @@
             <a href="mailto:contato@librecode.coop">contato@librecode.coop</a>
           </div>
         </div>
-        <p style="font:500 13px/1.7 var(--font-mono);color:var(--on-paper-soft);margin:6px 0 0">
+        <p class="lc-contact__note">
           Agradecemos pelo seu contato e estaremos ansiosos para ajudar!
         </p>
       </div>
