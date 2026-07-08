@@ -17,7 +17,7 @@
 
                 <article class="article-detail-blog">
                   <div class="article-img">
-                    <img src="{{ $page->banner }}" alt="banner-image" class="img-fluid rounded mx-auto d-block">
+                    <img src="{{ $page->banner }}" alt="Imagem de capa do post {{ $page->title }}" class="img-fluid rounded mx-auto d-block">
                   </div>
 
                   <div class="container mt-4 mb-5 p-3">
@@ -46,7 +46,7 @@
 
               <div>
 
-                <h3 class="font-weight-bold mt-5">Recent Posts</h3>
+                <h3 class="font-weight-bold mt-5">Posts recentes</h3>
                 @php $count = 0; @endphp
                 @foreach($posts as $article)
                   @php $count++; @endphp
@@ -54,7 +54,7 @@
                     @break
                   @endif
                 <div class="post-item">
-                  <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
+                  <img src="{{ $article->cover_image }}" alt="Miniatura do post {{ $article->title }}" class="flex-shrink-0">
                   <div>
                     <h4><a href="{{ $article->getUrl() }}">{{ $article->title }}</a></h4>
                     <time datetime="2020-01-01">{{ date('F j, Y', $article->date) }}</time>
@@ -77,16 +77,16 @@
             @if($option->name == $page->author)
               @if($option->name == 'LibreCode')
                 <img src="{{$page->baseUrl }}assets/images/logo/librecode_author.jpg"
-                alt="{{ $option->name }}" class="rounded-circle flex-shrink-0" alt="author_image">
+                alt="Foto de perfil de {{ $option->name }}" class="rounded-circle flex-shrink-0">
               @else
                 <img src="https://www.gravatar.com/avatar/{{$option->gravatar}}?size=170"
-                alt="{{ $option->name }}" class="rounded-circle flex-shrink-0" alt="author_image">
+                alt="Foto de perfil de {{ $option->name }}" class="rounded-circle flex-shrink-0">
               @endif
               <div>
                 <h4>{{ $option->name }}</h4>
                 <div class="social-links">
                   @foreach($option->social as $contact => $url)
-                  <a href="{{ $url }}" target="blank"><i class="lni lni-{{ $contact }}-original"></i></a>
+                  <a href="{{ $url }}" target="_blank" rel="noopener noreferrer"><i class="lni lni-{{ $contact }}-original"></i></a>
                   @endforeach
                 </div>
 

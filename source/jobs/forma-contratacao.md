@@ -4,6 +4,6 @@ extends: _layouts.job
 
 # Forma de contratação
 
-* Associar-se assumindo os direitos e deveres de sócio com remuneração variável de acordo com produção
+* Associar-se como cooperado, com direitos e deveres compartilhados e remuneração variável conforme a produção e a organização do trabalho.
 
-> OBS: Tornar-se sócio da LibreCode não é um trabalho de freelance que dedicamos quando há tempo extra. Tornar-se sócio é vestir a camisa e ser dono como todos os outros sócios contribuindo para o crescimento da cooperativa.
+> Observação: tornar-se sócio da LibreCode não é um trabalho freelancer de tempo livre. É assumir uma participação real na cooperativa, com responsabilidade sobre a operação e contribuição para o crescimento coletivo.

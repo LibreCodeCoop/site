@@ -4,9 +4,9 @@ extends: _layouts.job
 
 # Área de atuação
 
-A LibreCode é composta por profissionais de tecnologia que trabalham com soluções livres com os quais você poderá desenvolver o teu potencial como empreendedor.
+A LibreCode é composta por profissionais de tecnologia que trabalham com soluções livres e colaboram para desenvolver seu potencial de atuação em um ambiente cooperativo.
 
-Caso tenha interesse em empreender conosco, submeta seu pedido de associação e vamos avaliar as possibilidades em conjunto.
+Caso tenha interesse em cooperar conosco, submeta seu pedido de associação e vamos avaliar as possibilidades em conjunto.
 
 Hoje temos:
 
@@ -15,4 +15,4 @@ Hoje temos:
   * [Frontend](../requisitos-frontend)
 * [Infraestrutura](../requisitos-infraestrutura)
 
-Porém, não se limite ao que temos hoje, venha cooperar conosco!
+Porém, não se limite ao que temos hoje. Se sua área conversa com software livre, há espaço para construir junto.

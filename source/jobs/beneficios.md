@@ -6,7 +6,7 @@ extends: _layouts.job
 
 * Seguro de vida
 * Plano de saúde
-* Participação na divisão de sobras orçamentárias do ano
-* Formações na área do cooperativismo
+* Participação na divisão de sobras da cooperativa ao final do exercício
+* Formações em cooperativismo, tecnologia e atuação coletiva
 * Férias remuneradas
 * Renda mensal variável de acordo com produção
