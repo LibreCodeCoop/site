@@ -1838,12 +1838,6 @@ main.size-jobs-page { padding-top: 100px; }
   color: var(--on-ink-faint);
   letter-spacing: 0.12em;
 }
-.lc-solution__logo {
-  height: 62px;
-  margin-bottom: 26px;
-  display: flex; align-items: center;
-}
-.lc-solution__logo img { max-height: 62px; max-width: 190px; width: auto; }
 .lc-solution h3 {
   font-size: clamp(1.6rem, 3vw, 2.3rem);
   color: #fff;
@@ -2231,6 +2225,12 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   .lc-why { grid-template-columns: 1fr; }
   .lc-solution { grid-template-columns: 1fr; padding: 34px; }
   .lc-solution__media { order: -1; }
+  .lc-solution__idx {
+    position: static;
+    display: block;
+    margin: 0 0 18px;
+    color: var(--on-ink-soft);
+  }
   .lc-support { grid-template-columns: 1fr; padding: 34px; }
   .lc-support__aside { border-left: 0; border-top: 1px solid var(--ink-line); padding: 26px 0 0; }
   .lc-contact { grid-template-columns: 1fr; }

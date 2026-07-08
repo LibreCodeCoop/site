@@ -143,7 +143,6 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
           <article class="lc-solution" data-reveal="up" data-tilt-media>
             <div class="lc-solution__body">
               <span class="lc-solution__idx">01 — nuvem privada</span>
-              <div class="lc-solution__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/logo.png" alt="Logo do Nextcloud"></div>
               <h3>Nextcloud</h3>
               <p>Sua nuvem privada para armazenamento de documentos e colaboração eficiente para equipes de qualquer tamanho.</p>
               <a href="{{ $page->baseUrl }}nextcloud" class="lc-btn">Conheça <span class="lc-btn__arrow">→</span></a>
@@ -156,7 +155,6 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
           <article class="lc-solution" data-reveal="up" data-tilt-media>
             <div class="lc-solution__body">
               <span class="lc-solution__idx">02 — assinatura digital</span>
-              <div class="lc-solution__logo"><img loading="lazy" src="{{ $page->baseUrl }}assets/images/logo/libresign.png" alt="Logo do LibreSign"></div>
               <h3>LibreSign</h3>
               <p>Plataforma completa para assinatura digital de documentos, com praticidade, segurança e validade jurídica.</p>
               <a href="https://libresign.coop/" target="_blank" rel="noopener" class="lc-btn">Conheça <span class="lc-btn__arrow">→</span></a>
