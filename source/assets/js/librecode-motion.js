@@ -160,6 +160,108 @@
       });
     }
 
+    // Default CSS renders a swipeable scroll-snap carousel; on desktop this
+    // upgrades it to a GSAP pinned horizontal filmstrip driven by vertical scroll.
+    (function () {
+      var showcase = document.querySelector("#nc-showcase");
+      var track = showcase && showcase.querySelector("[data-nc-track]");
+      if (!showcase || !track || !window.ScrollTrigger) return;
+
+      var panels = gsap.utils.toArray("[data-nc-panel]", track);
+      var progressDots = showcase.querySelectorAll("[data-nc-rail] .nc-rail__dots b");
+      var progressLabel = showcase.querySelector("[data-nc-rail-label]");
+      if (!panels.length) return;
+
+      function panelLabel(panel) {
+        var labelElement = panel.querySelector(".nc-panel__idx, .lc-eyebrow");
+        return labelElement ? labelElement.textContent.trim() : "";
+      }
+
+      function markActivePanel(activeIndex) {
+        for (var dotIndex = 0; dotIndex < progressDots.length; dotIndex++) {
+          progressDots[dotIndex].classList.toggle("is-active", dotIndex === activeIndex);
+        }
+        if (progressLabel && panels[activeIndex]) {
+          progressLabel.textContent = panelLabel(panels[activeIndex]);
+        }
+      }
+
+      var isDesktop = window.matchMedia("(min-width: 880px) and (pointer: fine)").matches;
+
+      if (isDesktop) {
+        showcase.classList.add("is-pinned");
+
+        var getScrollDistance = function () {
+          return track.scrollWidth - track.clientWidth;
+        };
+
+        var horizontalScroll = gsap.to(track, {
+          x: function () { return -getScrollDistance(); },
+          ease: "none",
+          scrollTrigger: {
+            trigger: showcase,
+            start: "top top",
+            end: function () { return "+=" + getScrollDistance(); },
+            pin: true,
+            scrub: 1,
+            anticipatePin: 1,
+            invalidateOnRefresh: true
+          }
+        });
+
+        panels.forEach(function (panel, panelIndex) {
+          window.ScrollTrigger.create({
+            trigger: panel,
+            containerAnimation: horizontalScroll,
+            start: "left 70%",
+            end: "right 30%",
+            onToggle: function (panelTrigger) {
+              panel.classList.toggle("is-current", panelTrigger.isActive);
+              if (panelTrigger.isActive) markActivePanel(panelIndex);
+            }
+          });
+
+          var screenshot = panel.querySelector("[data-nc-media]");
+          if (screenshot) {
+            gsap.fromTo(screenshot, { xPercent: 6 }, {
+              xPercent: -6, ease: "none",
+              scrollTrigger: {
+                trigger: panel,
+                containerAnimation: horizontalScroll,
+                start: "left right",
+                end: "right left",
+                scrub: true
+              }
+            });
+          }
+
+          panel.addEventListener("focus", function () {
+            if (!window.ScrollToPlugin || panels.length < 2) return;
+            var pinTrigger = horizontalScroll.scrollTrigger;
+            var targetScroll = pinTrigger.start +
+              (pinTrigger.end - pinTrigger.start) * (panelIndex / (panels.length - 1));
+            gsap.to(window, {
+              duration: 0.6, ease: "power2.inOut",
+              scrollTo: { y: targetScroll, autoKill: true }
+            });
+          });
+        });
+
+        panels[0].classList.add("is-current");
+        markActivePanel(0);
+
+      } else {
+        var syncProgressToScroll = function () {
+          var nearestPanel = Math.round(track.scrollLeft / track.clientWidth);
+          markActivePanel(Math.max(0, Math.min(panels.length - 1, nearestPanel)));
+        };
+        track.addEventListener("scroll", function () {
+          window.requestAnimationFrame(syncProgressToScroll);
+        }, { passive: true });
+        markActivePanel(0);
+      }
+    })();
+
     if (window.ScrollTrigger) window.ScrollTrigger.refresh();
   });
 })();
