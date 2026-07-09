@@ -2388,7 +2388,7 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   width: var(--shell);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
   align-items: center;
   gap: clamp(32px, 5vw, 72px);
 }
@@ -2443,10 +2443,57 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   letter-spacing: 0.06em;
   color: var(--on-ink-faint);
 }
+.nc-window__frame {
+  display: block;
+  position: relative;
+  cursor: zoom-in;
+  overflow: hidden;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 .nc-window img {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+  transition: transform 0.5s var(--ease);
+}
+.nc-window__frame:hover img,
+.nc-window__frame:focus-visible img {
+  transform: scale(1.03);
+}
+.nc-window__zoom {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(15, 17, 23, 0.62);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+  pointer-events: none;
+}
+.nc-window__frame:hover .nc-window__zoom,
+.nc-window__frame:focus-visible .nc-window__zoom {
+  opacity: 1;
+  transform: none;
+}
+.nc-window__zoom ion-icon { --ionicon-stroke-width: 40px; }
+
+@media (hover: none) {
+  .nc-window__zoom { opacity: 1; transform: none; }
 }
 
 .nc-panel--intro .nc-panel__inner,
@@ -2487,11 +2534,20 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
 }
 .nc-rail__dots { display: flex; gap: 9px; }
 .nc-rail__dots b {
+  position: relative;
   width: 9px; height: 9px;
   border-radius: 50%;
   background: var(--ink-line-2);
+  cursor: pointer;
   transition: background 0.35s var(--ease), transform 0.35s var(--ease);
 }
+.nc-rail__dots b::before {
+  content: "";
+  position: absolute;
+  inset: -9px;
+  border-radius: 50%;
+}
+.nc-rail__dots b:hover { background: var(--red-2); }
 .nc-rail__dots b.is-active { background: var(--red); transform: scale(1.35); }
 
 /* Reveal only in pinned mode; the JS toggles `.is-current` per panel. */

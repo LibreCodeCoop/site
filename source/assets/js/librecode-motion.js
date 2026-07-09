@@ -250,6 +250,25 @@
         panels[0].classList.add("is-current");
         markActivePanel(0);
 
+        function scrollToPanel(index) {
+          if (!window.ScrollToPlugin || panels.length < 2) return;
+          var pinTrigger = horizontalScroll.scrollTrigger;
+          if (!pinTrigger) return;
+          var target = pinTrigger.start +
+            (pinTrigger.end - pinTrigger.start) * (index / (panels.length - 1));
+          gsap.to(window, {
+            duration: 0.7, ease: "power2.inOut",
+            scrollTo: { y: target, autoKill: false }
+          });
+        }
+        for (var desktopDot = 0; desktopDot < progressDots.length; desktopDot++) {
+          (function (index) {
+            progressDots[index].addEventListener("click", function () {
+              scrollToPanel(index);
+            });
+          })(desktopDot);
+        }
+
       } else {
         var syncProgressToScroll = function () {
           var nearestPanel = Math.round(track.scrollLeft / track.clientWidth);
@@ -259,6 +278,14 @@
           window.requestAnimationFrame(syncProgressToScroll);
         }, { passive: true });
         markActivePanel(0);
+
+        for (var carouselDot = 0; carouselDot < progressDots.length; carouselDot++) {
+          (function (index) {
+            progressDots[index].addEventListener("click", function () {
+              track.scrollTo({ left: index * track.clientWidth, behavior: "smooth" });
+            });
+          })(carouselDot);
+        }
       }
     })();
 
