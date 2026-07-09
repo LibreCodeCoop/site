@@ -1,8 +1,12 @@
+---
+title: Blog da LibreCode
+description: Artigos da LibreCode sobre cooperativismo, software livre, assinatura digital e transformação tecnológica.
+---
 @extends('_layouts.main')
 @section('body')
     <section id="intro-blog">
         <div class="container hight-blog-page">
-            <h1 class="text-center font-weight-bold mt-5">Blog Page</h1>
+            <h1 class="text-center font-weight-bold mt-5">Blog da LibreCode</h1>
         </div>
     </section>
 
@@ -18,7 +22,7 @@
                             <article class="article-blog">
                                 <div class="post-img">
                                     <a href="{{ $post->getUrl() }}">
-                                        <img src="{{ $post->cover_image }}" class="img-fluid">
+                                        <img src="{{ $post->cover_image }}" class="img-fluid" alt="Imagem de capa do artigo {{ $post->title }}">
                                     </a>
                                 </div>
                                 <p class="post-category">{{ date('F j, Y', $post->date) }}</p>

@@ -6,8 +6,42 @@ return [
     'production' => false,
     'matomo_container' => 'Ux1Y5m98_dev_08f02616a270a3d80b35beb7',
     'baseUrl' => '/',
-    'title' => 'LibreCode',
+    'title' => 'LibreCode Cooperativa de Software Livre',
+    'siteName' => 'LibreCode',
     'description' => 'Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre.',
+    'organization' => [
+        'name' => 'LibreCode',
+        'legalName' => 'LibreCode Cooperativa de Trabalho em Tecnologia da Informação',
+        'url' => 'https://librecode.coop/',
+        'logo' => 'assets/images/logo/librecode.png',
+        'email' => 'contato@librecode.coop',
+        'telephone' => '+55-21-2042-2073',
+        'sameAs' => [
+            'https://github.com/librecodecoop',
+            'https://www.linkedin.com/company/librecode/',
+            'https://www.instagram.com/librecodecoop/',
+            'https://www.facebook.com/librecodecoop/',
+            'https://t.me/LibreCodeCoop',
+        ],
+    ],
+    'homepageFaq' => [
+        [
+            'question' => 'O que a LibreCode faz?',
+            'answer' => 'A LibreCode e uma cooperativa de tecnologia que desenvolve, implanta e customiza solucoes de software livre para organizacoes publicas, privadas e do terceiro setor.',
+        ],
+        [
+            'question' => 'Quais solucoes a LibreCode oferece?',
+            'answer' => 'A cooperativa oferece solucoes como nuvem privada com Nextcloud, assinatura digital com LibreSign e servicos de desenvolvimento, consultoria e suporte em software livre.',
+        ],
+        [
+            'question' => 'Por que escolher software livre com a LibreCode?',
+            'answer' => 'O software livre permite auditoria, autonomia tecnologica, transparencia e customizacao. A LibreCode aplica esses principios para entregar seguranca, colaboracao e independencia tecnologica.',
+        ],
+        [
+            'question' => 'Como entrar em contato com a LibreCode?',
+            'answer' => 'Voce pode falar com a LibreCode pelo e-mail contato@librecode.coop, pelo telefone (21) 2042-2073 ou pela pagina de contato do site.',
+        ],
+    ],
     'collections' => [
         'posts' => [
             'path' => 'posts/{-title}',
