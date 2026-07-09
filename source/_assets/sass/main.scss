@@ -2414,7 +2414,6 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   margin: 0;
 }
 
-/* ---- App-window frame around the screenshots ---- */
 .nc-window {
   margin: 0;
   border: 1px solid var(--ink-line-2);
@@ -2450,7 +2449,6 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   height: auto;
 }
 
-/* ---- Intro / outro panels ---- */
 .nc-panel--intro .nc-panel__inner,
 .nc-panel--outro .nc-panel__inner {
   grid-template-columns: 1fr;
@@ -2467,7 +2465,6 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
 .nc-panel--outro h2 { font-size: clamp(2.2rem, 5vw, 4rem); color: #fff; margin: 0 0 18px; }
 .nc-panel--outro p { font-size: clamp(1rem, 1.4vw, 1.2rem); color: var(--on-ink-soft); margin: 0 0 32px; max-width: 40ch; }
 
-/* ---- Progress rail ---- */
 .nc-rail {
   position: absolute;
   left: 50%;
@@ -2497,7 +2494,7 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
 }
 .nc-rail__dots b.is-active { background: var(--red); transform: scale(1.35); }
 
-/* ---- Cinematic reveal (pinned mode only; JS toggles .is-current) ---- */
+/* Reveal only in pinned mode; the JS toggles `.is-current` per panel. */
 .nc-showcase.is-pinned [data-nc-text] {
   opacity: 0;
   transform: translateY(26px);
@@ -2519,7 +2516,6 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   clip-path: inset(0 0 0 0 round 14px);
 }
 
-/* ---- "E muito mais" grid ---- */
 .nc-more {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2551,7 +2547,6 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
 .nc-more__card h3 { font-size: 1.12rem; color: #fff; margin: 0 0 8px; }
 .nc-more__card p { font-size: 0.95rem; line-height: 1.55; color: var(--on-ink-soft); margin: 0; }
 
-/* ---- Final CTA ---- */
 .nc-cta__box {
   text-align: center;
   max-width: 720px;
@@ -2572,7 +2567,6 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   opacity: 0.75;
 }
 
-/* ---- Responsive ---- */
 @media (max-width: 980px) {
   .nc-panel__inner { grid-template-columns: 1fr; gap: 28px; }
   .nc-panel { padding: 104px 0 84px; align-items: center; }

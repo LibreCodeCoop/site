@@ -37,7 +37,6 @@
   <section id="nc-showcase" class="nc-showcase" aria-label="Módulos do Nextcloud">
     <div class="nc-track" data-nc-track>
 
-      {{-- Painel de abertura --}}
       <article class="nc-panel nc-panel--intro" data-nc-panel tabindex="0">
         <div class="nc-panel__inner nc-intro">
           <p class="lc-eyebrow" data-nc-text>O tour</p>
@@ -49,7 +48,6 @@
         </div>
       </article>
 
-      {{-- 01 · Arquivos --}}
       <article class="nc-panel" data-nc-panel tabindex="0">
         <div class="nc-panel__inner">
           <div class="nc-panel__text">
@@ -64,7 +62,6 @@
         </div>
       </article>
 
-      {{-- 02 · Histórico --}}
       <article class="nc-panel" data-nc-panel tabindex="0">
         <div class="nc-panel__inner">
           <div class="nc-panel__text">
@@ -79,7 +76,6 @@
         </div>
       </article>
 
-      {{-- 03 · Usuários --}}
       <article class="nc-panel" data-nc-panel tabindex="0">
         <div class="nc-panel__inner">
           <div class="nc-panel__text">
@@ -94,7 +90,6 @@
         </div>
       </article>
 
-      {{-- 04 · Agenda --}}
       <article class="nc-panel" data-nc-panel tabindex="0">
         <div class="nc-panel__inner">
           <div class="nc-panel__text">
@@ -109,7 +104,6 @@
         </div>
       </article>
 
-      {{-- 05 · Documentos --}}
       <article class="nc-panel" data-nc-panel tabindex="0">
         <div class="nc-panel__inner">
           <div class="nc-panel__text">
@@ -124,7 +118,6 @@
         </div>
       </article>
 
-      {{-- Painel de fechamento --}}
       <article class="nc-panel nc-panel--outro" data-nc-panel tabindex="0">
         <div class="nc-panel__inner nc-outro">
           <p class="lc-eyebrow" data-nc-text>Fim do tour</p>
@@ -136,7 +129,6 @@
 
     </div>
 
-    {{-- Trilho de progresso --}}
     <div class="nc-rail" data-nc-rail aria-hidden="true">
       <span class="nc-rail__label" data-nc-rail-label>o tour</span>
       <span class="nc-rail__dots">
