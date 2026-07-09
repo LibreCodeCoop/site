@@ -2,8 +2,6 @@
 
 @section('body')
 
-@extends('_layouts.header')
-
 {{-- ==========================  HERO  ========================== --}}
 <section id="intro" class="lc-hero nc-hero">
   <div class="lc-hero__inner">
@@ -57,7 +55,10 @@
           </div>
           <figure class="nc-window" data-nc-media>
             <span class="nc-window__bar" aria-hidden="true"><i></i><i></i><i></i><em>Arquivos — Nextcloud</em></span>
-            <img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/arquivos.png" alt="Tela de gestão de arquivos do Nextcloud">
+            <a class="nc-window__frame glightbox" href="{{ $page->baseUrl }}assets/images/nextcloud/arquivos.png" data-gallery="nc-showcase" aria-label="Ampliar imagem: Gestão de arquivos">
+              <img loading="lazy" draggable="false" src="{{ $page->baseUrl }}assets/images/nextcloud/arquivos.png" alt="Tela de gestão de arquivos do Nextcloud">
+              <span class="nc-window__zoom" aria-hidden="true"><ion-icon name="expand-outline"></ion-icon></span>
+            </a>
           </figure>
         </div>
       </article>
@@ -71,7 +72,10 @@
           </div>
           <figure class="nc-window" data-nc-media>
             <span class="nc-window__bar" aria-hidden="true"><i></i><i></i><i></i><em>Atividades — Nextcloud</em></span>
-            <img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/logs.png" alt="Tela de log de alterações do Nextcloud">
+            <a class="nc-window__frame glightbox" href="{{ $page->baseUrl }}assets/images/nextcloud/logs.png" data-gallery="nc-showcase" aria-label="Ampliar imagem: Log de alterações">
+              <img loading="lazy" draggable="false" src="{{ $page->baseUrl }}assets/images/nextcloud/logs.png" alt="Tela de log de alterações do Nextcloud">
+              <span class="nc-window__zoom" aria-hidden="true"><ion-icon name="expand-outline"></ion-icon></span>
+            </a>
           </figure>
         </div>
       </article>
@@ -85,7 +89,10 @@
           </div>
           <figure class="nc-window" data-nc-media>
             <span class="nc-window__bar" aria-hidden="true"><i></i><i></i><i></i><em>Usuários — Nextcloud</em></span>
-            <img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/usuarios.png" alt="Tela de gestão de usuários do Nextcloud">
+            <a class="nc-window__frame glightbox" href="{{ $page->baseUrl }}assets/images/nextcloud/usuarios.png" data-gallery="nc-showcase" aria-label="Ampliar imagem: Grupos e permissões">
+              <img loading="lazy" draggable="false" src="{{ $page->baseUrl }}assets/images/nextcloud/usuarios.png" alt="Tela de gestão de usuários do Nextcloud">
+              <span class="nc-window__zoom" aria-hidden="true"><ion-icon name="expand-outline"></ion-icon></span>
+            </a>
           </figure>
         </div>
       </article>
@@ -99,7 +106,10 @@
           </div>
           <figure class="nc-window" data-nc-media>
             <span class="nc-window__bar" aria-hidden="true"><i></i><i></i><i></i><em>Agenda — Nextcloud</em></span>
-            <img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/agenda.png" alt="Tela de agenda do Nextcloud">
+            <a class="nc-window__frame glightbox" href="{{ $page->baseUrl }}assets/images/nextcloud/agenda.png" data-gallery="nc-showcase" aria-label="Ampliar imagem: Calendários e agenda">
+              <img loading="lazy" draggable="false" src="{{ $page->baseUrl }}assets/images/nextcloud/agenda.png" alt="Tela de agenda do Nextcloud">
+              <span class="nc-window__zoom" aria-hidden="true"><ion-icon name="expand-outline"></ion-icon></span>
+            </a>
           </figure>
         </div>
       </article>
@@ -113,7 +123,10 @@
           </div>
           <figure class="nc-window" data-nc-media>
             <span class="nc-window__bar" aria-hidden="true"><i></i><i></i><i></i><em>Documentos — Nextcloud</em></span>
-            <img loading="lazy" src="{{ $page->baseUrl }}assets/images/nextcloud/onlyoffice.png" alt="Tela de edição de documentos online do Nextcloud">
+            <a class="nc-window__frame glightbox" href="{{ $page->baseUrl }}assets/images/nextcloud/onlyoffice.png" data-gallery="nc-showcase" aria-label="Ampliar imagem: Edição online colaborativa">
+              <img loading="lazy" draggable="false" src="{{ $page->baseUrl }}assets/images/nextcloud/onlyoffice.png" alt="Tela de edição de documentos online do Nextcloud">
+              <span class="nc-window__zoom" aria-hidden="true"><ion-icon name="expand-outline"></ion-icon></span>
+            </a>
           </figure>
         </div>
       </article>
