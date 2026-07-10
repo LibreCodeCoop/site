@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Benefícios
+description: Os benefícios de ser cooperado da LibreCode — de plano de saúde à participação nas sobras.
 ---
-
-# Benefícios
 
 * Seguro de vida
 * Plano de saúde

@@ -1,5 +1,7 @@
 ---
 extends: _layouts.job
+title: Requisitos · Backend
+description: Requisitos e tipos de trabalho para quem quer atuar no backend da LibreCode.
 ---
 
 ## Requisitos
@@ -14,4 +16,4 @@ extends: _layouts.job
 * Projetar e implementar aplicações web diversas (principalmente PHP)
 
 ## Como candidatar-se?
-* Instruções [aqui](../)
+* Instruções [aqui](/jobs/pre-requisitos)

@@ -1,5 +1,7 @@
 ---
 extends: _layouts.job
+title: Requisitos · Frontend
+description: Requisitos e tipos de trabalho para quem quer atuar no frontend da LibreCode.
 ---
 
 ## Requisitos
@@ -20,4 +22,4 @@ extends: _layouts.job
 * Projetar e implementar frontend para aplicações web diversas
 
 ## Como candidatar-se?
-* Instruções [aqui](../)
+* Instruções [aqui](/jobs/pre-requisitos)

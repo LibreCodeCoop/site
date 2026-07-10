@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Forma de contratação
+description: Como funciona a associação à LibreCode e o que significa tornar-se sócio da cooperativa.
 ---
-
-# Forma de contratação
 
 * Associar-se assumindo os direitos e deveres de sócio com remuneração variável de acordo com produção
 

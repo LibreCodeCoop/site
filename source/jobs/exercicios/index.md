@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Exercícios
+description: Exercícios práticos para demonstrar suas habilidades e contribuir com projetos reais da LibreCode.
 ---
-
-# Exercícios
 
 Você escolhe um ou mais exercícios práticos, de acordo com sua área de interesse (front-end, back-end, segurança da informação, gestão, vendas, etc.) e executa com autonomia. O desafio tem relação com demandas reais dos nossos projetos, seja de forma direta ou indireta, e servirá como base para avaliação da sua jornada conosco.
 

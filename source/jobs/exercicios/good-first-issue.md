@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Good first issues
+description: Tarefas de primeira contribuição para demonstrar suas habilidades no processo seletivo.
 ---
-
-# Good first issues
 
 Estas são tarefas que variam de simples a simples porém nem tanto, tudo depende de suas habilidades. Lembre-se que é um processo seletivo e o objetivo é demonstrar suas habilidades.
 

@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Comercial
+description: Elabore um planejamento comercial para os produtos da LibreCode.
 ---
-
-# Comercial
 
 Com base em nossos produtos, elabore um planejamento comercial para venda de algum dos nossos produtos que considera que você poderá aplicar na LibreCode e acredita que conseguiremos juntos potencializar nossas receitas.
 

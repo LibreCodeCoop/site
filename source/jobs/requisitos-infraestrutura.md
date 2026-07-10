@@ -1,5 +1,7 @@
 ---
 extends: _layouts.job
+title: Requisitos · Infraestrutura
+description: Requisitos e tipos de trabalho para quem quer atuar em infraestrutura na LibreCode.
 ---
 
 ## Requisitos
@@ -17,4 +19,4 @@ extends: _layouts.job
 * Auxiliar no suporte a clientes
 
 ## Como candidatar-se?
-* Instruções [aqui](../)
+* Instruções [aqui](/jobs/pre-requisitos)

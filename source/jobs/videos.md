@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Vídeos
+description: Vídeos essenciais sobre cooperativismo e software livre.
 ---
-
-# Vídeos
 
 É essencial que assista os seguintes materiais em vídeo para compreender mais sobre cooperativismo e software livre.
 

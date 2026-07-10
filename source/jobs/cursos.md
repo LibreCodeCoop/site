@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Cursos
+description: Cursos de cooperativismo recomendados para quem quer cooperar com a LibreCode.
 ---
-
-# Cursos
 
 Para ser sócio você precisa conhecer sobre cooperativismo. Seguem alguns passos necessários para demonstrar este conhecimento:
 
