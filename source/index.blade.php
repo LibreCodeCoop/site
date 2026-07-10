@@ -48,7 +48,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
   <section class="lc-principles" aria-label="Princípios do cooperativismo">
     <div class="lc-marquee">
       <div class="lc-marquee__track" data-marquee data-speed="60">
-        <span>Adesão livre</span><span>Gestão democrática</span><span>Participação econômica</span><span>Autonomia</span><span>Educação &amp; formação</span><span>Intercooperação</span><span>Interesse pela comunidade</span>
+        <span>Adesão livre</span><span>Gestão democrática</span><span>Participação econômica</span><span>Autonomia</span><span>Educação, formação &amp; informação</span><span>Intercooperação</span><span>Interesse pela comunidade</span>
         <span>Adesão livre</span><span>Gestão democrática</span><span>Participação econômica</span><span>Autonomia</span><span>Educação &amp; formação</span><span>Intercooperação</span><span>Interesse pela comunidade</span>
       </div>
     </div>
