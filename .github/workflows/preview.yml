@@ -3,19 +3,25 @@ name: Preview
 on:
   pull_request:
     branches: [ main ]
-    types: [opened, synchronize, reopened]
+    types: [opened, reopened, synchronize, closed]
 
 # Least privilege: read the repo, write only the PR comment.
 permissions:
   contents: read
   pull-requests: write
 
+# Previews share a single deploy branch on the site-preview repo, so serialize
+# runs to avoid concurrent pushes clobbering each other. Never cancel in-flight
+# runs — a cancelled `closed` run would leave a stale preview behind.
 concurrency:
-  group: preview-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
+  group: site-preview-deploy
+  cancel-in-progress: false
 
 jobs:
-  build-preview:
+  deploy-preview:
+    # Skip fork PRs (e.g. Weblate translations): secrets aren't available to
+    # forks and a hosted preview needs the PREVIEW_TOKEN.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,58 +40,27 @@ jobs:
       - name: Install dependencies
         run: composer i
 
+      # Point the build at the per-PR GitHub Pages subpath. The whole site
+      # (links, images, and the mix() CSS/JS) is prefixed with baseUrl, so this
+      # is all that's needed to make a sub-directory deploy resolve correctly.
+      # Drop the prod Matomo container so previews don't pollute analytics.
+      - name: Rewrite baseUrl for the preview subpath
+        run: |
+          PREVIEW_URL="https://librecodecoop.github.io/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}/"
+          sed -i "s|'baseUrl' => '/'|'baseUrl' => '${PREVIEW_URL}'|" config.php
+          sed -i "/'matomo_container'/d" config.production.php
+          grep "'baseUrl' => " config.php
+
       - name: Build site
         run: composer prod
 
-      - name: Upload preview artifact
-        uses: actions/upload-artifact@v4
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
         with:
-          name: preview-pr-${{ github.event.pull_request.number }}
-          path: build_production/
-          retention-days: 7
-
-      - name: Comment preview instructions
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const prNumber = context.issue.number;
-            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const marker = '<!-- preview-bot -->';
-            const body = [
-              marker,
-              '## 🔍 Preview do site',
-              '',
-              '✅ O build deste PR foi gerado com sucesso.',
-              '',
-              '### Como visualizar',
-              `1. Abra a [página desta execução](${runUrl})`,
-              '2. Role até a seção **Artifacts**',
-              `3. Baixe \`preview-pr-${prNumber}\``,
-              '4. Descompacte e abra `index.html` no navegador',
-              '',
-              '🔄 Atualizado automaticamente a cada novo commit neste PR.',
-              '',
-              '<sub>Artefato disponível por 7 dias.</sub>'
-            ].join('\n');
-
-            const { data: comments } = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: prNumber,
-            });
-            const existing = comments.find(c => c.body && c.body.includes(marker));
-            if (existing) {
-              await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: existing.id,
-                body,
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: prNumber,
-                body,
-              });
-            }
+          source-dir: ./build_production/
+          pages-base-url: librecodecoop.github.io/site-preview
+          deploy-repository: LibreCodeCoop/site-preview
+          preview-branch: main
+          wait-for-pages-deployment: false
+          token: ${{ secrets.PREVIEW_TOKEN }}
+          comment: ${{ github.event.pull_request.user.type != 'Bot' }}
