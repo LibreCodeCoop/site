@@ -1836,6 +1836,17 @@ main.size-jobs-page { padding-top: 100px; }
   margin: 0 0 14px;
 }
 .lc-why__card p:last-child { margin-bottom: 0; }
+.lc-why__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font: 600 14.5px/1 var(--font-body);
+  color: var(--red);
+}
+.lc-why__link:hover { color: var(--red-2); }
+.lc-why__link span { display: inline-block; transition: transform 0.35s var(--ease); }
+.lc-why__link:hover span { transform: translateX(4px); }
 
 /*--------------------------------------------------------------
   Solutions  (Apple-style stacked cards)

@@ -72,6 +72,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
             <h3>Por que uma cooperativa?</h3>
             <p>Cooperativas são organizações democráticas, cujas decisões são tomadas de forma coletiva e transparente e onde os cooperados contribuem equitativamente dentro de um princípio de intercooperação e trabalho em conjunto que potencializam a qualidade, produtividade e a economia de escala nos serviços.</p>
             <p>O movimento cooperativista trabalha para o desenvolvimento sustentável da comunidade na qual está inserido.</p>
+            <a class="lc-why__link" href="{{ $page->baseUrl }}posts/os-7-principios-do-cooperativismo" target="_blank" rel="noopener">Conheça os 7 princípios do cooperativismo <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="lc-why__card">
