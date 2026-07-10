@@ -5,22 +5,18 @@ on:
     branches: [ main ]
     types: [opened, reopened, synchronize, closed]
 
-# Least privilege: read the repo, write only the PR comment.
 permissions:
   contents: read
   pull-requests: write
 
-# Previews share a single deploy branch on the site-preview repo, so serialize
-# runs to avoid concurrent pushes clobbering each other. Never cancel in-flight
-# runs — a cancelled `closed` run would leave a stale preview behind.
+# Serialize: all previews share one deploy branch on site-preview.
 concurrency:
   group: site-preview-deploy
   cancel-in-progress: false
 
 jobs:
   deploy-preview:
-    # Skip fork PRs (e.g. Weblate translations): secrets aren't available to
-    # forks and a hosted preview needs the PREVIEW_TOKEN.
+    # Fork PRs (e.g. Weblate) can't access PREVIEW_TOKEN.
     if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
@@ -40,19 +36,19 @@ jobs:
       - name: Install dependencies
         run: composer i
 
-      # Point the build at the per-PR GitHub Pages subpath. The whole site
-      # (links, images, and the mix() CSS/JS) is prefixed with baseUrl, so this
-      # is all that's needed to make a sub-directory deploy resolve correctly.
-      # Drop the prod Matomo container so previews don't pollute analytics.
-      - name: Rewrite baseUrl for the preview subpath
-        run: |
-          PREVIEW_URL="https://librecodecoop.github.io/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}/"
-          sed -i "s|'baseUrl' => '/'|'baseUrl' => '${PREVIEW_URL}'|" config.php
-          sed -i "/'matomo_container'/d" config.production.php
-          grep "'baseUrl' => " config.php
+      - name: Disable Matomo on previews
+        run: sed -i "/'matomo_container'/d" config.production.php
 
       - name: Build site
         run: composer prod
+
+      # mix() and locale_path() emit root-relative URLs ("/assets/...", "/posts"),
+      # but previews live under a sub-path — prefix them so assets/links resolve.
+      - name: Rewrite root-relative URLs to the PR sub-path
+        run: |
+          BASE="/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}"
+          find build_production -name '*.html' -print0 \
+            | xargs -0 perl -i -pe "s{(href|src|srcset|content)=\"/(?!/)}{\$1=\"${BASE}/}g"
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
