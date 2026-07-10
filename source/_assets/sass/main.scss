@@ -1405,13 +1405,18 @@ button:focus-visible,
   background: var(--bg);
   border: 1px solid transparent;
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.35s var(--ease), background 0.3s var(--ease),
               box-shadow 0.35s var(--ease), color 0.3s var(--ease);
   will-change: transform;
 }
 .lc-btn:link,
-.lc-btn:visited {
+.lc-btn:visited,
+.lc-btn:hover,
+.lc-btn:focus,
+.lc-btn:active {
   color: var(--fg);
+  text-decoration: none;
 }
 .lc-btn:hover {
   color: #fff;
@@ -1492,13 +1497,17 @@ button:focus-visible,
   color: var(--on-ink-soft);
   letter-spacing: 0.01em;
   border-radius: 8px;
+  text-decoration: none;
   transition: color 0.25s var(--ease), background 0.25s var(--ease);
 }
 .main-nav a::after { display: none; }
 .main-nav a:hover,
+.main-nav a:focus,
+.main-nav a:active,
 .main-nav .active > a {
   color: #fff;
   background: rgba(255, 255, 255, 0.06);
+  text-decoration: none;
 }
 .main-nav .active > a { color: var(--red-2); }
 .main-nav > ul > li:last-child > a {
@@ -1549,9 +1558,16 @@ button:focus-visible,
   font: 500 17px/1 var(--font-display);
   color: var(--on-ink);
   border-bottom: 1px solid var(--ink-line);
+  text-decoration: none;
   transition: color 0.2s, padding-left 0.25s var(--ease);
 }
-.mobile-nav a:hover { color: var(--red-2); padding-left: 20px; }
+.mobile-nav a:hover,
+.mobile-nav a:focus,
+.mobile-nav a:active {
+  color: var(--red-2);
+  padding-left: 20px;
+  text-decoration: none;
+}
 .mobile-nav-active .mobile-nav { transform: translateX(0); }
 .mobile-nav-overly {
   position: fixed;
