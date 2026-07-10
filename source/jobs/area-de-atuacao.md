@@ -1,7 +1,7 @@
 ---
 extends: _layouts.job
 title: Área de atuação
-description: As áreas em que você pode empreender junto com a LibreCode:  desenvolvimento e infraestrutura.
+description: As áreas em que você pode empreender junto com a LibreCode — desenvolvimento e infraestrutura.
 ---
 
 A LibreCode é composta por profissionais de tecnologia que trabalham com soluções livres com os quais você poderá desenvolver o teu potencial como empreendedor.
