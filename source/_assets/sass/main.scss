@@ -1575,6 +1575,12 @@ button:focus-visible,
   padding-left: 20px;
   text-decoration: none;
 }
+.mobile-nav .active > a {
+  color: var(--red-2);
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 3px solid var(--red);
+}
 .mobile-nav-active .mobile-nav { transform: translateX(0); }
 .mobile-nav-overly {
   position: fixed;

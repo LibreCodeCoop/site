@@ -176,19 +176,18 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
 
     if (!hadMatch && main_nav.find('li.active').length === 0) {
       var current_path = normalizePath(window.location.pathname);
-      main_nav.find('a').each(function() {
+      var $matches = main_nav.find('a').filter(function() {
         var href = this.getAttribute('href');
-        if (!href || href.indexOf('#') !== -1) return;
+        if (!href || href.indexOf('#') !== -1) return false;
         try {
           var url = new URL(href, window.location.origin);
-          var link_path = normalizePath(url.pathname);
-          if (link_path === current_path) {
-            main_nav.find('li').removeClass('active');
-            $(this).parent('li').addClass('active');
-            return false;
-          }
-        } catch (e) { console.log(e); }
+          return normalizePath(url.pathname) === current_path;
+        } catch (e) { return false; }
       });
+      if ($matches.length) {
+        main_nav.find('li').removeClass('active');
+        $matches.parent('li').addClass('active');
+      }
     }
   });
 
