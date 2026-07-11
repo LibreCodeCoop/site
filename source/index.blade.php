@@ -141,7 +141,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
 
         <div class="lc-solutions">
 
-          <article class="lc-solution" data-reveal="up" data-tilt-media>
+          <article class="lc-solution" data-reveal="up">
             <div class="lc-solution__body">
               <span class="lc-solution__idx">01 — nuvem privada</span>
               <h3>Nextcloud</h3>
@@ -153,7 +153,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
             </div>
           </article>
 
-          <article class="lc-solution lc-solution--dpg" data-reveal="up" data-tilt-media>
+          <article class="lc-solution lc-solution--dpg" data-reveal="up">
             <div class="lc-solution__body">
               <span class="lc-solution__idx">02 — assinatura digital</span>
               <h3>LibreSign</h3>

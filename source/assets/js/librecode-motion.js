@@ -1,188 +1,210 @@
-// LibreCode motion — progressive enhancement over GSAP; no-ops without
-// GSAP or when the user prefers reduced motion (CSS keeps content visible).
+// LibreCode motion — progressive enhancement. No-ops without GSAP or under
+// prefers-reduced-motion, where CSS keeps everything visible on its own.
 (function () {
   "use strict";
 
-  var reduce = window.matchMedia &&
+  var prefersReducedMotion = window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  if (typeof window.gsap === "undefined" || reduce) {
+  if (typeof window.gsap === "undefined" || prefersReducedMotion) {
     return;
   }
 
   var gsap = window.gsap;
   if (window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
 
-  // Enable the hidden initial states now that we know JS + GSAP are live.
+  // Switches the CSS from "everything visible" to the hidden initial states
+  // the animations reveal from — only now that JS + GSAP are confirmed live.
   document.documentElement.classList.add("gsap-ready");
 
-  function ready(fn) {
-    if (document.readyState !== "loading") fn();
-    else document.addEventListener("DOMContentLoaded", fn);
+  function runWhenReady(callback) {
+    if (document.readyState !== "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
   }
 
-  ready(function () {
+  runWhenReady(function () {
 
-    // Scroll progress bar
-    var bar = document.querySelector(".lc-progress");
-    if (bar && window.ScrollTrigger) {
-      gsap.to(bar, {
+    var progressBar = document.querySelector(".lc-progress");
+    if (progressBar && window.ScrollTrigger) {
+      gsap.to(progressBar, {
         scaleX: 1,
         ease: "none",
         scrollTrigger: { start: 0, end: "max", scrub: 0.3 }
       });
     }
 
-    // Hero load sequence
-    var title = document.querySelector("[data-hero-title]");
-    var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    // Scoped to the hero root so it also drives the `.lc-pagehero` variants
+    // without the scroll reveals below animating the same elements twice.
+    var heroTitle = document.querySelector("[data-hero-title]");
+    var heroRoot = heroTitle && heroTitle.closest(".lc-hero, .lc-pagehero");
+    var heroTimeline = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-    if (title) {
-      tl.to(".lc-hero__eyebrow", { opacity: 1, y: 0, duration: 0.6 })
-        .fromTo(title.querySelectorAll(".lc-line > span"),
-            { yPercent: 110, opacity: 0 },
-            { yPercent: 0, opacity: 1, duration: 1, stagger: 0.12 }, "-=0.25")
-        .to(".lc-hero__lead", { opacity: 1, y: 0, duration: 0.7 }, "-=0.6")
-        .to(".lc-hero__actions", { opacity: 1, y: 0, duration: 0.7 }, "-=0.55")
-        .to(".lc-terminal", { opacity: 1, y: 0, duration: 0.7,
-             onStart: typeTerminal }, "-=0.5");
+    if (heroTitle && heroRoot) {
+      var heroEyebrow = heroRoot.querySelector(".lc-hero__eyebrow");
+      var heroTerminal = heroRoot.querySelector(".lc-terminal");
+      var heroContentAfterTitle = gsap.utils.toArray("[data-reveal]", heroRoot)
+        .filter(function (element) {
+          return element !== heroEyebrow &&
+            element !== heroTerminal &&
+            !heroTitle.contains(element);
+        });
+
+      if (heroEyebrow) {
+        heroTimeline.to(heroEyebrow, { opacity: 1, y: 0, duration: 0.6 });
+      }
+      heroTimeline.fromTo(heroTitle.querySelectorAll(".lc-line > span"),
+        { yPercent: 110, opacity: 0 },
+        { yPercent: 0, opacity: 1, duration: 1, stagger: 0.12 }, "-=0.25");
+      if (heroContentAfterTitle.length) {
+        heroTimeline.to(heroContentAfterTitle,
+          { opacity: 1, y: 0, duration: 0.7, stagger: 0.08 }, "-=0.55");
+      }
+      if (heroTerminal) {
+        heroTimeline.to(heroTerminal,
+          { opacity: 1, y: 0, duration: 0.7, onStart: typeTerminal }, "-=0.5");
+      }
     }
 
-    // Terminal typing
     function typeTerminal() {
-      var el = document.querySelector("[data-terminal]");
-      if (!el || el.dataset.typed) return;
-      el.dataset.typed = "1";
-      var lines = [
+      var terminalElement = document.querySelector("[data-terminal]");
+      if (!terminalElement || terminalElement.dataset.typed) return;
+      terminalElement.dataset.typed = "1";
+
+      var terminalLines = [
         { html: '<span class="p">$</span> whoami' },
         { html: '<span class="o">gente que decide junta e escreve código aberto</span>' },
         { html: '<span class="p">$</span> ./valores --list' },
         { html: '<span class="o">transparência · liberdade · democracia · comunidade</span>' }
       ];
-      var out = "", li = 0;
-      el.innerHTML = "";
-      function nextLine() {
-        if (li >= lines.length) return;
-        var full = lines[li].html;
-        var tmp = document.createElement("span");
-        tmp.innerHTML = full;
-        var text = tmp.textContent;
-        var cls = full.indexOf('class="p"') > -1 ? "p" : "o";
-        var i = 0;
-        (function typeChar() {
-          i++;
-          el.innerHTML = out +
-            '<span class="' + cls + '">' +
-            escapeHtml(text.slice(0, i)) + "</span>";
-          if (i < text.length) {
-            gsap.delayedCall(0.028, typeChar);
+      var renderedHtml = "";
+      var lineIndex = 0;
+      terminalElement.innerHTML = "";
+
+      function typeNextLine() {
+        if (lineIndex >= terminalLines.length) return;
+        var lineHtml = terminalLines[lineIndex].html;
+        var decoder = document.createElement("span");
+        decoder.innerHTML = lineHtml;
+        var lineText = decoder.textContent;
+        var lineClass = lineHtml.indexOf('class="p"') > -1 ? "p" : "o";
+        var characterIndex = 0;
+
+        (function typeNextCharacter() {
+          characterIndex++;
+          terminalElement.innerHTML = renderedHtml +
+            '<span class="' + lineClass + '">' +
+            escapeHtml(lineText.slice(0, characterIndex)) + "</span>";
+          if (characterIndex < lineText.length) {
+            gsap.delayedCall(0.028, typeNextCharacter);
           } else {
-            out += '<span class="' + cls + '">' + escapeHtml(text) + "</span><br>";
-            li++;
-            gsap.delayedCall(0.5, nextLine);
+            renderedHtml += '<span class="' + lineClass + '">' +
+              escapeHtml(lineText) + "</span><br>";
+            lineIndex++;
+            gsap.delayedCall(0.5, typeNextLine);
           }
         })();
       }
-      nextLine();
-    }
-    function escapeHtml(s) {
-      return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      typeNextLine();
     }
 
-    // Scroll reveals
+    function escapeHtml(value) {
+      return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
     if (window.ScrollTrigger) {
-      gsap.utils.toArray('[data-reveal="up"]').forEach(function (el) {
-        if (el.closest(".lc-hero")) return; // handled by hero timeline
-        gsap.to(el, {
+      gsap.utils.toArray('[data-reveal="up"]').forEach(function (revealElement) {
+        if (revealElement.closest(".lc-hero, .lc-pagehero")) return;
+        gsap.to(revealElement, {
           opacity: 1, y: 0, duration: 0.9, ease: "power3.out",
-          scrollTrigger: { trigger: el, start: "top 88%", once: true }
+          scrollTrigger: { trigger: revealElement, start: "top 88%", once: true }
         });
       });
 
-      gsap.utils.toArray('[data-reveal="stagger"]').forEach(function (el) {
-        gsap.to(el.children, {
+      gsap.utils.toArray('[data-reveal="stagger"]').forEach(function (revealElement) {
+        if (revealElement.closest(".lc-hero, .lc-pagehero")) return;
+        gsap.to(revealElement.children, {
           opacity: 1, y: 0, duration: 0.8, ease: "power3.out", stagger: 0.14,
-          scrollTrigger: { trigger: el, start: "top 85%", once: true }
+          scrollTrigger: { trigger: revealElement, start: "top 85%", once: true }
         });
       });
 
-      // Parallax drift on solution media
-      gsap.utils.toArray("[data-media]").forEach(function (el) {
-        gsap.fromTo(el, { yPercent: -6 }, {
+      gsap.utils.toArray("[data-media]").forEach(function (mediaElement) {
+        gsap.fromTo(mediaElement, { yPercent: -6 }, {
           yPercent: 6, ease: "none",
           scrollTrigger: {
-            trigger: el.closest(".lc-solution") || el,
+            trigger: mediaElement.closest(".lc-solution") || mediaElement,
             start: "top bottom", end: "bottom top", scrub: true
           }
         });
       });
     }
 
-    // Infinite marquees
-    gsap.utils.toArray("[data-marquee]").forEach(function (track) {
-      var speed = parseFloat(track.dataset.speed || "40");
-      var originals = Array.prototype.slice.call(track.children);
-      var setWidth = track.scrollWidth;
-      if (!setWidth) return;
-      var minWidth = track.parentElement.offsetWidth + setWidth;
-      var guard = 0;
-      while (track.scrollWidth < minWidth && guard++ < 40) {
-        originals.forEach(function (node) {
-          track.appendChild(node.cloneNode(true));
+    gsap.utils.toArray("[data-marquee]").forEach(function (marqueeTrack) {
+      var pixelsPerSecond = parseFloat(marqueeTrack.dataset.speed || "40");
+      var originalNodes = Array.prototype.slice.call(marqueeTrack.children);
+      var singleSetWidth = marqueeTrack.scrollWidth;
+      if (!singleSetWidth) return;
+
+      // Clone the content until the track is wide enough to cover the viewport
+      // plus one full set, so the wrapped loop never shows a gap.
+      var minimumTrackWidth = marqueeTrack.parentElement.offsetWidth + singleSetWidth;
+      var cloneGuard = 0;
+      while (marqueeTrack.scrollWidth < minimumTrackWidth && cloneGuard++ < 40) {
+        originalNodes.forEach(function (node) {
+          marqueeTrack.appendChild(node.cloneNode(true));
         });
       }
-      var loopDuration = setWidth / speed;
-      gsap.to(track, {
-        x: -setWidth,
-        duration: loopDuration,
+
+      gsap.to(marqueeTrack, {
+        x: -singleSetWidth,
+        duration: singleSetWidth / pixelsPerSecond,
         ease: "none",
         repeat: -1,
         modifiers: {
-          x: gsap.utils.unitize(gsap.utils.wrap(-setWidth, 0))
+          x: gsap.utils.unitize(gsap.utils.wrap(-singleSetWidth, 0))
         }
       });
     });
 
-    // Magnetic buttons (pointer, non-touch)
     if (window.matchMedia("(pointer:fine)").matches) {
-      document.querySelectorAll(".lc-btn").forEach(function (btn) {
-        btn.addEventListener("mousemove", function (e) {
-          var r = btn.getBoundingClientRect();
-          gsap.to(btn, {
-            x: (e.clientX - r.left - r.width / 2) * 0.28,
-            y: (e.clientY - r.top - r.height / 2) * 0.4,
+      document.querySelectorAll(".lc-btn").forEach(function (magneticButton) {
+        magneticButton.addEventListener("mousemove", function (event) {
+          var bounds = magneticButton.getBoundingClientRect();
+          gsap.to(magneticButton, {
+            x: (event.clientX - bounds.left - bounds.width / 2) * 0.28,
+            y: (event.clientY - bounds.top - bounds.height / 2) * 0.4,
             duration: 0.4, ease: "power3.out"
           });
         });
-        btn.addEventListener("mouseleave", function () {
-          gsap.to(btn, { x: 0, y: 0, duration: 0.5, ease: "elastic.out(1,0.4)" });
+        magneticButton.addEventListener("mouseleave", function () {
+          gsap.to(magneticButton, { x: 0, y: 0, duration: 0.5, ease: "elastic.out(1,0.4)" });
         });
       });
     }
 
-    // Default CSS renders a swipeable scroll-snap carousel; on desktop this
-    // upgrades it to a GSAP pinned horizontal filmstrip driven by vertical scroll.
-    (function () {
+    // The CSS renders a swipeable scroll-snap carousel by default; on desktop
+    // this upgrades it to a GSAP filmstrip pinned to the vertical scroll.
+    (function initNextcloudShowcase() {
       var showcase = document.querySelector("#nc-showcase");
-      var track = showcase && showcase.querySelector("[data-nc-track]");
-      if (!showcase || !track || !window.ScrollTrigger) return;
+      var panelTrack = showcase && showcase.querySelector("[data-nc-track]");
+      if (!showcase || !panelTrack || !window.ScrollTrigger) return;
 
-      var panels = gsap.utils.toArray("[data-nc-panel]", track);
+      var panels = gsap.utils.toArray("[data-nc-panel]", panelTrack);
       var progressDots = showcase.querySelectorAll("[data-nc-rail] .nc-rail__dots b");
       var progressLabel = showcase.querySelector("[data-nc-rail-label]");
       if (!panels.length) return;
 
-      function panelLabel(panel) {
+      function getPanelLabel(panel) {
         var labelElement = panel.querySelector(".nc-panel__idx, .lc-eyebrow");
         return labelElement ? labelElement.textContent.trim() : "";
       }
 
       function markActivePanel(activeIndex) {
-        for (var dotIndex = 0; dotIndex < progressDots.length; dotIndex++) {
-          progressDots[dotIndex].classList.toggle("is-active", dotIndex === activeIndex);
-        }
+        progressDots.forEach(function (dot, dotIndex) {
+          dot.classList.toggle("is-active", dotIndex === activeIndex);
+        });
         if (progressLabel && panels[activeIndex]) {
-          progressLabel.textContent = panelLabel(panels[activeIndex]);
+          progressLabel.textContent = getPanelLabel(panels[activeIndex]);
         }
       }
 
@@ -191,23 +213,35 @@
       if (isDesktop) {
         showcase.classList.add("is-pinned");
 
-        var getScrollDistance = function () {
-          return track.scrollWidth - track.clientWidth;
+        var getHorizontalScrollDistance = function () {
+          return panelTrack.scrollWidth - panelTrack.clientWidth;
         };
 
-        var horizontalScroll = gsap.to(track, {
-          x: function () { return -getScrollDistance(); },
+        var horizontalScroll = gsap.to(panelTrack, {
+          x: function () { return -getHorizontalScrollDistance(); },
           ease: "none",
           scrollTrigger: {
             trigger: showcase,
             start: "top top",
-            end: function () { return "+=" + getScrollDistance(); },
+            end: function () { return "+=" + getHorizontalScrollDistance(); },
             pin: true,
             scrub: 1,
             anticipatePin: 1,
             invalidateOnRefresh: true
           }
         });
+
+        var scrollToPanel = function (panelIndex) {
+          if (!window.ScrollToPlugin || panels.length < 2) return;
+          var pinTrigger = horizontalScroll.scrollTrigger;
+          if (!pinTrigger) return;
+          var targetScroll = pinTrigger.start +
+            (pinTrigger.end - pinTrigger.start) * (panelIndex / (panels.length - 1));
+          gsap.to(window, {
+            duration: 0.7, ease: "power2.inOut",
+            scrollTo: { y: targetScroll, autoKill: false }
+          });
+        };
 
         panels.forEach(function (panel, panelIndex) {
           window.ScrollTrigger.create({
@@ -221,9 +255,9 @@
             }
           });
 
-          var screenshot = panel.querySelector("[data-nc-media]");
-          if (screenshot) {
-            gsap.fromTo(screenshot, { xPercent: 6 }, {
+          var panelMedia = panel.querySelector("[data-nc-media]");
+          if (panelMedia) {
+            gsap.fromTo(panelMedia, { xPercent: 6 }, {
               xPercent: -6, ease: "none",
               scrollTrigger: {
                 trigger: panel,
@@ -236,56 +270,34 @@
           }
 
           panel.addEventListener("focus", function () {
-            if (!window.ScrollToPlugin || panels.length < 2) return;
-            var pinTrigger = horizontalScroll.scrollTrigger;
-            var targetScroll = pinTrigger.start +
-              (pinTrigger.end - pinTrigger.start) * (panelIndex / (panels.length - 1));
-            gsap.to(window, {
-              duration: 0.6, ease: "power2.inOut",
-              scrollTo: { y: targetScroll, autoKill: true }
-            });
+            scrollToPanel(panelIndex);
           });
         });
 
         panels[0].classList.add("is-current");
         markActivePanel(0);
 
-        function scrollToPanel(index) {
-          if (!window.ScrollToPlugin || panels.length < 2) return;
-          var pinTrigger = horizontalScroll.scrollTrigger;
-          if (!pinTrigger) return;
-          var target = pinTrigger.start +
-            (pinTrigger.end - pinTrigger.start) * (index / (panels.length - 1));
-          gsap.to(window, {
-            duration: 0.7, ease: "power2.inOut",
-            scrollTo: { y: target, autoKill: false }
+        progressDots.forEach(function (dot, dotIndex) {
+          dot.addEventListener("click", function () {
+            scrollToPanel(dotIndex);
           });
-        }
-        for (var desktopDot = 0; desktopDot < progressDots.length; desktopDot++) {
-          (function (index) {
-            progressDots[index].addEventListener("click", function () {
-              scrollToPanel(index);
-            });
-          })(desktopDot);
-        }
+        });
 
       } else {
         var syncProgressToScroll = function () {
-          var nearestPanel = Math.round(track.scrollLeft / track.clientWidth);
-          markActivePanel(Math.max(0, Math.min(panels.length - 1, nearestPanel)));
+          var nearestPanelIndex = Math.round(panelTrack.scrollLeft / panelTrack.clientWidth);
+          markActivePanel(Math.max(0, Math.min(panels.length - 1, nearestPanelIndex)));
         };
-        track.addEventListener("scroll", function () {
+        panelTrack.addEventListener("scroll", function () {
           window.requestAnimationFrame(syncProgressToScroll);
         }, { passive: true });
         markActivePanel(0);
 
-        for (var carouselDot = 0; carouselDot < progressDots.length; carouselDot++) {
-          (function (index) {
-            progressDots[index].addEventListener("click", function () {
-              track.scrollTo({ left: index * track.clientWidth, behavior: "smooth" });
-            });
-          })(carouselDot);
-        }
+        progressDots.forEach(function (dot, dotIndex) {
+          dot.addEventListener("click", function () {
+            panelTrack.scrollTo({ left: dotIndex * panelTrack.clientWidth, behavior: "smooth" });
+          });
+        });
       }
     })();
 

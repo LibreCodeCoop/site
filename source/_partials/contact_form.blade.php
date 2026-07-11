@@ -1,7 +1,7 @@
 <section id="contact" class="lc-section lc-section--paper">
   <div class="lc-shell">
     <div class="lc-head" data-reveal="up">
-      <p class="lc-eyebrow lc-eyebrow--index"><b>05</b> / Contato</p>
+      <p class="lc-eyebrow lc-eyebrow--index"><b>06</b> / Contato</p>
       <h2>Vamos quebrar o gelo</h2>
       <p>Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de mais informações sobre nossos produtos e serviços, não hesite em nos contatar.</p>
     </div>

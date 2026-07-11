@@ -44,6 +44,8 @@ jobs:
 
       # mix() and locale_path() emit root-relative URLs ("/assets/...", "/posts"),
       # but previews live under a sub-path — prefix them so assets/links resolve.
+      # Only the first URL per attribute is prefixed and CSS url(/...) is untouched;
+      # revisit if responsive `srcset` or root-relative `url()` gets added.
       - name: Rewrite root-relative URLs to the PR sub-path
         run: |
           BASE="/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}"

@@ -8,6 +8,8 @@ mix.jigsaw()
     .js('source/_assets/js/main.js', 'js')
     .sass('source/_assets/sass/main.scss', 'css')
     .copy('node_modules/lineicons/web-font/fonts', 'source/assets/build/css/fonts')
+    // Self-host ionicons: loader + lazy chunks + svg collection.
+    .copyDirectory('node_modules/ionicons/dist/ionicons', 'source/assets/build/ionicons')
     .options({
         processCssUrls: false,
     })

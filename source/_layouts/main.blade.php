@@ -86,6 +86,8 @@
     @yield('body')
     @include('_layouts.footer')
 
+    {{-- Production only, so dev and PR previews don't open real conversations. --}}
+    @if ($page->production)
     <!-- Chatwoot widget -->
     <script>
       (function (documentRef, scriptTagName) {
@@ -103,5 +105,6 @@
         };
       })(document, "script");
     </script>
+    @endif
 </body>
 </html>

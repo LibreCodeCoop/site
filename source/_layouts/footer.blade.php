@@ -57,14 +57,12 @@
 
   <!-- JavaScript Libraries -->
   <script src="{{ mix('js/main.js', 'assets/build') }}" type="text/javascript"></script>
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   @yield('footer_scripts')
 
-  <!-- GSAP (animation engine) + LibreCode motion -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-  <script>if (window.gsap && window.ScrollToPlugin) gsap.registerPlugin(ScrollToPlugin);</script>
+  <script type="module" src="{{ $page->baseUrl }}assets/build/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="{{ $page->baseUrl }}assets/build/ionicons/ionicons.js"></script>
+
+  <!-- Must load after the bundle above, which exposes the GSAP globals it uses -->
   <script src="{{ $page->baseUrl }}assets/js/librecode-motion.js"></script>
 
     <script>

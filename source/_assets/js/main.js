@@ -15,6 +15,15 @@ import '../../../source/assets/lib/mobile-nav/mobile-nav.js';
 import '../../../source/assets/lib/easing/easing.min.js';
 import '../../../source/assets/lib/waypoints/waypoints.min.js';
 
+// Exposed as globals so librecode-motion.js (a plain, non-module script) can use them.
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+window.gsap = gsap;
+window.ScrollTrigger = ScrollTrigger;
+window.ScrollToPlugin = ScrollToPlugin;
+
 (function ($) {
   "use strict";
 
