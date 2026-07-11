@@ -1663,7 +1663,9 @@ main.size-jobs-page { padding-top: 100px; }
 .lc-hero h1 .lc-accent,
 #intro .intro-info h2 span { color: var(--red); font-style: normal; }
 
-.lc-line { display: block; overflow: hidden; }
+/* padding-bottom keeps the overflow mask from clipping descenders (g, p, ç);
+   the negative margin preserves the line rhythm. */
+.lc-line { display: block; overflow: hidden; padding-bottom: 0.18em; margin-bottom: -0.18em; }
 .lc-line > span { display: inline-block; will-change: transform; }
 
 .lc-hero__lead,
