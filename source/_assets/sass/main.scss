@@ -1601,7 +1601,7 @@ main.size-jobs-page { padding-top: 100px; }
 .lc-hero {
   position: relative;
   min-height: 100svh;
-  padding: 120px 0 60px;
+  padding: 120px 0 clamp(96px, 12vh, 132px);
   display: flex;
   align-items: center;
   background: var(--ink);
@@ -1722,10 +1722,11 @@ main.size-jobs-page { padding-top: 100px; }
   left: 50%; bottom: 26px;
   transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 8px;
-  font: 500 10.5px/1 var(--font-mono);
-  letter-spacing: 0.24em;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--on-ink-faint);
+  text-align: center;
 }
 .lc-scrollcue span {
   width: 1px; height: 42px;
@@ -2335,7 +2336,30 @@ html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }
   .lc-hero__actions { width: 100%; }
   .lc-hero__actions .lc-btn { flex: 1 1 auto; justify-content: center; }
   .lc-diff { grid-template-columns: 1fr; }
-  .lc-tools { grid-template-columns: 1fr; }
+}
+
+/*--------------------------------------------------------------
+  Tools ecosystem — mobile carousel
+--------------------------------------------------------------*/
+@media (max-width: 640px) {
+  .lc-tools {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* full-bleed track so cards peek past the shell edges */
+    margin-inline: calc((100vw - var(--shell)) / -2);
+    padding-inline: calc((100vw - var(--shell)) / 2);
+    scroll-padding-inline: calc((100vw - var(--shell)) / 2);
+    padding-block: 4px 6px;
+  }
+  .lc-tools::-webkit-scrollbar { display: none; }
+  .lc-tool {
+    flex: 0 0 76%;
+    scroll-snap-align: start;
+  }
 }
 
 /*--------------------------------------------------------------

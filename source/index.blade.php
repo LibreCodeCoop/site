@@ -39,7 +39,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
     </div>
 
     <div class="lc-scrollcue" aria-hidden="true">
-      scroll
+      role para explorar
       <span></span>
     </div>
   </section>
