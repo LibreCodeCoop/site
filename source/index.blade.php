@@ -91,7 +91,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
           <p class="lc-eyebrow lc-eyebrow--index"><b>02</b> / Por que a LibreCode</p>
-          <h2>Controle, autonomia e <span class="lc-accent">dados no Brasil</span></h2>
+          <h2>Controle, autonomia e <span class="lc-accent">soberania de dados</span></h2>
           <p>Unimos experiência técnica e valores cooperativistas para entregar soluções úteis, seguras e sustentáveis — sem prender a sua operação a um fornecedor.</p>
         </div>
 
@@ -182,7 +182,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
 
         <div class="lc-tools-head" data-reveal="up">
           <h3>E todo o ecossistema livre que a sua operação precisa</h3>
-          <p>Implantamos, hospedamos e damos suporte a uma ampla gama de aplicações livres — da gestão ao ensino.</p>
+          <p>Implantamos, hospedamos e damos suporte a aplicações livres para gestão, análise de dados e educação.</p>
         </div>
 
         <div class="lc-tools" data-reveal="stagger">
@@ -250,7 +250,7 @@ description: Cooperativa de tecnologia especializada em soluções corporativas 
       <div class="lc-shell">
         <div class="lc-head" data-reveal="up">
           <p class="lc-eyebrow lc-eyebrow--index"><b>04</b> / Clientes</p>
-          <h2>Reconhecidos por quem constrói o país</h2>
+          <h2>Reconhecidos do setor público ao terceiro setor</h2>
           <p>Nossa expertise e a singularidade de nosso modelo de negócio são creditadas por diversos atores dos setores público, privado e do terceiro setor.</p>
         </div>
       </div>

@@ -135,7 +135,7 @@
         <div class="nc-panel__inner nc-outro">
           <p class="lc-eyebrow" data-nc-text>Fim do tour</p>
           <h2 data-nc-text>Pronto para ter o seu <span class="lc-accent">próprio hub</span>?</h2>
-          <p data-nc-text>Hospedagem no Brasil, suporte em português e dados sob o seu controle.</p>
+          <p data-nc-text>Infraestrutura dedicada, suporte humano e dados sob o seu controle.</p>
           <a href="https://t.me/LibreCodeCoop" target="_blank" rel="noopener" class="lc-btn" data-nc-text>Agende uma demonstração <span class="lc-btn__arrow">→</span></a>
         </div>
       </article>

@@ -55,7 +55,7 @@
       el.dataset.typed = "1";
       var lines = [
         { html: '<span class="p">$</span> whoami' },
-        { html: '<span class="o">cooperativa de software livre — sem chefes, com cooperados</span>' },
+        { html: '<span class="o">gente que decide junta e escreve código aberto</span>' },
         { html: '<span class="p">$</span> ./valores --list' },
         { html: '<span class="o">transparência · liberdade · democracia · comunidade</span>' }
       ];
