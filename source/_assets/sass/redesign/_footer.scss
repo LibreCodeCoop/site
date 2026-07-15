@@ -1,0 +1,76 @@
+#footer {
+  background: var(--ink);
+  color: var(--on-ink-soft);
+  padding: 0;
+  border-top: 1px solid var(--ink-line);
+}
+#footer .footer-top { background: transparent; padding: 0; box-shadow: none; }
+.lc-footer {
+  width: var(--shell);
+  margin-inline: auto;
+  padding: 72px 0 34px;
+}
+.lc-footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 46px;
+  border-bottom: 1px solid var(--ink-line);
+}
+.lc-footer__brand img { max-height: 42px; margin-bottom: 20px; }
+.lc-footer__brand p {
+  max-width: 34ch;
+  line-height: 1.7;
+  color: var(--on-ink-soft);
+  margin: 0 0 22px;
+}
+.lc-footer__coop img { max-height: 46px; opacity: 0.9; }
+.lc-footer__col h4 {
+  font: 500 12px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-faint);
+  margin: 0 0 20px;
+}
+.lc-footer__col ul { list-style: none; margin: 0; padding: 0; }
+.lc-footer__col li { margin-bottom: 12px; }
+.lc-footer__col a {
+  color: var(--on-ink-soft);
+  font-size: 0.98rem;
+  transition: color 0.2s, padding-left 0.25s var(--ease);
+}
+.lc-footer__col a:hover { color: #fff; padding-left: 5px; }
+
+.social-links { display: flex; gap: 12px; }
+.social-links a {
+  width: 42px; height: 42px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--ink-line);
+  border-radius: 12px;
+  color: var(--on-ink-soft);
+  font-size: 18px;
+  transition: all 0.3s var(--ease);
+}
+.social-links a:hover {
+  color: #fff;
+  border-color: var(--red);
+  background: var(--red);
+  transform: translateY(-3px);
+}
+
+.lc-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 26px;
+}
+.lc-footer__bottom, .lc-footer__bottom * {
+  font: 500 12.5px/1.6 var(--font-mono);
+  color: var(--on-ink-faint);
+  letter-spacing: 0.02em;
+}
+.lc-footer__bottom strong { color: var(--on-ink-soft); font-weight: 600; }
+.lc-footer__bottom a { color: var(--on-ink-soft); }
+.lc-footer__bottom a:hover { color: var(--red-2); }

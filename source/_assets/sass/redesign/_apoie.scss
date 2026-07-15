@@ -1,0 +1,30 @@
+.lc-support {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 52px;
+  border-radius: 24px;
+  border: 1px solid var(--ink-line);
+  background: linear-gradient(180deg, var(--ink-2), var(--ink-1));
+}
+.lc-support__badge {
+  width: 96px; height: 96px;
+  border-radius: 22px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--ink-line);
+  margin-bottom: 26px;
+}
+.lc-support__badge i { font-size: 46px; color: #fff; }
+.lc-support h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); color: #fff; margin: 0 0 16px; }
+.lc-support p { color: var(--on-ink-soft); line-height: 1.7; margin: 0 0 28px; }
+.lc-support__aside {
+  border-left: 1px solid var(--ink-line);
+  padding-left: 34px;
+}
+.lc-support__aside p {
+  font: 500 13px/1.6 var(--font-mono);
+  color: var(--on-ink-faint);
+  letter-spacing: 0.02em;
+}

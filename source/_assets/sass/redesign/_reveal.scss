@@ -1,0 +1,4 @@
+html.gsap-ready [data-reveal="up"] { opacity: 0; transform: translateY(34px); }
+html.gsap-ready [data-reveal="stagger"] > * { opacity: 0; transform: translateY(28px); }
+/* hide title lines with opacity only — a CSS % transform would fight GSAP's yPercent */
+html.gsap-ready [data-hero-title] .lc-line > span { opacity: 0; }

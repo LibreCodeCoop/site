@@ -1,0 +1,64 @@
+.lc-shell { width: var(--shell); margin-inline: auto; }
+
+.lc-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 22px;
+}
+.lc-eyebrow::before {
+  content: "";
+  width: 26px; height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
+.lc-eyebrow--index { color: var(--on-ink-faint); }
+.lc-eyebrow--index b { color: var(--red); font-weight: 600; }
+
+.lc-section {
+  position: relative;
+  padding: clamp(80px, 12vw, 150px) 0;
+}
+.lc-section--ink   { background: var(--ink);   color: var(--on-ink); }
+.lc-section--paper { background: var(--paper); color: var(--on-paper); }
+
+/* Scoped per-id so inner pages that reuse these ids with legacy markup keep their own look. */
+#about.lc-section, #why-us.lc-section, #apoie.lc-section {
+  background: var(--ink); color: var(--on-ink);
+  padding: clamp(80px, 12vw, 150px) 0;
+}
+#clients.lc-section, #contact.lc-section {
+  background: var(--paper); color: var(--on-paper);
+  padding: clamp(80px, 12vw, 150px) 0;
+}
+#about.lc-section h1, #about.lc-section h2, #about.lc-section h3,
+#why-us.lc-section h1, #why-us.lc-section h2, #why-us.lc-section h3,
+#apoie.lc-section h1, #apoie.lc-section h2, #apoie.lc-section h3 { color: #fff; }
+
+#why-us.lc-section .lc-head p,
+#why-us.lc-section .lc-solution p,
+#why-us.lc-section .lc-tools-head p,
+#why-us.lc-section .lc-tool p,
+#why-us.lc-section .lc-tools-cta p { color: var(--on-ink-soft); }
+
+.lc-section--ink h1, .lc-section--ink h2, .lc-section--ink h3,
+.lc-section--ink h4 { color: #fff; }
+
+.lc-head { max-width: 720px; margin-bottom: clamp(40px, 6vw, 72px); }
+.lc-head h2 {
+  font-size: clamp(2.1rem, 5.2vw, 3.6rem);
+  margin: 0 0 18px;
+}
+.lc-head p {
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  line-height: 1.6;
+  color: var(--on-ink-soft);
+  margin: 0;
+}
+.lc-section--paper .lc-head p { color: var(--on-paper-soft); }
+
+.lc-accent { color: var(--red); }

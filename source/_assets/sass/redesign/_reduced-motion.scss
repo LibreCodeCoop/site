@@ -1,0 +1,15 @@
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  html.gsap-ready [data-reveal="up"],
+  html.gsap-ready [data-reveal="stagger"] > *,
+  html.gsap-ready [data-hero-title] .lc-line > span {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .lc-marquee__track { transform: none !important; }
+  .lc-caret { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

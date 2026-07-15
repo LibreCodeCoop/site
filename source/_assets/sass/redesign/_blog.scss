@@ -1,0 +1,233 @@
+/* ---- Compact page hero (blog list + article) ---- */
+.lc-pagehero {
+  position: relative;
+  background: var(--ink);
+  color: var(--on-ink);
+  padding: clamp(150px, 20vh, 210px) 0 clamp(60px, 9vw, 96px);
+  overflow: hidden;
+  isolation: isolate;
+}
+.lc-pagehero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(var(--ink-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ink-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, #000 45%, transparent 100%);
+}
+.lc-pagehero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -40%; right: -10%;
+  width: 60vw; height: 60vw;
+  background: radial-gradient(circle, var(--red-glow), transparent 62%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.lc-pagehero__inner { width: var(--shell); margin-inline: auto; position: relative; }
+
+.lc-pagehero h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 6.5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin: 0 0 26px;
+  max-width: 18ch;
+}
+.lc-pagehero h1 .lc-accent { color: var(--red); }
+
+.lc-pagehero__lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.32rem);
+  line-height: 1.6;
+  color: var(--on-ink-soft);
+  max-width: 52ch;
+  margin: 0;
+}
+.lc-pagehero__count {
+  margin: 30px 0 0;
+  font: 500 12.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-faint);
+}
+.lc-pagehero__count span { color: var(--red); }
+
+/* Blog list section */
+.lc-journal { padding: clamp(64px, 9vw, 120px) 0 clamp(80px, 12vw, 150px); }
+
+/* ---- Featured post ---- */
+.lc-feature {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: stretch;
+  gap: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--paper-1);
+  border: 1px solid var(--paper-line);
+  box-shadow: 0 30px 70px -46px rgba(11, 13, 18, 0.5);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  margin-bottom: clamp(56px, 8vw, 96px);
+}
+.lc-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 44px 90px -46px rgba(11, 13, 18, 0.55);
+  color: inherit;
+}
+.lc-feature__media {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  background: var(--ink-2);
+}
+.lc-feature__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease);
+}
+.lc-feature:hover .lc-feature__media img { transform: scale(1.05); }
+.lc-feature__body {
+  padding: clamp(30px, 4vw, 52px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lc-feature__tag {
+  align-self: flex-start;
+  font: 500 11.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  background: color-mix(in srgb, var(--red), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--red), transparent 74%);
+  padding: 7px 12px;
+  border-radius: 100px;
+  margin: 0 0 22px;
+}
+.lc-feature__title {
+  font-size: clamp(1.7rem, 3.1vw, 2.5rem);
+  line-height: 1.06;
+  color: var(--on-paper);
+  margin: 0 0 18px;
+}
+.lc-feature__excerpt {
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.6;
+  color: var(--on-paper-soft);
+  margin: 0 0 28px;
+  max-width: 52ch;
+}
+.lc-feature__meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  font: 500 13.5px/1 var(--font-mono);
+  color: var(--on-paper-soft);
+}
+.lc-feature__read {
+  color: var(--red);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+.lc-feature__read span { transition: transform 0.35s var(--ease); display: inline-block; }
+.lc-feature:hover .lc-feature__read span { transform: translateX(5px); }
+
+/* ---- Grid + cards ---- */
+.lc-journal__head { margin-bottom: clamp(28px, 4vw, 44px); }
+
+.lc-journal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: clamp(24px, 3vw, 38px);
+}
+
+.lc-post-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--paper-1);
+  border: 1px solid var(--paper-line);
+  transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease), border-color 0.45s var(--ease);
+}
+.lc-post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px -40px rgba(11, 13, 18, 0.5);
+  border-color: color-mix(in srgb, var(--on-paper), transparent 82%);
+}
+.lc-post-card__media {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--ink-2);
+}
+.lc-post-card__media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+.lc-post-card:hover .lc-post-card__media img { transform: scale(1.06); }
+.lc-post-card__body {
+  padding: clamp(22px, 2.4vw, 30px);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.lc-post-card__date {
+  font: 500 11.5px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 14px;
+}
+.lc-post-card__title {
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+.lc-post-card__title a {
+  color: var(--on-paper);
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+.lc-post-card__title a:hover { color: var(--red); }
+.lc-post-card__excerpt {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--on-paper-soft);
+  margin: 0 0 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.lc-post-card__read {
+  margin-top: auto;
+  font: 600 14px/1 var(--font-body);
+  color: var(--red);
+}
+.lc-post-card__read span { transition: transform 0.35s var(--ease); display: inline-block; }
+.lc-post-card:hover .lc-post-card__read span { transform: translateX(5px); }
+
+/* Ink variant (used in "Continue lendo") */
+.lc-post-card--ink {
+  background: var(--ink-1);
+  border-color: var(--ink-line-2);
+}
+.lc-post-card--ink:hover {
+  border-color: color-mix(in srgb, #fff, transparent 78%);
+  box-shadow: 0 30px 60px -36px rgba(0, 0, 0, 0.7);
+}
+.lc-post-card--ink .lc-post-card__title a { color: #fff; }
+.lc-post-card--ink .lc-post-card__title a:hover { color: var(--red-2); }

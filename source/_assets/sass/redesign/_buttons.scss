@@ -1,0 +1,52 @@
+.lc-btn {
+  --bg: var(--red);
+  --fg: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 26px;
+  border-radius: 100px;
+  font: 600 15px/1 var(--font-body);
+  letter-spacing: 0.005em;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.35s var(--ease), background 0.3s var(--ease),
+              box-shadow 0.35s var(--ease), color 0.3s var(--ease);
+  will-change: transform;
+}
+.lc-btn:link,
+.lc-btn:visited,
+.lc-btn:hover,
+.lc-btn:focus,
+.lc-btn:active {
+  color: var(--fg);
+  text-decoration: none;
+}
+.lc-btn:hover {
+  color: #fff;
+  box-shadow: 0 14px 40px -12px var(--red-glow);
+  transform: translateY(-2px);
+}
+.lc-btn .lc-btn__arrow { transition: transform 0.35s var(--ease); }
+.lc-btn:hover .lc-btn__arrow { transform: translateX(4px); }
+
+.lc-btn--ghost {
+  --bg: transparent;
+  --fg: var(--on-ink);
+  border-color: var(--ink-line-2);
+}
+.lc-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--on-ink-soft);
+  box-shadow: none;
+}
+.lc-section--paper .lc-btn--ghost {
+  --fg: var(--on-paper);
+  border-color: var(--paper-line);
+}
+.lc-section--paper .lc-btn--ghost:hover {
+  background: rgba(11, 13, 18, 0.04);
+}

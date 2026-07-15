@@ -1,0 +1,20 @@
+@media (max-width: 640px) {
+  .lc-tools {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* full-bleed track so cards peek past the shell edges */
+    margin-inline: calc((100vw - var(--shell)) / -2);
+    padding-inline: calc((100vw - var(--shell)) / 2);
+    scroll-padding-inline: calc((100vw - var(--shell)) / 2);
+    padding-block: 4px 6px;
+  }
+  .lc-tools::-webkit-scrollbar { display: none; }
+  .lc-tool {
+    flex: 0 0 76%;
+    scroll-snap-align: start;
+  }
+}
