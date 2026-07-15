@@ -64,17 +64,6 @@
 
   <!-- Must load after the bundle above, which exposes the GSAP globals it uses -->
   <script src="{{ $page->baseUrl }}assets/js/librecode-motion.js"></script>
-
-    <script>
-      var _mtm = window._mtm = window._mtm || [];
-      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-      (function() {
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true;
-        g.src='https://matomo.librecode.coop/js/container_{{ $page->matomo_container }}.js';
-        s.parentNode.insertBefore(g,s);
-      })();
-    </script>
 <script>
   var lightbox = GLightbox();
   var lightboxDescription = GLightbox({ selector: '.glightbox2' });
