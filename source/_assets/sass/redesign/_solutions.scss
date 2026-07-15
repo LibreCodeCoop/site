@@ -1,0 +1,109 @@
+.lc-solutions { display: flex; flex-direction: column; gap: 22px; }
+.lc-solution {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 48px;
+  border-radius: 24px;
+  border: 1px solid var(--ink-line);
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(229,51,42,0.10), transparent 55%),
+    linear-gradient(180deg, var(--ink-2), var(--ink-1));
+  overflow: hidden;
+  transition: border-color 0.4s var(--ease), transform 0.5s var(--ease);
+}
+.lc-solution:hover { border-color: var(--ink-line-2); }
+.lc-solution__idx {
+  position: absolute;
+  top: 22px; right: 30px;
+  font: 500 12px/1 var(--font-mono);
+  color: var(--on-ink-faint);
+  letter-spacing: 0.12em;
+}
+.lc-solution h3 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  color: #fff;
+  margin: 0 0 16px;
+}
+.lc-solution p {
+  color: var(--on-ink-soft);
+  font-size: 1.08rem;
+  line-height: 1.65;
+  margin: 0 0 30px;
+  max-width: 46ch;
+}
+.lc-solution__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  border: 1px solid var(--ink-line);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(229,51,42,0.18), transparent 62%),
+    var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.lc-solution__media img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 50px rgba(0,0,0,0.5));
+  will-change: transform;
+}
+
+/* Selo Digital Public Good (destaque do LibreSign) */
+.lc-dpg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: -4px 0 28px;
+  padding: 13px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--ink-line);
+  background:
+    radial-gradient(130% 200% at 0% 0%, rgba(229, 51, 42, 0.14), transparent 58%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  text-decoration: none;
+  color: var(--on-ink);
+  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+.lc-dpg:hover {
+  border-color: var(--ink-line-2);
+  transform: translateY(-2px);
+  color: var(--on-ink);
+}
+.lc-dpg__seal {
+  height: 30px;
+  width: auto;
+  flex: none;
+  opacity: 0.96;
+}
+.lc-dpg__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.lc-dpg__text b {
+  font: 600 0.94rem/1.2 var(--font-display);
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.lc-dpg__meta {
+  font: 500 0.68rem/1.35 var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--on-ink-faint);
+}
+.lc-dpg__go {
+  margin-left: auto;
+  align-self: flex-start;
+  font-size: 1.05rem;
+  color: var(--red);
+  transition: transform 0.3s var(--ease);
+}
+.lc-dpg:hover .lc-dpg__go { transform: translate(3px, -3px); }

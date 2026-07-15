@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Pré-requisitos
+description: As etapas para se tornar cooperado da LibreCode — do cooperativismo à proposta de admissão.
 ---
-
-# Pré-requisitos
 
 Aqui, ninguém precisa de terno e gravata, só de vontade de cooperar e construir tecnologia com propósito (a não ser que seja necessário “vender a aparência” para alguém ou em algum lugar específico). Somos uma cooperativa de tecnologia que trabalha com soluções em software livre, e essa liberdade não está só no código, mas também no nosso espírito cooperativo.
 

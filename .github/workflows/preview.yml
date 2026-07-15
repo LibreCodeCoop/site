@@ -1,0 +1,64 @@
+name: Preview
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, reopened, synchronize, closed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+# Serialize: all previews share one deploy branch on site-preview.
+concurrency:
+  group: site-preview-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy-preview:
+    # Fork PRs (e.g. Weblate) can't access PREVIEW_TOKEN.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Set up PHP 8.4
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          tools: composer
+
+      - name: Install dependencies
+        run: composer i
+
+      - name: Disable Matomo on previews
+        run: sed -i "/'matomo_container'/d" config.production.php
+
+      - name: Build site
+        run: composer prod
+
+      # mix() and locale_path() emit root-relative URLs ("/assets/...", "/posts"),
+      # but previews live under a sub-path — prefix them so assets/links resolve.
+      # Only the first URL per attribute is prefixed and CSS url(/...) is untouched;
+      # revisit if responsive `srcset` or root-relative `url()` gets added.
+      - name: Rewrite root-relative URLs to the PR sub-path
+        run: |
+          BASE="/site-preview/pr-preview/pr-${{ github.event.pull_request.number }}"
+          find build_production -name '*.html' -print0 \
+            | xargs -0 perl -i -pe "s{(href|src|srcset|content)=\"/(?!/)}{\$1=\"${BASE}/}g"
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build_production/
+          pages-base-url: librecodecoop.github.io/site-preview
+          deploy-repository: LibreCodeCoop/site-preview
+          preview-branch: main
+          wait-for-pages-deployment: false
+          token: ${{ secrets.PREVIEW_TOKEN }}
+          comment: ${{ github.event.pull_request.user.type != 'Bot' }}

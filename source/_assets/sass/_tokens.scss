@@ -1,0 +1,32 @@
+:root {
+  --ink:        #0b0d12;
+  --ink-1:      #0f121a;
+  --ink-2:      #161a26;
+  --ink-3:      #1e2333;
+  --ink-line:   rgba(255, 255, 255, 0.09);
+  --ink-line-2: rgba(255, 255, 255, 0.14);
+
+  --paper:      #eef0f4;
+  --paper-1:    #f6f7f9;
+  --paper-line: rgba(11, 13, 18, 0.10);
+
+  --red:        #e5332a;
+  --red-2:      #ff4b3e;
+  --red-glow:   rgba(229, 51, 42, 0.45);
+
+  --dpg:        #7ad3de;          /* teal do selo DPG */
+  --dpg-deep:   #3333ab;          /* índigo do selo DPG */
+
+  --on-ink:       #e9ebf2;
+  --on-ink-soft:  #c3c9d6;
+  --on-ink-faint: #8b93a6;
+  --on-paper:      #12141b;
+  --on-paper-soft: #4c5261;
+
+  --font-display: "Space Grotesk", "Montserrat", sans-serif;
+  --font-body:    "Instrument Sans", "Open Sans", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", "SFMono-Regular", ui-monospace, monospace;
+
+  --shell: min(1240px, 92vw);
+  --ease:  cubic-bezier(0.22, 1, 0.36, 1);
+}

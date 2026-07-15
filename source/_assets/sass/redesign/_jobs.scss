@@ -1,0 +1,340 @@
+/* ---- Framed team photo ---- */
+.lc-jobs-figure {
+  width: min(880px, 100%);
+  margin: 0 auto clamp(40px, 6vw, 64px);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--ink-line-2);
+  background: var(--ink-2);
+  box-shadow: 0 40px 90px -50px rgba(0, 0, 0, 0.8);
+}
+.lc-jobs-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lc-pagehero .lc-hero__actions { margin-top: clamp(30px, 4vw, 40px); }
+
+/* ---- Benefits grid ---- */
+.lc-perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(18px, 2.4vw, 26px);
+}
+.lc-perk {
+  position: relative;
+  padding: clamp(26px, 3vw, 34px);
+  border: 1px solid var(--paper-line);
+  border-radius: 18px;
+  background: var(--paper-1);
+  overflow: hidden;
+  transition: border-color 0.4s var(--ease), transform 0.5s var(--ease),
+              box-shadow 0.5s var(--ease);
+}
+.lc-perk::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--red), transparent 70%);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.6s var(--ease);
+}
+.lc-perk:hover {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--on-paper), transparent 80%);
+  box-shadow: 0 30px 60px -44px rgba(11, 13, 18, 0.5);
+}
+.lc-perk:hover::before { transform: scaleX(1); }
+.lc-perk__icon {
+  width: 54px; height: 54px;
+  margin-bottom: 20px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--red), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--red), transparent 78%);
+  color: var(--red);
+  font-size: 24px;
+}
+.lc-perk h3 {
+  font-size: clamp(1.15rem, 1.7vw, 1.3rem);
+  color: var(--on-paper);
+  margin: 0 0 10px;
+}
+.lc-perk p {
+  color: var(--on-paper-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---- Info callout ---- */
+.lc-jobs-callout {
+  margin-top: clamp(30px, 4vw, 44px);
+  padding: 22px clamp(22px, 3vw, 30px);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  border: 1px solid var(--paper-line);
+  border-radius: 16px;
+  background: var(--paper-1);
+}
+.lc-jobs-callout > i {
+  font-size: 26px;
+  color: var(--red);
+  flex-shrink: 0;
+}
+.lc-jobs-callout p {
+  margin: 0;
+  color: var(--on-paper-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+  flex: 1 1 300px;
+}
+.lc-jobs-callout code {
+  font: 500 0.88em/1 var(--font-mono);
+  color: var(--on-paper);
+  background: color-mix(in srgb, var(--on-paper), transparent 92%);
+  padding: 0.2em 0.45em;
+  border-radius: 5px;
+}
+.lc-jobs-callout__link {
+  margin-left: auto;
+  font: 600 14.5px/1 var(--font-body);
+  color: var(--red);
+  white-space: nowrap;
+}
+.lc-jobs-callout__link:hover { color: var(--red-2); }
+.lc-jobs-callout__link span { display: inline-block; transition: transform 0.35s var(--ease); }
+.lc-jobs-callout__link:hover span { transform: translateX(4px); }
+
+/* ---- Áreas de atuação ---- */
+.lc-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(18px, 2.4vw, 24px);
+}
+.lc-track {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(28px, 3vw, 36px);
+  border: 1px solid var(--ink-line);
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--ink-2), var(--ink-1));
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.4s var(--ease), transform 0.5s var(--ease);
+}
+.lc-track::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--red), transparent 70%);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.6s var(--ease);
+}
+.lc-track:hover {
+  transform: translateY(-5px);
+  border-color: var(--ink-line-2);
+  color: inherit;
+}
+.lc-track:hover::before { transform: scaleX(1); }
+.lc-track__idx {
+  font: 500 12px/1 var(--font-mono);
+  color: var(--on-ink-faint);
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+.lc-track h3 {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  color: #fff;
+  margin: 0 0 14px;
+}
+.lc-track p {
+  color: var(--on-ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0 0 22px;
+}
+.lc-track__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+.lc-track__tags span {
+  font: 500 12px/1 var(--font-mono);
+  color: var(--on-ink-soft);
+  padding: 6px 11px;
+  border-radius: 100px;
+  border: 1px solid var(--ink-line-2);
+  background: rgba(255, 255, 255, 0.02);
+}
+.lc-track__cta {
+  margin-top: auto;
+  font: 600 14.5px/1 var(--font-body);
+  color: var(--red-2);
+}
+.lc-track__cta span { display: inline-block; transition: transform 0.35s var(--ease); }
+.lc-track:hover .lc-track__cta span { transform: translateX(5px); }
+
+/* ---- A jornada ---- */
+.lc-journey {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-width: 820px;
+}
+.lc-journey::before {
+  content: "";
+  position: absolute;
+  left: 26px; top: 12px; bottom: 12px;
+  width: 2px;
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--red), transparent 30%),
+    var(--paper-line));
+}
+.lc-journey__step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: clamp(18px, 3vw, 30px);
+  padding-bottom: clamp(34px, 5vw, 52px);
+}
+.lc-journey__step:last-child { padding-bottom: 0; }
+.lc-journey__num {
+  position: relative;
+  z-index: 1;
+  width: 54px; height: 54px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  font: 600 20px/1 var(--font-display);
+  color: #fff;
+  background: var(--red);
+  box-shadow: 0 12px 30px -12px var(--red-glow);
+}
+.lc-journey__body { padding-top: 4px; }
+.lc-journey__body h3 {
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  color: var(--on-paper);
+  margin: 0 0 10px;
+}
+.lc-journey__body p {
+  color: var(--on-paper-soft);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin: 0 0 16px;
+  max-width: 56ch;
+}
+.lc-journey__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.lc-journey__links a {
+  font: 600 14px/1 var(--font-body);
+  color: var(--red);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.lc-journey__links a::before {
+  content: "→";
+  color: var(--red);
+  transition: transform 0.3s var(--ease);
+}
+.lc-journey__links a:hover { color: var(--red-2); }
+.lc-journey__links a:hover::before { transform: translateX(3px); }
+
+/* ---- CTA final ---- */
+.lc-cta {
+  position: relative;
+  background: var(--ink);
+  color: var(--on-ink);
+  padding: clamp(80px, 12vw, 140px) 0;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+}
+.lc-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(var(--ink-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ink-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 90% at 50% 50%, #000 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 90% at 50% 50%, #000 40%, transparent 100%);
+  opacity: 0.6;
+}
+.lc-cta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -40%; left: 50%;
+  width: 70vw; height: 70vw;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, var(--red-glow), transparent 60%);
+  opacity: 0.4;
+  pointer-events: none;
+}
+.lc-cta__inner {
+  width: var(--shell);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lc-cta .lc-eyebrow { color: var(--on-ink-faint); justify-content: center; }
+.lc-cta h2 {
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  color: #fff;
+  margin: 0 0 20px;
+}
+.lc-cta__lead {
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--on-ink-soft);
+  max-width: 54ch;
+  margin: 0 0 36px;
+}
+.lc-cta .lc-hero__actions { justify-content: center; }
+
+/* ---- Job sub-page back link ---- */
+.lc-article__back {
+  width: min(720px, 92vw);
+  margin: clamp(44px, 6vw, 68px) auto 0;
+}
+
+/* ---- Article body: leading h1 ---- */
+.lc-article__body > h1:first-child {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  color: var(--on-paper);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 0.7em;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .lc-perks { grid-template-columns: repeat(2, 1fr); }
+  .lc-tracks { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .lc-perks { grid-template-columns: 1fr; }
+  .lc-journey__step { grid-template-columns: 44px 1fr; gap: 16px; }
+  .lc-journey::before { left: 21px; }
+  .lc-journey__num { width: 44px; height: 44px; font-size: 17px; }
+  .lc-jobs-callout__link { margin-left: 0; }
+}

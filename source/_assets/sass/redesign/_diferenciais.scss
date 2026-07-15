@@ -1,0 +1,47 @@
+.lc-diff {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.lc-diff__card {
+  position: relative;
+  padding: 34px;
+  border: 1px solid var(--ink-line);
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--ink-2), var(--ink-1));
+  overflow: hidden;
+  transition: border-color 0.4s var(--ease), transform 0.5s var(--ease);
+}
+.lc-diff__card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--red), transparent 70%);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.6s var(--ease);
+}
+.lc-diff__card:hover { border-color: var(--ink-line-2); transform: translateY(-4px); }
+.lc-diff__card:hover::before { transform: scaleX(1); }
+.lc-diff__icon {
+  width: 52px; height: 52px;
+  margin-bottom: 20px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 14px;
+  background: #e9ebf2;
+  border: 1px solid var(--ink-line);
+  color: #0f1220;
+  font-size: 22px;
+}
+.lc-diff__card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 0 12px;
+}
+.lc-diff__card p {
+  color: var(--on-ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0;
+}

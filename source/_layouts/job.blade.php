@@ -1,15 +1,27 @@
 @extends('_layouts.main')
 @section('body')
 
-<main id="main" class="p-5 hight-jobs-page size-jobs-page">
-  <section>
-    <div class="container">
-      <div>
-        <div class="content p-3 text-justify">@yield('content')</div>
-        <a href="{{ $page->baseUrl }}jobs" class="btn btn-danger mt-5 mb-5">Voltar</a>
-      </div>
+<section class="lc-pagehero lc-pagehero--article">
+    <div class="lc-pagehero__inner">
+        <p class="lc-eyebrow lc-hero__eyebrow" data-reveal="up">
+            <a href="{{ $page->baseUrl }}jobs">Coopere Conosco</a>
+        </p>
+        <h1 data-hero-title>
+            <span class="lc-line"><span>{{ $page->title ?? 'Coopere com a LibreCode' }}</span></span>
+        </h1>
     </div>
-  </section>
+</section>
+
+<main id="main" class="lc-article">
+    <div class="lc-article__body" data-reveal="up">
+        @yield('content')
+    </div>
+
+    <div class="lc-article__back" data-reveal="up">
+        <a href="{{ $page->baseUrl }}jobs" class="lc-btn">
+            <span aria-hidden="true">←</span> Voltar para Coopere Conosco
+        </a>
+    </div>
 </main>
 
 @endsection

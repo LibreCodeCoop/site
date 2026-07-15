@@ -1,0 +1,207 @@
+.lc-pagehero--article h1 {
+  font-size: clamp(2.1rem, 4.6vw, 3.7rem);
+  max-width: 24ch;
+}
+.lc-pagehero--article .lc-hero__eyebrow a {
+  color: var(--on-ink-faint);
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+.lc-pagehero--article .lc-hero__eyebrow a:hover { color: var(--red); }
+
+.lc-article__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font: 500 14px/1 var(--font-mono);
+  color: var(--on-ink-soft);
+}
+.lc-article__avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--ink-line-2);
+}
+.lc-article__author { color: #fff; font-weight: 600; }
+.lc-article__sep { color: var(--on-ink-faint); }
+
+.lc-article {
+  background: var(--paper);
+  color: var(--on-paper);
+  padding-bottom: clamp(70px, 10vw, 120px);
+}
+.lc-article__banner {
+  width: min(1000px, 92vw);
+  /* Overlap the ink→paper seam, but stay clear of the hero's bottom padding
+     (which also scales with vw) so meta ↔ banner keeps a positive gap. */
+  margin: clamp(-56px, -5vw, -32px) auto 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--paper-line);
+  box-shadow: 0 40px 90px -50px rgba(11, 13, 18, 0.6);
+  position: relative;
+  z-index: 2;
+}
+.lc-article__banner img { display: block; width: 100%; height: auto; }
+
+/* Prose */
+.lc-article__body {
+  width: min(720px, 92vw);
+  margin: clamp(44px, 6vw, 72px) auto 0;
+  font-size: clamp(1.06rem, 1.25vw, 1.18rem);
+  line-height: 1.78;
+  color: color-mix(in srgb, var(--on-paper), transparent 8%);
+}
+.lc-article__body > *:first-child { margin-top: 0; }
+.lc-article__body p { margin: 0 0 1.5em; }
+.lc-article__body a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.lc-article__body a:hover { color: var(--red-2); }
+.lc-article__body strong { color: var(--on-paper); font-weight: 600; }
+.lc-article__body em { font-style: italic; }
+
+.lc-article__body h2,
+.lc-article__body h3,
+.lc-article__body h4,
+.lc-article__body h5,
+.lc-article__body h6 {
+  font-family: var(--font-display);
+  color: var(--on-paper);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  scroll-margin-top: 90px;
+}
+.lc-article__body h2 { font-size: clamp(1.7rem, 2.6vw, 2.15rem); margin: 2em 0 0.7em; }
+.lc-article__body h3 {
+  font-size: clamp(1.4rem, 2.1vw, 1.75rem);
+  margin: 1.9em 0 0.6em;
+  padding-left: 18px;
+  position: relative;
+}
+.lc-article__body h3::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.16em;
+  width: 4px; height: 0.82em;
+  border-radius: 2px;
+  background: var(--red);
+}
+.lc-article__body h4 { font-size: clamp(1.18rem, 1.6vw, 1.34rem); margin: 1.7em 0 0.5em; }
+.lc-article__body h5 {
+  font-size: 1rem;
+  margin: 1.5em 0 0.4em;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--on-paper-soft);
+}
+
+.lc-article__body ul,
+.lc-article__body ol { margin: 0 0 1.5em; padding-left: 0; list-style: none; }
+.lc-article__body li { position: relative; padding-left: 30px; margin: 0 0 0.7em; }
+.lc-article__body ul > li::before {
+  content: "";
+  position: absolute;
+  left: 6px; top: 0.62em;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--red);
+}
+.lc-article__body ol { counter-reset: lc-ol; }
+.lc-article__body ol > li { counter-increment: lc-ol; }
+.lc-article__body ol > li::before {
+  content: counter(lc-ol);
+  position: absolute;
+  left: 0; top: 0.05em;
+  font: 600 13px/1.5 var(--font-mono);
+  color: var(--red);
+}
+.lc-article__body li ul,
+.lc-article__body li ol { margin: 0.6em 0 0; }
+
+.lc-article__body blockquote {
+  margin: 1.8em 0;
+  padding: 6px 0 6px 26px;
+  border-left: 3px solid var(--red);
+  font-size: 1.15em;
+  line-height: 1.6;
+  color: var(--on-paper);
+  font-style: italic;
+}
+.lc-article__body img { max-width: 100%; height: auto; border-radius: 12px; margin: 1.6em 0; }
+.lc-article__body hr { border: 0; border-top: 1px solid var(--paper-line); margin: 2.4em 0; }
+.lc-article__body code {
+  font: 500 0.9em/1 var(--font-mono);
+  background: color-mix(in srgb, var(--on-paper), transparent 92%);
+  padding: 0.2em 0.45em;
+  border-radius: 5px;
+}
+
+/* ---- Author card ---- */
+.lc-author {
+  width: min(720px, 92vw);
+  margin: clamp(48px, 7vw, 80px) auto 0;
+  display: flex;
+  gap: clamp(20px, 3vw, 32px);
+  align-items: flex-start;
+  padding: clamp(28px, 3.4vw, 40px);
+  border-radius: 18px;
+  background: var(--paper-1);
+  border: 1px solid var(--paper-line);
+}
+.lc-author__avatar {
+  flex-shrink: 0;
+  width: 84px; height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--paper-line);
+}
+.lc-author__kicker {
+  font: 500 11.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 8px;
+}
+.lc-author__name { font-size: clamp(1.3rem, 2vw, 1.6rem); margin: 0 0 12px; color: var(--on-paper); }
+.lc-author__bio { font-size: 1rem; line-height: 1.65; color: var(--on-paper-soft); margin: 0 0 16px; }
+.lc-author__social { display: flex; gap: 10px; }
+.lc-author__social a {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--paper-line);
+  color: var(--on-paper-soft);
+  font-size: 17px;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease), background 0.3s var(--ease);
+}
+.lc-author__social a:hover {
+  color: #fff;
+  background: var(--red);
+  border-color: var(--red);
+}
+
+/* ---- "Continue lendo" ---- */
+.lc-more { padding: clamp(70px, 10vw, 120px) 0; }
+.lc-more .lc-head { margin-bottom: clamp(36px, 5vw, 56px); }
+.lc-more .lc-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: #fff; }
+.lc-journal__grid--ink { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+/* ---- Responsive ---- */
+@media (max-width: 860px) {
+  .lc-feature { grid-template-columns: 1fr; }
+  .lc-feature__media { min-height: 240px; aspect-ratio: 16 / 9; }
+}
+@media (max-width: 560px) {
+  .lc-journal__grid { grid-template-columns: 1fr; }
+  .lc-author { flex-direction: column; }
+  .lc-article__meta { font-size: 12.5px; gap: 9px; }
+}

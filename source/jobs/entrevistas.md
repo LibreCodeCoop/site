@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Entrevistas
+description: Como funciona a etapa de entrevistas no processo de adesão à LibreCode.
 ---
-
-# Entrevistas
 
 Depois da etapa prática, obtendo aprovação para seguir em frente, será iniciado a etapa de entrevistas, onde buscamos conhecer quem está por trás da contribuição. Acreditamos que cooperar é mais do que saber fazer: é também saber caminhar junto.
 

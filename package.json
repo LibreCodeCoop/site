@@ -18,10 +18,14 @@
         "tailwindcss": "^3.1.6",
         "webpack": "^5.60.0"
     },
+    "overrides": {
+        "webpackbar": "^7.0.0"
+    },
     "dependencies": {
         "animate.css": "^4.1.0",
         "bootstrap": "^5.0.0",
         "glightbox": "^3.1.0",
+        "gsap": "^3.12.5",
         "ionicons": "^5.0.1",
         "isotope-layout": "^3.0.6",
         "jquery": "^3.5.1",

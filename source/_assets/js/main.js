@@ -15,8 +15,51 @@ import '../../../source/assets/lib/mobile-nav/mobile-nav.js';
 import '../../../source/assets/lib/easing/easing.min.js';
 import '../../../source/assets/lib/waypoints/waypoints.min.js';
 
+// Exposed as globals so librecode-motion.js (a plain, non-module script) can use them.
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+window.gsap = gsap;
+window.ScrollTrigger = ScrollTrigger;
+window.ScrollToPlugin = ScrollToPlugin;
+
 (function ($) {
   "use strict";
+
+  function normalizePath(path) {
+    return path.replace(/\/+$/, '') || '/';
+  }
+
+  function headerHeight() {
+    return $('#header').outerHeight() || 0;
+  }
+
+  // Smooth scroll via GSAP ScrollToPlugin, falling back to jQuery.
+  function smoothScrollTo(scrollTop) {
+    var targetScroll = Math.max(0, scrollTop);
+
+    $('html, body').stop(true);
+    if (window.gsap) {
+      window.gsap.killTweensOf(window);
+    }
+
+    if (window.gsap && window.ScrollToPlugin) {
+      window.gsap.to(window, {
+        duration: 0.9,
+        ease: 'power3.inOut',
+        overwrite: 'auto',
+        scrollTo: { y: targetScroll, autoKill: false },
+        onUpdate: function () {
+          if (window.ScrollTrigger) {
+            window.ScrollTrigger.update();
+          }
+        }
+      });
+    } else {
+      $('html, body').animate({ scrollTop: targetScroll }, 900, 'easeInOutExpo');
+    }
+  }
 
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
@@ -36,7 +79,7 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    smoothScrollTo(0);
     return false;
   });
 
@@ -58,47 +101,53 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
     $('#header').addClass('header-scrolled');
   }
 
-  // Smooth scroll for the navigation and links with .scrollto classes
-  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        var top_space = 0;
+  // Smooth scroll for the navigation and same-page section links.
+  $('.main-nav a, .mobile-nav a, .scrollto, .lc-btn[href*="#"], .lc-footer a[href*="#"]').on('click', function(event) {
+    var href = this.getAttribute('href');
+    if (!href || href === '#') return;
 
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
+    try {
+      var url = new URL(href, window.location.href);
 
-          if (! $('#header').hasClass('header-scrolled')) {
-            top_space = top_space - 20;
+      if (normalizePath(url.pathname) == normalizePath(location.pathname) && url.hostname == location.hostname) {
+        var target = $(url.hash);
+        if (target.length) {
+          event.preventDefault();
+          var top_space = 0;
+
+          if ($('#header').length) {
+            top_space = headerHeight();
+
+            if (! $('#header').hasClass('header-scrolled')) {
+              top_space = top_space - 20;
+            }
           }
-        }
 
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+          smoothScrollTo(target.offset().top - top_space);
 
-        if ($(this).parents('.main-nav, .mobile-nav').length) {
-          $('.main-nav .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
+          if ($(this).parents('.main-nav, .mobile-nav').length) {
+            $('.main-nav .active, .mobile-nav .active').removeClass('active');
+            $(this).closest('li').addClass('active');
+          }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('.mobile-nav-overly').fadeOut();
+          if ($('body').hasClass('mobile-nav-active')) {
+            $('body').removeClass('mobile-nav-active');
+            $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+            $('.mobile-nav-overly').fadeOut();
+          }
+          return false;
         }
-        return false;
       }
-    }
+    } catch (e) { return; }
   });
 
   // Navigation active state on scroll
   var nav_sections = $('section[id], main[id]');
   var main_nav = $('.main-nav, .mobile-nav');
-  var main_nav_height = $('#header').outerHeight();
 
   function updateActiveNavOnScroll(current_scroll_position) {
     var matched = false;
+    var main_nav_height = headerHeight();
     nav_sections.each(function() {
       var $section = $(this);
       var top = $section.offset().top - main_nav_height;
@@ -106,13 +155,13 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
 
       if (current_scroll_position >= top && current_scroll_position <= bottom) {
         var id = $section.attr('id');
-        var current_path = window.location.pathname.replace(/\/+$/, '');
+        var current_path = normalizePath(window.location.pathname);
         var $link = main_nav
           .find('a[href$="#' + id + '"]')
           .filter(function() {
             try {
               var url = new URL(this.getAttribute('href'), window.location.origin);
-              var link_path = url.pathname.replace(/\/+$/, '');
+              var link_path = normalizePath(url.pathname);
               return link_path === current_path;
             } catch (e) { return false; }
           });
@@ -135,20 +184,19 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
     var hadMatch = updateActiveNavOnScroll($(window).scrollTop());
 
     if (!hadMatch && main_nav.find('li.active').length === 0) {
-      var current_path = window.location.pathname.replace(/\/+$/, '');
-      main_nav.find('a').each(function() {
+      var current_path = normalizePath(window.location.pathname);
+      var $matches = main_nav.find('a').filter(function() {
         var href = this.getAttribute('href');
-        if (!href || href.indexOf('#') !== -1) return;
+        if (!href || href.indexOf('#') !== -1) return false;
         try {
           var url = new URL(href, window.location.origin);
-          var link_path = url.pathname.replace(/\/+$/, '');
-          if (link_path === current_path) {
-            main_nav.find('li').removeClass('active');
-            $(this).parent('li').addClass('active');
-            return false;
-          }
-        } catch (e) { console.log(e); }
+          return normalizePath(url.pathname) === current_path;
+        } catch (e) { return false; }
       });
+      if ($matches.length) {
+        main_nav.find('li').removeClass('active');
+        $matches.parent('li').addClass('active');
+      }
     }
   });
 
@@ -175,4 +223,3 @@ import '../../../source/assets/lib/waypoints/waypoints.min.js';
   });
 
 })(jQuery);
-

@@ -1,112 +1,72 @@
 <footer id="footer">
     <div class="footer-top">
-        <div class="container">
-            <div class="row">
+        <div class="lc-footer">
+            <div class="lc-footer__grid">
 
-                <div>
-                    <a href="https://www.somos.coop.br/" target="_blank">
-                        <img
-                        src="{{ $page->baseUrl }}assets/images/logo/somoscoop-horizontal-light.png"
-                        alt="somos coop logo imagem"
-                        width="220" height="200"
-                        />
-                    </a>
-                </div>
-
-            <div>
-                <div class="social-links">
-                    <a href="https://t.me/LibreCodeCoop" class="telegram" target="_blank"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.facebook.com/librecodecoop/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/librecodecoop/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://github.com/librecodecoop" class="github" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-
-            </div>
-            <div class="item">
-                <div>
-                    <div class="copyright">
-                        &copy; Copyright <strong>LibreCode</strong>. Todos os direitos reservados
-                    </div>
-                    <div class="credits">
-                        <!--
-                        All the links in the footer should remain intact.
-                        You can delete the links only if you purchased the pro version.
-                        Licensing information: https://bootstrapmade.com/license/
-                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-                        -->
-                        Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+                <div class="lc-footer__brand">
+                    <img src="{{ $page->baseUrl }}assets/images/logo/librecode.png" alt="LibreCode">
+                    <p>Cooperativa digital de especialistas em desenvolvimento de software livre. Tecnologia com transparência e liberdade.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/LibreCodeCoop" class="telegram" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/librecodecoop/" class="facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/librecodecoop/" class="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/librecodecoop" class="github" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/company/librecode/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
 
+                <div class="lc-footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}#about">Quem somos</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}#why-us">Soluções</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}#clients">Clientes</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}#apoie">Apoie</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}posts">Blog</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}jobs">Coopere Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="lc-footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="tel:+552120422073">+55 (21) 2042-2073</a></li>
+                        <li><a href="mailto:contato@librecode.coop">contato@librecode.coop</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}#contact">Fale conosco</a></li>
+                    </ul>
+                    <div class="lc-footer__coop" style="margin-top:26px">
+                        <a href="https://www.somos.coop.br/" target="_blank" rel="noopener" aria-label="Somos Coop">
+                            <img src="{{ $page->baseUrl }}assets/images/logo/somoscoop-horizontal-light.png" alt="Somos Coop">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lc-footer__bottom">
+                <div class="copyright">
+                    &copy; {{ date('Y') }} <strong>LibreCode</strong> — Todos os direitos reservados
+                </div>
+                <div class="credits">
+                    Feito com software livre em <a href="https://www.somos.coop.br/" target="_blank" rel="noopener">cooperação</a>
+                </div>
             </div>
         </div>
     </div>
-
-
 </footer>
-
- <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
   <script src="{{ mix('js/main.js', 'assets/build') }}" type="text/javascript"></script>
-  <!-- Contact Form JavaScript File -->
-  <!-- <script src="contactform/contactform.js"></script>-->
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   @yield('footer_scripts')
-  @if ($page->production)
-	<script type="text/javascript">
-    (function(w, d, s, u) {
-      w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-      var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-      j.async = true; j.src = 'https://chat.librecode.coop/livechat/rocketchat-livechat.min.js?_=201903270000';
-      h.parentNode.insertBefore(j, h);
-    })(window, document, 'script', 'https://chat.librecode.coop/livechat');
-  </script>
-  @endif
+
+  <script type="module" src="{{ $page->baseUrl }}assets/build/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="{{ $page->baseUrl }}assets/build/ionicons/ionicons.js"></script>
+
+  <!-- Must load after the bundle above, which exposes the GSAP globals it uses -->
+  <script src="{{ $page->baseUrl }}assets/js/librecode-motion.js"></script>
 <script>
   var lightbox = GLightbox();
-  lightbox.on('open', (target) => {
-      console.log('lightbox opened');
-  });
-  var lightboxDescription = GLightbox({
-      selector: '.glightbox2'
-  });
-  var lightboxVideo = GLightbox({
-      selector: '.glightbox3'
-  });
-  lightboxVideo.on('slide_changed', ({ prev, current }) => {
-      console.log('Prev slide', prev);
-      console.log('Current slide', current);
-
-      const { slideIndex, slideNode, slideConfig, player } = current;
-
-      if (player) {
-          if (!player.ready) {
-              // If player is not ready
-              player.on('ready', (event) => {
-                  // Do something when video is ready
-              });
-          }
-
-          player.on('play', (event) => {
-              console.log('Started play');
-          });
-
-          player.on('volumechange', (event) => {
-              console.log('Volume change');
-          });
-
-          player.on('ended', (event) => {
-              console.log('Video ended');
-          });
-      }
-  });
-
-  var lightboxInlineIframe = GLightbox({
-      selector: '.glightbox4'
-  });
+  var lightboxDescription = GLightbox({ selector: '.glightbox2' });
+  var lightboxVideo = GLightbox({ selector: '.glightbox3' });
+  var lightboxInlineIframe = GLightbox({ selector: '.glightbox4' });
 </script>

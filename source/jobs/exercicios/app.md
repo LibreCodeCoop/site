@@ -1,8 +1,8 @@
 ---
 extends: _layouts.job
+title: Desenvolvimento de apps
+description: Crie um app para Nextcloud como forma de demonstrar seus conhecimentos.
 ---
-
-# Desenvolvimento de apps
 
 O LibreSign é um app para Nextcloud, você pode criar um outro app como forma de demonstrar seus conhecimentos.
 

@@ -1,0 +1,50 @@
+.lc-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.lc-marquee__track {
+  display: inline-flex;
+  align-items: center;
+  will-change: transform;
+}
+
+.lc-principles {
+  background: var(--red);
+  color: #fff;
+  padding: 26px 0;
+}
+.lc-principles .lc-marquee__track > span {
+  font: 600 clamp(0.95rem, 2vw, 1.4rem)/1 var(--font-display);
+  letter-spacing: -0.01em;
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+.lc-principles .lc-marquee__track > span::after {
+  content: "";
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.lc-clients-row { margin-top: 12px; }
+.lc-clients-row .lc-marquee__track > .lc-client {
+  flex: 0 0 auto;
+  height: 66px;
+  margin: 0 34px;
+  display: inline-flex;
+  align-items: center;
+}
+.lc-client img {
+  max-height: 54px;
+  max-width: 150px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(1) contrast(0.9);
+  opacity: 0.62;
+  transition: filter 0.4s var(--ease), opacity 0.4s var(--ease);
+}
+.lc-client img:hover { filter: none; opacity: 1; }
