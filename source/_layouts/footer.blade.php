@@ -57,16 +57,6 @@
   <!-- <script src="contactform/contactform.js"></script>-->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   @yield('footer_scripts')
-    <script>
-      var _mtm = window._mtm = window._mtm || [];
-      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-      (function() {
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true;
-        g.src='https://matomo.librecode.coop/js/container_{{ $page->matomo_container }}.js';
-        s.parentNode.insertBefore(g,s);
-      })();
-    </script>
   @if ($page->production)
 	<script type="text/javascript">
     (function(w, d, s, u) {
