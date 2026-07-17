@@ -1,7 +1,5 @@
 {
-  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
   "version": "v1.1.0",
-
   "entity": {
     "type": "organisation",
     "role": "owner",
@@ -10,11 +8,9 @@
     "phone": "+552120422073",
     "description": "LibreCode is a cooperative founded by software developers and technology professionals with the vision of making open-source solutions more accessible while highlighting their value in fostering innovation, security, and technological freedom without borders.\n\nBeyond our cooperative principles, we are committed to providing open-source software and professional support so that the entire community can benefit from what we build. For more than seven years, we have been creating and maintaining open-source solutions while helping more people discover and adopt free and open-source software.",
     "webpageUrl": {
-      "url": "https://librecode.coop",
-      "wellKnown": "https://librecode.coop/.well-known/funding-manifest-urls"
+      "url": "https://librecode.coop"
     }
   },
-
   "projects": [
     {
       "guid": "libresign",
@@ -25,7 +21,8 @@
         "wellKnown": "https://libresign.coop/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/LibreSign/libresign"
+        "url": "https://github.com/LibreSign/libresign",
+        "wellKnown": "https://github.com/LibreSign/libresign/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": [
         "spdx:AGPL-3.0"
@@ -39,7 +36,6 @@
       ]
     }
   ],
-
   "funding": {
     "channels": [
       {
@@ -49,7 +45,6 @@
         "description": "Recurring or one-time contributions through GitHub Sponsors."
       }
     ],
-
     "plans": [
       {
         "guid": "developer-time-yearly",
@@ -59,7 +54,9 @@
         "amount": 75000,
         "currency": "USD",
         "frequency": "yearly",
-        "channels": ["github-sponsors"]
+        "channels": [
+          "github-sponsors"
+        ]
       },
       {
         "guid": "developer-time-monthly",
@@ -69,8 +66,10 @@
         "amount": 6250,
         "currency": "USD",
         "frequency": "monthly",
-        "channels": ["github-sponsors"]
-            }
+        "channels": [
+          "github-sponsors"
+        ]
+      }
     ]
   }
-}  
+}
