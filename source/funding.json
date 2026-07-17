@@ -9,7 +9,8 @@
     "phone": "+552120422073",
     "description": "LibreCode is a cooperative founded by software developers and technology professionals with the vision of making open-source solutions more accessible while highlighting their value in fostering innovation, security, and technological freedom without borders.\n\nBeyond our cooperative principles, we are committed to providing open-source software and professional support so that the entire community can benefit from what we build. For more than seven years, we have been creating and maintaining open-source solutions while helping more people discover and adopt free and open-source software.",
     "webpageUrl": {
-      "url": "https://librecode.coop"
+      "url": "https://librecode.coop",
+      "wellKnown": "https://librecode.coop/.well-known/funding-manifest-urls"
     }
   },
   "projects": [
