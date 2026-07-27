@@ -1,3 +1,8 @@
+---
+title: Nextcloud — Nuvem Privada e Colaborativa | LibreCode
+description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem privada com hospedagem no Brasil, suporte em português e dados sob o seu controle.
+---
+
 @extends('_layouts.main')
 
 @section('body')
@@ -21,6 +26,15 @@
       <a href="#nc-showcase" class="lc-btn">Conheça o hub <span class="lc-btn__arrow">→</span></a>
       <a href="https://t.me/LibreCodeCoop" target="_blank" rel="noopener" class="lc-btn lc-btn--ghost">Agendar demonstração</a>
     </div>
+
+    <nav class="nc-hero-nav" aria-label="Navegação desta página" data-reveal="up">
+      <span>Ir para</span>
+      <a href="#nc-showcase">Recursos</a>
+      <a href="#nc-why">Benefícios</a>
+      <a href="#nc-managed">Como funciona</a>
+      <a href="#pricing">Planos</a>
+      <a href="#nc-faq">FAQ</a>
+    </nav>
   </div>
 
   <div class="lc-scrollcue nc-scrollcue" aria-hidden="true">
@@ -178,7 +192,7 @@
         <article class="nc-more__card">
           <span class="nc-more__icon"><ion-icon name="key-outline"></ion-icon></span>
           <h3>Criptografia</h3>
-          <p>Dados criptografados e invioláveis de ponta a ponta.</p>
+          <p>Proteção dos dados em trânsito e recursos adicionais de criptografia configurados conforme a necessidade.</p>
         </article>
         <article class="nc-more__card">
           <span class="nc-more__icon"><ion-icon name="grid-outline"></ion-icon></span>
@@ -200,6 +214,233 @@
           <h3>Gestor de senhas</h3>
           <p>Guarde e organize suas senhas de forma segura.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  {{-- ==========================  POR QUE ESCOLHER  ========================== --}}
+  <section id="nc-why" class="lc-section lc-section--paper nc-why">
+    <div class="lc-shell">
+      <div class="lc-head" data-reveal="up">
+        <p class="lc-eyebrow lc-eyebrow--index"><b>01</b> / Uma escolha com propósito</p>
+        <h2>Produtividade sem abrir mão da autonomia</h2>
+        <p>Sua equipe ganha um espaço integrado para trabalhar, enquanto a organização mantém o controle sobre os próprios dados e sobre o futuro da plataforma.</p>
+      </div>
+
+      <div class="nc-values" data-reveal="stagger">
+        <article class="nc-value">
+          <span class="nc-value__number">01</span>
+          <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+          <h3>Soberania digital</h3>
+          <p>Arquivos, conversas e rotinas de trabalho ficam em uma infraestrutura privada, com hospedagem no Brasil e sem dependência de uma big tech.</p>
+        </article>
+        <article class="nc-value">
+          <span class="nc-value__number">02</span>
+          <ion-icon name="eye-off-outline" aria-hidden="true"></ion-icon>
+          <h3>Privacidade por princípio</h3>
+          <p>Sem publicidade ou exploração comercial do conteúdo. O acesso é definido pela sua organização, com recursos alinhados às práticas de privacidade e à LGPD.</p>
+        </article>
+        <article class="nc-value">
+          <span class="nc-value__number">03</span>
+          <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+          <h3>Economia solidária</h3>
+          <p>Ao contratar a LibreCode, sua organização fortalece uma cooperativa de profissionais que desenvolve e sustenta tecnologia livre.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {{-- ==========================  PARA QUEM É  ========================== --}}
+  <section id="nc-use-cases" class="lc-section lc-section--ink nc-use-cases">
+    <div class="lc-shell">
+      <div class="lc-head" data-reveal="up">
+        <p class="lc-eyebrow lc-eyebrow--index"><b>02</b> / Para quem é</p>
+        <h2>Uma nuvem que acompanha diferentes formas de organização</h2>
+        <p>O Nextcloud se adapta tanto a equipes em crescimento quanto a operações que lidam diariamente com informações sensíveis.</p>
+      </div>
+
+      <div class="nc-audiences" data-reveal="stagger">
+        <article class="nc-audience">
+          <span class="nc-audience__icon"><ion-icon name="business-outline"></ion-icon></span>
+          <div>
+            <h3>Equipes e empresas</h3>
+            <p>Centralize arquivos, reuniões, agendas e edição colaborativa, reduzindo a dispersão entre várias plataformas.</p>
+          </div>
+        </article>
+        <article class="nc-audience">
+          <span class="nc-audience__icon"><ion-icon name="git-network-outline"></ion-icon></span>
+          <div>
+            <h3>Cooperativas e coletivos</h3>
+            <p>Organize decisões e processos em ferramentas compatíveis com autonomia, colaboração e gestão democrática.</p>
+          </div>
+        </article>
+        <article class="nc-audience">
+          <span class="nc-audience__icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <div>
+            <h3>Operações com dados sensíveis</h3>
+            <p>Controle acessos, compartilhamentos e histórico de atividades em áreas como saúde, contabilidade e serviços jurídicos.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {{-- ==========================  SERVIÇO GERENCIADO  ========================== --}}
+  <section id="nc-managed" class="lc-section lc-section--paper nc-managed">
+    <div class="lc-shell">
+      <div class="nc-managed__layout">
+        <div class="lc-head" data-reveal="up">
+          <p class="lc-eyebrow lc-eyebrow--index"><b>03</b> / Nextcloud com a LibreCode</p>
+          <h2>A tecnologia é livre. A operação não precisa ficar por sua conta.</h2>
+          <p>Cuidamos da implantação e da sustentação para sua equipe se concentrar no trabalho, não na administração de servidores.</p>
+          <a href="https://t.me/LibreCodeCoop" target="_blank" rel="noopener" class="lc-btn">Planejar minha implantação <span class="lc-btn__arrow">→</span></a>
+        </div>
+
+        <ol class="nc-managed__steps" data-reveal="stagger">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Diagnóstico e dimensionamento</h3>
+              <p>Entendemos número de pessoas, volume de dados, integrações e requisitos para desenhar o ambiente adequado.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Implantação e migração assistida</h3>
+              <p>Configuramos a plataforma e planejamos a entrada de arquivos, contatos e calendários com a sua equipe.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Atualizações, backups e suporte</h3>
+              <p>Mantemos a infraestrutura e atendemos em português, com contato direto com uma equipe técnica.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  {{-- ==========================  PLANOS  ========================== --}}
+  <section id="pricing" class="lc-section lc-section--ink nc-pricing">
+    <div class="lc-shell">
+      <div class="lc-head nc-pricing__head" data-reveal="up">
+        <p class="lc-eyebrow lc-eyebrow--index"><b>04</b> / Planos</p>
+        <h2>Nuvem soberana para sua organização</h2>
+        <p>Privacidade, código aberto e gestão cooperativa em planos que crescem com a sua equipe.</p>
+        <span class="nc-pricing__setup">
+          <ion-icon name="sparkles-outline" aria-hidden="true"></ion-icon>
+          Sem taxa de implantação
+        </span>
+      </div>
+
+      <div class="nc-plans" data-reveal="stagger">
+        <article class="nc-plan">
+          <header class="nc-plan__header">
+            <p class="nc-plan__eyebrow">Para começar</p>
+            <h3>Início</h3>
+            <p>Para equipes começando a migrar para a soberania digital.</p>
+          </header>
+          <p class="nc-plan__price">
+            <span>R$</span>
+            <strong>49,90</strong>
+            <small>por usuário<br>por mês</small>
+          </p>
+          <ul class="nc-plan__features">
+            <li><ion-icon name="checkmark-circle"></ion-icon><span><strong>30 GB</strong> de armazenamento</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Nextcloud Office</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Nextcloud Talk</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Suporte por e-mail</span></li>
+          </ul>
+          <a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost nc-plan__cta">Assinar Início <span class="lc-btn__arrow">→</span></a>
+        </article>
+
+        <article class="nc-plan nc-plan--featured">
+          <span class="nc-plan__badge">Recomendado</span>
+          <header class="nc-plan__header">
+            <p class="nc-plan__eyebrow">Mais escolhido</p>
+            <h3>Padrão</h3>
+            <p>Para organizações que precisam de mais espaço e recursos avançados.</p>
+          </header>
+          <p class="nc-plan__price">
+            <span>R$</span>
+            <strong>119,90</strong>
+            <small>por usuário<br>por mês</small>
+          </p>
+          <ul class="nc-plan__features">
+            <li><ion-icon name="checkmark-circle"></ion-icon><span><strong>100 GB</strong> de armazenamento</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Antivírus para uploads</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Controle avançado de permissões</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Retenção de arquivos e versões</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Suporte prioritário</span></li>
+          </ul>
+          <a href="{{ $page->baseUrl }}contato" class="lc-btn nc-plan__cta">Assinar Padrão <span class="lc-btn__arrow">→</span></a>
+        </article>
+
+        <article class="nc-plan">
+          <header class="nc-plan__header">
+            <p class="nc-plan__eyebrow">Alta capacidade</p>
+            <h3>Premium</h3>
+            <p>Performance e integração para grandes equipes e operações complexas.</p>
+          </header>
+          <p class="nc-plan__price">
+            <span>R$</span>
+            <strong>329,90</strong>
+            <small>por usuário<br>por mês</small>
+          </p>
+          <ul class="nc-plan__features">
+            <li><ion-icon name="checkmark-circle"></ion-icon><span><strong>300 GB</strong> de armazenamento</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Servidor otimizado com SSD NVMe</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Integração com LDAP/Active Directory</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Auditoria e logs avançados</span></li>
+            <li><ion-icon name="checkmark-circle"></ion-icon><span>Gerente de contas dedicado</span></li>
+          </ul>
+          <a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost nc-plan__cta">Assinar Premium <span class="lc-btn__arrow">→</span></a>
+        </article>
+      </div>
+
+      <p class="nc-pricing__note" data-reveal="up">
+        Planos a partir de 5 usuários. Precisa de servidor dedicado ou de uma configuração específica?
+        <a href="{{ $page->baseUrl }}contato">Fale com a LibreCode</a>.
+      </p>
+    </div>
+  </section>
+
+  {{-- ==========================  PERGUNTAS FREQUENTES  ========================== --}}
+  <section id="nc-faq" class="lc-section lc-section--ink nc-faq">
+    <div class="lc-shell">
+      <div class="lc-head" data-reveal="up">
+        <p class="lc-eyebrow lc-eyebrow--index"><b>05</b> / Perguntas frequentes</p>
+        <h2>Antes de levar sua equipe para uma nuvem própria</h2>
+      </div>
+
+      <div class="nc-faq__list" data-reveal="stagger">
+        <details>
+          <summary>O Nextcloud substitui Google Workspace ou Microsoft 365?</summary>
+          <p>Ele reúne alternativas para arquivos, calendários, contatos, chamadas e edição colaborativa. A equivalência exata depende das ferramentas e integrações usadas pela sua organização; por isso, começamos pelo diagnóstico.</p>
+        </details>
+        <details>
+          <summary>Existe limite de armazenamento ou de pessoas?</summary>
+          <p>O ambiente é dimensionado de acordo com a necessidade da organização. Na proposta, definimos capacidade, número de usuários e recursos para que custos e possibilidades fiquem claros.</p>
+        </details>
+        <details>
+          <summary>Onde os dados ficam hospedados?</summary>
+          <p>A LibreCode oferece hospedagem no Brasil. Durante o planejamento, detalhamos a arquitetura, as rotinas de backup e os requisitos de privacidade aplicáveis ao projeto.</p>
+        </details>
+        <details>
+          <summary>Posso usar o domínio da minha organização?</summary>
+          <p>Sim. A implantação pode usar um endereço próprio, como <strong>nuvem.suaorganizacao.org.br</strong>, preservando a identidade da organização.</p>
+        </details>
+        <details>
+          <summary>E a conta de e-mail?</summary>
+          <p>O Nextcloud não substitui o provedor de e-mail, mas pode reunir contas compatíveis em seu aplicativo de correio. Avaliamos essa integração junto com os demais serviços da organização.</p>
+        </details>
+        <details>
+          <summary>Vocês ajudam a migrar de outra plataforma?</summary>
+          <p>Sim. Primeiro analisamos origem, volume e formatos dos dados; depois definimos com a equipe um plano de migração para arquivos, contatos e calendários.</p>
+        </details>
       </div>
     </div>
   </section>
