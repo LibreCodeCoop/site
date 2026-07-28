@@ -320,7 +320,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  PLANOS  ========================== --}}
   <section id="pricing" class="lc-section lc-section--ink nc-pricing">
     <div class="lc-shell">
       <div class="lc-head nc-pricing__head" data-reveal="up">
