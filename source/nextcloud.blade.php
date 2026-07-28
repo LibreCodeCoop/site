@@ -283,7 +283,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  SERVIÇO GERENCIADO  ========================== --}}
   <section id="nc-managed" class="lc-section lc-section--paper nc-managed">
     <div class="lc-shell">
       <div class="nc-managed__layout">
