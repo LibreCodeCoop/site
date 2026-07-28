@@ -7,7 +7,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
 
 @section('body')
 
-{{-- ==========================  HERO  ========================== --}}
 <section id="intro" class="lc-hero nc-hero">
   <div class="lc-hero__inner">
     <p class="lc-eyebrow lc-hero__eyebrow" data-reveal="up">Nuvem privada · hub de aplicações</p>
@@ -45,7 +44,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
 
 <main id="main">
 
-  {{-- ==========================  SHOWCASE HORIZONTAL  ========================== --}}
   <section id="nc-showcase" class="nc-showcase" aria-label="Módulos do Nextcloud">
     <div class="nc-track" data-nc-track>
 
@@ -164,7 +162,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  E MUITO MAIS  ========================== --}}
   <section id="nc-more" class="lc-section lc-section--ink nc-more-section">
     <div class="lc-shell">
       <div class="lc-head" data-reveal="up">
@@ -501,7 +498,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  CTA FINAL  ========================== --}}
   <section id="nc-cta" class="lc-section lc-section--paper nc-cta">
     <div class="lc-shell">
       <div class="nc-cta__box" data-reveal="up">
