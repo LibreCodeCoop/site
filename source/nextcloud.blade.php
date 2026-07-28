@@ -249,7 +249,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  PARA QUEM É  ========================== --}}
   <section id="nc-use-cases" class="lc-section lc-section--ink nc-use-cases">
     <div class="lc-shell">
       <div class="lc-head" data-reveal="up">
