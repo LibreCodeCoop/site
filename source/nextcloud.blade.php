@@ -465,7 +465,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  PERGUNTAS FREQUENTES  ========================== --}}
   <section id="nc-faq" class="lc-section lc-section--ink nc-faq">
     <div class="lc-shell">
       <div class="lc-head" data-reveal="up">
