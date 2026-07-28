@@ -336,73 +336,134 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
         </span>
       </div>
 
-      <div class="nc-plans" data-reveal="stagger">
-        <article class="nc-plan">
-          <header class="nc-plan__header">
-            <p class="nc-plan__eyebrow">Para começar</p>
-            <h3>Início</h3>
-            <p>Para equipes começando a migrar para a soberania digital.</p>
-          </header>
-          <p class="nc-plan__price">
-            <span>R$</span>
-            <strong>49,90</strong>
-            <small>por usuário<br>por mês</small>
-          </p>
-          <ul class="nc-plan__features">
-            <li><ion-icon name="checkmark-circle"></ion-icon><span><strong>30 GB</strong> de armazenamento</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Nextcloud Office</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Nextcloud Talk</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Suporte por e-mail</span></li>
-          </ul>
-          <a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost nc-plan__cta">Assinar Início <span class="lc-btn__arrow">→</span></a>
-        </article>
-
-        <article class="nc-plan nc-plan--featured">
-          <span class="nc-plan__badge">Recomendado</span>
-          <header class="nc-plan__header">
-            <p class="nc-plan__eyebrow">Mais escolhido</p>
-            <h3>Padrão</h3>
-            <p>Para organizações que precisam de mais espaço e recursos avançados.</p>
-          </header>
-          <p class="nc-plan__price">
-            <span>R$</span>
-            <strong>119,90</strong>
-            <small>por usuário<br>por mês</small>
-          </p>
-          <ul class="nc-plan__features">
-            <li><ion-icon name="checkmark-circle"></ion-icon><span><strong>100 GB</strong> de armazenamento</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Antivírus para uploads</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Controle avançado de permissões</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Retenção de arquivos e versões</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Suporte prioritário</span></li>
-          </ul>
-          <a href="{{ $page->baseUrl }}contato" class="lc-btn nc-plan__cta">Assinar Padrão <span class="lc-btn__arrow">→</span></a>
-        </article>
-
-        <article class="nc-plan">
-          <header class="nc-plan__header">
-            <p class="nc-plan__eyebrow">Alta capacidade</p>
-            <h3>Premium</h3>
-            <p>Performance e integração para grandes equipes e operações complexas.</p>
-          </header>
-          <p class="nc-plan__price">
-            <span>R$</span>
-            <strong>329,90</strong>
-            <small>por usuário<br>por mês</small>
-          </p>
-          <ul class="nc-plan__features">
-            <li><ion-icon name="checkmark-circle"></ion-icon><span><strong>300 GB</strong> de armazenamento</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Servidor otimizado com SSD NVMe</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Integração com LDAP/Active Directory</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Auditoria e logs avançados</span></li>
-            <li><ion-icon name="checkmark-circle"></ion-icon><span>Gerente de contas dedicado</span></li>
-          </ul>
-          <a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost nc-plan__cta">Assinar Premium <span class="lc-btn__arrow">→</span></a>
-        </article>
+      <div class="nc-plan-table-wrap" data-reveal="up" tabindex="0" role="region" aria-label="Comparação dos planos Nextcloud">
+        <table class="nc-plan-table">
+          <caption>Recursos e valores dos planos Nextcloud da LibreCode</caption>
+          <thead>
+            <tr>
+              <th scope="col">Recursos</th>
+              <th scope="col">Básico</th>
+              <th scope="col" class="nc-plan-table__featured">
+                <span>Recomendado</span>
+                Pro
+              </th>
+              <th scope="col">Empresas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Usuários</th>
+              <td><strong class="nc-plan-table__included-text">Ilimitados</strong></td>
+              <td><strong class="nc-plan-table__included-text">Ilimitados</strong></td>
+              <td><strong class="nc-plan-table__included-text">Ilimitados</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Arquivos</th>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Quadro de tarefas</th>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Gestão de contatos</th>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Calendário</th>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Formulários</th>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Assinaturas ilimitadas</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Editor de documentos</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Videoconferência</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Suporte e consultoria</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Domínio customizado</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Logo customizada</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+            <tr>
+              <th scope="row">Cores customizadas</th>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><span class="nc-plan-table__dash" aria-label="Não incluído">—</span></td>
+              <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
+            </tr>
+          </tbody>
+          <tbody class="nc-plan-table__details">
+            <tr>
+              <th scope="row">Armazenamento</th>
+              <td><strong>10 GB</strong></td>
+              <td><strong>120 GB</strong></td>
+              <td><strong>800 GB</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Mensalidade no plano anual</th>
+              <td><strong>R$ 150,00</strong></td>
+              <td><strong>R$ 1.000,00</strong></td>
+              <td><strong>R$ 4.700,00</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Mensalidade no plano mensal</th>
+              <td><strong>R$ 157,50</strong></td>
+              <td><strong>R$ 1.100,00</strong></td>
+              <td><strong>R$ 5.170,00</strong></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Escolha seu plano</th>
+              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost">Assinar Básico</a></td>
+              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn">Assinar Pro</a></td>
+              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost">Falar sobre Empresas</a></td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
 
       <p class="nc-pricing__note" data-reveal="up">
-        Planos a partir de 5 usuários. Precisa de servidor dedicado ou de uma configuração específica?
+        Todos os planos permitem usuários ilimitados. Você gerencia livremente como o armazenamento disponível
+        é distribuído e quais limites cada usuário terá. Precisa de uma configuração específica?
         <a href="{{ $page->baseUrl }}contato">Fale com a LibreCode</a>.
       </p>
     </div>

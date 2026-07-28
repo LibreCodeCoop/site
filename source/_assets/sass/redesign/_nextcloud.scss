@@ -424,116 +424,129 @@
   text-transform: uppercase;
 }
 .nc-pricing__setup ion-icon { font-size: 17px; }
-.nc-plans {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  align-items: stretch;
-}
-.nc-plan {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  padding: clamp(28px, 3vw, 38px);
+.nc-plan-table-wrap {
+  max-width: 1120px;
+  margin-inline: auto;
+  overflow-x: auto;
   border: 1px solid var(--ink-line-2);
   border-radius: 20px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 30%),
-    var(--ink-1);
-  box-shadow: 0 30px 70px -54px rgba(0, 0, 0, 0.95);
+  background: var(--ink-1);
+  box-shadow: 0 34px 80px -56px rgba(0, 0, 0, 0.95);
+  scrollbar-color: var(--red) var(--ink-2);
 }
-.nc-plan--featured {
-  border-color: color-mix(in srgb, var(--red), transparent 20%);
-  box-shadow: 0 34px 80px -48px var(--red-glow);
+.nc-plan-table-wrap:focus-visible { outline-offset: 5px; }
+.nc-plan-table {
+  width: 100%;
+  min-width: 790px;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: var(--on-ink-soft);
 }
-.nc-plan--featured::before {
-  content: "";
+.nc-plan-table caption {
   position: absolute;
-  inset: 0 0 auto;
-  height: 3px;
-  border-radius: 20px 20px 0 0;
-  background: linear-gradient(90deg, var(--red), var(--red-2));
-}
-.nc-plan__badge {
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 7px 14px;
-  border-radius: 100px;
-  background: var(--red);
-  color: #fff;
-  font: 600 10.5px/1 var(--font-mono);
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
+  width: 100%;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+  border: 0;
 }
-.nc-plan__header { min-height: 152px; }
-.nc-plan__eyebrow {
-  margin: 0 0 14px;
-  color: var(--red-2);
+.nc-plan-table th,
+.nc-plan-table td {
+  padding: 16px clamp(16px, 2.5vw, 28px);
+  border: 0;
+  border-bottom: 1px solid var(--ink-line);
+  text-align: center;
+  vertical-align: middle;
+}
+.nc-plan-table th:first-child {
+  width: 34%;
+  min-width: 250px;
+  text-align: left;
+}
+.nc-plan-table thead th {
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background: var(--ink-2);
+  color: #fff;
+  font: 600 clamp(1.05rem, 2vw, 1.3rem)/1 var(--font-display);
+}
+.nc-plan-table thead th:first-child {
+  border-radius: 19px 0 0;
+  color: var(--on-ink-faint);
   font: 500 11px/1 var(--font-mono);
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.nc-plan__header h3 { margin: 0 0 12px; font-size: 1.55rem; }
-.nc-plan__header > p:last-child {
-  margin: 0;
-  color: var(--on-ink-soft);
-  line-height: 1.55;
+.nc-plan-table thead th:last-child { border-radius: 0 19px 0 0; }
+.nc-plan-table__featured {
+  background: color-mix(in srgb, var(--red), var(--ink-2) 76%) !important;
 }
-.nc-plan__price {
-  display: flex;
-  align-items: flex-start;
-  gap: 7px;
-  margin: 22px 0 30px;
-  padding: 24px 0;
-  border-top: 1px solid var(--ink-line);
-  border-bottom: 1px solid var(--ink-line);
-  color: #fff;
-}
-.nc-plan__price > span {
-  margin-top: 7px;
-  color: var(--on-ink-soft);
-  font: 500 13px/1 var(--font-mono);
-}
-.nc-plan__price strong {
-  font: 600 clamp(2rem, 3vw, 2.6rem)/1 var(--font-display);
-  letter-spacing: -0.04em;
-}
-.nc-plan__price small {
-  margin: 6px 0 0 auto;
-  color: var(--on-ink-faint);
-  font: 500 10.5px/1.45 var(--font-mono);
-  text-align: right;
+.nc-plan-table__featured > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--red-2);
+  font: 600 9px/1 var(--font-mono);
+  letter-spacing: 0.13em;
   text-transform: uppercase;
 }
-.nc-plan__features {
-  display: grid;
-  gap: 15px;
-  margin: 0 0 32px;
-  padding: 0;
-  list-style: none;
+.nc-plan-table tbody th {
+  color: #fff;
+  font-size: 0.96rem;
+  font-weight: 500;
 }
-.nc-plan__features li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  color: var(--on-ink-soft);
-  line-height: 1.45;
+.nc-plan-table tbody td:nth-child(3),
+.nc-plan-table tfoot td:nth-child(3) {
+  background: color-mix(in srgb, var(--red), transparent 94%);
 }
-.nc-plan__features ion-icon {
-  flex: 0 0 auto;
-  margin-top: 2px;
+.nc-plan-table tbody ion-icon {
   color: var(--red-2);
-  font-size: 18px;
+  font-size: 22px;
+  vertical-align: middle;
 }
-.nc-plan__features strong { color: #fff; font-weight: 600; }
-.nc-plan__cta {
+.nc-plan-table__included-text {
+  color: var(--red-2);
+  font: 600 0.82rem/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.nc-plan-table__dash { color: var(--on-ink-faint); }
+.nc-plan-table__details th,
+.nc-plan-table__details td {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background-color: rgba(255, 255, 255, 0.018);
+}
+.nc-plan-table__details tr:first-child th,
+.nc-plan-table__details tr:first-child td {
+  border-top: 2px solid var(--ink-line-2);
+}
+.nc-plan-table__details strong {
+  color: #fff;
+  font: 600 0.96rem/1.3 var(--font-mono);
+  white-space: nowrap;
+}
+.nc-plan-table tfoot th,
+.nc-plan-table tfoot td {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 0;
+}
+.nc-plan-table tfoot th {
+  color: var(--on-ink-faint);
+  font: 500 11px/1.4 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.nc-plan-table tfoot .lc-btn {
   width: 100%;
-  margin-top: auto;
+  min-width: 0;
+  padding-inline: 14px;
   justify-content: center;
+  white-space: nowrap;
 }
 .nc-pricing__note {
   margin: 34px auto 0;
@@ -616,8 +629,6 @@
   .nc-audience:last-child { border-bottom: 0; }
   .nc-managed__layout { grid-template-columns: 1fr; gap: 36px; }
   .nc-managed .lc-head { position: static; }
-  .nc-plans { grid-template-columns: 1fr; max-width: 620px; margin-inline: auto; }
-  .nc-plan__header { min-height: 0; }
 }
 @media (max-width: 560px) {
   .nc-hero-nav {
@@ -632,9 +643,11 @@
   .nc-more { grid-template-columns: 1fr; }
   .nc-rail { width: 88vw; }
   .nc-rail__label { display: none; }
-  .nc-plan { padding: 28px 24px; }
-  .nc-plan__price { flex-wrap: wrap; }
-  .nc-plan__price small { flex-basis: 100%; margin: 8px 0 0; text-align: left; }
+  .nc-plan-table-wrap {
+    width: calc(100% + 6vw);
+    margin-left: -3vw;
+    border-radius: 14px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
