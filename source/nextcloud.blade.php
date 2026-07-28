@@ -218,7 +218,6 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
     </div>
   </section>
 
-  {{-- ==========================  POR QUE ESCOLHER  ========================== --}}
   <section id="nc-why" class="lc-section lc-section--paper nc-why">
     <div class="lc-shell">
       <div class="lc-head" data-reveal="up">
