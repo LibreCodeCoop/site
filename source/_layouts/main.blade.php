@@ -19,14 +19,14 @@
   @if (!empty($og_image))
     <meta property="og:image" content="{{ $og_image }}"/>
   @else
-    <meta property="og:image" content="{{ $page->baseUrl }}assets/images/logo.png"/>
+    <meta property="og:image" content="{{ $page->baseUrl }}assets/images/logo/librecode.png"/>
   @endif
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ $page->title ?? 'LibreCode' }}">
   <meta name="twitter:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre.' }}">
-  <meta name="twitter:image" content="{{ $page->baseUrl }}assets/images/logo.png">
+  <meta name="twitter:image" content="{{ $page->baseUrl }}assets/images/logo/librecode.png">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
