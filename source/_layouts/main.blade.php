@@ -14,6 +14,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ $page->getUrl() }}">
+  <meta property="og:site_name" content="LibreCode">
   <meta property="og:title" content="{{ $page->title ?? 'LibreCode — Cooperativa de Software Livre' }}">
   <meta property="og:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil.' }}">
   @if (!empty($og_image))
