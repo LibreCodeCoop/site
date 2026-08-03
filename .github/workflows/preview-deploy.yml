@@ -51,15 +51,3 @@ jobs:
           preview-branch: main
           wait-for-pages-deployment: false
           token: ${{ secrets.PREVIEW_TOKEN }}
-
-  remove-preview:
-    if: github.event_name == 'pull_request_target' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Remove preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          action: remove
-          deploy-repository: LibreCodeCoop/site-preview
-          preview-branch: main
-          token: ${{ secrets.PREVIEW_TOKEN }}
