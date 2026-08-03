@@ -4,7 +4,7 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "tightenco/jigsaw": "^1.7",
-        "gregwar/captcha": "^1.2",
+        "gregwar/captcha": "^2.1",
         "libresign/espeak": "dev-main",
         "nesbot/carbon": "^3.3",
         "elaborate-code/jigsaw-localization": "dev-main",
