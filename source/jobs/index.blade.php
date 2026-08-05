@@ -3,7 +3,7 @@ title: Coopere com a LibreCode — Faça parte da cooperativa
 description: Junte-se a uma cooperativa de desenvolvedores de software livre. Sem chefes, com cooperados. Conheça os benefícios, as áreas de atuação e como fazer parte da LibreCode.
 ---
 
-@extends('_layouts.main')
+@extends('_layouts.main', ['og_image' => "/assets/images/librecode_team.jpeg"])
 @section('body')
 
 {{-- ==========================  HERO  ========================== --}}
