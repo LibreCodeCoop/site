@@ -20,15 +20,18 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions && sync \
 COPY xdebug.ini /usr/local/etc/php/conf.d/
 
 # Install NVM
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash \
-    && export NVM_DIR="/root/.nvm" \
+RUN export NVM_DIR="/usr/local/nvm" \
+    && mkdir -p "$NVM_DIR" \
+    && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash \
     && . "$NVM_DIR/nvm.sh" \
-    && nvm install 20 \
-    && nvm alias default 20
-
-ENV NVM_DIR   /root/.nvm
-ENV NODE_PATH $NVM_DIR/v20/lib/node_modules
-ENV PATH      $NVM_DIR/v20/bin:$PATH
+    && nvm install 24 \
+    && nvm alias default 24 \
+    && NODE_VERSION="$(nvm version default)" \
+    && ln -s "$NVM_DIR/versions/node/$NODE_VERSION/bin/node" /usr/local/bin/node \
+    && ln -s "$NVM_DIR/versions/node/$NODE_VERSION/bin/npm" /usr/local/bin/npm \
+    && ln -s "$NVM_DIR/versions/node/$NODE_VERSION/bin/npx" /usr/local/bin/npx \
+    && echo 'export NVM_DIR="/usr/local/nvm"' > /etc/profile.d/nvm.sh \
+    && echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> /etc/profile.d/nvm.sh
 
 RUN echo "alias jigsaw=./vendor/bin/jigsaw" >> /etc/bash.bashrc && \
     echo "alias compile='./vendor/bin/jigsaw build'" >> /etc/bash.bashrc && \
