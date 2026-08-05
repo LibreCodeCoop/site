@@ -9,8 +9,9 @@ services:
       - ./build_local:/var/www/html
 
   php:
-    build:
-      context: .docker/php
+    image: ghcr.io/librecodecoop/site-php:${PHP_IMAGE_TAG:-latest}
+    # build:
+    #   context: .docker/php
     ports:
       - "127.0.0.1:${HTTP_PORT_PHP:-3000}:3000"
       - "127.0.0.1:${HTTP_PORT_BROWSERSYNC:-3001}:3001"
