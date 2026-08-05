@@ -1,0 +1,53 @@
+name: Deploy PR previews
+
+on:
+  workflow_run:
+    workflows: ["Preview Build"]
+    types: [completed]
+  pull_request_target:
+    branches: [ main ]
+    types: [closed]
+
+permissions:
+  actions: read
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: site-preview-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy-preview:
+    if: >
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract PR number from workflow_run payload
+        id: pr
+        run: |
+          pr_number=$(jq -r '.workflow_run.pull_requests[0].number // empty' "$GITHUB_EVENT_PATH")
+          echo "number=$pr_number" >> "$GITHUB_OUTPUT"
+
+      - name: Download preview build artifact
+        if: steps.pr.outputs.number != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: preview-build
+          path: build_production/
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy preview
+        if: steps.pr.outputs.number != ''
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build_production/
+          pr-number: ${{ steps.pr.outputs.number }}
+          pages-base-url: librecodecoop.github.io/site-preview
+          deploy-repository: LibreCodeCoop/site-preview
+          preview-branch: main
+          wait-for-pages-deployment: false
+          token: ${{ secrets.PREVIEW_TOKEN }}
