@@ -654,3 +654,139 @@
   .nc-showcase.is-pinned [data-nc-text] { opacity: 1 !important; transform: none !important; }
   .nc-showcase.is-pinned .nc-window { clip-path: none !important; }
 }
+
+/* On phones, turn the wide comparison table into compact comparison rows.
+   Each resource keeps the three plans visible without horizontal scrolling. */
+@media (max-width: 720px) {
+  .nc-plan-table-wrap {
+    width: 100%;
+    margin-inline: 0;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nc-plan-table {
+    display: block;
+    min-width: 0;
+  }
+
+  .nc-plan-table thead { display: none; }
+
+  .nc-plan-table tbody,
+  .nc-plan-table tfoot,
+  .nc-plan-table tr {
+    display: grid;
+    width: 100%;
+  }
+
+  .nc-plan-table tbody { gap: 12px; }
+  .nc-plan-table__details { margin-top: 22px; }
+
+  .nc-plan-table tbody tr {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: hidden;
+    border: 1px solid var(--ink-line-2);
+    border-radius: 14px;
+    background: var(--ink-1);
+  }
+
+  .nc-plan-table th,
+  .nc-plan-table td,
+  .nc-plan-table th:first-child {
+    width: auto;
+    min-width: 0;
+    padding: 13px 7px;
+  }
+
+  .nc-plan-table tbody th,
+  .nc-plan-table__details th {
+    grid-column: 1 / -1;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--ink-line);
+    background: var(--ink-2);
+    font-size: 0.92rem;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  .nc-plan-table tbody td {
+    display: flex;
+    min-height: 64px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-right: 1px solid var(--ink-line);
+    border-bottom: 0;
+    background-color: transparent;
+    overflow-wrap: anywhere;
+  }
+
+  .nc-plan-table tbody td:last-child { border-right: 0; }
+  .nc-plan-table tbody td:nth-child(3) {
+    background: color-mix(in srgb, var(--red), transparent 94%);
+  }
+
+  .nc-plan-table tbody td::before,
+  .nc-plan-table tfoot td::before {
+    color: var(--on-ink-faint);
+    font: 500 8.5px/1 var(--font-mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .nc-plan-table tr > td:nth-child(2)::before { content: "Básico"; }
+  .nc-plan-table tr > td:nth-child(3)::before { content: "Pro"; color: var(--red-2); }
+  .nc-plan-table tr > td:nth-child(4)::before { content: "Empresas"; }
+
+  .nc-plan-table__included-text,
+  .nc-plan-table__details strong {
+    max-width: 100%;
+    font-size: clamp(0.68rem, 3.2vw, 0.8rem);
+    line-height: 1.25;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .nc-plan-table__details tr:first-child th,
+  .nc-plan-table__details tr:first-child td { border-top: 0; }
+
+  .nc-plan-table tfoot {
+    margin-top: 22px;
+  }
+
+  .nc-plan-table tfoot tr {
+    gap: 10px;
+  }
+
+  .nc-plan-table tfoot th,
+  .nc-plan-table tfoot td {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+
+  .nc-plan-table tfoot th {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .nc-plan-table tfoot td {
+    display: grid;
+    grid-template-columns: minmax(66px, 0.32fr) 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nc-plan-table tfoot td::before {
+    text-align: right;
+  }
+
+  .nc-plan-table tfoot .lc-btn {
+    min-height: 46px;
+    white-space: normal;
+    text-align: center;
+  }
+}
