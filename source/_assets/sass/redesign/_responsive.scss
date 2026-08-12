@@ -21,9 +21,95 @@
   .lc-tools-cta { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 560px) {
+  .lc-section,
+  #about.lc-section,
+  #why-us.lc-section,
+  #apoie.lc-section,
+  #clients.lc-section,
+  #contact.lc-section {
+    padding-block: clamp(64px, 20vw, 88px);
+  }
+
+  .lc-head { margin-bottom: 38px; }
+  .lc-head h2 { font-size: clamp(1.9rem, 10vw, 2.5rem); }
+
+  #intro,
+  .lc-hero {
+    min-height: 100svh;
+    padding: 104px 0 88px;
+  }
+  .lc-hero h1,
+  #intro .intro-info h2 {
+    font-size: clamp(2.35rem, 13vw, 3.5rem);
+    line-height: 1;
+  }
+  .lc-hero__lead,
+  #intro .intro-info p { margin-bottom: 30px; }
+  .lc-terminal { margin-top: 34px; }
+  .lc-scrollcue { display: none; }
+
   .lc-why__card, .lc-solution, .lc-support { padding: 26px; }
+  .lc-solution { gap: 28px; border-radius: 18px; }
+  .lc-solution__media { aspect-ratio: 16 / 10; }
+  .lc-solution__media img { max-width: 54%; max-height: 54%; }
+  .lc-support__badge { width: 76px; height: 76px; }
+  .lc-support__badge i { font-size: 36px; }
+
   .lc-footer__grid { grid-template-columns: 1fr; }
   .lc-hero__actions { width: 100%; }
   .lc-hero__actions .lc-btn { flex: 1 1 auto; justify-content: center; }
   .lc-diff { grid-template-columns: 1fr; }
+
+  .lc-contact { gap: 32px; }
+  .lc-window__body iframe { height: min(470px, 70svh); }
+  .lc-contact__item > div { min-width: 0; }
+  .lc-contact__item a,
+  .lc-contact__item .v { overflow-wrap: anywhere; }
+
+  .lc-pagehero { padding: 124px 0 64px; }
+  .lc-pagehero h1 { font-size: clamp(2.25rem, 12vw, 3.25rem); }
+  .lc-feature__media { min-height: 0; }
+
+  .lc-footer { padding-top: 56px; }
+  .lc-footer__grid { gap: 32px; }
+  .lc-footer__bottom { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 420px) {
+  .lc-hero__actions { flex-direction: column; }
+  .lc-hero__actions .lc-btn { width: 100%; }
+
+  .lc-dpg {
+    align-items: flex-start;
+    gap: 11px;
+    padding: 12px;
+  }
+  .lc-dpg__seal { height: 26px; }
+  .lc-dpg__meta { font-size: 0.62rem; letter-spacing: 0.04em; }
+
+  .lc-tools-cta { padding: 26px; }
+  .lc-tools-cta .lc-btn { width: 100%; justify-content: center; }
+  .lc-contact__item { align-items: flex-start; padding: 18px; }
+}
+
+@media (max-width: 360px) {
+  .lc-why__card,
+  .lc-solution,
+  .lc-support,
+  .lc-diff__card { padding: 22px; }
+
+  .lc-eyebrow { letter-spacing: 0.1em; }
+  .lc-terminal__bar span { letter-spacing: 0.05em; }
+  .lc-terminal__body { padding-inline: 14px; font-size: 12.5px; }
+  .lc-btn { padding-inline: 20px; }
+}
+
+/* Short landscape screens need content height to drive the hero. */
+@media (max-height: 650px) and (orientation: landscape) {
+  #intro,
+  .lc-hero {
+    min-height: auto;
+    padding: 100px 0 64px;
+  }
+  .lc-scrollcue { display: none; }
 }
