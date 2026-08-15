@@ -29,13 +29,13 @@
   margin-bottom: 22px;
   display: flex; align-items: center; justify-content: center;
   border-radius: 14px;
-  background: #e9ebf2;
+  background: var(--plate-soft);
   border: 1px solid var(--ink-line);
 }
 .lc-why__icon img { max-width: 38px; max-height: 38px; }
 .lc-why__card h3 {
   font-size: clamp(1.3rem, 2.2vw, 1.7rem);
-  color: #fff;
+  color: var(--on-ink-strong);
   margin: 0 0 16px;
 }
 .lc-why__card p {

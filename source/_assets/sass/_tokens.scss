@@ -5,6 +5,8 @@
   --ink-3:      #1e2333;
   --ink-line:   rgba(255, 255, 255, 0.09);
   --ink-line-2: rgba(255, 255, 255, 0.14);
+  --ink-fill:   rgba(255, 255, 255, 0.03);
+  --ink-fill-2: rgba(255, 255, 255, 0.06);
 
   --paper:      #eef0f4;
   --paper-1:    #f6f7f9;
@@ -17,11 +19,22 @@
   --dpg:        #7ad3de;          /* teal do selo DPG */
   --dpg-deep:   #3333ab;          /* índigo do selo DPG */
 
-  --on-ink:       #e9ebf2;
-  --on-ink-soft:  #c3c9d6;
-  --on-ink-faint: #8b93a6;
+  --on-ink:        #e9ebf2;
+  --on-ink-strong: #ffffff;
+  --on-ink-soft:   #c3c9d6;
+  --on-ink-faint:  #8b93a6;
   --on-paper:      #12141b;
   --on-paper-soft: #4c5261;
+
+  --plate:      #ffffff;
+  --plate-soft: #e9ebf2;
+  --plate-fg:   #0f1220;
+
+  --header-bg:          rgba(11, 13, 18, 0.78);
+  --header-bg-scrolled: rgba(11, 13, 18, 0.92);
+  --scrim:              rgba(5, 6, 9, 0.6);
+  --shadow-ink:         rgba(0, 0, 0, 0.8);
+  --dot:                #3a3f4d;
 
   --font-display: "Space Grotesk", "Montserrat", sans-serif;
   --font-body:    "Instrument Sans", "Open Sans", system-ui, sans-serif;
@@ -29,4 +42,35 @@
 
   --shell: min(1240px, 92vw);
   --ease:  cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root[data-theme="light"] {
+  --ink:        #ffffff;
+  --ink-1:      #f3f5f9;
+  --ink-2:      #fafbfd;
+  --ink-3:      #eef0f4;
+  --ink-line:   rgba(11, 13, 18, 0.10);
+  --ink-line-2: rgba(11, 13, 18, 0.18);
+  --ink-fill:   rgba(11, 13, 18, 0.03);
+  --ink-fill-2: rgba(11, 13, 18, 0.06);
+
+  --paper:      #eceef4;
+  --paper-1:    #ffffff;
+  --paper-line: rgba(11, 13, 18, 0.12);
+
+  --red-glow:   rgba(229, 51, 42, 0.3);
+
+  --on-ink:        #12141b;
+  --on-ink-strong: #0b0d12;
+  --on-ink-soft:   #4c5261;
+  --on-ink-faint:  #6b7183;
+
+  --plate:      #f3f5f9;
+  --plate-soft: #eceef4;
+
+  --header-bg:          rgba(255, 255, 255, 0.82);
+  --header-bg-scrolled: rgba(255, 255, 255, 0.94);
+  --scrim:              rgba(11, 13, 18, 0.35);
+  --shadow-ink:         rgba(11, 13, 18, 0.18);
+  --dot:                #c9ced9;
 }

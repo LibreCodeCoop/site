@@ -36,7 +36,7 @@
   font-size: clamp(2.6rem, 6.5vw, 5rem);
   line-height: 0.98;
   letter-spacing: -0.03em;
-  color: #fff;
+  color: var(--on-ink-strong);
   margin: 0 0 26px;
   max-width: 18ch;
 }
@@ -226,8 +226,8 @@
   border-color: var(--ink-line-2);
 }
 .lc-post-card--ink:hover {
-  border-color: color-mix(in srgb, #fff, transparent 78%);
-  box-shadow: 0 30px 60px -36px rgba(0, 0, 0, 0.7);
+  border-color: color-mix(in srgb, var(--on-ink-strong), transparent 78%);
+  box-shadow: 0 30px 60px -36px var(--shadow-ink);
 }
-.lc-post-card--ink .lc-post-card__title a { color: #fff; }
+.lc-post-card--ink .lc-post-card__title a { color: var(--on-ink-strong); }
 .lc-post-card--ink .lc-post-card__title a:hover { color: var(--red-2); }

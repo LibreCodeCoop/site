@@ -1,10 +1,10 @@
 #header {
   height: 74px;
   padding: 0;
-  background: rgba(11, 13, 18, 0.78);
+  background: var(--header-bg);
   backdrop-filter: saturate(160%) blur(16px);
   -webkit-backdrop-filter: saturate(160%) blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--ink-line);
   box-shadow: none;
   transition: height 0.4s var(--ease), background 0.4s var(--ease),
               border-color 0.4s var(--ease);
@@ -19,10 +19,10 @@
 #header.header-pages {
   height: 62px;
   padding: 0;
-  background: rgba(11, 13, 18, 0.92);
+  background: var(--header-bg-scrolled);
   backdrop-filter: saturate(160%) blur(20px);
   -webkit-backdrop-filter: saturate(160%) blur(20px);
-  border-bottom-color: rgba(255, 255, 255, 0.09);
+  border-bottom-color: var(--ink-line);
 }
 #header .logo { float: none; margin: 0; }
 #header .logo img {
@@ -56,8 +56,8 @@
 .main-nav a:focus,
 .main-nav a:active,
 .main-nav .active > a {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.06);
+  color: var(--on-ink-strong);
+  background: var(--ink-fill-2);
   text-decoration: none;
 }
 .main-nav .active > a { color: var(--red-2); }
@@ -81,14 +81,14 @@
   display: none;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--ink-line-2);
   border-radius: 12px;
-  background: rgba(11, 13, 18, 0.7);
+  background: var(--header-bg-scrolled);
   backdrop-filter: blur(10px);
-  color: #fff;
+  color: var(--on-ink-strong);
   cursor: pointer;
 }
-.mobile-nav-toggle i { color: #fff; font-size: 20px; }
+.mobile-nav-toggle i { color: var(--on-ink-strong); font-size: 20px; }
 
 .mobile-nav {
   position: fixed;
@@ -122,7 +122,7 @@
 .mobile-nav .active > a {
   color: var(--red-2);
   padding-left: 20px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--ink-fill-2);
   border-left: 3px solid var(--red);
 }
 .mobile-nav-active .mobile-nav { transform: translateX(0); }
@@ -130,7 +130,7 @@
   position: fixed;
   inset: 0;
   z-index: 1098;
-  background: rgba(5, 6, 9, 0.6);
+  background: var(--scrim);
   backdrop-filter: blur(3px);
   display: none;
 }

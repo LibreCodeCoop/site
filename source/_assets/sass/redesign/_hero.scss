@@ -50,7 +50,7 @@
   line-height: 0.98;
   letter-spacing: -0.03em;
   margin: 0 0 28px;
-  color: #fff;
+  color: var(--on-ink-strong);
   text-align: left;
   padding: 0;
   max-width: 15ch;
@@ -80,9 +80,9 @@
   width: min(520px, 100%);
   border: 1px solid var(--ink-line-2);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--ink-fill);
   overflow: hidden;
-  box-shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 30px 80px -40px var(--shadow-ink);
 }
 .lc-terminal__bar {
   display: flex;
@@ -93,7 +93,7 @@
 }
 .lc-terminal__bar i {
   width: 11px; height: 11px; border-radius: 50%;
-  background: #3a3f4d; display: inline-block;
+  background: var(--dot); display: inline-block;
 }
 .lc-terminal__bar i:first-child { background: var(--red); }
 .lc-terminal__bar span {
