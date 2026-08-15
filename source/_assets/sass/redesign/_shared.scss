@@ -37,7 +37,7 @@
 }
 #about.lc-section h1, #about.lc-section h2, #about.lc-section h3,
 #why-us.lc-section h1, #why-us.lc-section h2, #why-us.lc-section h3,
-#apoie.lc-section h1, #apoie.lc-section h2, #apoie.lc-section h3 { color: #fff; }
+#apoie.lc-section h1, #apoie.lc-section h2, #apoie.lc-section h3 { color: var(--on-ink-strong); }
 
 #why-us.lc-section .lc-head p,
 #why-us.lc-section .lc-solution p,
@@ -46,7 +46,7 @@
 #why-us.lc-section .lc-tools-cta p { color: var(--on-ink-soft); }
 
 .lc-section--ink h1, .lc-section--ink h2, .lc-section--ink h3,
-.lc-section--ink h4 { color: #fff; }
+.lc-section--ink h4 { color: var(--on-ink-strong); }
 
 .lc-head { max-width: 720px; margin-bottom: clamp(40px, 6vw, 72px); }
 .lc-head h2 {

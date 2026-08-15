@@ -25,6 +25,7 @@
   margin: 0 0 22px;
 }
 .lc-footer__coop img { max-height: 46px; opacity: 0.9; }
+:root[data-theme="light"] .lc-footer__coop img { filter: invert(1); }
 .lc-footer__col h4 {
   font: 500 12px/1 var(--font-mono);
   letter-spacing: 0.14em;
@@ -39,7 +40,7 @@
   font-size: 0.98rem;
   transition: color 0.2s, padding-left 0.25s var(--ease);
 }
-.lc-footer__col a:hover { color: #fff; padding-left: 5px; }
+.lc-footer__col a:hover { color: var(--on-ink-strong); padding-left: 5px; }
 
 .social-links { display: flex; gap: 12px; }
 .social-links a {

@@ -39,7 +39,8 @@
   border-color: var(--ink-line-2);
 }
 .lc-btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.06);
+  color: var(--fg);
+  background: var(--ink-fill-2);
   border-color: var(--on-ink-soft);
   box-shadow: none;
 }

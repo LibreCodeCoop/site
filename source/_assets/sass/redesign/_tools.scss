@@ -4,7 +4,7 @@
 }
 .lc-tools-head h3 {
   font-size: clamp(1.4rem, 2.6vw, 2rem);
-  color: #fff;
+  color: var(--on-ink-strong);
   margin: 0 0 12px;
 }
 .lc-tools-head p { color: var(--on-ink-soft); font-size: 1.02rem; line-height: 1.6; margin: 0; }
@@ -30,11 +30,11 @@
   padding: 0 14px;
   margin-bottom: 18px;
   border-radius: 12px;
-  background: #fff;
+  background: var(--plate);
   border: 1px solid var(--ink-line);
 }
 .lc-tool__logo img { max-height: 32px; max-width: 116px; width: auto; }
-.lc-tool h4 { font-size: 1.05rem; color: #fff; margin: 0 0 8px; }
+.lc-tool h4 { font-size: 1.05rem; color: var(--on-ink-strong); margin: 0 0 8px; }
 .lc-tool p { color: var(--on-ink-soft); font-size: 0.9rem; line-height: 1.55; margin: 0; }
 
 .lc-tools-cta {

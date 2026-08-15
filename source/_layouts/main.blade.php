@@ -72,6 +72,39 @@
   <!-- Libraries CSS Files -->
   <link href="{{ $page->baseUrl }}assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var storageKey = 'lc-theme';
+      var storedTheme;
+
+      try { storedTheme = localStorage.getItem(storageKey); } catch (error) {}
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        var toggles = document.querySelectorAll('[data-theme-toggle]');
+        for (var index = 0; index < toggles.length; index++) {
+          toggles[index].setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+        }
+      }
+
+      applyTheme(storedTheme === 'light' ? 'light' : 'dark');
+
+      document.addEventListener('DOMContentLoaded', function () {
+        applyTheme(root.getAttribute('data-theme'));
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!event.target || !event.target.closest || !event.target.closest('[data-theme-toggle]')) {
+          return;
+        }
+        var theme = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        applyTheme(theme);
+        try { localStorage.setItem(storageKey, theme); } catch (error) {}
+      });
+    })();
+  </script>
+
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 

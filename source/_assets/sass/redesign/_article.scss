@@ -24,7 +24,7 @@
   object-fit: cover;
   border: 1px solid var(--ink-line-2);
 }
-.lc-article__author { color: #fff; font-weight: 600; }
+.lc-article__author { color: var(--on-ink-strong); font-weight: 600; }
 .lc-article__sep { color: var(--on-ink-faint); }
 
 .lc-article {
@@ -192,7 +192,7 @@
 /* ---- "Continue lendo" ---- */
 .lc-more { padding: clamp(70px, 10vw, 120px) 0; }
 .lc-more .lc-head { margin-bottom: clamp(36px, 5vw, 56px); }
-.lc-more .lc-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: #fff; }
+.lc-more .lc-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: var(--on-ink-strong); }
 .lc-journal__grid--ink { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 
 /* ---- Responsive ---- */

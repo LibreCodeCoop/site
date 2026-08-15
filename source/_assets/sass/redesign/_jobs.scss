@@ -6,7 +6,7 @@
   overflow: hidden;
   border: 1px solid var(--ink-line-2);
   background: var(--ink-2);
-  box-shadow: 0 40px 90px -50px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 40px 90px -50px var(--shadow-ink);
 }
 .lc-jobs-figure img {
   display: block;
@@ -154,7 +154,7 @@
 }
 .lc-track h3 {
   font-size: clamp(1.3rem, 2vw, 1.6rem);
-  color: #fff;
+  color: var(--on-ink-strong);
   margin: 0 0 14px;
 }
 .lc-track p {
@@ -175,7 +175,7 @@
   padding: 6px 11px;
   border-radius: 100px;
   border: 1px solid var(--ink-line-2);
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--ink-fill);
 }
 .lc-track__cta {
   margin-top: auto;
@@ -298,7 +298,7 @@
 .lc-cta .lc-eyebrow { color: var(--on-ink-faint); justify-content: center; }
 .lc-cta h2 {
   font-size: clamp(2.2rem, 5.5vw, 3.8rem);
-  color: #fff;
+  color: var(--on-ink-strong);
   margin: 0 0 20px;
 }
 .lc-cta__lead {

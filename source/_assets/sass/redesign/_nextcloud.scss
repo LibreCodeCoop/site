@@ -1,5 +1,5 @@
 /* Default is a scroll-snap carousel; JS adds `.is-pinned` on desktop to switch to a GSAP pinned horizontal filmstrip. */
-.nc-hero .lc-hero__lead b { color: #fff; font-weight: 600; }
+.nc-hero .lc-hero__lead b { color: var(--on-ink-strong); font-weight: 600; }
 
 .nc-scrollcue {
   font: 500 11px/1 var(--font-mono);
@@ -74,7 +74,7 @@
 }
 .nc-panel__text h2 {
   font-size: clamp(2rem, 4.2vw, 3.4rem);
-  color: #fff;
+  color: var(--on-ink-strong);
   margin: 0 0 20px;
 }
 .nc-panel__text p {
@@ -91,8 +91,8 @@
   border-radius: 14px;
   background: var(--ink-1);
   overflow: hidden;
-  box-shadow: 0 40px 90px -50px rgba(0, 0, 0, 0.9),
-              0 0 0 1px rgba(255, 255, 255, 0.02);
+  box-shadow: 0 40px 90px -50px var(--shadow-ink),
+              0 0 0 1px var(--ink-fill);
 }
 .nc-window__bar {
   display: flex;
@@ -100,11 +100,11 @@
   gap: 7px;
   padding: 12px 16px;
   border-bottom: 1px solid var(--ink-line);
-  background: rgba(255, 255, 255, 0.015);
+  background: var(--ink-fill);
 }
 .nc-window__bar i {
   width: 11px; height: 11px; border-radius: 50%;
-  background: #3a3f4d;
+  background: var(--dot);
 }
 .nc-window__bar i:first-child { background: var(--red); }
 .nc-window__bar em {
@@ -172,7 +172,7 @@
   grid-template-columns: 1fr;
   max-width: 820px;
 }
-.nc-intro__title { font-size: clamp(2.4rem, 6vw, 4.6rem); color: #fff; margin: 0 0 22px; }
+.nc-intro__title { font-size: clamp(2.4rem, 6vw, 4.6rem); color: var(--on-ink-strong); margin: 0 0 22px; }
 .nc-intro__lead { font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.6; color: var(--on-ink-soft); max-width: 46ch; margin: 0 0 30px; }
 .nc-intro__hint {
   font: 500 12px/1 var(--font-mono);
@@ -180,7 +180,7 @@
   text-transform: uppercase;
   color: var(--red-2);
 }
-.nc-panel--outro h2 { font-size: clamp(2.2rem, 5vw, 4rem); color: #fff; margin: 0 0 18px; }
+.nc-panel--outro h2 { font-size: clamp(2.2rem, 5vw, 4rem); color: var(--on-ink-strong); margin: 0 0 18px; }
 .nc-panel--outro p { font-size: clamp(1rem, 1.4vw, 1.2rem); color: var(--on-ink-soft); margin: 0 0 32px; max-width: 40ch; }
 .nc-outro .lc-btn { justify-self: start; }
 
@@ -277,13 +277,13 @@
   width: 48px; height: 48px;
   margin-bottom: 18px;
   border-radius: 12px;
-  background: #e9ebf2;
+  background: var(--plate-soft);
   border: 1px solid var(--ink-line);
-  color: #0f1220;
+  color: var(--plate-fg);
   font-size: 24px;
 }
 .nc-more__icon ion-icon { --ionicon-stroke-width: 34px; }
-.nc-more__card h3 { font-size: 1.12rem; color: #fff; margin: 0 0 8px; }
+.nc-more__card h3 { font-size: 1.12rem; color: var(--on-ink-strong); margin: 0 0 8px; }
 .nc-more__card p { font-size: 0.95rem; line-height: 1.55; color: var(--on-ink-soft); margin: 0; }
 
 .nc-cta__box {
