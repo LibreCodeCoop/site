@@ -1,6 +1,6 @@
 ---
 title: Nextcloud — Nuvem Privada e Colaborativa | LibreCode
-description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem privada com hospedagem no Brasil, suporte em português e dados sob o seu controle.
+description: Nextcloud gerenciado pela LibreCode — nuvem privada com hospedagem no Brasil, suporte em português e código aberto. Arquivos, agenda, chamadas e colaboração sob o seu controle.
 ---
 
 @extends('_layouts.main')
@@ -323,15 +323,11 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
         <p class="lc-eyebrow lc-eyebrow--index"><b>04</b> / Planos</p>
         <h2>Nuvem soberana para sua organização</h2>
         <p>Privacidade, código aberto e gestão cooperativa em planos que crescem com a sua equipe.</p>
-        <span class="nc-pricing__setup">
-          <ion-icon name="sparkles-outline" aria-hidden="true"></ion-icon>
-          Sem taxa de implantação
-        </span>
       </div>
 
       <div class="nc-plan-table-wrap" data-reveal="up" tabindex="0" role="region" aria-label="Comparação dos planos Nextcloud">
         <table class="nc-plan-table">
-          <caption>Recursos e valores dos planos Nextcloud da LibreCode</caption>
+          <caption>Planos Nextcloud da LibreCode</caption>
           <thead>
             <tr>
               <th scope="col">Recursos</th>
@@ -423,41 +419,21 @@ description: Arquivos, documentos, agenda, chamadas e colaboração em uma nuvem
               <td><ion-icon name="checkmark-circle" aria-label="Incluído"></ion-icon></td>
             </tr>
           </tbody>
-          <tbody class="nc-plan-table__details">
-            <tr>
-              <th scope="row">Armazenamento</th>
-              <td><strong>10 GB</strong></td>
-              <td><strong>120 GB</strong></td>
-              <td><strong>800 GB</strong></td>
-            </tr>
-            <tr>
-              <th scope="row">Mensalidade no plano anual</th>
-              <td><strong>R$ 150,00</strong></td>
-              <td><strong>R$ 1.000,00</strong></td>
-              <td><strong>R$ 4.700,00</strong></td>
-            </tr>
-            <tr>
-              <th scope="row">Mensalidade no plano mensal</th>
-              <td><strong>R$ 157,50</strong></td>
-              <td><strong>R$ 1.100,00</strong></td>
-              <td><strong>R$ 5.170,00</strong></td>
-            </tr>
-          </tbody>
           <tfoot>
             <tr>
-              <th scope="row">Escolha seu plano</th>
-              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost">Assinar Básico</a></td>
-              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn">Assinar Pro</a></td>
-              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost">Falar sobre Empresas</a></td>
+              <th scope="row">Fale conosco</th>
+              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost">Saiba mais</a></td>
+              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn">Saiba mais</a></td>
+              <td><a href="{{ $page->baseUrl }}contato" class="lc-btn lc-btn--ghost">Saiba mais</a></td>
             </tr>
           </tfoot>
         </table>
       </div>
 
       <p class="nc-pricing__note" data-reveal="up">
-        Todos os planos permitem usuários ilimitados. Você gerencia livremente como o armazenamento disponível
-        é distribuído e quais limites cada usuário terá. Precisa de uma configuração específica?
-        <a href="{{ $page->baseUrl }}contato">Fale com a LibreCode</a>.
+        Todos os planos incluem usuários ilimitados, armazenamento escalonável e suporte em português.
+        Cada organização tem necessidades diferentes —
+        <a href="{{ $page->baseUrl }}contato">fale com a LibreCode</a> para montar o plano ideal.
       </p>
     </div>
   </section>

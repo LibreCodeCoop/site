@@ -673,7 +673,18 @@
     min-width: 0;
   }
 
-  .nc-plan-table thead { display: none; }
+  .nc-plan-table thead {
+    /* Visually hidden — still available to screen readers */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 
   .nc-plan-table tbody,
   .nc-plan-table tfoot,
@@ -681,6 +692,8 @@
     display: grid;
     width: 100%;
   }
+
+  .nc-managed .lc-head { position: static; }
 
   .nc-plan-table tbody { gap: 12px; }
   .nc-plan-table__details { margin-top: 22px; }
