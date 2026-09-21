@@ -117,7 +117,7 @@ description: Junte-se a uma cooperativa de desenvolvedores de software livre. Se
 
             <div class="lc-jobs-callout" data-reveal="up">
                 <i class="lni lni-home" aria-hidden="true"></i>
-                <p>Local de trabalho: <code>0.0.0.0</code> ou <code>127.0.0.1</code> — trabalhamos de onde estivermos.</p>
+                <p>Local de trabalho: <code>0.0.0.0</code> ou <code>127.0.0.1</code> — com autonomia, escolhemos de onde trabalhar.</p>
                 <a href="{{ $page->baseUrl }}jobs/forma-contratacao" class="lc-jobs-callout__link">Forma de contratação <span aria-hidden="true">→</span></a>
             </div>
         </div>
