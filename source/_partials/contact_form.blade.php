@@ -19,7 +19,7 @@
               <p>carregando formulário…</p>
             </div>
             <iframe id="form-contato" title="Formulário de contato"
-                    src="https://ls.librecode.coop/?r=survey/index&sid=467949&newtest=Y"
+                    src="https://ls.librecode.coop/index.php/467949&newtest=Y"
                     loading="lazy" scrolling="no"
                     onload="this.closest('[data-contact-window]').classList.add('is-loaded')"></iframe>
           </div>
