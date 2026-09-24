@@ -68,7 +68,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e identidade da Libre
         <h2>Liberdade também é uma decisão de negócio</h2>
         <p>Software livre permite auditar, estudar, adaptar e evoluir a tecnologia. Para uma organização, isso reduz dependências desnecessárias e amplia opções: trocar de fornecedor, internalizar conhecimento, integrar sistemas e planejar a evolução tecnológica com mais autonomia.</p>
         <p>A LibreCode Coop trabalha para transformar essa liberdade técnica em valor operacional: soluções sustentáveis, interoperáveis e mantidas com transparência.</p>
-        <p><a class="lc-why__link" href="https://github.com/LibreCodeCoop/brand/releases/latest/download/librecode-brand-manual.pdf">Baixar manual da marca mais recente (PDF) <span aria-hidden="true">↓</span></a></p>
+        <p><a class="lc-why__link" href="https://github.com/LibreCodeCoop/brand/releases/download/latest/librecode-brand-manual.pdf">Baixar manual da marca mais recente (PDF) <span aria-hidden="true">↓</span></a></p>
         <p><a class="lc-why__link" href="https://github.com/LibreCodeCoop/brand" target="_blank" rel="noopener">Ver fonte canônica da marca <span aria-hidden="true">↗</span></a></p>
       </div>
     </div>
