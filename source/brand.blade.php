@@ -1,6 +1,6 @@
 ---
 title: Marca e pronúncia — LibreCode
-description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas LibreCode, LibreCode Co-op e LibreSign.
+description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas LibreCode, LibreCode Coop e LibreSign.
 ---
 
 @extends('_layouts.main')
@@ -12,16 +12,16 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
       <div class="lc-head">
         <p class="lc-eyebrow">Marca</p>
         <h1>Como escrever e pronunciar nossas marcas</h1>
-        <p>Esta é a referência canônica para a grafia e a pronúncia de LibreCode, LibreCode Co-op e LibreSign. Os nomes nasceram da tradição de software livre associada ao LibreOffice: <em>Libre</em> remete à liberdade.</p>
+        <p>Esta é a referência canônica para a grafia e a pronúncia de LibreCode, LibreCode Coop e LibreSign. Os nomes nasceram da tradição de software livre associada ao LibreOffice: <em>Libre</em> remete à liberdade.</p>
       </div>
 
       <div class="lc-why">
         <article class="lc-why__card" id="names">
           <div class="lc-why__idx">01</div>
           <h2>Nomes oficiais</h2>
-          <p>Use sempre <strong>LibreCode</strong>, <strong>LibreCode Co-op</strong> e <strong>LibreSign</strong>.</p>
-          <p>Em LibreCode e LibreSign, a letra inicial e a segunda palavra começam em maiúscula, sem espaço entre as palavras. Em Co-op, preserve o hífen.</p>
-          <p>Evite grafias como <code>Librecode</code>, <code>Libre Code</code>, <code>Libresign</code>, <code>Libre Sign</code> e <code>LibreCode Coop</code>.</p>
+          <p>Use sempre <strong>LibreCode</strong>, <strong>LibreCode Coop</strong> e <strong>LibreSign</strong>.</p>
+          <p>Em LibreCode e LibreSign, a letra inicial e a segunda palavra começam em maiúscula, sem espaço entre as palavras. Em Coop, use a grafia sem hífen.</p>
+          <p>Evite grafias como <code>Librecode</code>, <code>Libre Code</code>, <code>Libresign</code>, <code>Libre Sign</code> e <code>LibreCode Co-op</code>.</p>
         </article>
 
         <article class="lc-why__card" id="pronunciation">
@@ -30,7 +30,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
           <p><strong>Libre</strong> começa com o som /i/: não é “laibre”. A pronúncia de referência para o elemento <em>Libre</em> é <span aria-label="transcrição fonética internacional">/ˈli.bɾe/</span>.</p>
           <p><strong>LibreCode</strong>: <span aria-label="transcrição fonética internacional">/ˈli.bɾe koʊd/</span>. <strong>Code</strong> mantém a pronúncia inglesa.</p>
           <p><strong>LibreSign</strong>: <span aria-label="transcrição fonética internacional">/ˈli.bɾe saɪn/</span>. <strong>Sign</strong> mantém a pronúncia inglesa.</p>
-          <p><strong>Co-op</strong> tem duas sílabas: <em>co</em> + <em>op</em>. Não deve ser reduzido a “cop” ou “copy”.</p>
+          <p><strong>Coop</strong> é escrito sem hífen. Na pronúncia, mantenha duas sílabas: <em>co</em> + <em>op</em>; não reduza a “cop” ou “copy”.</p>
         </article>
       </div>
     </div>
