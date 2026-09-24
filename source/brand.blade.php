@@ -56,8 +56,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e identidade da Libre
           <div class="lc-why__idx">02</div>
           <h3>Uso consistente</h3>
           <p>Não altere a grafia, proporções ou composição da marca. O núcleo visual mantém o vermelho <code>#e5332a</code>, as proporções do logo, sua área de proteção e regras de redução. A tipografia e os tokens de interface do site pertencem à camada digital da identidade e podem evoluir sem alterar o logo.</p>
-          <p>O manual histórico foi revisado e está sendo reconstruído em fonte aberta e reproduzível; documentos administrativos, contratos e arquivos com dados pessoais permanecem fora do repositório público.</p>
-        </article>
+                  </article>
       </div>
     </div>
   </section>
