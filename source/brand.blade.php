@@ -1,6 +1,6 @@
 ---
 title: Marca e pronúncia — LibreCode
-description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas LibreCode, LibreCode Coop e LibreSign.
+description: Diretrizes oficiais para a grafia, pronúncia e identidade da LibreCode Coop.
 ---
 
 @extends('_layouts.main')
@@ -11,52 +11,51 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
     <div class="lc-shell">
       <div class="lc-head">
         <p class="lc-eyebrow">Marca</p>
-        <h1>Como escrever e pronunciar nossas marcas</h1>
-        <p>Esta é a referência canônica para a grafia e a pronúncia de LibreCode, LibreCode Coop e LibreSign. Os nomes nasceram da tradição de software livre associada ao LibreOffice: <em>Libre</em> remete à liberdade.</p>
+        <h1>LibreCode: tecnologia com liberdade</h1>
+        <p><strong>Libre</strong> não é apenas parte do nome. É a ideia de liberdade que orienta como construímos, entregamos e sustentamos tecnologia: liberdade para entender o que você usa, escolher quem mantém, adaptar às suas necessidades, integrar com outros sistemas e evitar dependência artificial de um único fornecedor.</p>
+        <p>Para nossos clientes, isso se traduz em mais controle sobre tecnologia e dados, maior capacidade de continuidade e uma relação comercial baseada em serviço, conhecimento e confiança — não em aprisionamento tecnológico.</p>
       </div>
 
       <div class="lc-why">
-        <article class="lc-why__card" id="names">
+        <article class="lc-why__card" id="name">
           <div class="lc-why__idx">01</div>
-          <h2>Nomes oficiais</h2>
-          <p>Use sempre <strong>LibreCode</strong>, <strong>LibreCode Coop</strong> e <strong>LibreSign</strong>.</p>
-          <p>Em LibreCode e LibreSign, a letra inicial e a segunda palavra começam em maiúscula, sem espaço entre as palavras. Em Coop, use a grafia sem hífen.</p>
-          <p>Evite grafias como <code>Librecode</code>, <code>Libre Code</code>, <code>Libresign</code>, <code>Libre Sign</code> e <code>LibreCode Co-op</code>.</p>
+          <h2>Nome oficial</h2>
+          <p>Use sempre <strong>LibreCode</strong> e <strong>LibreCode Coop</strong>.</p>
+          <p>Em LibreCode, a letra inicial e a segunda palavra começam em maiúscula, sem espaço. <strong>Coop</strong> é escrito sem hífen.</p>
+          <p>Evite grafias como <code>Librecode</code>, <code>Libre Code</code> e <code>LibreCode Co-op</code>.</p>
         </article>
 
         <article class="lc-why__card" id="pronunciation">
           <div class="lc-why__idx">02</div>
           <h2>Pronúncia</h2>
-          <p><strong>Libre</strong> começa com o som /i/: não é “laibre”. A pronúncia de referência para o elemento <em>Libre</em> é <span aria-label="transcrição fonética internacional">/ˈli.bɾe/</span>.</p>
+          <p><strong>Libre</strong> começa com o som /i/: não é “laibre”. A pronúncia de referência é <span aria-label="transcrição fonética internacional">/ˈli.bɾe/</span>.</p>
           <p><strong>LibreCode</strong>: <span aria-label="transcrição fonética internacional">/ˈli.bɾe koʊd/</span>. <strong>Code</strong> mantém a pronúncia inglesa.</p>
-          <p><strong>LibreSign</strong>: <span aria-label="transcrição fonética internacional">/ˈli.bɾe saɪn/</span>. <strong>Sign</strong> mantém a pronúncia inglesa.</p>
-          <p><strong>Coop</strong> é escrito sem hífen. Na pronúncia, mantenha duas sílabas: <em>co</em> + <em>op</em>; não reduza a “cop” ou “copy”.</p>
+          <p><strong>Coop</strong> é escrito sem hífen e pronunciado em duas sílabas: <em>co</em> + <em>op</em>.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="lc-section lc-section--paper">
+  <section class="lc-section lc-section--paper" id="assets">
     <div class="lc-shell">
       <div class="lc-head">
         <p class="lc-eyebrow">Identidade visual</p>
-        <h2>Manuais e ativos</h2>
-        <p>Os arquivos de identidade visual existentes continuam disponíveis nas pastas públicas abaixo. Esta página concentra as regras textuais; os materiais visuais permanecem em seus arquivos originais até que a versão pública consolidada do manual seja incorporada ao site.</p>
+        <h2>Assets oficiais da LibreCode</h2>
+        <p>Use sempre arquivos oficiais e preserve proporções, cores e legibilidade. Os assets públicos devem ser distribuídos a partir de fontes versionadas e revisáveis; materiais de trabalho não são a fonte pública da marca.</p>
       </div>
 
       <div class="lc-why">
         <article class="lc-why__card">
           <div class="lc-why__idx">01</div>
-          <h3>LibreCode</h3>
-          <p>Logotipos, variações e materiais do manual da marca LibreCode.</p>
-          <a class="lc-why__link" href="https://cloud.librecode.coop/s/2yD3mRSYiea6BaD" target="_blank" rel="noopener">Abrir arquivos da marca LibreCode <span aria-hidden="true">↗</span></a>
+          <h3>Logo LibreCode</h3>
+          <p>Versão oficial atualmente utilizada no site.</p>
+          <a class="lc-why__link" href="{{ $page->baseUrl }}assets/images/logo/librecode_large.png" download>Baixar logo LibreCode (PNG) <span aria-hidden="true">↓</span></a>
         </article>
 
-        <article class="lc-why__card" id="libresign">
+        <article class="lc-why__card">
           <div class="lc-why__idx">02</div>
-          <h3>LibreSign</h3>
-          <p>Logotipos, variações e materiais do manual da marca LibreSign.</p>
-          <a class="lc-why__link" href="https://cloud.librecode.coop/s/HpkZbZZrsdn9Gqj" target="_blank" rel="noopener">Abrir arquivos da marca LibreSign <span aria-hidden="true">↗</span></a>
+          <h3>Uso consistente</h3>
+          <p>Não altere a grafia, proporções ou composição da marca. As especificações visuais completas — variações, cores, área de proteção, tamanhos mínimos e usos incorretos — serão mantidas como documentação versionada e publicadas nesta página.</p>
         </article>
       </div>
     </div>
@@ -65,10 +64,10 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
   <section class="lc-section lc-section--ink">
     <div class="lc-shell">
       <div class="lc-head">
-        <p class="lc-eyebrow">Uso em texto</p>
-        <h2>Consistência sem repetir a explicação</h2>
-        <p>A grafia oficial deve ser usada em sites, documentação, apresentações, imprensa e interfaces. A explicação de pronúncia não precisa acompanhar cada ocorrência do nome: este endereço é a fonte de referência e pode ser citado quando necessário.</p>
-        <p>Para dúvidas de uso de marca, inclusive situações comerciais ou institucionais não cobertas pelos materiais publicados, entre em contato com <a href="mailto:contato@librecode.coop">contato@librecode.coop</a>.</p>
+        <p class="lc-eyebrow">Por que “Libre”</p>
+        <h2>Liberdade também é uma decisão de negócio</h2>
+        <p>Software livre permite auditar, estudar, adaptar e evoluir a tecnologia. Para uma organização, isso reduz dependências desnecessárias e amplia opções: trocar de fornecedor, internalizar conhecimento, integrar sistemas e planejar a evolução tecnológica com mais autonomia.</p>
+        <p>A LibreCode Coop trabalha para transformar essa liberdade técnica em valor operacional: soluções sustentáveis, interoperáveis e mantidas com transparência.</p>
       </div>
     </div>
   </section>
