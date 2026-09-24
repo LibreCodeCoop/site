@@ -41,7 +41,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e identidade da Libre
       <div class="lc-head">
         <p class="lc-eyebrow">Identidade visual</p>
         <h2>Assets oficiais da LibreCode</h2>
-        <p>Use sempre arquivos oficiais e preserve proporções, cores e legibilidade. Os assets públicos devem ser distribuídos a partir de fontes versionadas e revisáveis; materiais de trabalho não são a fonte pública da marca.</p>
+        <p>Use sempre arquivos oficiais e preserve proporções, cores e legibilidade. A fonte canônica e versionada da marca é o repositório <a href="https://github.com/LibreCodeCoop/brand" target="_blank" rel="noopener">LibreCodeCoop/brand</a>; este site é a interface pública das diretrizes e dos exports aprovados.</p>
       </div>
 
       <div class="lc-why">
@@ -68,6 +68,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e identidade da Libre
         <h2>Liberdade também é uma decisão de negócio</h2>
         <p>Software livre permite auditar, estudar, adaptar e evoluir a tecnologia. Para uma organização, isso reduz dependências desnecessárias e amplia opções: trocar de fornecedor, internalizar conhecimento, integrar sistemas e planejar a evolução tecnológica com mais autonomia.</p>
         <p>A LibreCode Coop trabalha para transformar essa liberdade técnica em valor operacional: soluções sustentáveis, interoperáveis e mantidas com transparência.</p>
+        <p><a class="lc-why__link" href="https://github.com/LibreCodeCoop/brand" target="_blank" rel="noopener">Ver fonte canônica da marca <span aria-hidden="true">↗</span></a></p>
       </div>
     </div>
   </section>
