@@ -16,7 +16,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
       </div>
 
       <div class="lc-why">
-        <article class="lc-why__card">
+        <article class="lc-why__card" id="names">
           <div class="lc-why__idx">01</div>
           <h2>Nomes oficiais</h2>
           <p>Use sempre <strong>LibreCode</strong>, <strong>LibreCode Co-op</strong> e <strong>LibreSign</strong>.</p>
@@ -24,7 +24,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
           <p>Evite grafias como <code>Librecode</code>, <code>Libre Code</code>, <code>Libresign</code>, <code>Libre Sign</code> e <code>LibreCode Coop</code>.</p>
         </article>
 
-        <article class="lc-why__card">
+        <article class="lc-why__card" id="pronunciation">
           <div class="lc-why__idx">02</div>
           <h2>Pronúncia</h2>
           <p><strong>Libre</strong> começa com o som /i/: não é “laibre”. A pronúncia de referência para o elemento <em>Libre</em> é <span aria-label="transcrição fonética internacional">/ˈli.bɾe/</span>.</p>
@@ -52,7 +52,7 @@ description: Diretrizes oficiais para a grafia, pronúncia e uso das marcas Libr
           <a class="lc-why__link" href="https://cloud.librecode.coop/s/2yD3mRSYiea6BaD" target="_blank" rel="noopener">Abrir arquivos da marca LibreCode <span aria-hidden="true">↗</span></a>
         </article>
 
-        <article class="lc-why__card">
+        <article class="lc-why__card" id="libresign">
           <div class="lc-why__idx">02</div>
           <h3>LibreSign</h3>
           <p>Logotipos, variações e materiais do manual da marca LibreSign.</p>
