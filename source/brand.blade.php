@@ -30,6 +30,10 @@ description: Diretrizes oficiais para a grafia, pronúncia e identidade da Libre
           <h2>Pronúncia</h2>
           <p><strong>Libre</strong> começa com o som /i/: não é “laibre”. A pronúncia de referência é <span aria-label="transcrição fonética internacional">/ˈli.bɾe/</span>.</p>
           <p><strong>LibreCode</strong>: <span aria-label="transcrição fonética internacional">/ˈli.bɾe koʊd/</span>. <strong>Code</strong> mantém a pronúncia inglesa.</p>
+          <audio controls preload="none" src="{{ $page->baseUrl }}assets/audio/librecode-pronunciation.ogg">
+            Seu navegador não suporta reprodução de áudio.
+          </audio>
+          <p>Gravação humana da pronúncia de referência da LibreCode.</p>
           <p><strong>Coop</strong> é escrito sem hífen e pronunciado em duas sílabas: <em>co</em> + <em>op</em>.</p>
         </article>
       </div>
