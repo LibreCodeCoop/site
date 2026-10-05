@@ -58,5 +58,3 @@ Claro, self-hosted exige um pouco mais de cuidado com hospedagem, segurança e m
 #Marketing #MarketingDigital #OpenSource #SelfHosted #Mautic #EvolutionCRM #Matomo #LimeSurvey #YOURLS #CRM #WhatsApp #LGPD #AutomaçãoDeMarketing
 
 ---
-
-Posso fazer uma versão mais curta para Instagram ou uma mais técnica para LinkedIn, se quiser.
