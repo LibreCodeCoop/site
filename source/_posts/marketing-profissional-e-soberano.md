@@ -15,7 +15,14 @@ Existe outro caminho: **ferramentas open source e self-hosted**, que você insta
 📧 **Mautic: automação de marketing**
 Captura de leads, segmentação, e-mail marketing, landing pages e jornadas automatizadas, sem limite artificial de contatos imposto por plano.
 
-FOTO AQUI
+<img width="1367" height="651" alt="image" src="https://github.com/user-attachments/assets/1529286e-509d-40c5-a213-59d36e1200d0" />
+<img width="1363" height="663" alt="image" src="https://github.com/user-attachments/assets/8359d466-0514-4e5a-8815-179c33c20417" />
+<img width="630" height="323" alt="image" src="https://github.com/user-attachments/assets/f06c8e1e-0701-4e91-8c4b-723aa0c60e12" />
+<img width="601" height="478" alt="image" src="https://github.com/user-attachments/assets/bf31cbb1-7970-438b-afe0-deeb736400b0" />
+<img width="1357" height="680" alt="image" src="https://github.com/user-attachments/assets/4998662d-86d3-4259-8859-9fb21db90a40" />
+<img width="1127" height="594" alt="image" src="https://github.com/user-attachments/assets/876d2423-5a1e-4611-ba9c-a66c5213cae6" />
+
+
 
 🤝 **EvolutionCRM: CRM conversacional com WhatsApp e IA**
 Centralize atendimento e vendas em uma caixa de entrada compartilhada. Distribua conversas entre a equipe, organize contatos e use agentes de IA e automações para qualificar leads e responder dúvidas, tudo no seu servidor e integrado à Evolution API.
