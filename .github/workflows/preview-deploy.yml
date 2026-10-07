@@ -44,7 +44,7 @@ jobs:
 
       - name: Deploy preview
         if: steps.pr.outputs.number != ''
-        uses: rossjrw/pr-preview-action@v1
+        uses: LibreSign/pr-preview-action@2a6da1177b47dc23173ba9a75e01da0a0d800978
         with:
           action: deploy
           source-dir: ./build_production/
