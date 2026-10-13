@@ -24,6 +24,7 @@
                         <li><a href="{{ locale_path($page, $page->baseUrl) }}#apoie">Apoie</a></li>
                         <li><a href="{{ locale_path($page, $page->baseUrl) }}posts">Blog</a></li>
                         <li><a href="{{ locale_path($page, $page->baseUrl) }}jobs">Coopere Conosco</a></li>
+                        <li><a href="{{ locale_path($page, $page->baseUrl) }}brand">Marca e pronúncia</a></li>
                     </ul>
                 </div>
 
