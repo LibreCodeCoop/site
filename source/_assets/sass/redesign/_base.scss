@@ -11,6 +11,20 @@ body {
   overflow-x: hidden;
 }
 
+/* Media should shrink with its container instead of creating horizontal scroll. */
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
 body,
 h1, h2, h3, h4, h5, h6, p {
   font-family: var(--font-body);
