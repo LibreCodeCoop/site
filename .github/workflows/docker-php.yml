@@ -1,8 +1,6 @@
 name: Docker PHP Publish
 
 on:
-  schedule:
-    - cron: '0 2 * * *'
   pull_request:
   push:
     branches:
@@ -62,6 +60,7 @@ jobs:
       - name: Build container image
         uses: docker/build-push-action@v6
         with:
+          pull: true
           push: false
           context: .docker/php
           platforms: linux/amd64,linux/arm64
@@ -75,6 +74,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: docker/build-push-action@v6
         with:
+          pull: true
           push: true
           context: .docker/php
           platforms: linux/amd64,linux/arm64
