@@ -1,4 +1,4 @@
-FROM php:8.4.27-fpm@sha256:e2d8e787dc775bdbd9d7e0c5e8f2f9ddb41ce5977c8bbaf99a2ba2e7d90fd8ae
+FROM php:8.5.11-fpm@sha256:36b66e02388a304d90cfa548172831b2ba3fd2a1a9cb5aa97ce6df01360518dd
 
 
 
