@@ -22,5 +22,5 @@ description: Documentários, cursos e leituras recomendadas sobre cooperativismo
   * Cursos obrigatórios
     * Nacionais
       * [Cooperativismo - Primeiras lições](https://capacita.coop.br/cursos-studion/cooperativismo-primeiras-licoes)
-      * [Entendendo a sociedade cooperativa](https://capacita.coop.br/cursos-studion/entendendo-a-sociedade-cooperativa-2)
+      * [Entendendo a sociedade cooperativa](https://capacita.coop.br/cursos-studion/entendendo-a-sociedade-cooperativa)
   * Ao concluir os cursos, envie em nosso grupo o comprovante de conclusão
