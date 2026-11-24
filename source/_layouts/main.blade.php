@@ -2,7 +2,7 @@
 <html lang="{{ $page->language ?? 'pt-BR' }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ $page->title ?? 'LibreCode — Cooperativa de Software Livre' }}</title>
+  <title>{{ $page->seo_title ?? $page->title ?? 'LibreCode — Cooperativa de Software Livre' }}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="keywords" content="software livre, cooperativa tecnologia, nuvem privada, ERP, CRM, automação de marketing, hospedagem Brasil, LGPD, soberania digital, suporte em português">
   <meta name="description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil, suporte em português e foco em LGPD.' }}">
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ $page->getUrl() }}">
   <meta property="og:site_name" content="LibreCode">
-  <meta property="og:title" content="{{ $page->title ?? 'LibreCode — Cooperativa de Software Livre' }}">
+  <meta property="og:title" content="{{ $page->seo_title ?? $page->title ?? 'LibreCode — Cooperativa de Software Livre' }}">
   <meta property="og:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil.' }}">
   @if (!empty($og_image))
     <meta property="og:image" content="{{ $og_image }}"/>
@@ -25,7 +25,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ $page->title ?? 'LibreCode' }}">
+  <meta name="twitter:title" content="{{ $page->seo_title ?? $page->title ?? 'LibreCode' }}">
   <meta name="twitter:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre.' }}">
   <meta name="twitter:image" content="{{ $page->baseUrl }}assets/images/logo/librecode_large.png">
 
