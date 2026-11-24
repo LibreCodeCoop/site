@@ -31,7 +31,7 @@ Vale fazer um esclarecimento técnico honesto: trocar o provedor de e-mail corpo
 
 Uma alternativa ao Microsoft 365 baseada em software livre substitui o aluguel de licenças fechadas por um ambiente dedicado, hospedado em servidores no Brasil ou na infraestrutura própria da empresa, onde os dados e o código pertencem integralmente à organização.
 
-Mais do que substituir apenas o e-mail e o armazenamento de arquivos, essa arquitetura permite consolidar praticamente toda a pilha de softwares de gestão, marketing e atendimento da empresa em um único ecossistema soberano, eliminando dezenas de assinaturas avulsas. Na LibreCode — cooperativa brasileira de tecnologia fundada em 2017 e responsável por projetos críticos em instituições como a Fiocruz —, estruturamos e gerenciamos ambientes corporativos completos sob medida:
+Mais do que substituir apenas o e-mail e o armazenamento de arquivos, essa arquitetura permite consolidar praticamente toda a pilha de softwares de gestão, marketing e atendimento da empresa em um único ecossistema soberano, eliminando dezenas de assinaturas avulsas. Na LibreCode — cooperativa brasileira de tecnologia fundada em 2018 e responsável por projetos críticos em instituições como a Fiocruz —, estruturamos e gerenciamos ambientes corporativos completos sob medida:
 
 | Frente de trabalho | Ferramenta proprietária | Solução livre gerenciada | Como funciona na operação |
 | --- | --- | --- | --- |
