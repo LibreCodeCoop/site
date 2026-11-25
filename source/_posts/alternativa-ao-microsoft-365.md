@@ -1,7 +1,6 @@
 ---
 extends: _layouts.post
 title: "Alternativa ao Microsoft 365: como manter sua empresa operando sem depender de um único fornecedor"
-seo_title: "Alternativa ao Microsoft 365: e-mail e nuvem sob seu controle"
 author: LibreCode
 date: 2026-11-24
 description: Falhas no Outlook e quedas no Microsoft 365 expõem os riscos de depender de um único fornecedor. Veja como migrar para uma nuvem privada segura no Brasil.
@@ -42,9 +41,9 @@ Mais do que substituir apenas o e-mail e o armazenamento de arquivos, essa arqui
 | Relacionamento (CRM) | Dynamics / Salesforce | SuiteCRM | Gestão de funil comercial, histórico de clientes e automação de vendas sem cobrança de licença por usuário. |
 | Automação de marketing | RD Station / Mailchimp | Mautic | Disparos de e-mail marketing, nutrição de leads, fluxos de automação e criação de landing pages hospedadas na infraestrutura da empresa. |
 | Analytics web | Google Analytics | Matomo | Rastreamento de tráfego e conversão em sites com 100% de propriedade sobre os dados e total aderência à LGPD, sem envio de informações para terceiros. |
-| Pesquisas e formulários | Google Forms / Typeform | LimeSurvey | Criação de pesquisas internas, avaliações e formulários avançados com armazenamento soberano das respostas. |
-| Gestão financeira | Conta Azul / Omie | Akaunting | Controle financeiro, fluxo de caixa e gestão contábil online integrados ao ambiente da organização. |
-| Controle de horas | Clockify / Toggl | Kimai | Apontamento de horas trabalhadas por projeto, equipe ou cliente para gestão de produtividade e faturamento. |
+| Pesquisas e formulários | Google Forms / Typeform | Nextcloud Forms / LimeSurvey | Criação de pesquisas internas, avaliações e formulários avançados com armazenamento soberano das respostas. |
+| Gestão financeira | Conta Azul / Omie | LibreFinance / Akaunting | Controle financeiro, fluxo de caixa e gestão contábil online integrados ao ambiente da organização. |
+| Controle de horas | Clockify / Toggl | Nextcloud Time Tracker / Kimai | Apontamento de horas trabalhadas por projeto, equipe ou cliente para gestão de produtividade e faturamento. |
 | Encurtador de URLs | Bitly | YOURLS | Encurtador de links próprio, sob o domínio oficial da marca, com métricas de cliques centralizadas. |
 | Ensino e treinamento | Plataformas EAD fechadas | Moodle | Ambiente completo de ensino a distância para universidades corporativas, onboarding de equipes e cursos online. |
 

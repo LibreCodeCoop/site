@@ -101,6 +101,25 @@ window.ScrollToPlugin = ScrollToPlugin;
     $('#header').addClass('header-scrolled');
   }
 
+  // Keep horizontally scrollable article tables reachable with a keyboard.
+  function updateArticleTableAccessibility() {
+    $('.lc-article__body table').each(function () {
+      var $table = $(this);
+
+      if (this.scrollWidth > this.clientWidth) {
+        $table.attr({
+          tabindex: '0',
+          'aria-label': 'Tabela com rolagem horizontal'
+        });
+      } else {
+        $table.removeAttr('tabindex aria-label');
+      }
+    });
+  }
+
+  updateArticleTableAccessibility();
+  $(window).on('resize', updateArticleTableAccessibility);
+
   // Smooth scroll for the navigation and same-page section links.
   $('.main-nav a, .mobile-nav a, .scrollto, .lc-btn[href*="#"], .lc-footer a[href*="#"]').on('click', function(event) {
     var href = this.getAttribute('href');
