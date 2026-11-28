@@ -39,20 +39,152 @@ Uma alternativa ao Microsoft 365 baseada em software livre substitui o aluguel d
 
 Mais do que substituir apenas o e-mail e o armazenamento de arquivos, essa arquitetura permite consolidar praticamente toda a pilha de softwares de gestão, marketing e atendimento da empresa em um único ecossistema soberano, eliminando dezenas de assinaturas avulsas. Na LibreCode — cooperativa brasileira de tecnologia fundada em 2018 e responsável por projetos críticos em instituições como a Fiocruz —, estruturamos e gerenciamos ambientes corporativos completos sob medida:
 
-| Frente de trabalho | Ferramenta proprietária | Solução livre gerenciada | Como funciona na operação |
-| --- | --- | --- | --- |
-| E-mail corporativo | Exchange / Outlook Web | Servidor de e-mail dedicado | Caixas postais com domínio próprio, políticas antispam customizadas, criptografia e compatibilidade total com qualquer aplicativo de e-mail ou celular. |
-| Arquivos e nuvem | OneDrive / Google Drive | Nextcloud | Armazenamento em nuvem privada, sincronização de pastas, controle granular de permissões e edição simultânea de documentos e planilhas. |
-| Reuniões e chat | Microsoft Teams / Zoom | Nextcloud Talk / Jitsi | Videoconferências em servidor próprio, compartilhamento de tela e canais de mensagens internos sem tráfego por servidores de terceiros. |
-| Assinatura digital | DocuSign / Adobe Sign | LibreSign | Plataforma integrada para assinatura eletrônica e digital de contratos com validade jurídica e conformidade com padrões ICP-Brasil. |
-| Relacionamento (CRM) | Dynamics / Salesforce | SuiteCRM | Gestão de funil comercial, histórico de clientes e automação de vendas sem cobrança de licença por usuário. |
-| Automação de marketing | RD Station / Mailchimp | Mautic | Disparos de e-mail marketing, nutrição de leads, fluxos de automação e criação de landing pages hospedadas na infraestrutura da empresa. |
-| Analytics web | Google Analytics | Matomo | Rastreamento de tráfego e conversão em sites com 100% de propriedade sobre os dados e total aderência à LGPD, sem envio de informações para terceiros. |
-| Pesquisas e formulários | Google Forms / Typeform | Nextcloud Forms / LimeSurvey | Criação de pesquisas internas, avaliações e formulários avançados com armazenamento soberano das respostas. |
-| Gestão financeira | Conta Azul / Omie | LibreFinance / Akaunting | Controle financeiro, fluxo de caixa e gestão contábil online integrados ao ambiente da organização. |
-| Controle de horas | Clockify / Toggl | Nextcloud Time Tracker / Kimai | Apontamento de horas trabalhadas por projeto, equipe ou cliente para gestão de produtividade e faturamento. |
-| Encurtador de URLs | Bitly | YOURLS | Encurtador de links próprio, sob o domínio oficial da marca, com métricas de cliques centralizadas. |
-| Ensino e treinamento | Plataformas EAD fechadas | Moodle | Ambiente completo de ensino a distância para universidades corporativas, onboarding de equipes e cursos online. |
+<div class="lc-comparison">
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">E-mail corporativo</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Exchange / Outlook Web</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Servidor de e-mail dedicado</strong>
+</span>
+</summary>
+<p>Caixas postais com domínio próprio, políticas antispam customizadas, criptografia e compatibilidade total com qualquer aplicativo de e-mail ou celular.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Arquivos e nuvem</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">OneDrive / Google Drive</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Nextcloud</strong>
+</span>
+</summary>
+<p>Armazenamento em nuvem privada, sincronização de pastas, controle granular de permissões e edição simultânea de documentos e planilhas.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Reuniões e chat</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Microsoft Teams / Zoom</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Nextcloud Talk / Jitsi</strong>
+</span>
+</summary>
+<p>Videoconferências em servidor próprio, compartilhamento de tela e canais de mensagens internos sem tráfego por servidores de terceiros.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Assinatura digital</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">DocuSign / Adobe Sign</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">LibreSign</strong>
+</span>
+</summary>
+<p>Plataforma integrada para assinatura eletrônica e digital de contratos com validade jurídica e conformidade com padrões ICP-Brasil.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Relacionamento (CRM)</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Dynamics / Salesforce</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">SuiteCRM</strong>
+</span>
+</summary>
+<p>Gestão de funil comercial, histórico de clientes e automação de vendas sem cobrança de licença por usuário.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Automação de marketing</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">RD Station / Mailchimp</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Mautic</strong>
+</span>
+</summary>
+<p>Disparos de e-mail marketing, nutrição de leads, fluxos de automação e criação de landing pages hospedadas na infraestrutura da empresa.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Analytics web</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Google Analytics</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Matomo</strong>
+</span>
+</summary>
+<p>Rastreamento de tráfego e conversão em sites com 100% de propriedade sobre os dados e total aderência à LGPD, sem envio de informações para terceiros.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Pesquisas e formulários</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Google Forms / Typeform</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Nextcloud Forms / LimeSurvey</strong>
+</span>
+</summary>
+<p>Criação de pesquisas internas, avaliações e formulários avançados com armazenamento soberano das respostas.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Gestão financeira</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Conta Azul / Omie</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">LibreFinance / Akaunting</strong>
+</span>
+</summary>
+<p>Controle financeiro, fluxo de caixa e gestão contábil online integrados ao ambiente da organização.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Controle de horas</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Clockify / Toggl</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Nextcloud Time Tracker / Kimai</strong>
+</span>
+</summary>
+<p>Apontamento de horas trabalhadas por projeto, equipe ou cliente para gestão de produtividade e faturamento.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Encurtador de URLs</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Bitly</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">YOURLS</strong>
+</span>
+</summary>
+<p>Encurtador de links próprio, sob o domínio oficial da marca, com métricas de cliques centralizadas.</p>
+</details>
+<details name="lc-comparison">
+<summary>
+<span class="lc-comparison__area">Ensino e treinamento</span>
+<span class="lc-comparison__swap">
+<span class="lc-comparison__from">Plataformas EAD fechadas</span>
+<span class="lc-comparison__arrow" aria-hidden="true">→</span>
+<span class="visually-hidden">substituído por</span>
+<strong class="lc-comparison__to">Moodle</strong>
+</span>
+</summary>
+<p>Ambiente completo de ensino a distância para universidades corporativas, onboarding de equipes e cursos online.</p>
+</details>
+</div>
 
 ## Como é feita a migração de e-mail corporativo e arquivos sem parar a empresa?
 
