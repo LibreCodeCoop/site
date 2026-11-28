@@ -3,7 +3,14 @@ extends: _layouts.post
 title: "Alternativa ao Microsoft 365: como manter sua empresa operando sem depender de um único fornecedor"
 author: LibreCode
 date: 2026-11-24
-description: Falhas no Outlook e quedas no Microsoft 365 expõem os riscos de depender de um único fornecedor. Veja como migrar para uma nuvem privada segura no Brasil.
+description: "Alternativa ao Microsoft 365 em software livre: e-mail, arquivos e reuniões em nuvem privada no Brasil, com LGPD e migração sem parar a operação."
+path: posts
+banner: /assets/images/posts/alternativa-ao-microsoft-365-nuvem-privada/alternativa-microsoft-365-nuvem-privada-librecode.webp
+cover_image: /assets/images/posts/alternativa-ao-microsoft-365-nuvem-privada/alternativa-microsoft-365-nuvem-privada-librecode.webp
+og_image: /assets/images/posts/alternativa-ao-microsoft-365-nuvem-privada/alternativa-microsoft-365-nuvem-privada-librecode-og.jpg
+image_title: "Alternativa ao Microsoft 365: nuvem privada e sob controle"
+image_alt: Ilustração da migração do Microsoft 365 para uma nuvem privada segura com e-mail, arquivos, videochamada e assinatura digital em software livre
+image_description: De um lado, uma nuvem rachada com alerta e conexões interrompidas mostra o risco de depender de um único fornecedor, como o Microsoft 365 ou o Google Workspace. Do outro, uma nuvem privada protegida por escudo reúne e-mail corporativo, arquivos (Nextcloud), videochamadas (Nextcloud Talk/Jitsi), assinatura digital (LibreSign), analytics (Matomo) e chat em rede redundante. Ela representa a alternativa em software livre da LibreCode, hospedada no Brasil e de acordo com a LGPD.
 ---
 
 Quando o e-mail corporativo para de funcionar às dez da manhã de uma quarta-feira, a operação inteira trava. A diretoria começa a cobrar respostas pelo WhatsApp pessoal, propostas comerciais ficam presas na caixa de saída e reuniões com clientes são canceladas às pressas.
