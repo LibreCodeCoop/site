@@ -9,6 +9,7 @@ return [
     // Kept in config so it is configurable per environment, like matomo_container.
     'chatwoot_token' => '1FWLmSUAXnZd8qhUB5rsPCdq',
     'baseUrl' => '/',
+    'site_url' => 'https://librecode.coop',
     'title' => 'LibreCode',
     'description' => 'Cooperativa de tecnologia da informação especializada em desenvolvimento de soluções com licença livre.',
     'collections' => [
@@ -29,7 +30,7 @@ return [
                     $post->set('gravatar', $author->gravatar);
                 }
 
-                if(empty($post->cover_image)){
+                if(! $post->cover_image){
                     if(file_exists(__DIR__.'/source/'.$path.'/cover.jpg')){
                         $post->set('cover_image',$post->baseUrl.$path.'/cover.jpg');
                     } elseif(file_exists(__DIR__.'/source/'.$alternativePath.'/cover.jpg')){
@@ -39,7 +40,7 @@ return [
                     }
                 }
 
-                if(empty($post->banner)){
+                if(! $post->banner){
                     if(file_exists(__DIR__.'/source/'.$path.'/banner.jpg')){
                         $post->set('banner',$post->baseUrl.$path.'/banner.jpg');
                     } elseif(file_exists(__DIR__.'/source/'.$alternativePath.'/banner.jpg')){

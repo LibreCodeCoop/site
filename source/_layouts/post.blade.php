@@ -1,5 +1,40 @@
 @extends('_layouts.main')
 
+@section('structured_data')
+@if ($page->og_image)
+@php
+    $structuredData = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BlogPosting',
+        'headline' => $page->title,
+        'description' => $page->description,
+        'datePublished' => date('Y-m-d', $page->date),
+        'inLanguage' => 'pt-BR',
+        'mainEntityOfPage' => $page->site_url . $page->getPath(),
+        'author' => [
+            '@type' => $page->author === 'LibreCode' ? 'Organization' : 'Person',
+            'name' => $page->author,
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'LibreCode',
+            'url' => $page->site_url,
+            'logo' => $page->site_url . '/assets/images/logo/librecode.png',
+        ],
+        'image' => [
+            '@type' => 'ImageObject',
+            'contentUrl' => $page->site_url . $page->banner,
+            'url' => $page->site_url . $page->banner,
+            'name' => $page->image_title,
+            'caption' => $page->image_alt,
+            'description' => $page->image_description,
+        ],
+    ];
+@endphp
+  <script type="application/ld+json">{!! json_encode($structuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) !!}</script>
+@endif
+@endsection
+
 @section('body')
 
 @php
@@ -58,7 +93,7 @@
 <main id="main">
     <article class="lc-article lc-section--paper">
         <div class="lc-article__banner" data-reveal="up">
-            <img src="{{ $page->banner }}" alt="{{ $page->title }}" loading="lazy">
+            <img src="{{ $page->banner }}" alt="{{ $page->image_alt ?: $page->title }}" @if ($page->image_title) title="{{ $page->image_title }}" @endif loading="lazy">
         </div>
 
         <div class="lc-article__body" data-reveal="up">

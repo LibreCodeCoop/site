@@ -17,8 +17,9 @@
   <meta property="og:site_name" content="LibreCode">
   <meta property="og:title" content="{{ $page->title ?? 'LibreCode — Cooperativa de Software Livre' }}">
   <meta property="og:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre. Nuvem privada, gestão, CRM, atendimento e automação com hospedagem no Brasil.' }}">
-  @if (!empty($og_image))
-    <meta property="og:image" content="{{ $og_image }}"/>
+  @if ($page->og_image)
+    <meta property="og:image" content="{{ $page->site_url }}{{ $page->og_image }}"/>
+    <meta property="og:image:alt" content="{{ $page->image_alt }}"/>
   @else
     <meta property="og:image" content="{{ $page->baseUrl }}assets/images/logo/librecode_large.png"/>
   @endif
@@ -27,7 +28,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ $page->title ?? 'LibreCode' }}">
   <meta name="twitter:description" content="{{ $page->description ?? 'Cooperativa de tecnologia especializada em soluções corporativas com software livre.' }}">
-  <meta name="twitter:image" content="{{ $page->baseUrl }}assets/images/logo/librecode_large.png">
+  @if ($page->og_image)
+    <meta name="twitter:image" content="{{ $page->site_url }}{{ $page->og_image }}">
+    <meta name="twitter:image:alt" content="{{ $page->image_alt }}">
+  @else
+    <meta name="twitter:image" content="{{ $page->baseUrl }}assets/images/logo/librecode_large.png">
+  @endif
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -59,6 +65,7 @@
     ]
   }
   </script>
+  @yield('structured_data')
 
   <!-- Favicons -->
   <link href="{{ $page->baseUrl }}assets/images/favico.png" rel="icon">
